@@ -933,7 +933,7 @@ reference "sub:Foreign-company-operations"
 
 \end_deeper
 \begin_layout Itemize
-The number of operating rounds (a
+The number of operating rounds (a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3083,7 +3083,7 @@ reference "sub:SR-stock-price"
 \end_layout
 
 \begin_layout Itemize
-The number of operating rounds in the
+The number of operating rounds in the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3242,7 +3242,7 @@ A player can buy shares past 60% ownership of a public company from the
 \end_deeper
 \begin_layout Itemize
 The first available certificate of a public company is always the director's
- certificate (2 shares, 20%, one certificate - see
+ certificate (2 shares, 20%, one certificate - see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Starting-or-floating"
@@ -3446,7 +3446,7 @@ floated
 \end_inset
 
  will operate in all future operating rounds for the rest of the game (see
- 
+  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Operating-Rounds"
@@ -3547,7 +3547,7 @@ Shares of foreign companies do not count as certificates against the certificate
 \end_deeper
 \begin_layout Itemize
 A player may not own more certificates than the certificate limit specified
- for the number of players in the game (see 
+ for the number of players in the game (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Starting-Player-Capital"
@@ -3876,7 +3876,7 @@ The stock price markers of companies in the same space of the stock market
 \end_deeper
 \begin_layout Itemize
 As companies operate, their stock price markers are turned upside down and
- moved to their new stock price location (see 
+ moved to their new stock price location (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:OR-stock-price"
@@ -3945,7 +3945,7 @@ reference "tab:Public-Companies"
 
  and
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Private-Companies"
 
 \end_inset
@@ -4672,7 +4672,7 @@ OO
 \end_inset
 
  track tiles, or to the two sides of Amsterdam prior to the gray Amsterdam
- track tile being placed (see 
+ track tile being placed (see   
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Track-types"
@@ -4723,7 +4723,7 @@ reference "sub:Train-types"
 \end_deeper
 \begin_layout Itemize
 A route must contain at least two revenue locations that are within the
- Netherlands (not off-boards -- see
+ Netherlands (not off-boards -- see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Map-Explanation"
@@ -4736,7 +4736,7 @@ reference "sec:Map-Explanation"
 \begin_layout Itemize
 The total number and variety of towns and cities in the route run by a train
  cannot exceed the range of the type of train (specified on its certificate
- - see:
+ - see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Game-Phases"
@@ -4756,7 +4756,7 @@ reference "sub:Train-types"
 \begin_deeper
 \begin_layout Description
 Note: Off-board locations do not count against train-length but do contribute
- revenue toward the route (see 
+ revenue toward the route (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Run-calculation"
@@ -5113,7 +5113,7 @@ reference "sub:Train-Limit"
 \begin_layout Itemize
 Trains can be bought from the bank pool or supply for face value, or from
  another public company for any price agreed upon by the directors of both
- companies (minimum ƒ1, also see
+ companies (minimum ƒ1, also see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Emergency-train-buying"
@@ -5163,7 +5163,7 @@ rust
 \begin_inset Quotes erd
 \end_inset
 
- and be removed from the game (see 
+ and be removed from the game (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -5491,7 +5491,7 @@ The following steps are done in order:
 
 \begin_layout Enumerate
 The total revenue for the foreign company as recorded on the revenue track
- is half-paid to all share-holders (see 
+ is half-paid to all share-holders (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Recording-revenues"
@@ -5820,7 +5820,7 @@ reference "par:Run-calculation"
 
 \begin_layout Itemize
 Some hexagons are marked with a bob-ended bar, denoting that they are blocked
- by a matching private company (see 
+ by a matching private company (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Private-Companies"
@@ -5988,7 +5988,7 @@ Town Have a small cross-bar or black circle marking the town with a line
  of track passing through it, and a revenue value (number in a small white
  circle).
  Town track tiles must be placed on town hexagons containing a town (see
- 
+  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Map-Explanation"
@@ -7124,7 +7124,7 @@ Power: Owning company may move one of its placed station markers to a new
 Use: The power may be used during the exchange and station marker placement
  step of the owning company's operations.
  The power may be used if the company is not already prohibited from placing
- an exchange or station marker (see 
+ an exchange or station marker (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Place-station-marker"
@@ -7872,7 +7872,7 @@ Public companies may:
 
 \begin_deeper
 \begin_layout Itemize
-Buy private companies (green phase or later, see
+Buy private companies (green phase or later, see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -8005,7 +8005,7 @@ The public company that is randomly assigned to the
 \noun on
 Rijkswaterstaat
 \noun default
- private company during setup (see 
+ private company during setup (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Private-Companies"
@@ -8508,7 +8508,7 @@ reference "sub:Train-Limit"
 
 \begin_layout Itemize
 The purchase of trains of new types causes phase changes and may change
- the train limit (see 
+ the train limit (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Game-Phases"
@@ -8556,7 +8556,7 @@ trains Run a route containing no more than
 \emph on
  N
 \emph default
- cities or towns plus a possible off-board at each end (see 
+ cities or towns plus a possible off-board at each end (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Track-types"
@@ -8657,7 +8657,7 @@ reference "sub:Run-train(s)"
 
 \begin_layout Description
 Note: Off-boards do not satisfy the requirements for a route and do not
- count against a train's length (see 
+ count against a train's length (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Route-definition"
