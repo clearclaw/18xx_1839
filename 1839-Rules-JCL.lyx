@@ -962,7 +962,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -981,7 +981,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -1002,7 +1002,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -3106,7 +3106,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Operating-Rounds"
@@ -3155,7 +3155,7 @@ reference "sub:Starting-or-floating"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Operating-Rounds"
@@ -3173,7 +3173,7 @@ reference "sub:Pay-or-withhold"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Foreign-Companies"
@@ -3249,7 +3249,7 @@ reference "sub:Starting-or-floating"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Company-directors"
@@ -3504,7 +3504,7 @@ In order to transfer director control of a company via share sales:
 \begin_layout Enumerate
 The director's share must be exchanged for certificates of the player with
  the most shares of the company after the sale, assigning control of the
- company, and its charter and assets to that player.
+ company and its charter and assets to that player.
 \end_layout
 
 \begin_layout Enumerate
@@ -3943,7 +3943,7 @@ reference "tab:Public-Companies"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Private-Companies"
@@ -4025,7 +4025,7 @@ reference "sub:Buy-train(s)"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Emergency-train-buying"
@@ -4151,7 +4151,7 @@ reference "sub:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Upgrading-track"
@@ -4180,7 +4180,7 @@ Gray track tiles upgrade/replace brown track tiles.
 Some hexes are blocked and may not have track placed there until their matching
  private companies have closed or been bought by a public company (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Private-Companies-Overview"
 
 \end_inset
@@ -4381,7 +4381,7 @@ A
 \begin_inset Quotes erd
 \end_inset
 
- for Amsterdam (G10),
+ for Amsterdam (G10), 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4389,7 +4389,7 @@ B
 \begin_inset Quotes erd
 \end_inset
 
- for Breda (L9),
+ for Breda (L9), 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4397,7 +4397,7 @@ H
 \begin_inset Quotes erd
 \end_inset
 
- for Haarlem (G8),
+ for Haarlem (G8), 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4405,7 +4405,7 @@ R
 \begin_inset Quotes erd
 \end_inset
 
- for Rotterdam (J7) and
+ for Rotterdam (J7) and 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4653,7 +4653,7 @@ Use the same piece of track on a track tile more than once (no matter how
 
 \begin_layout Itemize
 Pass through a city which doesn't have an open station marker location or
- exchange token, and doesn't contain the company's station marker.
+ exchange token and doesn't contain the company's station marker.
 \end_layout
 
 \begin_layout Itemize
@@ -4743,7 +4743,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Train-types"
@@ -4808,7 +4808,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Train-types"
@@ -4858,7 +4858,7 @@ The revenue value of off-boards is based on the game phase:
 The values are for, in order from left to right: yellow phase, green phase,
  brown phase, and gray phase (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Game-Phases"
 
 \end_inset
@@ -5100,7 +5100,7 @@ reference "sub:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Train-Limit"
@@ -5125,7 +5125,7 @@ reference "sub:Emergency-train-buying"
 
 \begin_layout Itemize
 Trains are available from the supply in colour order: first yellow, then
- green, blue, brown, red, and finally gray.
+ green, blue, brown, red and finally gray.
 \end_layout
 
 \begin_deeper
@@ -5143,7 +5143,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -5219,7 +5219,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -5239,7 +5239,7 @@ reference "sub:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Train-Limit"
@@ -5360,7 +5360,7 @@ reference "sub:Selling-shares"
 Director control of the currently operating company may not be transferred
  to another player during Emergency Train Buying (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Company-directors"
 
 \end_inset
@@ -5498,9 +5498,9 @@ reference "sub:Recording-revenues"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Pay-or-withhold"
 
 \end_inset
@@ -5522,7 +5522,7 @@ Dividends for foreign company shares in the bank pool are lost.
 The stock price is moved up or down one space if the foreign company did
  or did not pay a dividend (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "par:Foreign-company-stock-movement"
 
 \end_inset
@@ -5557,7 +5557,7 @@ The foreign company will buy as many trains from the supply as it can afford
 \begin_layout Itemize
 The stock price is moved up one space for each train bought (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "par:Foreign-company-stock-movement"
 
 \end_inset
@@ -5693,8 +5693,17 @@ The designer would like to thank Francis Tresham for the design and development
  of the wonderful field of 18xx games, Erno Eekelschot for 18Kaas, Michael
  Calhoon for his bounteous supply of notions, complaints and sounding board
  in equal measures.
- Additional thanks go to the many play-testers, most notably Bruce Murphy
- and Daniel Barnes.
+ Additional thanks go to BGG user 
+\begin_inset Quotes eld
+\end_inset
+
+R.
+ vdH
+\begin_inset Quotes erd
+\end_inset
+
+ for his help with Dutch corrections and the rules, as well as the many
+ play-testers, most notably Bruce Murphy and Daniel Barnes.
  I have been honoured to design games for and with such wonderful people.
 \end_layout
 
@@ -5808,7 +5817,7 @@ reference "sub:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Run-calculation"
@@ -5879,7 +5888,7 @@ Spoorwegwerken Oost
 \noun default
  and
 \noun on
-Rijkswaterstaat
+ Rijkswaterstaat
 \noun default
  private companies (C10, D9 and F13, G12 respectively).
 \end_layout
@@ -6161,7 +6170,7 @@ reference "sub:OR-Overview"
 
 \begin_deeper
 \begin_layout Itemize
-Private companies do not otherwise
+Private companies do not otherwise 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6299,7 +6308,7 @@ reference "sub:OR-Overview"
 
  and 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Game-Phases"
 
 \end_inset
@@ -7478,7 +7487,7 @@ reference "par:Train-purchasing"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Emergency-train-buying"
@@ -7716,7 +7725,7 @@ Foreign companies:
 \begin_layout Itemize
 Have their initial pars determined during game setup (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sec:Game-Setup"
 
 \end_inset
@@ -7744,7 +7753,7 @@ reference "sub:Foreign-company-operations"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Foreign-company-operating-order"
@@ -7776,7 +7785,7 @@ Foreign company shares start the game on their respective charters, are
  bought by players, may then be sold to the bank pool, may be bought back
  by the foreign company from the bank pool to its charter (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Foreign-operating-round-actions"
 
 \end_inset
@@ -7879,7 +7888,7 @@ reference "sub:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Private-Companies"
@@ -8012,7 +8021,7 @@ reference "sub:Private-Companies"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Game-Setup"
@@ -8433,7 +8442,7 @@ Lifecycle
 Public company shares start the game in the IPO, are bought by players (see
   
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Starting-or-floating"
 
 \end_inset
@@ -8472,7 +8481,7 @@ reference "sub:Run-train(s)"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Buy-train(s)"
@@ -8522,7 +8531,7 @@ reference "sub:Game-Phases"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Train-Limit"
@@ -8645,7 +8654,7 @@ reference "sec:Track-tiles"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Run-train(s)"
@@ -8690,7 +8699,7 @@ reference "sub:Starting-or-floating"
 
 \end_inset
 
- and
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
