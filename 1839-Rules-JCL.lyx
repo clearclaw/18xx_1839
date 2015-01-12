@@ -398,7 +398,7 @@ Place the following yellow private companies on their matching charters:
 \noun on
 Staatslijn C: Meppel - Groningen
 \noun default
- on the
+ on the 
 \noun on
 Maatschappij tot Exploitatie van Staatsspoorwegen (SS)
 \noun default
@@ -410,7 +410,7 @@ Maatschappij tot Exploitatie van Staatsspoorwegen (SS)
 \noun on
 Staatslijn D: Zutphen - Glanerbeek
 \noun default
- on the
+ on the 
 \noun on
  Nederlandsch-Westfaalsche Spoorweg-Maatschappij (NWS)
 \noun default
@@ -422,7 +422,7 @@ Staatslijn D: Zutphen - Glanerbeek
 \noun on
 Staatslijn E: Maastricht - Venlo
 \noun default
- on the
+ on the 
 \noun on
  Aken-Maastrichtsche Spoorweg-Maatschappij (AMS)
 \noun default
@@ -434,7 +434,7 @@ Staatslijn E: Maastricht - Venlo
 \noun on
 Staatslijn K: Den Helder - Amsterdam
 \noun default
- on the
+ on the 
 \noun on
  Hollandsche IJzeren Spoorweg-Maatschappij
 \noun default
@@ -3404,7 +3404,7 @@ After the 20% director's certificate of a public company has been parred
 \end_layout
 
 \begin_layout Itemize
-A public company is
+A public company is 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3437,7 +3437,7 @@ The charter and control of the public company is given to the player holding
 
 \end_deeper
 \begin_layout Itemize
-A public company that has
+A public company that has 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3810,7 +3810,7 @@ reference "sub:Private-Companies"
 
 \begin_deeper
 \begin_layout Description
-Exception: If the
+Exception: If the 
 \noun on
 Maatschappij tot Exploitatie van Staatsspoorwegen
 \noun default
@@ -3966,7 +3966,7 @@ If a company has multiple home stations, the director may freely decide
 \emph on
 (Optional)
 \emph default
-Build track (see 
+ Build track (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Build-track"
@@ -3981,7 +3981,7 @@ reference "sub:Build-track"
 \emph on
 (Optional)
 \emph default
-Place exchange or station marker (
+ Place exchange or station marker (
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Place-station-marker"
@@ -4018,7 +4018,7 @@ reference "sub:Pay-or-withhold"
 \emph on
 (May be optional)
 \emph default
-Buy train(s) (see 
+ Buy train(s) (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Buy-train(s)"
@@ -4113,7 +4113,7 @@ reference "sub:Upgrading-track"
 
 \end_inset
 
-)
+).
 \end_layout
 
 \begin_layout Itemize
@@ -4501,7 +4501,7 @@ Crossing any hexagon-edge twice.
 \end_layout
 
 \begin_layout Description
-Exception: A station marker may be placed using the power of the
+Exception: A station marker may be placed using the power of the 
 \noun on
 Schielands Hoge Zeedijk
 \noun default
@@ -4663,7 +4663,7 @@ Run to or through the same town or city more than once.
 \begin_deeper
 \begin_layout Description
 Exception: But can run to or through multiple distinct towns on double town
- tiles, or multiple distinct cities on
+ tiles, or multiple distinct cities on 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4750,7 +4750,7 @@ reference "sub:Train-types"
 
 \end_inset
 
-)
+).
 \end_layout
 
 \begin_deeper
@@ -4904,11 +4904,11 @@ Roer
 \end_layout
 
 \begin_layout Itemize
-If multiple train routes include the
+If multiple train routes include the 
 \noun on
 Roer
 \noun default
-, then the
+, then the 
 \noun on
 Roer
 \noun default
@@ -5761,7 +5761,7 @@ off
 \end_inset
 
 boards Red hexes representing connections to areas not shown on the map.
- Black triangles or
+ Black triangles or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5771,7 +5771,7 @@ spikes
 
  mark the track connections to those locations.
  Track tiles can be placed adjacent to them so that the lines of track connect
- to the
+ to the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5882,7 +5882,7 @@ Exception: The supply of yellow #7, #8 and #9 track tiles is unlimited.
 \end_deeper
 \begin_layout Itemize
 The reserved track tiles (#A08, #A09, #F04, #F08) may only be used for the
- hexes blocked by the
+ hexes blocked by the 
 \noun on
 Spoorwegwerken Oost
 \noun default
@@ -5971,7 +5971,7 @@ OO
 \begin_inset space ~
 \end_inset
 
-City Have two distinct cities on the same tile and are marked
+City Have two distinct cities on the same tile and are marked 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5980,7 +5980,7 @@ OO
 \end_inset
 
  but are otherwise the same as a normal city track tile.
- Only OO city tiles can be placed on hexagons marked
+ Only OO city tiles can be placed on hexagons marked 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6383,7 +6383,7 @@ Closes: In brown phase or when power used.
 \end_layout
 
 \begin_layout Description
-Power: Instead of its normal track build, the owning company,
+Power: Instead of its normal track build, the owning company, 
 \noun on
 Maatschappij tot Exploitatie van Staatsspoorwegen
 \noun default
@@ -6392,7 +6392,7 @@ Maatschappij tot Exploitatie van Staatsspoorwegen
 \end_layout
 
 \begin_layout Description
-Use: The power may be used during the track building step of the
+Use: The power may be used during the track building step of the 
 \noun on
 Maatschappij tot Exploitatie van Staatsspoorwegen
 \noun default
@@ -6402,11 +6402,11 @@ Maatschappij tot Exploitatie van Staatsspoorwegen
 \end_layout
 
 \begin_layout Description
-Note: The
+Note: The 
 \noun on
 Staatslijn C: Meppel - Groningen
 \noun default
- is assigned to the
+ is assigned to the 
 \noun on
 Maatschappij tot Exploitatie van Staatsspoorwegen
 \noun default
@@ -6418,7 +6418,7 @@ reference "sec:Game-Setup"
 \end_inset
 
 ).
- Revenues from the
+ Revenues from the 
 \noun on
 Staatslijn C: Meppel - Groningen
 \noun default
@@ -6454,7 +6454,7 @@ Closes: In brown phase or when power used.
 \end_layout
 
 \begin_layout Description
-Power: Instead of its normal track build, the owning company,
+Power: Instead of its normal track build, the owning company, 
 \noun on
 Nederlandsch-Westfaalsche Spoorweg-Maatschappij
 \noun default
@@ -6463,7 +6463,7 @@ Nederlandsch-Westfaalsche Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Description
-Use: The power may be used during the track building step of the
+Use: The power may be used during the track building step of the 
 \noun on
 Nederlandsch-Westfaalsche Spoorweg-Maatschappij
 \noun default
@@ -6473,11 +6473,11 @@ Nederlandsch-Westfaalsche Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Description
-Note: The
+Note: The 
 \noun on
 Staatslijn D: Zutphen - Glanerbeek
 \noun default
- is assigned to the
+ is assigned to the 
 \noun on
 Nederlandsch-Westfaalsche Spoorweg-Maatschappij
 \noun default
@@ -6489,11 +6489,11 @@ reference "sec:Game-Setup"
 \end_inset
 
 ).
- Revenues from the
+ Revenues from the 
 \noun on
 Staatslijn D: Zutphen - Glanerbeek
 \noun default
- are paid to the
+ are paid to the 
 \noun on
 Nederlandsch-Westfaalsche Spoorweg-Maatschappij
 \noun default
@@ -6525,7 +6525,7 @@ Closes: In brown phase or when power used.
 \end_layout
 
 \begin_layout Description
-Power: Instead of its normal track build, the owning company,
+Power: Instead of its normal track build, the owning company, 
 \noun on
 Aken-Maastrichtsche Spoorweg-Maatschappij
 \noun default
@@ -6534,7 +6534,7 @@ Aken-Maastrichtsche Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Description
-Use: The power may be used during the track building step of the
+Use: The power may be used during the track building step of the 
 \noun on
 Aken-Maastrichtsche Spoorweg-Maatschappij
 \noun default
@@ -6544,11 +6544,11 @@ Aken-Maastrichtsche Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Description
-Note: The
+Note: The 
 \noun on
 Staatslijn E: Maastricht–Venlo
 \noun default
- is assigned to the
+ is assigned to the 
 \noun on
 Aken-Maastrichtsche Spoorweg-Maatschappij
 \noun default
@@ -6560,11 +6560,11 @@ reference "sec:Game-Setup"
 \end_inset
 
 ).
- Revenues from the
+ Revenues from the 
 \noun on
 Staatslijn E: Maastricht–Venlo
 \noun default
- are paid to the
+ are paid to the 
 \noun on
 Aken-Maastrichtsche Spoorweg-Maatschappij
 \noun default
@@ -6596,7 +6596,7 @@ Closes: In brown phase or when power used.
 \end_layout
 
 \begin_layout Description
-Power: Instead of its normal track build, the owning company,
+Power: Instead of its normal track build, the owning company, 
 \noun on
 Hollandsche IJzeren Spoorweg-Maatschappij
 \noun default
@@ -6605,7 +6605,7 @@ Hollandsche IJzeren Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Description
-Use: The power may be used during the track building step of the
+Use: The power may be used during the track building step of the 
 \noun on
 Hollandsche IJzeren Spoorweg-Maatschappij
 \noun default
@@ -6615,11 +6615,11 @@ Hollandsche IJzeren Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Description
-Note: The
+Note: The 
 \noun on
 Staatslijn K: Den Helder - Amsterdam
 \noun default
- is assigned to the
+ is assigned to the 
 \noun on
 Hollandsche IJzeren Spoorweg-Maatschappij
 \noun default
@@ -6631,11 +6631,11 @@ reference "sec:Game-Setup"
 \end_inset
 
 ).
- Revenues from the
+ Revenues from the 
 \noun on
 Staatslijn K: Den Helder - Amsterdam
 \noun default
- are paid to the
+ are paid to the 
 \noun on
 Hollandsche IJzeren Spoorweg-Maatschappij
 \noun default
@@ -7214,7 +7214,7 @@ reference "par:Route-definition"
 \end_inset
 
 ).
- If the
+ If the 
 \noun on
 Noord Friesche Locaalspoorweg-Maatschappij
 \noun default
@@ -7974,11 +7974,11 @@ One or more station markers on the map.
 
 \end_deeper
 \begin_layout Itemize
-The
+The 
 \noun on
 Aken-Maastrichtsche Spoorweg-Maatschappij
 \noun default
- (AMS) comes with the green
+ (AMS) comes with the green 
 \noun on
 Staatslijn E: Maastricht–Venlo
 \noun default
@@ -8010,7 +8010,7 @@ reference "tab:Public-Companies"
 \end_layout
 
 \begin_layout Itemize
-The public company that is randomly assigned to the
+The public company that is randomly assigned to the 
 \noun on
 Rijkswaterstaat
 \noun default
@@ -8524,7 +8524,7 @@ reference "tab:Game-Phases"
 
 \end_inset
 
-,
+, 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Game-Phases"
@@ -8632,7 +8632,7 @@ trains Run every city and town and off-board which could possibly be reached
 \end_layout
 
 \begin_layout Description
-Note: A
+Note: A 
 \begin_inset Quotes eld
 \end_inset
 
