@@ -3229,7 +3229,12 @@ reference "sec:Foreign-Companies"
 
 \end_deeper
 \begin_layout Itemize
-Shares are sold for the current stock market price per share.
+Public company shares are sold for the current stock market price per share.
+\end_layout
+
+\begin_layout Itemize
+Foreign company shares are sold for the next lower stock price below their
+ current stock market price per share.
 \end_layout
 
 \begin_deeper
@@ -5705,7 +5710,7 @@ Private companies (if held by players) are worth their face value.
 \end_layout
 
 \begin_layout Itemize
-Shares are valued at their stock price when the game ended.
+All shares are valued at their stock price when the game ended.
 \end_layout
 
 \begin_layout Itemize
