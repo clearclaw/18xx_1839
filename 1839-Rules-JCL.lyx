@@ -3461,7 +3461,7 @@ started
 \begin_inset Quotes erd
 \end_inset
 
- or
+ or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5204,7 +5204,7 @@ reference "sub:Game-Phases"
 
 \begin_deeper
 \begin_layout Itemize
-Some game phase changes will cause older trains to
+Some game phase changes will cause older trains to 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8773,12 +8773,12 @@ D+
 \begin_inset space ~
 \end_inset
 
-trains Run the best
+trains Run the best 
 \emph on
 N
 \emph default
  stops along a route of any length, plus possible off-boards at each end,
- plus any towns along the way, with the revenue of the
+ plus any towns along the way, with the revenue of the 
 \emph on
 N
 \emph default
@@ -8812,7 +8812,7 @@ reference "sec:Map-Explanation"
 
 \end_inset
 
-,
+, 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Track-tiles"
