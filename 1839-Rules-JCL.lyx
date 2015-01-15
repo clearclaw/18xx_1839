@@ -389,7 +389,7 @@ In a random order, place the foreign company stock price markers beside
 \end_layout
 
 \begin_layout Itemize
-Place the following yellow private companies on their matching charters:
+Place the yellow private companies on their matching public company charters:
 \end_layout
 
 \begin_deeper
@@ -419,6 +419,10 @@ Staatslijn D: Zutphen - Glanerbeek
 
 \begin_layout Itemize
 
+\noun on
+IJzeren Rijn
+\noun default
+ and 
 \noun on
 Staatslijn E: Maastricht - Venlo
 \noun default
@@ -1675,7 +1679,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="28" columns="4">
+<lyxtabular version="3" rows="29" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -1847,6 +1851,46 @@ yellow
 
 \noun on
 Staatslijn K: Den Helder - Amsterdam
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+yellow
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ƒ0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ƒ20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+IJzeren Rijn 
 \end_layout
 
 \end_inset
@@ -6359,6 +6403,8 @@ name "sub:Yellow-private-companies"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Staatslijn C: Meppel - Groningen
 \end_layout
 
@@ -6430,6 +6476,8 @@ Maatschappij tot Exploitatie van Staatsspoorwegen
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Staatslijn D: Zutphen - Glanerbeek
 \end_layout
 
@@ -6501,6 +6549,8 @@ Nederlandsch-Westfaalsche Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Staatslijn E: Maastricht–Venlo
 \end_layout
 
@@ -6572,6 +6622,8 @@ Aken-Maastrichtsche Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Staatslijn K: Den Helder - Amsterdam
 \end_layout
 
@@ -6642,6 +6694,76 @@ Hollandsche IJzeren Spoorweg-Maatschappij
  (HIJSM) charter, whether or not that company has floated.
 \end_layout
 
+\begin_layout Subsubsection
+
+\noun on
+IJzeren Rijn
+\end_layout
+
+\begin_layout Description
+Face
+\begin_inset space ~
+\end_inset
+
+value: ƒ0
+\end_layout
+
+\begin_layout Description
+Revenue: ƒ10
+\end_layout
+
+\begin_layout Description
+Blocks: No.
+\end_layout
+
+\begin_layout Description
+Closes: In brown phase or when power used.
+\end_layout
+
+\begin_layout Description
+Power: Owning company may place or upgrade a track tile in any or all of
+ L11, L13, L15 & L17 for no cost other than terrain cost.
+ The power may be used in addition to the company's normal track lay.
+\end_layout
+
+\begin_layout Description
+Use: The power may be used during the track building step of the 
+\noun on
+Aken-Maastrichtsche Spoorweg-Maatschappij
+\noun default
+ (AMS) operations.
+ Use of the power does not preclude the owning company from placing an exchange
+ or station marker.
+\end_layout
+
+\begin_layout Description
+Note: The 
+\noun on
+IJzeren Rijn
+\noun default
+ is assigned to the 
+\noun on
+Aken-Maastrichtsche Spoorweg-Maatschappij
+\noun default
+ (AMS) during the game setup (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Setup"
+
+\end_inset
+
+).
+ Revenues from the 
+\noun on
+IJzeren Rijn
+\noun default
+ are paid to the 
+\noun on
+Aken-Maastrichtsche Spoorweg-Maatschappij
+\noun default
+ (AMS) charter, whether or not that company has floated.
+\end_layout
+
 \begin_layout Subsection
 Green private companies
 \begin_inset CommandInset label
@@ -6654,6 +6776,8 @@ name "sub:Green-Private-Companies"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Het Laantje van Van der Gaag
 \end_layout
 
@@ -6701,6 +6825,8 @@ reference "sub:Build-track"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Schielands Hoge Zeedijk
 \end_layout
 
@@ -6745,6 +6871,8 @@ reference "sub:Place-station-marker"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Cornelis Outshoorn
 \end_layout
 
@@ -6786,6 +6914,8 @@ reference "sub:Place-station-marker"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Rijkswaterstaat
 \end_layout
 
@@ -6821,6 +6951,8 @@ Use: None.
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Spoorwegwerken Oost
 \end_layout
 
@@ -6877,6 +7009,8 @@ name "sub:Blue-Private-Companies"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Van Vlissingen & Dudok van Heel
 \end_layout
 
@@ -6912,6 +7046,8 @@ Use: The power may be used during the track-building step of the owning
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Lokaalspoorweg
 \end_layout
 
@@ -6955,6 +7091,8 @@ Use: The power may be used during the track-building step of the owning
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 De Ambachtsschool
 \end_layout
 
@@ -6989,6 +7127,8 @@ Use: The power may be used during the track-building step of the owning
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Regiment Genietroepen
 \end_layout
 
@@ -7031,6 +7171,8 @@ Use: The power may be used during the track-building step of the owning
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 August Borsig
 \end_layout
 
@@ -7064,6 +7206,8 @@ Use: The power may be used during the train-running step of the owning company's
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 IJsel Stoomtramweg-Maatschappij
 \end_layout
 
@@ -7099,6 +7243,8 @@ Use: The power may be used during the train-running step of the owning company's
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Westlandsche Stoomtramweg Maatschappij
 \end_layout
 
@@ -7144,6 +7290,8 @@ reference "sub:Place-station-marker"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Staatsbedrijf der Posterijen, Telegrafie en Telefonie
 \end_layout
 
@@ -7178,6 +7326,8 @@ Use: The power may be used during the train-running step of the owning company's
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Noord Friesche Locaalspoorweg-Maatschappij
 \end_layout
 
@@ -7253,6 +7403,8 @@ name "sub:Brown-Private-Companies"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Maatschappij tot Exploitatie van Staatsspoorwegen
 \end_layout
 
@@ -7295,6 +7447,8 @@ reference "sub:OR-Overview"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Verveers
 \end_layout
 
@@ -7341,6 +7495,8 @@ Use: The power may be used during the train-purchasing step of the owning
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Crédit Mobilier
 \end_layout
 
@@ -7375,6 +7531,8 @@ Use: The power may be used during the train-buying step of the owning company's
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Kabinet-Rochussen
 \end_layout
 
@@ -7416,6 +7574,8 @@ Use: The power may be used during the owning company's operations.
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Rotterdamsche Bank
 \end_layout
 
@@ -7455,6 +7615,8 @@ Use: The power may be used by the owning player during stock rounds after
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Nederlandsche Fabriek van Werktuigen en Spoorwegmaterieel
 \end_layout
 
@@ -7502,6 +7664,8 @@ Use: The power may be used at any time during the owning company's operations.
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Regiment Fabriek van Rijtuigen en Spoorwagens J.
  J.
  Beijnes
@@ -7540,6 +7704,8 @@ Use: The power may be used during the train-buying step of the owning company's
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Beyer, Peacock & Company
 \end_layout
 
@@ -7597,6 +7763,8 @@ Use: The power may be used during the train-buying step of the owning company's
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
 Ketwich & Voombergh
 \end_layout
 
@@ -7605,7 +7773,7 @@ Face
 \begin_inset space ~
 \end_inset
 
-value: ƒ500
+value: ƒ320
 \end_layout
 
 \begin_layout Description
