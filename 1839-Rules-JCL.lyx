@@ -817,7 +817,7 @@ name "tab:Starting-Player-Capital"
 Overview
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:game-overview"
+name "sec:game-overview"
 
 \end_inset
 
@@ -828,7 +828,7 @@ name "sub:game-overview"
 1839 commences with the auction of the private companies (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Auction"
+reference "sec:Private-Auction"
 
 \end_inset
 
@@ -867,7 +867,7 @@ In stock rounds, players may buy and sell shares of foreign and public companies
  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Stock-Rounds"
+reference "sec:Stock-Rounds"
 
 \end_inset
 
@@ -892,7 +892,7 @@ In operating rounds
  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Operating-Rounds"
+reference "sec:Operating-Rounds"
 
 \end_inset
 
@@ -905,7 +905,7 @@ Private companies operate and pay revenue at the start of each operating
  round (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Companies"
+reference "sec:Private-Companies"
 
 \end_inset
 
@@ -969,7 +969,7 @@ reference "tab:Game-Phases"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -988,7 +988,7 @@ reference "tab:Game-Phases"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -1009,7 +1009,7 @@ reference "tab:Game-Phases"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -1664,7 +1664,7 @@ name "tab:Game-Phases"
 Private Auction
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Private-Auction"
+name "sec:Private-Auction"
 
 \end_inset
 
@@ -2979,7 +2979,7 @@ Tied players retain their prior relative order.
 Stock Rounds
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Stock-Rounds"
+name "sec:Stock-Rounds"
 
 \end_inset
 
@@ -3139,7 +3139,7 @@ set
  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:game-overview"
+reference "sec:game-overview"
 
 \end_inset
 
@@ -3153,7 +3153,7 @@ reference "tab:Game-Phases"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Operating-Rounds"
+reference "sec:Operating-Rounds"
 
 \end_inset
 
@@ -3202,7 +3202,7 @@ reference "sub:Starting-or-floating"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Operating-Rounds"
+reference "sec:Operating-Rounds"
 
 \end_inset
 
@@ -3415,7 +3415,7 @@ Selecting an available par price for the public company.
 The available par prices are limited by the current game phase (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -3498,7 +3498,7 @@ floated
   
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Operating-Rounds"
+reference "sec:Operating-Rounds"
 
 \end_inset
 
@@ -3822,7 +3822,7 @@ Buys one or more trains from the supply, then its stock price is moved up
 Operating Rounds
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Operating-Rounds"
+name "sec:Operating-Rounds"
 
 \end_inset
 
@@ -3850,7 +3850,7 @@ Private companies operate and pay their revenue from the bank to their player
  or company owners (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Companies"
+reference "sec:Private-Companies"
 
 \end_inset
 
@@ -3995,7 +3995,7 @@ reference "tab:Public-Companies"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Companies"
+reference "sec:Private-Companies"
 
 \end_inset
 
@@ -4090,7 +4090,7 @@ Exception: In green phase or later, private companies may be bought from
  face value of the private company (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Companies"
+reference "sec:Private-Companies"
 
 \end_inset
 
@@ -4151,7 +4151,7 @@ Exception: The supply of yellow #7, #8 and #9 track tiles is unlimited.
 In green phase or later (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -4196,7 +4196,7 @@ Only yellow track tiles are available at the beginning of the game.
  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -4350,7 +4350,7 @@ Starting in Green phase, companies may upgrade yellow track tiles to green
  track tiles (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -4362,7 +4362,7 @@ Starting in Brown phase, companies may upgrade green track tiles to brown
  track tiles(see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -4374,7 +4374,7 @@ Starting in Gray phase, companies may upgrade brown track tiles to gray
  track tiles (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -4908,7 +4908,7 @@ The values are for, in order from left to right: yellow phase, green phase,
  brown phase, and gray phase (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -5011,7 +5011,7 @@ A foreign company that has parred will operate in this and all future operating
  rounds for the rest of the game (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Operating-Rounds"
+reference "sec:Operating-Rounds"
 
 \end_inset
 
@@ -5145,7 +5145,7 @@ A public company that has not reached its train limit may buy a train that
  caused by the purchase takes effect (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -5195,7 +5195,7 @@ reference "tab:Game-Phases"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -5215,7 +5215,7 @@ rust
  and be removed from the game (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -5271,7 +5271,7 @@ reference "tab:Game-Phases"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -5284,7 +5284,7 @@ A company that has not reached its train limit may buy a train that would
  by the purchase takes effect (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -5625,7 +5625,7 @@ Trains (other than FLOOD trains) purchased by foreign companies are discarded
 Game End
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:End-of-the"
+name "sec:End-of-the"
 
 \end_inset
 
@@ -5854,7 +5854,7 @@ Revenue locations are marked with their revenue as a number in a small white
 rown/gray) to which they apply (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -5873,7 +5873,7 @@ Some hexagons are marked with a bob-ended bar, denoting that they are blocked
  by a matching private company (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Companies"
+reference "sec:Private-Companies"
 
 \end_inset
 
@@ -6177,7 +6177,7 @@ reference "sec:Foreign-Companies"
 Private Companies
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Private-Companies"
+name "sec:Private-Companies"
 
 \end_inset
 
@@ -6350,7 +6350,7 @@ reference "sub:OR-Overview"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -7789,7 +7789,7 @@ Closes: In brown phase.
 Power: In yellow phase or later (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -8049,14 +8049,14 @@ Public companies may:
 Buy private companies (green phase or later, see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Companies"
+reference "sec:Private-Companies"
 
 \end_inset
 
@@ -8182,7 +8182,7 @@ Rijkswaterstaat
  private company during setup (see  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Private-Companies"
+reference "sec:Private-Companies"
 
 \end_inset
 
@@ -8692,7 +8692,7 @@ reference "tab:Game-Phases"
 , 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -8867,7 +8867,7 @@ reference "sub:Starting-or-floating"
  and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:Game-Phases"
+reference "sec:Game-Phases"
 
 \end_inset
 
@@ -8924,7 +8924,7 @@ reference "sub:Stock-price-movement"
 Game Phases
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Game-Phases"
+name "sec:Game-Phases"
 
 \end_inset
 
