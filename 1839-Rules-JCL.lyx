@@ -247,15 +247,19 @@ For each of 8 public companies:
 \end_layout
 
 \begin_layout Itemize
+1 stock price marker
+\end_layout
+
+\begin_layout Itemize
+1 revenue marker
+\end_layout
+
+\begin_layout Itemize
+3 off-board revenue markers
+\end_layout
+
+\begin_layout Itemize
 Company charter
-\end_layout
-
-\begin_layout Itemize
-Stock price marker
-\end_layout
-
-\begin_layout Itemize
-Revenue marker
 \end_layout
 
 \end_deeper
@@ -331,6 +335,7 @@ Use of poker chips or computerised tools for the money handling (e.g.
 \begin_layout Itemize
 Negotiation among players is explicitly forbidden outside of the first stock
  round of the game.
+ 
 \end_layout
 
 \begin_deeper
@@ -3864,8 +3869,7 @@ name "sub:OR-Overview"
 \end_layout
 
 \begin_layout Enumerate
-Foreign company revenues as recorded on the revenue track are reset to zero
- at the start of each operating round.
+All public company revenue markers are removed from off-board charters.
 \end_layout
 
 \begin_layout Enumerate
@@ -4028,8 +4032,8 @@ reference "sec:Private-Companies"
 \begin_deeper
 \begin_layout Itemize
 If a company has multiple home stations, the director may freely decide
- which to keep in the first operating round the company operates, but must
- keep at least one.
+ which to keep in the first operating round the company operates, may keep
+ all of them, but must keep at least one.
 \end_layout
 
 \end_deeper
@@ -4108,7 +4112,7 @@ reference "sub:Emergency-train-buying"
 \end_layout
 
 \begin_layout Description
-Exception: In green phase or later, private companies may be bought from
+Exception: In green and blue phase, private companies may be bought from
  players at any time during a company's operation for between ƒ1 and the
  face value of the private company (see 
 \begin_inset CommandInset ref
@@ -5090,10 +5094,19 @@ Half (rounding down) paid by the bank to the company treasury.
 \end_layout
 
 \begin_layout Itemize
-Half (rounding up) paid as dividends in the normal way as if that were the
- total company revenue.
+Half paid as dividends in the normal way as if that were the company revenue:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Rounding up for shares held by players.
+\end_layout
+
+\begin_layout Itemize
+Rounding down for shares in the bank pool.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 If the revenue is withheld:
@@ -5134,10 +5147,8 @@ Each public company's total revenue, whether fully paid, half paid or withheld,
 \end_layout
 
 \begin_layout Itemize
-50% of the total revenue of each public company, rounded up to an even multiple
- of ten (10), is added to the accumulated revenue of each foreign company
- one of whose off-boards was included in a run of that public company's
- trains, and is recorded using a marker on the revenue track.
+Each public company also records the off-boards it ran to by placing one
+ of its markers on that foreign company's charter.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5557,20 +5568,25 @@ name "sub:Foreign-operating-round-actions"
 
 \end_layout
 
-\begin_layout Standard
-The following steps are done in order:
-\end_layout
-
-\begin_layout Enumerate
-The total revenue for the foreign company as recorded on the revenue track
- is half-paid to all share-holders (see  
+\begin_layout Description
+Revenue: The revenue of a foreign company is half of the total income of
+ the public companies that ran to one of its off-boards (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Recording-revenues"
 
 \end_inset
 
- and 
+), rounded up to a multiple of twenty (20).
+\end_layout
+
+\begin_layout Standard
+The following steps are done in order:
+\end_layout
+
+\begin_layout Enumerate
+The total revenue for the foreign company is half-paid to share-holders
+ (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Pay-or-withhold"
@@ -7374,7 +7390,7 @@ Closes: In brown phase.
 \begin_layout Description
 Power: Owning player may place a yellow track tile on a route connected
  to Leeuwarden (B13), Hoogezand (B17), Roden (B17) or Groningen (B19).
- Player revenue is the 2-train route starting from that tile: the next unblocked
+ Player revenue is the 2-train route that includes that tile: the next unblocked
  two revenue centres (towns or cities) plus a possible off-board, from the
  placed tile (see 
 \begin_inset CommandInset ref
@@ -9003,7 +9019,8 @@ Foreign and public company shares may be bought in stock rounds.
 \end_layout
 
 \begin_layout Itemize
-Half the purchase price of foreign shares is paid to their treasury.
+When bought, half the purchase price of foreign shares is paid to their
+ treasury.
 \end_layout
 
 \begin_layout Itemize
@@ -9043,7 +9060,12 @@ Foreign and public company shares may be bought in stock rounds.
 \end_layout
 
 \begin_layout Itemize
-Half the purchase price of foreign shares is paid to their treasury.
+When bought, half the purchase price of foreign shares is paid to their
+ treasury.
+\end_layout
+
+\begin_layout Itemize
+Private companies may be bought by public companies.
 \end_layout
 
 \begin_layout Itemize
@@ -9087,7 +9109,8 @@ Foreign and public company shares may be bought in stock rounds.
 \end_layout
 
 \begin_layout Itemize
-The full purchase price of foreign shares is paid to their treasury.
+When bought, the full purchase price of foreign shares is paid to their
+ treasury.
 \end_layout
 
 \begin_layout Itemize
@@ -9135,7 +9158,8 @@ Foreign and public company shares may be bought in stock rounds.
 \end_layout
 
 \begin_layout Itemize
-The full purchase price of foreign shares is paid to their treasury.
+When bought, the full purchase price of foreign shares is paid to their
+ treasury.
 \end_layout
 
 \begin_layout Itemize
@@ -9183,7 +9207,8 @@ Foreign and public company shares may be bought in stock rounds.
 \end_layout
 
 \begin_layout Itemize
-The full purchase price of foreign shares is paid to their treasury.
+When bought, the full purchase price of foreign shares is paid to their
+ treasury.
 \end_layout
 
 \begin_layout Itemize
