@@ -22,8 +22,8 @@
   BEL_LIGHT = 0.941, 0.902, 0.549
   GER_DARK = ${RED}
   GER_LIGHT = 0.847, 0.847, 0.749
-  HISM_DARK = ${BLACK}
-  HISM_LIGHT = ${GRAY}
+  HIJSM_DARK = ${BLACK}
+  HIJSM_LIGHT = ${GRAY}
   NBDS_DARK = 0.000, 0.000, 0.804
   NBDS_LIGHT = 0.392, 0.584, 0.929
   NCS_DARK = 1, 0, 0
@@ -63,7 +63,7 @@ on map * value of revenue location."""
       DARK = ${AMS_DARK}
       title = "Aken-Maastrichtsche", "Spoorweg-Maatschappij"
       token_name = AMS
-      note1 = """Owns the IJzeren Rijn and 
+      note1 = """Owns the IJzeren Rijn and
 Staatslijn E: Maastricht - Venlo
 private companies.
 
@@ -73,10 +73,10 @@ Station cost: Number of token locations
 on map * value of revenue location."""
 
     [[[tile_1.2]]]
-      LIGHT = ${HISM_LIGHT}
-      DARK = ${HISM_DARK}
+      LIGHT = ${HIJSM_LIGHT}
+      DARK = ${HIJSM_DARK}
       title = "Hollandsche IJzeren", "Spoorweg-Maatschappij"
-      token_name = HISM
+      token_name = HIJSM
       note1 = """Owns the private company:
 Staatslijn K: Den Helder - Amsterdam.
 
@@ -145,9 +145,8 @@ on map * value of revenue location."""
 until brown phase, then full purchase price
 goes to treasury.
 Shares in treasury pay dividends to treasury."""
-    note2 = """
-Income: 50% public company's income that runs to a${COUNTRY} 
-off-board. Buy market shares first, pay dividend and adjust 
+    note2 = """Income: 50% public company's income that runs to a${COUNTRY}
+off-board. Buy market shares first, pay dividend and adjust
 stock price, then buy trains.  Stock up once per train bought.
 Dividend: Half-pay total income."""
     num_across_x = 1
@@ -306,7 +305,7 @@ plus any terrain and upgrade costs."""
       cost = Cost: f0
       revenue = Revenue: f20
       title = Staatslijn K: Daman - Amsterdam
-      desc = """Owned by the HISM.
+      desc = """Owned by the HIJSM.
 Owning company may place up to four
 track tiles \(two may be upgrades\)
 as its entire track lay, for f10 each
@@ -318,10 +317,10 @@ plus any terrain and upgrade costs."""
       revenue = Revenue: f10
       title = IJzeren Rijn
       desc = """Owned by the AMS.
-Owning company may place or upgrade 
-a track tile in any or all of L11, 
-L13, L15 & L17 for no cost other 
-than terrain cost, in addition to 
+Owning company may place or upgrade
+a track tile in any or all of L11,
+L13, L15 & L17 for no cost other
+than terrain cost, in addition to
 its normal track lay."""
       close = """Close: In brown phase or when power used."""
 
@@ -453,7 +452,7 @@ plus any terrain and upgrade costs."""
 
     [[[tile_3.2]]]
       cost = Cost: f140
-      revenue = Revenue: f20/f10
+      revenue = Revenue: f20 / f10
       title = De Ambachtsschool
       desc = """Owning company may do two track upgrades
 per operating round as their entire
@@ -525,7 +524,7 @@ start of brown phase if owned by a company."""
 
     [[[tile_2.3]]]
       cost = Cost: f240
-      revenue = Revenue: f25/f0
+      revenue = Revenue: f25 / f0
       title = "Beyer, Peacock & Company"
       desc = """Owning company sells train markers \(3\)
 to other companies for f200 each \(f50
@@ -585,11 +584,11 @@ company is capitalised at the new rate."""
       token_count = 2
       type_colour = ${ORANGE}
 
-  [[HISM]]
+  [[HIJSM]]
     LIGHT = ${GRAY}
     DARK = ${BLACK}
     title = "Hollandsche IJzeren", "Spoorweg-Maatschappij"
-    token_name = HISM
+    token_name = HIJSM
 
     [[[tile_1.1]]]
       size = 20%
@@ -725,7 +724,7 @@ company is capitalised at the new rate."""
     [[[tile_1.2]]]
       LIGHT = ${GRAY}
       DARK = ${BLACK}
-      token_name = HISM
+      token_name = HIJSM
 
     [[[tile_1.3]]]
       LIGHT = ${NBDS_LIGHT}
