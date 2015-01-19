@@ -50,7 +50,7 @@
 
 [charter]
   desc1 = "Assets, Treasury & Trains"
-e  note1 = """Purchase price of shares goes to bank.
+  note1 = """Purchase price of shares goes to bank.
 Market shares pay dividends to treasury.
 Station cost: Number of token locations
 on map * value of revenue location."""
@@ -63,8 +63,9 @@ on map * value of revenue location."""
       DARK = ${AMS_DARK}
       title = "Aken-Maastrichtsche", "Spoorweg-Maatschappij"
       token_name = AMS
-      note1 = """Owns the private company:
-Staatslijn E: Maastricht–Venlo.
+      note1 = """Owns the IJzeren Rijn and 
+Staatslijn E: Maastricht - Venlo
+private companies.
 
 Purchase price of shares goes to bank.
 Market shares pay dividends to treasury.
@@ -76,7 +77,6 @@ on map * value of revenue location."""
       DARK = ${HISM_DARK}
       title = "Hollandsche IJzeren", "Spoorweg-Maatschappij"
       token_name = HISM
-
       note1 = """Owns the private company:
 Staatslijn K: Den Helder - Amsterdam.
 
@@ -141,12 +141,15 @@ on map * value of revenue location."""
     centre_colour = ${BLACK}
     desc1 = "Shares & Treasury"
     desc2 = "Income"
-    note1 = """Purchase price of shares goes to treasury.
+    note1 = """Half purchase price of shares goes to treasury
+until brown phase, then full purchase price
+goes to treasury.
 Shares in treasury pay dividends to treasury."""
-    note2 = """Income: 50% company's income that runs to a${COUNTRY} off-board.
-Buy market shares first, pay dividend and adjust stock
-price, then buy trains.  Stock up once per train bought.
-Dividend: Half-pay total revenue."""
+    note2 = """
+Income: 50% public company's income that runs to a${COUNTRY} 
+off-board. Buy market shares first, pay dividend and adjust 
+stock price, then buy trains.  Stock up once per train bought.
+Dividend: Half-pay total income."""
     num_across_x = 1
     num_across_y = 3
     tile_x = 510

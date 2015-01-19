@@ -3372,6 +3372,29 @@ is paid to the matching foreign company's treasury for foreign shares bought
  from the foreigner's charter.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Prior to brown phase (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Game-Phases"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Game-Phases"
+
+\end_inset
+
+) the foreign company only receives half the purchase price to its treasury,
+ with the other half paid to the bank.
+ In brown phase and later, the entire purchase price is paid to the foreign
+ treasury.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Subsection
 \begin_inset Quotes eld
@@ -8980,6 +9003,10 @@ Foreign and public company shares may be bought in stock rounds.
 \end_layout
 
 \begin_layout Itemize
+Half the purchase price of foreign shares is paid to their treasury.
+\end_layout
+
+\begin_layout Itemize
 Private companies may be bought by public companies.
 \end_layout
 
@@ -9013,6 +9040,10 @@ Blue, green and yellow pars are available.
 
 \begin_layout Itemize
 Foreign and public company shares may be bought in stock rounds.
+\end_layout
+
+\begin_layout Itemize
+Half the purchase price of foreign shares is paid to their treasury.
 \end_layout
 
 \begin_layout Itemize
@@ -9053,6 +9084,10 @@ Brown, blue, green and yellow pars are available.
 
 \begin_layout Itemize
 Foreign and public company shares may be bought in stock rounds.
+\end_layout
+
+\begin_layout Itemize
+The full purchase price of foreign shares is paid to their treasury.
 \end_layout
 
 \begin_layout Itemize
@@ -9100,6 +9135,10 @@ Foreign and public company shares may be bought in stock rounds.
 \end_layout
 
 \begin_layout Itemize
+The full purchase price of foreign shares is paid to their treasury.
+\end_layout
+
+\begin_layout Itemize
 All blue trains are removed from the game.
 \end_layout
 
@@ -9112,7 +9151,7 @@ Brown, green and yellow track tiles are available.
 \noun on
 Overzees
 \noun default
- off-board has ƒ40 revenue.
+ off-board has ƒ50 revenue.
 \end_layout
 
 \begin_layout Itemize
@@ -9141,6 +9180,10 @@ Brown, blue, green and yellow pars are available.
 
 \begin_layout Itemize
 Foreign and public company shares may be bought in stock rounds.
+\end_layout
+
+\begin_layout Itemize
+The full purchase price of foreign shares is paid to their treasury.
 \end_layout
 
 \begin_layout Itemize
