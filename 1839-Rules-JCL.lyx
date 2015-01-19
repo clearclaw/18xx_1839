@@ -4112,7 +4112,7 @@ reference "sub:Emergency-train-buying"
 \end_layout
 
 \begin_layout Description
-Exception: In green and blue phase, private companies may be bought from
+Exception: In green and later phases, private companies may be bought from
  players at any time during a company's operation for between ƒ1 and the
  face value of the private company (see 
 \begin_inset CommandInset ref
