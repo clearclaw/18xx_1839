@@ -7625,7 +7625,7 @@ Use: The power may be used during the train-buying step of the owning company's
 \begin_layout Subsubsection
 
 \noun on
-Kabinet-Rochussen
+Rotterdamsche Bank
 \end_layout
 
 \begin_layout Description
@@ -7637,7 +7637,7 @@ value: ƒ200
 \end_layout
 
 \begin_layout Description
-Revenue: ƒ10
+Revenue: ƒ30
 \end_layout
 
 \begin_layout Description
@@ -7651,7 +7651,9 @@ Closes: In brown phase.
 \begin_layout Description
 Power: Owning company may draw freely on their director's assets for station,
  track and train expenses, including causing the director to sell shares
- in order to fund the expense (see 
+ in order to fund the expense, including causing the president to sell shares
+ as if the expense were an Emergency Train Purchase.
+ (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Emergency-train-buying"
@@ -7668,7 +7670,7 @@ Use: The power may be used during the owning company's operations.
 \begin_layout Subsubsection
 
 \noun on
-Rotterdamsche Bank
+Kabinet-Rochussen
 \end_layout
 
 \begin_layout Description
@@ -7680,7 +7682,7 @@ value: ƒ200
 \end_layout
 
 \begin_layout Description
-Revenue: ƒ30
+Revenue: ƒ10
 \end_layout
 
 \begin_layout Description

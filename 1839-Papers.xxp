@@ -564,9 +564,12 @@ for the first time."""
       cost = Cost: f200
       revenue = Revenue: f30
       title = Rotterdamsche Bank
-      desc = """Owning company may draw
-freely on their president's assets for
-station, track and train expenses."""
+      desc = """Owning company may draw freely 
+on their president's assets for
+station, track and train expenses, 
+including causing the president to 
+sell shares as if the expense were 
+an Emergency Train Purchase."""
       close = "Close: In brown phase."
 
     [[[tile_3.3]]]
