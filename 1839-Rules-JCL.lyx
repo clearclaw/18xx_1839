@@ -294,6 +294,30 @@ Revenue marker
 
 \end_deeper
 \begin_layout Itemize
+A yellow 
+\begin_inset Quotes eld
+\end_inset
+
+Bank Pool
+\begin_inset Quotes erd
+\end_inset
+
+ card
+\end_layout
+
+\begin_layout Itemize
+A yellow 
+\begin_inset Quotes eld
+\end_inset
+
+IPO
+\begin_inset Quotes erd
+\end_inset
+
+ card
+\end_layout
+
+\begin_layout Itemize
 ~
 \lang british
 ƒ100
@@ -377,6 +401,38 @@ name "sec:Game-Setup"
 \begin_layout Itemize
 Place the map and foreign charters where they can be easily seen and accessed
  by all players.
+\end_layout
+
+\begin_layout Itemize
+Place the 
+\begin_inset Quotes eld
+\end_inset
+
+IPO
+\begin_inset Quotes erd
+\end_inset
+
+ card in the upper right corner of the map, over the 
+\noun on
+Noordzee
+\noun default
+, marking that area as used for the IPO.
+\end_layout
+
+\begin_layout Itemize
+Place the 
+\begin_inset Quotes eld
+\end_inset
+
+Bank Pool
+\begin_inset Quotes erd
+\end_inset
+
+ card in the lower left corner of the map, over 
+\noun on
+België
+\noun default
+, marking that area as used for the Bank Pool.
 \end_layout
 
 \begin_layout Itemize

@@ -324,6 +324,22 @@ than terrain cost, in addition to
 its normal track lay."""
       close = """Close: In brown phase or when power used."""
 
+    [[[tile_2.3]]]
+      cost = ""
+      revenue = ""
+      title = Bank Pool
+      title_font = "Times-Roman", 36
+      desc = ""
+      close = "" 
+
+    [[[tile_3.1]]]
+      cost = ""
+      revenue = ""
+      title = IPO
+      title_font = "Times-Roman", 36
+      desc = ""
+      close = ""
+
   [[green]]
     frame_colour = ${LIGHT_GREEN}
 
