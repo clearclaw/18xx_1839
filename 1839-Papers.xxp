@@ -390,8 +390,9 @@ exchange or station marker for free."""
       title = Rijkswaterstaat
       desc = """Blocks F13 & G12.
 Comes with a 20% presidency parred at f101.
-Flevoland bypass built when closed. May
-not be purchased by a company."""
+That company gains a home station in 
+Emmen (D19).  Flevoland bypass built when 
+closed. May not be purchased by a company."""
       close = """Close: In brown phase or when related company buys
 a train."""
 
