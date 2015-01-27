@@ -379,7 +379,7 @@ addition to the company's normal track lay."""
     [[[tile_2.1]]]
       cost = Cost: f160
       revenue = Revenue: f20
-      title = Cornelis Outshorn
+      title = Cornelis Outshoorn
       desc = """Owning company may place a
 exchange or station marker for free."""
       close = "Close: In brown phase or when power used."
