@@ -479,7 +479,7 @@ plus any terrain costs."""
 
     [[[tile_3.3]]]
       cost = Cost: f300
-      revenue = Revenue: ?f/f20
+      revenue = Revenue: f? / f20
       title = "Noord Friesche", "Locaalspoorweg-Maatschappij"
       desc = """Owning player may place a yellow track
 tile on a route connected to Leeuwarden,
@@ -552,7 +552,7 @@ rust and then rust."""
 
     [[[tile_3.1]]]
       cost = Cost: f180
-      revenue = Revenue: ?f / f0
+      revenue = Revenue: f? / f0
       title = "Maatschappij tot Explotatie", "van Staatsspoorwegen"
       desc = """Owning player or company is paid the
 revenue value of each town or city that
