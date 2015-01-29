@@ -304,7 +304,7 @@ plus any terrain and upgrade costs."""
     [[[tile_2.1]]]
       cost = Cost: f0
       revenue = Revenue: f20
-      title = Staatslijn K: Daman - Amsterdam
+      title = Staatslijn K: Den Helder - Amsterdam
       desc = """Owned by the HIJSM.
 Owning company may place up to four
 track tiles \(two may be upgrades\)
