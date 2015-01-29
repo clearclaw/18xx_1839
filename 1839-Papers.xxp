@@ -553,7 +553,7 @@ rust and then rust."""
     [[[tile_3.1]]]
       cost = Cost: f180
       revenue = Revenue: f? / f0
-      title = "Maatschappij tot Explotatie", "van Staatsspoorwegen"
+      title = "Maatschappij tot Exploitatie", "van Staatsspoorwegen"
       desc = """Owning player or company is paid the
 revenue value of each town or city that
 a company that player or company
