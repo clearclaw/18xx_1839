@@ -304,7 +304,7 @@ plus any terrain and upgrade costs."""
     [[[tile_2.1]]]
       cost = Cost: f0
       revenue = Revenue: f20
-      title = Staatslijn K: Daman - Amsterdam
+      title = Staatslijn K: Den Helder - Amsterdam
       desc = """Owned by the HIJSM.
 Owning company may place up to four
 track tiles \(two may be upgrades\)
@@ -479,7 +479,7 @@ plus any terrain costs."""
 
     [[[tile_3.3]]]
       cost = Cost: f300
-      revenue = Revenue: ?f/f20
+      revenue = Revenue: f? / f20
       title = "Noord Friesche", "Locaalspoorweg-Maatschappij"
       desc = """Owning player may place a yellow track
 tile on a route connected to Leeuwarden,
@@ -552,8 +552,8 @@ rust and then rust."""
 
     [[[tile_3.1]]]
       cost = Cost: f180
-      revenue = Revenue: ?f / f0
-      title = "Maatschappij tot Explotatie", "van Staatsspoorwegen"
+      revenue = Revenue: f? / f0
+      title = "Maatschappij tot Exploitatie", "van Staatsspoorwegen"
       desc = """Owning player or company is paid the
 revenue value of each town or city that
 a company that player or company
