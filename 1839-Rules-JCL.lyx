@@ -3754,7 +3754,7 @@ If a stock price reaches the bottom space of the stock market, then the
 \end_layout
 
 \begin_layout Itemize
-If a stock price marker reaches top of the stock marker (ƒ1,000), then the
+If a stock price marker reaches top of the stock market (ƒ1,000), then the
  stock price cannot be moved further up and the game will end at the end
  of that operating round (see 
 \begin_inset CommandInset ref
