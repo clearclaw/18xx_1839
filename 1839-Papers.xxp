@@ -523,7 +523,7 @@ Blue: f150, Brown: f250."""
     [[[tile_2.1]]]
       cost = Cost: f210
       revenue = Revenue: f20
-      title = "Nederlandsche Fabriek van", "Werktuigen en", "Spooerwegmaterieel"
+      title = "Nederlandsche Fabriek van", "Werktuigen en", "Spoorwegmaterieel"
       desc = """Owning company may buy a train,
 as usual or as an emergency purchase,
 at any time during its operations."""

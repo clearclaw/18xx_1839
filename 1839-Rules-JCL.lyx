@@ -2791,7 +2791,7 @@ brown
 \begin_layout Plain Layout
 
 \noun on
-Regiment Fabriek van Rijtuigen en Spoorwagens J.
+Fabriek van Rijtuigen en Spoorwagens J.
  J.
  Beijnes
 \end_layout
@@ -3754,7 +3754,7 @@ If a stock price reaches the bottom space of the stock market, then the
 \end_layout
 
 \begin_layout Itemize
-If a stock price marker reaches top of the stock marker (ƒ1,000), then the
+If a stock price marker reaches top of the stock market (ƒ1,000), then the
  stock price cannot be moved further up and the game will end at the end
  of that operating round (see 
 \begin_inset CommandInset ref
@@ -7761,7 +7761,7 @@ Use: The power may be used at any time during the owning company's operations.
 \begin_layout Subsubsection
 
 \noun on
-Regiment Fabriek van Rijtuigen en Spoorwagens J.
+Fabriek van Rijtuigen en Spoorwagens J.
  J.
  Beijnes
 \end_layout
@@ -8331,7 +8331,7 @@ Symbol
 \begin_inset Text
 
 \begin_layout Plain Layout
-Station markers
+Station Markers
 \end_layout
 
 \end_inset
@@ -8677,7 +8677,7 @@ Haarlem (G8)
 \begin_inset Caption
 
 \begin_layout Plain Layout
-public companies
+Public Companies
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Public-Companies"
