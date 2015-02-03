@@ -506,6 +506,18 @@ Staatslijn K: Den Helder - Amsterdam
  (HIJSM) charter.
 \end_layout
 
+\begin_layout Itemize
+
+\noun on
+Spoorlijn Zevenaar - Kleef
+\noun default
+ on the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij
+\noun default
+ (NRS) charter.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Randomly select two blue and two brown private companies and add them to
@@ -1740,7 +1752,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="29" columns="4">
+<lyxtabular version="3" rows="30" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -1979,6 +1991,46 @@ yellow
 
 \begin_layout Plain Layout
 ƒ20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+Spoorlijn Zevenaar - Kleef
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+yellow
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ƒ0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ƒ0
 \end_layout
 
 \end_inset
@@ -6854,6 +6906,88 @@ IJzeren Rijn
 Aken-Maastrichtsche Spoorweg-Maatschappij
 \noun default
  (AMS) charter, whether or not that company has floated.
+\end_layout
+
+\begin_layout Subsubsection
+
+\noun on
+Spoorlijn Zevenaar - Kleef
+\end_layout
+
+\begin_layout Description
+Face
+\begin_inset space ~
+\end_inset
+
+value: ƒ0
+\end_layout
+
+\begin_layout Description
+Revenue: ƒ0
+\end_layout
+
+\begin_layout Description
+Blocks: No.
+\end_layout
+
+\begin_layout Description
+Closes: In brown phase.
+\end_layout
+
+\begin_layout Description
+Power: Owning company may place or upgrade a tile and a station marker (must
+ be both) for a cost of ƒ80 at Nijmegen (I16) or Venlo (K16) as part of
+ their normal track lay and station marker placement.
+\end_layout
+
+\begin_layout Description
+Use: The power may be used during the track-building step of the owning
+ company's operations as one of the company's track lays.
+ The power may be used to place an exchange or station marker even if the
+ owning company places a second track tile (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Place-station-marker"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+Use: The power may be used during the track building step of the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij
+\noun default
+ (NRS) operations.
+\end_layout
+
+\begin_layout Description
+Note: 
+\noun on
+Spoorlijn Zevenaar - Kleef
+\noun default
+ is assigned to the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij
+\noun default
+ (NRS) during the game setup (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Setup"
+
+\end_inset
+
+).
+ Revenues from the 
+\noun on
+Spoorlijn Zevenaar - Kleef
+\noun default
+ are paid to the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij
+\noun default
+ (NRS) charter, whether or not that company has floated.
 \end_layout
 
 \begin_layout Subsection
