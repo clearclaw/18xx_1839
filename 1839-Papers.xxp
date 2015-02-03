@@ -34,8 +34,8 @@
   OVER_LIGHT = 0.498, 1.000, 0.831
   ROUND_DARK = 1.0, 0.647, 0.0
   ROUND_LIGHT = 0.0, 0.0, 1.0
-  RS_DARK = 0.804, 0.522, 0.247
-  RS_LIGHT = 0.871, 0.722, 0.529
+  NRS_DARK = 0.804, 0.522, 0.247
+  NRS_LIGHT = 0.871, 0.722, 0.529
   SAVED_DARK = 0.804, 0.804, 0.804
   SAVED_LIGHT = 0.686, 0.933, 0.933
   SS_DARK = 0.604, 0.804, 0.196
@@ -113,10 +113,12 @@ Station cost: Number of token locations
 on map * value of revenue location."""
 
     [[[tile_1.2]]]
-      LIGHT = ${RS_LIGHT}
-      DARK = ${RS_DARK}
+      LIGHT = ${NRS_LIGHT}
+      DARK = ${NRS_DARK}
       title = "Nederlandsche", "Rhijnspoorweg-Maatschappij"
       token_name = NRS
+      note1 = """Owns the private company:
+Spoorlijn Zevenaar - Kleef"""
 
     [[[tile_2.1]]]
       LIGHT = ${SS_LIGHT}
@@ -304,7 +306,8 @@ plus any terrain and upgrade costs."""
     [[[tile_2.1]]]
       cost = Cost: f0
       revenue = Revenue: f20
-      title = Staatslijn K: Den Helder - Amsterdam
+      title = """Staatslijn K: 
+Den Helder - Amsterdam"""
       desc = """Owned by the HIJSM.
 Owning company may place up to four
 track tiles \(two may be upgrades\)
@@ -773,8 +776,8 @@ company is capitalised at the new rate."""
       token_name = NWS
 
     [[[tile_1.6]]]
-      LIGHT = ${RS_LIGHT}
-      DARK = ${RS_DARK}
+      LIGHT = ${NRS_LIGHT}
+      DARK = ${NRS_DARK}
       token_name = NRS
 
     [[[tile_1.7]]]
