@@ -4310,13 +4310,8 @@ The upgrade may be of a yellow track tile just placed.
 \end_layout
 
 \begin_layout Itemize
-Upgrades of city track tiles cost ƒ40.
-\end_layout
-
-\begin_layout Itemize
 Upgrades of Amsterdam (G10), Breda (L9), Haarlem (G8), Rotterdam (J7) and
- Utrecht (I12) track tiles have an additional ƒ40 terrain cost (total of
- ƒ80).
+ Utrecht (I12) track tiles have an additional ƒ80 terrain cost.
 \end_layout
 
 \end_deeper
