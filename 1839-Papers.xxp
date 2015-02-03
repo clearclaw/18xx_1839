@@ -118,7 +118,12 @@ on map * value of revenue location."""
       title = "Nederlandsche", "Rhijnspoorweg-Maatschappij"
       token_name = NRS
       note1 = """Owns the private company:
-Spoorlijn Zevenaar - Kleef"""
+Spoorlijn Zevenaar - Kleef.
+
+Purchase price of shares goes to bank.
+Market shares pay dividends to treasury.
+Station cost: Number of token locations
+on map * value of revenue location."""
 
     [[[tile_2.1]]]
       LIGHT = ${SS_LIGHT}
