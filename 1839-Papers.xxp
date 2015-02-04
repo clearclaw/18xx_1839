@@ -340,7 +340,7 @@ its normal track lay."""
 Owning company may place or upgrade
 a tile and a station marker \(must be both\)
 for f80 at I16 or K16 as part of their
-normal track lay and station placement."""
+normal station placement."""
       close = """Close: In brown phase."""
       
     [[[tile_3.2]]]

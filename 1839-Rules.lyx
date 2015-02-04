@@ -85,7 +85,7 @@ Game design: J C Lawrence
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Perron_van_het_Centraal_Station_in_Utrecht_in_1866.jpeg
+	filename ../t/18xx_1839/Perron_van_het_Centraal_Station_in_Utrecht_in_1866.jpeg
 	width 7in
 
 \end_inset
@@ -3026,7 +3026,8 @@ Discounting ends when all six discounts have been placed on private companies.
 \end_layout
 
 \begin_layout Itemize
-Randomly re-assign the numbered player number cards, one card to each player.
+After discounting, randomly re-assign the numbered player number cards,
+ one card to each player.
 \end_layout
 
 \begin_layout Subsection
@@ -4597,7 +4598,7 @@ U
 \end_layout
 
 \begin_layout Itemize
-The pre-drawn track on the map at B13, B19, D19, G8, G10, J7 and K8 must
+The pre-drawn track on the map at B11, B19, D19, G8, G10, J7 and K8 must
  be preserved by any track tiles placed or upgraded there.
 \end_layout
 
@@ -6931,15 +6932,16 @@ Closes: In brown phase.
 
 \begin_layout Description
 Power: Owning company may place or upgrade a tile and a station marker (must
- be both) for a cost of ƒ80 at Nijmegen (I16) or Venlo (K16) as part of
- their normal track lay and station marker placement.
+ be both) for a cost of ƒ80 at Nijmegen (I16) or Venlo (K16) as in addition
+ to its normal track lay and as its normal station marker placement.
 \end_layout
 
 \begin_layout Description
-Use: The power may be used during the track-building step of the owning
- company's operations as one of the company's track lays.
+Use: The power may be used during the station marker placement step of the
+ owning company's operations.
  The power may be used to place an exchange or station marker even if the
- owning company places a second track tile (see 
+ owning company places a second track tile during its track building (see
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Place-station-marker"
@@ -6950,7 +6952,8 @@ reference "sub:Place-station-marker"
 \end_layout
 
 \begin_layout Description
-Use: The power may be used during the track building step of the 
+Use: The power may be used during the station marker placement step of the
+ 
 \noun on
 Nederlandsche Rhijnspoorweg-Maatschappij
 \noun default
