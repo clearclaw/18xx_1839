@@ -390,8 +390,9 @@ lay and station placement."""
       title = Het Laantje van Van der Gaag
       desc = """Blocks H7.
 Owning company may place an additional
-yellow track tile or tile upgrade \(all
-terrain costs must be paid as usual\) in
+yellow track tile or tile upgrade \(if at
+H7 there are no terrain costs, otherwise all
+terrain costs must be paid as usual\) in 
 addition to the company's normal track lay."""
       close = "Close: In brown phase or when power used."
 
