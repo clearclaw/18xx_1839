@@ -5765,7 +5765,7 @@ If there are shares of the foreign company in the bank pool:
 \end_layout
 
 \begin_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 The foreign company will buy as many of its own shares as it can afford
  with its treasury from the bank pool at half the foreign company's current
  stock price (rounding down), placing the purchased shares back in its treasury.
@@ -5795,10 +5795,15 @@ reference "par:Foreign-company-stock-movement"
 \end_layout
 
 \begin_layout Itemize
-Trains (other than FLOOD trains) purchased by foreign companies are discarded
- from the game.
+Trains purchased by foreign companies are discarded from the game.
 \end_layout
 
+\begin_deeper
+\begin_layout Description
+Exception: Purchased FLOOD trains are returned to the supply.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Section
