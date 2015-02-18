@@ -234,6 +234,38 @@ SAVED
 \end_layout
 
 \begin_layout Itemize
+1 revenue marker for the 
+\noun on
+Noord Friesche Locaalspoorweg-Maatschappij
+\noun default
+ (
+\begin_inset Quotes eld
+\end_inset
+
+NFLM
+\begin_inset Quotes erd
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Itemize
+3 off-board revenue markers for the 
+\noun on
+Noord Friesche Locaalspoorweg-Maatschappij
+\noun default
+ (
+\begin_inset Quotes eld
+\end_inset
+
+NFLM
+\begin_inset Quotes erd
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Itemize
 For each of 8 public companies:
 \end_layout
 
@@ -3379,9 +3411,9 @@ The selling player receives the stock price of the share(s) in cash from
 \end_layout
 
 \begin_layout Itemize
-The selling player may exchange a 4% double foreign share for two single
- 2% foreign shares from the foreign charter, Bank Pool or another player
- before selling one of them.
+The selling player may exchange a 4% double foreign share for two matching
+ single 2% foreign shares held by the foreign charter, Bank Pool or another
+ player before selling one of them.
 \end_layout
 
 \end_deeper
@@ -3497,8 +3529,9 @@ e or a single 2% certificate, if a sufficient percentage is available from
 \begin_deeper
 \begin_layout Itemize
 Owners of foreign shares must trade pairs of single shares for double shares,
- and double shares for pairs of single shares, with the shares on the foreign
- charter or bank pool as needed to enable share purchases.
+ and double shares for pairs of single shares, with other player's holdings,
+ or the shares on the foreign charter or bank pool as needed to enable share
+ purchases.
 \end_layout
 
 \end_deeper
@@ -5771,6 +5804,15 @@ The foreign company will buy as many of its own shares as it can afford
  stock price (rounding down), placing the purchased shares back in its treasury.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Owners of foreign shares must trade pairs of single shares for double shares,
+ and double shares for pairs of single shares, with other player's holdings,
+ or the shares on the foreign charter or bank pool as needed to enable share
+ purchases.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 If there is still money in the foreign company's treasury:
@@ -5849,8 +5891,8 @@ If a public or foreign company's stock price reaches ƒ1,000 per share:
 
 \begin_deeper
 \begin_layout Enumerate
-At the end of a stock round because it was 100% held by players, then the
- game ends immediately,
+At the end of a stock round because it was a foreign company that was 100%
+ held by players, then the game ends immediately,
 \end_layout
 
 \begin_layout Enumerate
@@ -5974,7 +6016,8 @@ Rural
 \begin_inset space ~
 \end_inset
 
-hexagons Rural spaces that may have terrain (rivers: wavy line).
+hexagons Rural spaces that may have terrain (rivers: wavy line) with a matching
+ terrain cost of ƒ80.
 \end_layout
 
 \begin_layout Description
@@ -6190,6 +6233,8 @@ Named
 
 City Same as a normal city track tile, but marked with a city's initial
  letter and must be used for that city's hexagon.
+ Named city tiles also have terrain (river: wavy line) with a matching cost
+ for upgrades (ƒ80).
 \end_layout
 
 \begin_layout Description
@@ -7635,8 +7680,15 @@ reference "par:Route-definition"
 \noun on
 Noord Friesche Locaalspoorweg-Maatschappij
 \noun default
- runs to an off-board, then the full revenue is additionally placed directly
- in the foreign company's treasury from the bank.
+ runs to an off-board, then double the revenue is recorded on the revenue
+ track for the foreign company (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Recording-revenues"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Description

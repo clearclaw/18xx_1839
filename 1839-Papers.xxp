@@ -872,6 +872,11 @@ company is capitalised at the new rate."""
       token_name = ROUND
       token_bottom_colour = ${LIGHT}
 
+    [[[tile_1.14]]]
+      LIGHT = ${WHITE}
+      DARK = ${WHITE}
+      token_name = NFLM
+
 [train]
   trade = ""
 
