@@ -545,8 +545,9 @@ Blue: f150, Brown: f250."""
       revenue = Revenue: f20
       title = "Nederlandsche Fabriek van", "Werktuigen en", "Spoorwegmaterieel"
       desc = """Owning company may buy a train,
-as usual or as an emergency purchase,
-at any time during its operations."""
+as usual or as an emergency purchase 
+(if it has no train), at any time 
+during its operations."""
       close = "Close: In brown phase."
 
     [[[tile_2.2]]]
@@ -715,7 +716,20 @@ company is capitalised at the new rate."""
       token_count = 2
       type_colour = ${ORANGE}
 
-  [[OVER]]
+  [[OVER4]]
+    frame_colour = ${LIGHT_BLUE}
+    LIGHT = ${OVER_LIGHT}
+    DARK = ${OVER_DARK}
+    title = "Overzees"
+    token_name = OZ
+    token_colour = ${BLACK}
+    token_count = 2
+    token_name_colour = ${WHITE}
+    note = "Foreign"
+    size = 4%
+    token_bottom_colour = ${OVER_TOKEN_BOTTOM}
+
+  [[OVER2]]
     frame_colour = ${LIGHT_BLUE}
     LIGHT = ${OVER_LIGHT}
     DARK = ${OVER_DARK}
@@ -724,10 +738,23 @@ company is capitalised at the new rate."""
     token_colour = ${BLACK}
     token_name_colour = ${WHITE}
     note = "Foreign"
-    size = 5%
+    size = 2%
     token_bottom_colour = ${OVER_TOKEN_BOTTOM}
 
-  [[BEL]]
+  [[BEL4]]
+    frame_colour = ${LIGHT_ORANGE}
+    LIGHT = ${BEL_LIGHT}
+    DARK = ${BEL_DARK}
+    title = "Belgie"
+    token_name = "BEL"
+    token_colour = ${BLACK}
+    token_count = 2
+    token_name_colour = ${WHITE}
+    note = "Foreign"
+    size = 4%
+    token_bottom_colour = ${BEL_TOKEN_BOTTOM}
+
+  [[BEL2]]
     frame_colour = ${LIGHT_ORANGE}
     LIGHT = ${BEL_LIGHT}
     DARK = ${BEL_DARK}
@@ -736,10 +763,23 @@ company is capitalised at the new rate."""
     token_colour = ${BLACK}
     token_name_colour = ${WHITE}
     note = "Foreign"
-    size = 5%
+    size = 2%
     token_bottom_colour = ${BEL_TOKEN_BOTTOM}
 
-  [[GER]]
+  [[GER4]]
+    frame_colour = ${LIGHT_RED}
+    LIGHT = ${GER_LIGHT}
+    DARK = ${GER_DARK}
+    title = "Duitsland"
+    token_name = "D"
+    token_colour = ${BLACK}
+    token_count = 2
+    token_name_colour = ${WHITE}
+    note = "Foreign"
+    size = 4%
+    token_bottom_colour = ${GER_TOKEN_BOTTOM}
+
+  [[GER2]]
     frame_colour = ${LIGHT_RED}
     LIGHT = ${GER_LIGHT}
     DARK = ${GER_DARK}
@@ -748,7 +788,7 @@ company is capitalised at the new rate."""
     token_colour = ${BLACK}
     token_name_colour = ${WHITE}
     note = "Foreign"
-    size = 5%
+    size = 2%
     token_bottom_colour = ${GER_TOKEN_BOTTOM}
 
 

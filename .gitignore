@@ -40,3 +40,4 @@ nosetests.xml
 # Emacs backups and lockfiles
 *~
 .#*
+\#*
