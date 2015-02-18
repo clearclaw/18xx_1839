@@ -3306,7 +3306,7 @@ reference "sec:game-overview"
 
 \end_inset
 
-,
+, 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Game-Phases"
@@ -4601,7 +4601,7 @@ reference "sec:Map-Explanation"
 
 \begin_deeper
 \begin_layout Description
-Exception: It always costs ƒ40 in terrain costs to upgrade Amsterdam (G10),
+Exception: It always costs ƒ80 in terrain costs to upgrade Amsterdam (G10),
  Breda (L9), Haarlem (G8), Rotterdam (J7) and Utrecht (I12) track tiles.
 \end_layout
 
@@ -4668,8 +4668,8 @@ U
 \end_layout
 
 \begin_layout Itemize
-The pre-drawn track on the map at B11, B19, D19, G8, G10, J7 and K8 must
- be preserved by any track tiles placed or upgraded there.
+The pre-drawn track on the map at B11, B19, D19, G8, G10, J7, K8 and L9
+ must be preserved by any track tiles placed or upgraded there.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6232,7 +6232,47 @@ Named
 \end_inset
 
 City Same as a normal city track tile, but marked with a city's initial
- letter and must be used for that city's hexagon.
+ letter (
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+ for Amsterdam (G10), 
+\begin_inset Quotes eld
+\end_inset
+
+B
+\begin_inset Quotes erd
+\end_inset
+
+ for Breda (L9), 
+\begin_inset Quotes eld
+\end_inset
+
+H
+\begin_inset Quotes erd
+\end_inset
+
+ for Haarlem (G8), 
+\begin_inset Quotes eld
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ for Rotterdam (J7) and 
+\begin_inset Quotes eld
+\end_inset
+
+U
+\begin_inset Quotes erd
+\end_inset
+
+ for Utrecht (I12)) and must be used for that city's hexagon.
  Named city tiles also have terrain (river: wavy line) with a matching cost
  for upgrades (ƒ80).
 \end_layout
