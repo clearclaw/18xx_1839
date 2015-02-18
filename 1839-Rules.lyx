@@ -7635,8 +7635,8 @@ reference "par:Route-definition"
 \noun on
 Noord Friesche Locaalspoorweg-Maatschappij
 \noun default
- runs to an off-board, then the full revenue is directly placed in the foreign
- company's treasury.
+ runs to an off-board, then the full revenue is additionally placed directly
+ in the foreign company's treasury from the bank.
 \end_layout
 
 \begin_layout Description
