@@ -721,6 +721,7 @@ company is capitalised at the new rate."""
     LIGHT = ${OVER_LIGHT}
     DARK = ${OVER_DARK}
     title = "Overzees"
+    desc = 2 Shares
     token_name = OZ
     token_colour = ${BLACK}
     token_count = 2
@@ -746,6 +747,7 @@ company is capitalised at the new rate."""
     LIGHT = ${BEL_LIGHT}
     DARK = ${BEL_DARK}
     title = "Belgie"
+    desc = 2 Shares
     token_name = "BEL"
     token_colour = ${BLACK}
     token_count = 2
@@ -771,6 +773,7 @@ company is capitalised at the new rate."""
     LIGHT = ${GER_LIGHT}
     DARK = ${GER_DARK}
     title = "Duitsland"
+    desc = 2 Shares
     token_name = "D"
     token_colour = ${BLACK}
     token_count = 2

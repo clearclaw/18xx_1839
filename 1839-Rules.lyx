@@ -3350,6 +3350,15 @@ reference "sub:Company-directors"
 ).
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+A player that has bought the director's share of a company from the IPO
+ may sell shares of other companies in the same stock round, but only if
+ they still retain director control of those companies immediately after
+ the sale.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 In stock rounds other than the first stock round following the private auction.
 \end_layout
@@ -3396,8 +3405,8 @@ Public company shares are sold for the current stock market price per share.
 \end_layout
 
 \begin_layout Itemize
-Foreign company shares are sold for the next lower stock price below their
- current stock market price per share.
+Foreign company shares are sold for their current stock market price per
+ share.
 \end_layout
 
 \begin_deeper
@@ -3607,6 +3616,12 @@ name "sub:Starting-or-floating"
 \end_layout
 
 \begin_layout Itemize
+A player that has transferred director control of a public company to another
+ player by selling shares can not buy another company's director's share
+ from the IPO in that stock round.
+\end_layout
+
+\begin_layout Itemize
 The first available certificate of a public company is always the director's
  certificate (2 shares, 20%, one certificate).
  It can be bought from the IPO by:
@@ -3702,7 +3717,7 @@ floated
 \end_inset
 
  will operate in all future operating rounds for the rest of the game (see
-  
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Operating-Rounds"
@@ -3758,6 +3773,18 @@ In order to transfer director control of a company via share sales:
 
 \begin_deeper
 \begin_layout Enumerate
+The current director must not have bought the director's share of another
+ company from the IPO in that stock round (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Selling-shares"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
 The director's share must be exchanged for certificates of the player with
  the most shares of the company after the sale, assigning control of the
  company and its charter and assets to that player.
@@ -3803,7 +3830,7 @@ Shares of foreign companies do not count as certificates against the certificate
 \end_deeper
 \begin_layout Itemize
 A player may not own more certificates than the certificate limit specified
- for the number of players in the game (see  
+ for the number of players in the game (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Starting-Player-Capital"
