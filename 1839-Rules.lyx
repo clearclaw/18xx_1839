@@ -3994,8 +3994,9 @@ If a public company pays a total dividend during an operating round equal
 \begin_deeper
 \begin_layout Description
 Exception: Once a stock price is ƒ135 or higher, it will only move up one
- space if the total dividend is larger than the stock price, including the
- turn in which the stock price reaches ƒ135.
+ space if the total dividend is larger than the stock price, or two spaces
+ if the total dividend is at least equal to quadruple its stock price, including
+ the turn in which the stock price reaches ƒ135.
 \end_layout
 
 \end_deeper
