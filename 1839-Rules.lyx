@@ -4587,8 +4587,8 @@ reference "sec:Game-Phases"
 \end_layout
 
 \begin_layout Itemize
-Starting in Brown phase, companies may upgrade green track tiles to brown
- track tiles(see 
+Starting in Brown phase, companies may also upgrade green track tiles to
+ brown track tiles(see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Game-Phases"
@@ -4599,8 +4599,8 @@ reference "sec:Game-Phases"
 \end_layout
 
 \begin_layout Itemize
-Starting in Gray phase, companies may upgrade brown track tiles to gray
- track tiles (see 
+Starting in Gray phase, companies may also upgrade brown track tiles to
+ gray track tiles (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Game-Phases"
@@ -4734,7 +4734,8 @@ Pay for the marker from its treasury.
 \begin_deeper
 \begin_layout Itemize
 The cost is the revenue value of the location multiplied by the total number
- of locations on the map that the company has station markers.
+ of locations on the map that the company has station markers after placing
+ the station marker.
 \end_layout
 
 \end_deeper
@@ -5099,7 +5100,7 @@ reference "sub:Train-types"
 \begin_deeper
 \begin_layout Itemize
 The revenues of cities and towns are counted only once, no matter how many
- of the company's train routes includes them.
+ of the company's train routes include them.
 \end_layout
 
 \begin_deeper
@@ -5155,9 +5156,9 @@ Overzees
 \end_layout
 
 \begin_layout Description
-Note: A company may include optionally 
+Note: A company may optionally include
 \noun on
-Overzees
+ Overzees
 \noun default
  in a route in brown phase even though it has no revenue (
 \emph on
@@ -5201,7 +5202,15 @@ An off-board's revenue value applies from its game-phase until superseded
 \end_deeper
 \begin_layout Itemize
 The total value of all the run of all the company's trains is that company's
- revenue and is recorded on the revenue track.
+ revenue for its 
+\begin_inset Quotes eld
+\end_inset
+
+run
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -5349,8 +5358,8 @@ Each public company's total revenue, whether fully paid, half paid or withheld,
 \end_layout
 
 \begin_layout Itemize
-Each public company also records the off-boards it ran to by placing one
- of its revenue markers on that foreign company's charter.
+Each public company also records the off-board companies it ran to by placing
+ one of its revenue markers on that foreign company's charter.
 \end_layout
 
 \begin_layout Subsubsection
