@@ -5173,13 +5173,21 @@ The revenue value of the
 \noun on
  Roer
 \noun default
- off-board is the larger of the largest revenue center on the route, or
+ off-board is the larger of the largest revenue centre on the route, or
  double the revenue value of the off-board at the other end of the route
  (for a route that runs from the
 \noun on
-Roer
+ Roer
 \noun default
- to another off-board).
+ to a 
+\noun on
+Belgie
+\noun default
+ or 
+\noun on
+Overzees
+\noun default
+ off-board).
 \end_layout
 
 \begin_layout Itemize
@@ -5674,14 +5682,14 @@ If shares are sold such that director control of a different company transfers
 \begin_layout Itemize
 If the company is still unable to buy a train after the director has contributed
  all possible funds, cashed in all their private companies and sold all
- legally sellable shares (see 
+ share that can be legally sold (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Selling-shares"
 
 \end_inset
 
-), and the company has sold all legally sellable station markers, and no
+), and the company has sold all legally possible station markers, and no
  other company is willing to sell one of its trains to the company for an
  agreeable price, then the player is declared bankrupt and the game is immediate
 ly ended (see 
@@ -6542,7 +6550,7 @@ Exception: The
 \begin_layout Description
 Exception: The
 \noun on
-Maatschappij tot Exploitatie van Staatsspoorwegen
+ Maatschappij tot Exploitatie van Staatsspoorwegen
 \noun default
  private company pays its revenue as its player's companies operate.
 \end_layout
@@ -6581,7 +6589,7 @@ The purchase price is paid from the public company's treasury to the selling
 \end_layout
 
 \begin_layout Itemize
-Purchased private companies are moved to their owning public company'scharter
+Purchased private companies are moved to their owning public company's charter
  and future revenues from the private company will be paid to the owning
  company's treasury.
 \end_layout
@@ -6774,7 +6782,7 @@ Staatslijn C: Meppel - Groningen
 \noun default
  are paid to the
 \noun on
-Maatschappij tot Exploitatie van Staatsspoorwegen
+ Maatschappij tot Exploitatie van Staatsspoorwegen
 \noun default
  (SS) charter, whether or not that company has floated.
 \end_layout
