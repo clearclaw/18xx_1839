@@ -3354,8 +3354,8 @@ reference "sub:Company-directors"
 \begin_layout Itemize
 A player that has bought the director's share of a company from the IPO
  may sell shares of other companies in the same stock round, but only if
- they still retain director control of those companies immediately after
- the sale.
+ they don't transfer director control of those companies as an immediate
+ result of the sale.
 \end_layout
 
 \end_deeper
@@ -3484,6 +3484,12 @@ reference "sub:Company-directors"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Itemize
+A player cannot buy the director's certificate of a company from the IPO
+ if they have transferred director control of a company from themselves
+ to another player in that stock round by selling shares.
 \end_layout
 
 \begin_layout Itemize
