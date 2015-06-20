@@ -4049,7 +4049,7 @@ Does not pay a dividend during an operating round, then its stock price
 
 \begin_layout Itemize
 Buys one or more trains from the supply, then its stock price is moved up
- one space per train bought.
+ one space per pair of trains or remaining fraction of a pair bought.
 \end_layout
 
 \end_deeper
@@ -5789,7 +5789,8 @@ name "sub:Foreign-operating-round-actions"
 
 \begin_layout Description
 Revenue: The revenue of a foreign company is half of the total income of
- the public companies that ran to one of its off-boards (see 
+ all the public companies that ran to one of its off-boards in that operating
+ round (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Recording-revenues"
@@ -5845,8 +5846,9 @@ If there are shares of the foreign company in the bank pool:
 \begin_deeper
 \begin_layout Itemize
 The foreign company will buy as many of its own shares as it can afford
- with its treasury from the bank pool at half the foreign company's current
- stock price (rounding down), placing the purchased shares back in its treasury.
+ from the bank pool, paying half the foreign company's current stock price
+ (rounding down) per share and placing the purchased share(s) back in its
+ treasury.
 \end_layout
 
 \begin_deeper
@@ -5865,13 +5867,13 @@ If there is still money in the foreign company's treasury:
 
 \begin_deeper
 \begin_layout Itemize
-The foreign company will buy as many trains from the supply as it can afford
- using its treasury.
+The foreign company will buy as many trains from the supply as it can afford.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-The stock price is moved up one space for each train bought (see 
+The stock price is moved up one space for each pair of trains or remaining
+ part of a pair bought (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Foreign-company-stock-movement"
