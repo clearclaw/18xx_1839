@@ -302,7 +302,7 @@ plus any terrain and upgrade costs."""
       revenue = Revenue: f20
       title = Staatslijn E: Maastricht - Venlo
       desc = """Owned by the AMS.
-Owning company may place up to four
+Owning company may place up to five
 track tiles \(two may be upgrades\)
 as its entire track lay, for f10 each
 plus any terrain and upgrade costs."""
@@ -311,7 +311,7 @@ plus any terrain and upgrade costs."""
     [[[tile_2.1]]]
       cost = Cost: f0
       revenue = Revenue: f20
-      title = """Staatslijn K: 
+      title = """Staatslijn K:
 Den Helder - Amsterdam"""
       desc = """Owned by the HIJSM.
 Owning company may place up to four
@@ -322,18 +322,6 @@ plus any terrain and upgrade costs."""
 
     [[[tile_2.2]]]
       cost = Cost: f0
-      revenue = Revenue: f10
-      title = IJzeren Rijn
-      desc = """Owned by the AMS.
-Owning company may place or upgrade
-a track tile in any or all of L11,
-L13, L15 & L17 for no cost other
-than terrain cost, in addition to
-its normal track lay."""
-      close = """Close: In brown phase or when power used."""
-
-    [[[tile_2.3]]]
-      cost = Cost: f0
       revenue = Revenue: f0
       title = Spoorlijn Zevenaar - Kleef
       desc = """Owned by the NRS.
@@ -342,14 +330,14 @@ a tile and a station marker \(must be both\)
 for f80 at I16 or K16 as part of their
 normal station placement."""
       close = """Close: In brown phase."""
-      
+
     [[[tile_3.2]]]
       cost = ""
       revenue = ""
       title = Bank Pool
       title_font = "Times-Roman", 36
       desc = ""
-      close = "" 
+      close = ""
 
     [[[tile_3.3]]]
       cost = ""
@@ -392,7 +380,7 @@ lay and station placement."""
 Owning company may place an additional
 yellow track tile or tile upgrade \(if at
 H7 there are no terrain costs, otherwise all
-terrain costs must be paid as usual\) in 
+terrain costs must be paid as usual\) in
 addition to the company's normal track lay."""
       close = "Close: In brown phase or when power used."
 
@@ -410,11 +398,21 @@ exchange or station marker for free."""
       title = Rijkswaterstaat
       desc = """Blocks F13 & G12.
 Comes with a 20% presidency parred at f101.
-That company gains a home station in 
-Emmen (D19).  Flevoland bypass built when 
+That company gains a home station in
+Emmen (D19).  Flevoland bypass built when
 closed. May not be purchased by a company."""
       close = """Close: In brown phase or when related company buys
 a train."""
+
+    [[[tile_2.3]]]
+      cost = Cost: f50
+      revenue = Revenue: f20
+      title = IJzeren Rijn
+      desc = """Blocks L11 - L17.
+Owned by the AMS.
+IJzeren Rijn built when the first
+green 3+ train is bought."""
+      close = """Close: In green phase."""
 
   [[blue]]
     frame_colour = ${LIGHT_BLUE}
@@ -545,8 +543,8 @@ Blue: f150, Brown: f250."""
       revenue = Revenue: f20
       title = "Nederlandsche Fabriek van", "Werktuigen en", "Spoorwegmaterieel"
       desc = """Owning company may buy a train,
-as usual or as an emergency purchase 
-(if it has no train), at any time 
+as usual or as an emergency purchase
+(if it has no train), at any time
 during its operations."""
       close = "Close: In brown phase."
 
@@ -586,11 +584,11 @@ for the first time."""
       cost = Cost: f200
       revenue = Revenue: f30
       title = Rotterdamsche Bank
-      desc = """Owning company may draw freely 
+      desc = """Owning company may draw freely
 on their president's assets for
-station, track and train expenses, 
-including causing the president to 
-sell shares as if the expense were 
+station, track and train expenses,
+including causing the president to
+sell shares as if the expense were
 an Emergency Train Purchase."""
       close = "Close: In brown phase."
 
