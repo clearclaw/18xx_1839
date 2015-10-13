@@ -3963,8 +3963,15 @@ reference "sub:Foreign-company-operating-order"
 
 \end_inset
 
-), each floated foreign company's stock price is moved down one space if
- any of its shares are in the bank pool.
+), each parred foreign company's stock price is moved down one space if
+ any of its shares are in the bank pool (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Foreign-country-par"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
