@@ -6,7 +6,9 @@ mkdir -p build
 pushd build
   mv ../1839-Rules.pdf ./
   xxpaper ../1839-Papers.xxp $*
+  rm market_sheet1-nooutline*
   cp ../1839-Papers.xxp ./
+  cp ../README.txt ./
   for file in *.ps
   do
     ps2pdf $file

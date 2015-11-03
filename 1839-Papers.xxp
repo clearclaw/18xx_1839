@@ -154,7 +154,8 @@ goes to treasury.
 Shares in treasury pay dividends to treasury."""
     note2 = """Income: 50% public company's income that runs to a${COUNTRY}
 off-board. Buy market shares first, pay dividend and adjust
-stock price, then buy trains.  Stock up once per train bought.
+stock price, then buy trains.  Stock price moves up once per
+pair of trains bought (rounding up).
 Dividend: Half-pay total income."""
     num_across_x = 1
     num_across_y = 3
@@ -804,6 +805,7 @@ company is capitalised at the new rate."""
 [token]
 
   [[sheet1]]
+    token_count = 10
 
     [[[tile_1.1]]]
       LIGHT = ${AMS_LIGHT}
@@ -846,6 +848,7 @@ company is capitalised at the new rate."""
       token_name = ZHESM
 
     [[[tile_1.9]]]
+      token_count = 2
       LIGHT = ${OVER_LIGHT}
       DARK = ${OVER_DARK}
       token_colour = ${BLACK}
@@ -854,6 +857,7 @@ company is capitalised at the new rate."""
       token_bottom_colour = ${OVER_TOKEN_BOTTOM}
 
     [[[tile_1.10]]]
+      token_count = 2
       LIGHT = ${BEL_LIGHT}
       DARK = ${BEL_DARK}
       token_colour = ${BLACK}
@@ -862,6 +866,7 @@ company is capitalised at the new rate."""
       token_bottom_colour = ${BEL_TOKEN_BOTTOM}
 
     [[[tile_1.11]]]
+      token_count = 2
       LIGHT = ${GER_LIGHT}
       DARK = ${GER_DARK}
       token_colour = ${BLACK}
@@ -870,18 +875,21 @@ company is capitalised at the new rate."""
       token_bottom_colour = ${GER_TOKEN_BOTTOM}
 
     [[[tile_1.12]]]
+      token_count = 4
       LIGHT = ${SAVED_LIGHT}
       DARK = ${SAVED_DARK}
       token_name = SAVED
       token_bottom_colour = ${BLACK}
 
     [[[tile_1.13]]]
+      token_count = 1
       LIGHT = ${ROUND_LIGHT}
       DARK = ${ROUND_DARK}
       token_name = ROUND
       token_bottom_colour = ${LIGHT}
 
     [[[tile_1.14]]]
+      token_count = 4
       LIGHT = ${WHITE}
       DARK = ${WHITE}
       token_name = NFLM

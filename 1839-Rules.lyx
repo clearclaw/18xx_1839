@@ -152,7 +152,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Part
-Overview
+Overview
 \begin_inset CommandInset label
 LatexCommand label
 name "par:Overview"
@@ -201,11 +201,11 @@ name "sec:Components"
 \end_layout
 
 \begin_layout Itemize
-1 revenue track
+1 revenue track (not supplied)
 \end_layout
 
 \begin_layout Itemize
-1 round marker
+1 round marker (no round track is supplied)
 \end_layout
 
 \begin_layout Itemize
@@ -213,7 +213,7 @@ Many track tiles (yellow, green, brown and gray)
 \end_layout
 
 \begin_layout Itemize
-4 reserved yellow track tiles (#A08, #A09, #F04, #F08)
+8 reserved yellow track tiles (#P04, #P08 and #F09)
 \end_layout
 
 \begin_layout Itemize
@@ -335,6 +335,10 @@ Stock price marker
 
 \begin_layout Itemize
 Revenue marker
+\end_layout
+
+\begin_layout Itemize
+Company charter
 \end_layout
 
 \end_deeper
@@ -607,7 +611,7 @@ Rotterdamsche Bank
 \begin_layout Itemize
 
 \emph on
-Or more than one of the following brown private companies:
+Or more than one of the following brown private companies at the same time:
 \end_layout
 
 \begin_deeper
@@ -5483,7 +5487,7 @@ rust
 \begin_inset Quotes erd
 \end_inset
 
- and be removed from the game (see  
+ and be removed from the game (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Game-Phases"
@@ -6702,6 +6706,14 @@ reference "sec:Game-Phases"
 \end_layout
 
 \begin_deeper
+\begin_layout Description
+Exception: The 
+\noun on
+IJzeren Rijn 
+\noun default
+closes at the start of green phase.
+\end_layout
+
 \begin_layout Itemize
 Obsolete private companies are closed and discarded from the game when:
 \end_layout
@@ -7158,10 +7170,12 @@ Closes: In green phase.
 
 \begin_layout Description
 Power: At the start of green phase the IJzeren Rijn is built.
+ (Yellow #P08 and #P09 track tiles are placed at L11 through L17 to match
+ the dotted track line on the map)
 \end_layout
 
 \begin_layout Description
-Use: No.
+Use: None.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7331,7 +7345,7 @@ Closes: In brown phase or when related company buys a train.
 \begin_layout Description
 Power: Comes with a 20% presidency parred at ƒ101.
  That company gains a home station in Emmen (D19).
- Flevoland bypass built when closed (#F04 & #F08 yellow track tiles are
+ Flevoland bypass built when closed (#P04 & #P08 yellow track tiles are
  placed at F13 & G12 to match the dotted track line on the map).
  May not be purchased by a company.
 \end_layout
@@ -7369,7 +7383,7 @@ Closes: In brown phase or when power used.
 \begin_layout Description
 Power: Comes with a 10% certificate of a public company.
  The owning company may place a station or exchange marker for half-cost.
- Afsluitdijk built when closed or bought by a company (#A08 & #A09 yellow
+ Afsluitdijk built when closed or bought by a company (#P08 & #P09 yellow
  track tiles are placed at C10 & D9 to match the dotted track line on the
  map).
 \end_layout
