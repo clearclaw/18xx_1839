@@ -311,7 +311,7 @@ plus any terrain and upgrade costs."""
     [[[tile_2.1]]]
       cost = Cost: f0
       revenue = Revenue: f20
-      title = """Staatslijn K: 
+      title = """Staatslijn K:
 Den Helder - Amsterdam"""
       desc = """Owned by the HIJSM.
 Owning company may place up to four
@@ -342,14 +342,14 @@ a tile and a station marker \(must be both\)
 for f80 at I16 or K16 as part of their
 normal station placement."""
       close = """Close: In brown phase."""
-      
+
     [[[tile_3.2]]]
       cost = ""
       revenue = ""
       title = Bank Pool
       title_font = "Times-Roman", 36
       desc = ""
-      close = "" 
+      close = ""
 
     [[[tile_3.3]]]
       cost = ""
@@ -392,7 +392,7 @@ lay and station placement."""
 Owning company may place an additional
 yellow track tile or tile upgrade \(if at
 H7 there are no terrain costs, otherwise all
-terrain costs must be paid as usual\) in 
+terrain costs must be paid as usual\) in
 addition to the company's normal track lay."""
       close = "Close: In brown phase or when power used."
 
@@ -410,8 +410,8 @@ exchange or station marker for free."""
       title = Rijkswaterstaat
       desc = """Blocks F13 & G12.
 Comes with a 20% presidency parred at f101.
-That company gains a home station in 
-Emmen (D19).  Flevoland bypass built when 
+That company gains a home station in
+Emmen (D19).  Flevoland bypass built when
 closed. May not be purchased by a company."""
       close = """Close: In brown phase or when related company buys
 a train."""
@@ -545,8 +545,8 @@ Blue: f150, Brown: f250."""
       revenue = Revenue: f20
       title = "Nederlandsche Fabriek van", "Werktuigen en", "Spoorwegmaterieel"
       desc = """Owning company may buy a train,
-as usual or as an emergency purchase 
-(if it has no train), at any time 
+as usual or as an emergency purchase
+(if it has no train), at any time
 during its operations."""
       close = "Close: In brown phase."
 
@@ -586,11 +586,11 @@ for the first time."""
       cost = Cost: f200
       revenue = Revenue: f30
       title = Rotterdamsche Bank
-      desc = """Owning company may draw freely 
+      desc = """Owning company may draw freely
 on their president's assets for
-station, track and train expenses, 
-including causing the president to 
-sell shares as if the expense were 
+station, track and train expenses,
+including causing the president to
+sell shares as if the expense were
 an Emergency Train Purchase."""
       close = "Close: In brown phase."
 
@@ -716,7 +716,7 @@ company is capitalised at the new rate."""
       token_count = 2
       type_colour = ${ORANGE}
 
-  [[OVER4]]
+  [[OVER]]
     frame_colour = ${LIGHT_BLUE}
     LIGHT = ${OVER_LIGHT}
     DARK = ${OVER_DARK}
@@ -730,19 +730,22 @@ company is capitalised at the new rate."""
     size = 4%
     token_bottom_colour = ${OVER_TOKEN_BOTTOM}
 
-  [[OVER2]]
-    frame_colour = ${LIGHT_BLUE}
-    LIGHT = ${OVER_LIGHT}
-    DARK = ${OVER_DARK}
-    title = "Overzees"
-    token_name = OZ
-    token_colour = ${BLACK}
-    token_name_colour = ${WHITE}
-    note = "Foreign"
+    [[[tile_1.1]]]
+    token_count = 1
+    desc = 1 Share
     size = 2%
-    token_bottom_colour = ${OVER_TOKEN_BOTTOM}
 
-  [[BEL4]]
+    [[[tile_1.2]]]
+    token_count = 1
+    desc = 1 Share
+    size = 2%
+
+    [[[tile_1.3]]]
+    token_count = 1
+    desc = 1 Share
+    size = 2%
+
+  [[BEL]]
     frame_colour = ${LIGHT_ORANGE}
     LIGHT = ${BEL_LIGHT}
     DARK = ${BEL_DARK}
@@ -756,19 +759,22 @@ company is capitalised at the new rate."""
     size = 4%
     token_bottom_colour = ${BEL_TOKEN_BOTTOM}
 
-  [[BEL2]]
-    frame_colour = ${LIGHT_ORANGE}
-    LIGHT = ${BEL_LIGHT}
-    DARK = ${BEL_DARK}
-    title = "Belgie"
-    token_name = "BEL"
-    token_colour = ${BLACK}
-    token_name_colour = ${WHITE}
-    note = "Foreign"
+    [[[tile_1.1]]]
+    token_count = 1
+    desc = 1 Share
     size = 2%
-    token_bottom_colour = ${BEL_TOKEN_BOTTOM}
 
-  [[GER4]]
+    [[[tile_1.2]]]
+    token_count = 1
+    desc = 1 Share
+    size = 2%
+
+    [[[tile_1.3]]]
+    token_count = 1
+    desc = 1 Share
+    size = 2%
+
+  [[GER]]
     frame_colour = ${LIGHT_RED}
     LIGHT = ${GER_LIGHT}
     DARK = ${GER_DARK}
@@ -782,18 +788,20 @@ company is capitalised at the new rate."""
     size = 4%
     token_bottom_colour = ${GER_TOKEN_BOTTOM}
 
-  [[GER2]]
-    frame_colour = ${LIGHT_RED}
-    LIGHT = ${GER_LIGHT}
-    DARK = ${GER_DARK}
-    title = "Duitsland"
-    token_name = "D"
-    token_colour = ${BLACK}
-    token_name_colour = ${WHITE}
-    note = "Foreign"
+    [[[tile_1.1]]]
+    token_count = 1
+    desc = 1 Share
     size = 2%
-    token_bottom_colour = ${GER_TOKEN_BOTTOM}
 
+    [[[tile_1.2]]]
+    token_count = 1
+    desc = 1 Share
+    size = 2%
+
+    [[[tile_1.3]]]
+    token_count = 1
+    desc = 1 Share
+    size = 2%
 
 [token]
 
