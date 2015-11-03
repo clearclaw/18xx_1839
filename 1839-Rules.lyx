@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -17,13 +17,13 @@ figs-within-sections
 \font_roman palatino
 \font_sans berasans
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc true
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -34,15 +34,24 @@ figs-within-sections
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -213,7 +222,7 @@ Many track tiles (yellow, green, brown and gray)
 \end_layout
 
 \begin_layout Itemize
-28 private companies (5 yellow, 5 green, 9 blue, 9 brown)
+29 private companies (5 yellow, 6 green, 9 blue, 9 brown)
 \end_layout
 
 \begin_layout Itemize
@@ -517,10 +526,6 @@ Staatslijn D: Zutphen - Glanerbeek
 \begin_layout Itemize
 
 \noun on
-IJzeren Rijn
-\noun default
- and 
-\noun on
 Staatslijn E: Maastricht - Venlo
 \noun default
  on the 
@@ -729,10 +734,10 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
@@ -912,7 +917,7 @@ Certificate Limit
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Starting Player Capital
@@ -1160,7 +1165,7 @@ status open
 \begin_layout Description
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="9">
-<features booktabs="true" tabularvalignment="middle">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="0.6in">
 <column alignment="center" valignment="middle" width="0.6in">
 <column alignment="center" valignment="middle" width="0.6in">
@@ -1759,7 +1764,7 @@ Brown and below
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Game Phases
@@ -1802,10 +1807,10 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="30" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
@@ -2012,46 +2017,6 @@ yellow
 \begin_layout Plain Layout
 
 \noun on
-IJzeren Rijn 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-yellow
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ƒ0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ƒ20
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\noun on
 Spoorlijn Zevenaar - Kleef
 \end_layout
 
@@ -2079,7 +2044,47 @@ yellow
 \begin_inset Text
 
 \begin_layout Plain Layout
-ƒ0
+ƒ10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+IJzeren Rijn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+green
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ƒ50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ƒ20
 \end_layout
 
 \end_inset
@@ -3012,7 +3017,7 @@ brown
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Private Companies
@@ -3958,8 +3963,15 @@ reference "sub:Foreign-company-operating-order"
 
 \end_inset
 
-), each floated foreign company's stock price is moved down one space if
- any of its shares are in the bank pool.
+), each parred foreign company's stock price is moved down one space if
+ any of its shares are in the bank pool (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Foreign-country-par"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -4055,7 +4067,7 @@ Does not pay a dividend during an operating round, then its stock price
 
 \begin_layout Itemize
 Buys one or more trains from the supply, then its stock price is moved up
- one space per train bought.
+ one space per pair of trains or remaining fraction of a pair bought.
 \end_layout
 
 \end_deeper
@@ -5795,7 +5807,8 @@ name "sub:Foreign-operating-round-actions"
 
 \begin_layout Description
 Revenue: The revenue of a foreign company is half of the total income of
- the public companies that ran to one of its off-boards (see 
+ all the public companies that ran to one of its off-boards in that operating
+ round (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Recording-revenues"
@@ -5803,6 +5816,7 @@ reference "sub:Recording-revenues"
 \end_inset
 
 ), rounded up to a multiple of one hundred (100).
+ After the calculation the public company revenue markers are returned.
 \end_layout
 
 \begin_layout Standard
@@ -5851,8 +5865,9 @@ If there are shares of the foreign company in the bank pool:
 \begin_deeper
 \begin_layout Itemize
 The foreign company will buy as many of its own shares as it can afford
- with its treasury from the bank pool at half the foreign company's current
- stock price (rounding down), placing the purchased shares back in its treasury.
+ from the bank pool, paying half the foreign company's current stock price
+ (rounding down) per share and placing the purchased share(s) back in its
+ treasury.
 \end_layout
 
 \begin_deeper
@@ -5871,13 +5886,13 @@ If there is still money in the foreign company's treasury:
 
 \begin_deeper
 \begin_layout Itemize
-The foreign company will buy as many trains from the supply as it can afford
- using its treasury.
+The foreign company will buy as many trains from the supply as it can afford.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-The stock price is moved up one space for each train bought (see 
+The stock price is moved up one space for each pair of trains or remaining
+ part of a pair bought (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Foreign-company-stock-movement"
@@ -6022,7 +6037,7 @@ The designer would like to thank Francis Tresham for the design and development
  in equal measures.
  Additional thanks go to Roel van der Hoorn for his help with Dutch language
  corrections and historicity, as well as the many play-testers, most notably
- Bruce Murphy and Daniel Barnes.
+ Bruce Murphy, Daniel Barnes and Shelby Noonan.
  I have been honoured to design games for and with such wonderful people.
 \end_layout
 
@@ -6415,8 +6430,8 @@ Revenue
 \begin_inset space ~
 \end_inset
 
-centre A track tile or map location (city, town or off-board) with an income
- or revenue value
+centre A location on a hexagon to track tile such as a city, town or off-board
+ which has an income or revenue value
 \end_layout
 
 \begin_layout Description
@@ -6643,6 +6658,14 @@ Spoorwegwerken Oost
 Rijkswaterstaat
 \noun default
  blocks F13 and G12.
+\end_layout
+
+\begin_layout Itemize
+
+\noun on
+IJzeren Rijn
+\noun default
+ blocks L11 through L17.
 \end_layout
 
 \end_deeper
@@ -6897,7 +6920,7 @@ Power: Instead of its normal track build, the owning company,
 \noun on
 Aken-Maastrichtsche Spoorweg-Maatschappij
 \noun default
- (AMS), may place up to four track tiles (two may be upgrades) as its entire
+ (AMS), may place up to five track tiles (two may be upgrades) as its entire
  track lay, for ƒ10 each plus any terrain and upgrade costs.
 \end_layout
 
@@ -7015,76 +7038,6 @@ Hollandsche IJzeren Spoorweg-Maatschappij
 \begin_layout Subsubsection
 
 \noun on
-IJzeren Rijn
-\end_layout
-
-\begin_layout Description
-Face
-\begin_inset space ~
-\end_inset
-
-value: ƒ0
-\end_layout
-
-\begin_layout Description
-Revenue: ƒ10
-\end_layout
-
-\begin_layout Description
-Blocks: No.
-\end_layout
-
-\begin_layout Description
-Closes: In brown phase or when power used.
-\end_layout
-
-\begin_layout Description
-Power: Owning company may place or upgrade a track tile in any or all of
- L11, L13, L15 & L17 for no cost other than terrain cost.
- The power may be used in addition to the company's normal track lay.
-\end_layout
-
-\begin_layout Description
-Use: The power may be used during the track building step of the 
-\noun on
-Aken-Maastrichtsche Spoorweg-Maatschappij
-\noun default
- (AMS) operations.
- Use of the power does not preclude the owning company from placing an exchange
- or station marker.
-\end_layout
-
-\begin_layout Description
-Note: The 
-\noun on
-IJzeren Rijn
-\noun default
- is assigned to the 
-\noun on
-Aken-Maastrichtsche Spoorweg-Maatschappij
-\noun default
- (AMS) during the game setup (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Game-Setup"
-
-\end_inset
-
-).
- Revenues from the 
-\noun on
-IJzeren Rijn
-\noun default
- are paid to the 
-\noun on
-Aken-Maastrichtsche Spoorweg-Maatschappij
-\noun default
- (AMS) charter, whether or not that company has floated.
-\end_layout
-
-\begin_layout Subsubsection
-
-\noun on
 Spoorlijn Zevenaar - Kleef
 \end_layout
 
@@ -7097,7 +7050,7 @@ value: ƒ0
 \end_layout
 
 \begin_layout Description
-Revenue: ƒ0
+Revenue: ƒ10
 \end_layout
 
 \begin_layout Description
@@ -7175,6 +7128,40 @@ name "sub:Green-Private-Companies"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+
+\noun on
+IJzeren Rijn
+\end_layout
+
+\begin_layout Description
+Face
+\begin_inset space ~
+\end_inset
+
+value: ƒ50
+\end_layout
+
+\begin_layout Description
+Revenue: ƒ20
+\end_layout
+
+\begin_layout Description
+Blocks: L11 through L17 (IJzeren Rijn)
+\end_layout
+
+\begin_layout Description
+Closes: In green phase.
+\end_layout
+
+\begin_layout Description
+Power: At the start of green phase the IJzeren Rijn is built.
+\end_layout
+
+\begin_layout Description
+Use: No.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8623,7 +8610,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
-<features tabularvalignment="middle">
+<features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="2in">
 <column alignment="center" valignment="top" width="0.5in">
 <column alignment="center" valignment="top" width="0.6in">
@@ -8994,7 +8981,7 @@ Haarlem (G8)
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Public Companies
@@ -9387,6 +9374,14 @@ Green phase
 
 \begin_layout Itemize
 Green phase starts with the purchase of the first green train.
+\end_layout
+
+\begin_layout Itemize
+
+\noun on
+IJzeren Staatslijn
+\noun default
+ private company closes and IJzeren Staatslijn route built.
 \end_layout
 
 \begin_layout Itemize

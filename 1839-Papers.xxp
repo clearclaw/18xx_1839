@@ -302,7 +302,7 @@ plus any terrain and upgrade costs."""
       revenue = Revenue: f20
       title = Staatslijn E: Maastricht - Venlo
       desc = """Owned by the AMS.
-Owning company may place up to four
+Owning company may place up to five
 track tiles \(two may be upgrades\)
 as its entire track lay, for f10 each
 plus any terrain and upgrade costs."""
@@ -321,18 +321,6 @@ plus any terrain and upgrade costs."""
       close = """Close: In brown phase or when power used."""
 
     [[[tile_2.2]]]
-      cost = Cost: f0
-      revenue = Revenue: f10
-      title = IJzeren Rijn
-      desc = """Owned by the AMS.
-Owning company may place or upgrade
-a track tile in any or all of L11,
-L13, L15 & L17 for no cost other
-than terrain cost, in addition to
-its normal track lay."""
-      close = """Close: In brown phase or when power used."""
-
-    [[[tile_2.3]]]
       cost = Cost: f0
       revenue = Revenue: f0
       title = Spoorlijn Zevenaar - Kleef
@@ -415,6 +403,16 @@ Emmen (D19).  Flevoland bypass built when
 closed. May not be purchased by a company."""
       close = """Close: In brown phase or when related company buys
 a train."""
+
+    [[[tile_2.3]]]
+      cost = Cost: f50
+      revenue = Revenue: f20
+      title = IJzeren Rijn
+      desc = """Blocks L11 - L17.
+Owned by the AMS.
+IJzeren Rijn built when the first
+green 3+ train is bought."""
+      close = """Close: In green phase."""
 
   [[blue]]
     frame_colour = ${LIGHT_BLUE}
