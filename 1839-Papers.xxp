@@ -232,7 +232,7 @@ Spoorweg-Maatschappij""",
   token_count = 5
 
 {% set page_size = 4 %}
-{% set blocks = ((companies|count + 3) / page_size) | int %}
+{% set blocks = ((companies | count + 3) / page_size) | int %}
 {% set tiles = ["1.1", "1.2", "2.1", "2.2",] %}
 {% for sheet in range (blocks) %}
   [[sheet{{ sheet + 1 }}]]
@@ -281,7 +281,7 @@ Dividend: Half-pay total income."""
     token_name_colour = ${WHITE}
 
 {% set page_size = 3 %}
-{% set blocks = ((foreigners|count + 3) / page_size) | int %}
+{% set blocks = ((foreigners | count + 3) / page_size) | int %}
 {% set tiles = ["1.1", "1.2", "1.3",] %}
 {% for tile in range (page_size) %}
     {% set company = foreigners[tile] %}
@@ -384,74 +384,24 @@ Dividend: Half-pay total income."""
   [[sheet1]]
     tile_colour = ${WHITE}
 
-    [[[tile_1.1]]]
-      desc = "55"
-
-    [[[tile_2.1]]]
-      desc = "56"
-
-    [[[tile_3.1]]]
-      desc = "59"
-
-    [[[tile_4.1]]]
-      desc = "62"
-
-    [[[tile_5.1]]]
-      desc = "67"
+{% set stock_values = [55, 56, 59, 62, 67, 72, 80, 89, 101, 116, 135, 160, 192,
+                       233, 287, 359, 454, 584, 761, 1000, ] %}
+{% for ndx in range (stock_values | count) %}
+  {% set value = stock_values[ndx] %}
+    [[[tile_{{ ndx + 1 }}.1]]]
+      desc = {{ value }}
+      {% if value >= 67 and value <= 80%}
       tile_colour = ${YELLOW}
-
-    [[[tile_6.1]]]
-      desc = "72"
-      tile_colour = ${YELLOW}
-
-    [[[tile_7.1]]]
-      desc = "80"
-      tile_colour = ${YELLOW}
-
-    [[[tile_8.1]]]
-      desc = "89"
+      {% elif value >= 89 and value <= 101 %}
       tile_colour = ${GREEN}
-
-    [[[tile_9.1]]]
-      desc = "101"
-      tile_colour = ${GREEN}
-
-    [[[tile_10.1]]]
-      desc = "116"
+      {% elif value == 116 %}
       tile_colour = ${BLUE}
-
-    [[[tile_11.1]]]
-      desc = "135"
+      {% elif value == 135 %}
       tile_colour = ${BROWN}
-
-    [[[tile_12.1]]]
-      desc = "160"
-
-    [[[tile_13.1]]]
-      desc = "192"
-
-    [[[tile_14.1]]]
-      desc = "233"
-
-    [[[tile_15.1]]]
-      desc = "287"
-
-    [[[tile_16.1]]]
-      desc = "359"
-
-    [[[tile_17.1]]]
-      desc = "454"
-
-    [[[tile_18.1]]]
-      desc = "584"
-
-    [[[tile_19.1]]]
-      desc = "761"
-
-    [[[tile_20.1]]]
-      desc = "1,000"
+      {% elif value == 1000 %}
       tile_colour = ${LIGHT_RED}
-
+      {% endif %}
+{% endfor %}
 
 [private]
 
