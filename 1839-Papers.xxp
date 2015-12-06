@@ -307,7 +307,8 @@ Dividend: Half-pay total income."""
 
 [market]
 
-{% for sheet in range (5) %}
+{% set revsheets = 5 %}
+{% for sheet in range (revsheets) %}
   [[revenue{{ sheet + 1 }}a]]
     num_across_x = 15
     num_across_y = 12
@@ -319,7 +320,7 @@ Dividend: Half-pay total income."""
   {% for row in range (12) %}
     {% for ndx in range (15) %}
     [[[tile_{{ ndx + 1 }}.{{ row + 1 }}]]]
-      {% set value = (sheet * 15) + (row * 5 * 15) + ndx %}
+      {% set value = (sheet * 15) + (row * revsheets * 15) + ndx %}
       desc = {{ value }}
       {% if not value % 50 %}
       tile_colour = ${LIGHT_BLUE}
