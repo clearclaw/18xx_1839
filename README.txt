@@ -3,7 +3,14 @@
 
 This is an 18xx game. See: https://en.wikipedia.org/wiki/18XX_games
 
-Print the coponents to match the counts listed in the rules.  This
+Use `build.sh` to produce the artfiles for all the components.
+Major dependencies:
+
+  Ghostscript: http://www.ghostscript.com/
+  LyX: http://lyx,.org/
+  XXpaper: https://pypi.python.org/pypi?name=xxpaper
+
+Print the components to match the counts listed in the rules.  This
 will for instance, require printing four copies of the foreign shares
 and then discarding down.  Likewise the trains will need discarding
 down to match counts.
@@ -20,8 +27,7 @@ Exceptions:
   - If using a hand-punch for the token stickers, use the
     *-nooutline-* files for a cleaner result.
 
-  - There are two forms of revenue track provided in each of two
-orientations.  They are functionally identical.
+  - A revenue track is provided in each of two orientations.
 
 I recommend printing the tokens on full-page lable stock, cutting with
 a 1/2" PaperShaper punch and then mounting to wood plugs or discs.
