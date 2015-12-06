@@ -3,7 +3,7 @@
 
 This is an 18xx game. See: https://en.wikipedia.org/wiki/18XX_games
 
-Use `build.sh` to produce the artfiles for all the components.
+Use `build.sh` to produce the art files for all the components.
 Major dependencies:
 
   Ghostscript: http://www.ghostscript.com/
