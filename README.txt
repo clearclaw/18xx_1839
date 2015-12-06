@@ -1,3 +1,8 @@
+1839
+====
+
+This is an 18xx game. See: https://en.wikipedia.org/wiki/18XX_games
+
 Print the coponents to match the counts listed in the rules.  This
 will for instance, require printing four copies of the foreign shares
 and then discarding down.  Likewise the trains will need discarding
