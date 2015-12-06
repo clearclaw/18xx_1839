@@ -18,7 +18,7 @@ components by hand, reverse that and work entirely from the
 Exceptions:
 
   - If using a hand-punch for the token stickers, use the
-    *-nooutline-* files and you'll get a cleaner appearance.
+    *-nooutline-* files for a cleaner result.
 
   - There are two forms of revenue track provided in each of two
 orientations.  They are functionally identical.
