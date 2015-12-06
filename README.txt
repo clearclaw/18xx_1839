@@ -12,11 +12,11 @@ components by hand, reverse that and work entirely from the
 
 Exceptions:
 
-  - Use the outline market-* file.  The market-sheet1-nooutline.*
-files are useless.  Sorry.
-
   - If using a hand-punch for the token stickers, use the
     *-nooutline-* files and you'll get a cleaner appearance.
+
+  - There are two forms of revenue track provided in each of two
+orientations.  They are functionally identical.
 
 I recommend printing the tokens on full-page lable stock, cutting with
 a 1/2" PaperShaper punch and then mounting to wood plugs or discs.

@@ -152,7 +152,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Part
-Overview
+Overview
 \begin_inset CommandInset label
 LatexCommand label
 name "par:Overview"
@@ -201,11 +201,11 @@ name "sec:Components"
 \end_layout
 
 \begin_layout Itemize
-1 revenue track (not supplied)
+1 revenue track
 \end_layout
 
 \begin_layout Itemize
-1 round marker (no round track is supplied)
+1 round marker
 \end_layout
 
 \begin_layout Itemize

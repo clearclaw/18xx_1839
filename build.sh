@@ -9,6 +9,7 @@ pushd build
   rm market_sheet1-nooutline*
   cp ../1839-Papers.xxp ./
   cp ../README.txt ./
+  cp ../M39.pdf ./1839-Map.pdf
   for file in *.ps
   do
     ps2pdf $file
