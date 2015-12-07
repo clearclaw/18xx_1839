@@ -252,7 +252,11 @@ Spoorweg-Maatschappij""",
       token_top_colour = {{ company.token_top }}
       title = """{{ company.name }}"""
       token_name = {{ company.token }}
-      price = ""
+      price1 = "$ x #"
+      price2 = "$ x #"
+      price3 = "$ x #"
+      price4 = "$ x #"
+      price5 = "$ x #"
       note1 = """{{ company.note }}
 
 Purchase price of shares goes to bank.
@@ -307,7 +311,7 @@ Dividend: Half-pay total income."""
 
 [market]
 
-{% set revsheets = 5 %}
+{% set revsheets = 3 %}
 {% for sheet in range (revsheets) %}
   {% for sheet_type in ["a", "b",] %}
   [[revenue{{ sheet + 1 }}{{ sheet_type }}]]
