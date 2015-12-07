@@ -347,28 +347,28 @@ Dividend: Half-pay total income."""
 
   [[round]]
     num_across_x = 10
-    num_across_y = 1
+    num_across_y = 2
     tile_x = 64
     tile_y = 64
     tile_colour = ${WHITE}
     tile_stroke_colour = ${WHITE}
     desc = ""
 
-    [[[tile_4.1]]]
+    [[[tile_4.2]]]
       desc = "Stock"
       tile_stroke_colour = ${BLACK}
 
-    [[[tile_5.1]]]
+    [[[tile_4.1]]]
       desc = "Operating"
       tile_colour = ${YELLOW}
       tile_stroke_colour = ${BLACK}
 
-    [[[tile_6.1]]]
+    [[[tile_5.1]]]
       desc = "Operating"
       tile_colour = ${GREEN}
       tile_stroke_colour = ${BLACK}
 
-    [[[tile_7.1]]]
+    [[[tile_6.1]]]
       desc = "Operating"
       tile_colour = ${BROWN}
       tile_stroke_colour = ${BLACK}
