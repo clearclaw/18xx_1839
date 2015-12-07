@@ -52,7 +52,8 @@ Spoorweg-Maatschappij""",
     },
     {
       "name": """Nederlandsche
-Rhijnspoorweg-Maatschappij""",
+Rhijnspoorweg-
+Maatschappij""",
       "token": "NRS",
       "token_top": "0.804, 0.522, 0.247",
       "token_bottom": "0.804, 0.522, 0.247",
@@ -90,7 +91,8 @@ Staatslijn C: Meppel - Groningen.""",
 railway company in the Netherlands""",
     },
     {
-      "name": """Zuid-Hollandsche Electrische
+      "name": """Zuid-Hollandsche
+Electrische
 Spoorweg-Maatschappij""",
       "token": "ZHESM",
       "token_top": "0.129, 0.369, 0.129",
@@ -736,7 +738,7 @@ company is capitalised at the new rate."""
   type_colour = transparent
 
 {% for company in companies %}
-  [[{{ company.token }}1]]
+  [[{{ company.token }}]]
     token_bottom_colour = {{ company.token_bottom }}
     token_colour = ${WHITE}
     token_top_colour = {{ company.token_top }}

@@ -10,6 +10,7 @@ pushd build
   cp ../1839-Papers.xxp ./
   cp ../README.txt ./
   cp ../M39.pdf ./1839-Map.pdf
+  cp ../P39.pdf ./1839-Tiles.pdf
   for file in *.ps
   do
     ps2pdf $file
