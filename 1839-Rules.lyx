@@ -457,6 +457,11 @@ Place the map and foreign charters where they can be easily seen and accessed
 \end_layout
 
 \begin_layout Itemize
+Place the round marker on the round track in the upper right corner of the
+ map.
+\end_layout
+
+\begin_layout Itemize
 Place the 
 \begin_inset Quotes eld
 \end_inset
@@ -465,7 +470,7 @@ IPO
 \begin_inset Quotes erd
 \end_inset
 
- card in the upper right corner of the map, over the 
+ card in the upper leftcorner of the map, over the 
 \noun on
 Noordzee
 \noun default
@@ -660,7 +665,7 @@ Discard the remaining brown and blue private companies from the game.
 
 \begin_layout Itemize
 Arrange the remaining green, blue and brown private company cards conveniently
- for the auction.
+ for the private auction.
 \end_layout
 
 \begin_layout Itemize
@@ -992,7 +997,8 @@ There then follows an alternating series of stock rounds interspersed by
 
 \begin_deeper
 \begin_layout Itemize
-The round marker is used to track of the game's progress through the rounds.
+The round marker and round track can be used to track of the game's progress
+ through the rounds.
 \end_layout
 
 \end_deeper
@@ -4504,6 +4510,23 @@ name "par:Track-restrictions:"
 \end_layout
 
 \begin_layout Itemize
+Track placement and upgrades are 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+permissive
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
 After placing or upgrading a track tile the placing company must be able
  to trace a continuous line of track from one of its station markers to
  a line of track on the placed track tile without:
@@ -4555,6 +4578,7 @@ Runs to the edge of a red off-board hexagon which doesn't have a black triangle/
 arrow to indicate a continuation for the track.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 A company placing a track tile on a river hexagon which has not previously
