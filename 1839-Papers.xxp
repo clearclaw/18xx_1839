@@ -318,11 +318,11 @@ Dividend: Half-pay total income."""
         {% endif %}
       desc = {{ value }}
         {% if not value % 50 %}
-      tile_colour = ${L_BLUE}
+      tile_colour = ${P_GREEN}
         {% elif not value % 10 %}
-      tile_colour = ${L_RED}
+      tile_colour = ${P_RED}
         {%elif not value % 5 %}
-      tile_colour = ${L_YELLOW}
+      tile_colour = ${P_YELLOW}
         {% else %}
       tile_colour = ${WHITE}
         {% endif %}

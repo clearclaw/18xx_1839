@@ -6,7 +6,7 @@ mkdir -p build
 pushd build
   mv ../1839-Rules.pdf ./
   xxpaper ../1839-Papers.xxp $*
-  \rm market_*-nooutline*
+  \rm market_*-nooutline* || true
   cp ../1839-Papers.xxp ./
   cp ../README.txt ./
   cp ../M39.pdf ./1839-Map.pdf
