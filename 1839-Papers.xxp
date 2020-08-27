@@ -359,14 +359,27 @@ Dividend: Half-pay total income."""
       tile_colour = ${L_BROWN}
       tile_stroke_colour = ${BLACK}
 
-  [[sheet1]]
-    tile_colour = ${WHITE}
-
 {% set stock_values = [55, 56, 59, 62, 67, 72, 80, 89, 101, 116, 135, 160, 192,
                        233, 287, 359, 454, 584, 761, 1000, ] %}
-{% for ndx in range (stock_values | count) %}
-  {% set value = stock_values[ndx] %}
+{% set page_size = 14 %}
+{% set stock_count = stock_values | count %}
+{% set blocks = ((stock_count + page_size - 1) / page_size) | int %}
+{% for sheet in range (blocks) %}
+  [[sheet{{ sheet + 1 }}]]
+    tile_x = 44
+    num_across_x = {{ page_size }}
+    tile_colour = ${WHITE}
+
+  {% for ndx in range (page_size) %}
+    {% set index = (sheet * page_size) + ndx %}
     [[[tile_{{ ndx + 1 }}.1]]]
+    {% if index >= stock_count %}
+    tile_colour = ${WHITE}
+    tile_stroke_colour = ${WHITE}
+    desc = ""
+      {% continue %}
+    {% endif %}
+    {% set value = stock_values[index] %}
       desc = {{ value }}
       {% if value >= 67 and value <= 80%}
       tile_colour = ${L_YELLOW}
@@ -379,7 +392,10 @@ Dividend: Half-pay total income."""
       {% elif value == 1000 %}
       tile_colour = ${L_RED}
       {% endif %}
+  {% endfor %}
 {% endfor %}
+
+
 
 [private]
 
@@ -802,22 +818,21 @@ company is capitalised at the new rate."""
 
     [[[tile_1.12]]]
       token_count = 4
-      LIGHT = ${SAVED_LIGHT}
-      DARK = ${SAVED_DARK}
-      token_name = SAVED
+      token_top_colour = ${L_GRAY}
       token_bottom_colour = ${BLACK}
+      token_name = SAVED
 
     [[[tile_1.13]]]
       token_count = 1
-      LIGHT = ${ROUND_LIGHT}
-      DARK = ${ROUND_DARK}
+      token_top_colour = ${ORANGE}
+      token_bottom_colour = ${M_BLUE}
       token_name = ROUND
-      token_bottom_colour = ${LIGHT}
 
     [[[tile_1.14]]]
       token_count = 4
-      LIGHT = ${WHITE}
-      DARK = ${WHITE}
+      token_top_colour = ${WHITE}
+      token_bottom_colour = ${WHITE}
+      token_colour= ${ORANGE}
       token_name = NFLM
 
 [train]
