@@ -6,11 +6,11 @@
 \origin unavailable
 \textclass article
 \begin_preamble
-%\usepackage{draftwatermark}
-%\SetWatermarkText{\textsc{Prototype}}
-%\SetWatermarkColor[rgb]{0.8,0.9,0.8 }
-%\SetWatermarkFontSize{1cm}
-%\SetWatermarkScale{5}
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{Prototype}}
+\SetWatermarkColor[rgb]{0.8,0.9,0.8 }
+\SetWatermarkFontSize{1cm}
+\SetWatermarkScale{5}
 \usepackage[missing=Help!,notags={No tags?},dirty=dirty]{gitinfo2}
 
 \PassOptionsToPackage{UKenglish}{babel}
@@ -138,10 +138,6 @@ tabs-within-sections
 \begin_layout Author
 
 \noun on
-1839
-\begin_inset Newline newline
-\end_inset
-
 English Rules
 \begin_inset Newline newline
 \end_inset
@@ -157,23 +153,6 @@ Game design: J C Lawrence
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-\begin_inset Quotes eld
-\end_inset
-
-Travels safely by rail quickly and comfortably
-\begin_inset Quotes erd
-\end_inset
-
- - 
-\emph default
-promotional poster probably from 1932 by Nicolaas van de Vecht
-\emph on
-.
 \end_layout
 
 \begin_layout Standard
@@ -308,7 +287,7 @@ Eight 10% share certificates.
 
 \end_deeper
 \begin_layout Itemize
-12 private companies (2 green, 5 blue, 5 brown, 4 red).
+16 private companies (2 green, 5 blue, 5 brown, 4 red).
 \end_layout
 
 \begin_layout Itemize
@@ -485,11 +464,15 @@ brown private company.
 
 \end_deeper
 \begin_layout Itemize
-Place 3 
+(
+\emph on
+3-player and 4-player games only
+\emph default
+) Place 3 
 \begin_inset Quotes eld
 \end_inset
 
-SAVED
+SAVE
 \begin_inset Quotes erd
 \end_inset
 
@@ -884,7 +867,11 @@ Unlimited
 \begin_inset Text
 
 \begin_layout Plain Layout
-N/A ƒ250
+N/A
+\begin_inset Newline newline
+\end_inset
+
+ƒ250
 \end_layout
 
 \end_inset
@@ -1566,8 +1553,8 @@ reference "tab:Game-Phases"
 \end_layout
 
 \begin_layout Itemize
-Additional par prices, track tile types and other changes accompany some
- game phase changes (see 
+Additional track tile types and other changes accompany some game phase
+ changes (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Game-Phases"
@@ -1587,9 +1574,9 @@ and sets of Operating Rounds
 \noun on
  
 \noun default
-continues until the end of the game (a player is agreed to have won, a player
- bankrupts, a stock price reaches ƒ500, or a complete set of Operating Rounds
- is finished in purple phase) (see 
+continues until the end of the game (a player is agreed to have won, all
+ but one player bankrupts, a stock price reaches ƒ500, or a complete set
+ of Operating Rounds is finished in purple phase) (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Game-End"
@@ -1611,8 +1598,8 @@ reference "sec:Game-End"
 \end_layout
 
 \begin_layout Itemize
-The holdings of players, public companies and systems are public information
- and must be clearly displayed and visible to all players at all times.
+The holdings of players, public companies are public information and must
+ be clearly displayed and visible to all players at all times.
 \end_layout
 
 \begin_layout Section
@@ -1690,29 +1677,10 @@ or:
 \end_layout
 
 \begin_layout Itemize
-(
-\emph on
-3 & 4 player games only
-\emph default
-) None of the other players could afford any of the remaining private companies
+None of the other players could afford any of the remaining private companies
  at the start of the active player's turn, and the active player can afford
  one or more of the remaining private companies that they have not discounted
  on that turn.
-\end_layout
-
-\begin_layout Standard
-or:
-\end_layout
-
-\begin_layout Itemize
-(
-\emph on
-2-player games only
-\emph default
-) None of the other players could afford any of the remaining private companies
- at the start of the active player's turn, and the active player can afford
- one or more of the remaining private companies that they have not discounted
- on that turn and they have not purchased a private company on this turn.
 \end_layout
 
 \end_deeper
@@ -1723,8 +1691,8 @@ Player purchases are limited to their available cash.
 \end_layout
 
 \begin_layout Itemize
-When a brown private company is purchased, the assigned Founding Public
- Company must immediately be parred on the Major Stock Market (see 
+When a brown private company is purchased, the assigned founding public
+ company must immediately be parred on the Major Stock Market (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Stock-Market-Overview"
@@ -1904,8 +1872,7 @@ The player number cards of the other colour will determine the player order
 
 \end_deeper
 \begin_layout Itemize
-At the end of each Stock Round the stock prices of floated public companies
- with:
+At the end of each Stock Round the stock prices of public companies with:
 \end_layout
 
 \begin_deeper
@@ -1999,20 +1966,9 @@ reference "subsec:Company-directors"
 In Stock Rounds other than the first Stock Round following the private auction.
 \end_layout
 
-\begin_layout Itemize
-Of public companies that have been parred (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Starting-or-floating"
-
-\end_inset
-
-).
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
-The sale price for sold shares for public companies floated in an earlier
+The sale price for sold shares for public companies floated before this
  Stock Round is the current stock price per share.
  Otherwise the sale price is the stock price next to the left from the current
  stock price on that Stock Market, or if already at the left end of that
@@ -2026,8 +1982,8 @@ The sale process:
 \begin_deeper
 \begin_layout Enumerate
 The selling player announces the shares they will be selling (which public
- companies and the share counts being sold) and receives the sale price
- of the share(s) in cash from the bank.
+ companies and in what order) and receives the sale price of the share(s)
+ in cash from the bank.
 \end_layout
 
 \begin_layout Enumerate
@@ -2059,9 +2015,8 @@ noprefix "false"
 
 \begin_deeper
 \begin_layout Itemize
-The company must have been floated, must have sufficient treasury to pay
- for all the shares of the company being sold and must redeem all the shares
- being sold at that time.
+The company must have sufficient treasury to pay for all the shares of the
+ company being sold and must redeem all the shares being sold at that time.
 \end_layout
 
 \end_deeper
@@ -2176,13 +2131,9 @@ They may buy certificates of that public company in future Stock Rounds.
 \end_deeper
 \begin_layout Itemize
 The purchase price for share certificates is the number of shares represented
- by the certificate, multiplied by the current stock price of that company.
-\end_layout
-
-\begin_layout Itemize
-The purchase price is paid to the bank for shares bought from the IPO or
- Bank Pool and to that company treasury for shares bought from a company
- treasury.
+ by the certificate, multiplied by the current stock price of that company
+ and is paid to the bank for shares bought from the IPO or Bank Pool and
+ to that company treasury for shares bought from a company treasury.
 \end_layout
 
 \begin_layout Subsection
@@ -2254,8 +2205,8 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
-On a player's turn during a Stock Round, a company they direct can buy any
- or all of its own shares from the Bank Pool.
+On a player's turn during a Stock Round, a company they direct can redeem
+ any or all of its own shares from the Bank Pool.
 \end_layout
 
 \begin_deeper
@@ -2303,6 +2254,34 @@ The first available share certificate of a public company is always the
  director's certificate (2 shares, 20%, one certificate).
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Players cannot buy the director's certificate of a public company from the
+ IPO if they have nationalised a public company in the immediately preceding
+ set of Operating Rounds (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Operating-round-General"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Nationalisation-overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 The director's certificate of a public company can be bought from the IPO
  by:
@@ -2354,6 +2333,10 @@ Paying twice that value to the bank and taking the director's share certificate.
 \emph on
 If the public company is not a founding public company
 \emph default
+ 
+\emph on
+that has been nationalised
+\emph default
 ) Reserve two home station hexagons:
 \end_layout
 
@@ -2365,7 +2348,7 @@ Both hexagons must have a currently available and unreserved location for
 
 \begin_layout Itemize
 No more than one of the two hexagons can be an OO hexagon or be a big city
- (Amsterdam, Breda, Haarlem, Rotterdamn, or Utrecht, see 
+ (Amsterdam, Breda, Haarlem, Rotterdam, or Utrecht, see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Map-Explanation"
@@ -2388,7 +2371,7 @@ Mark both hexagons with that public company's station marker placed near
 \begin_layout Itemize
 After the 20% director's certificate of a public company has been parred
  and bought, the remaining shares of the public company are available for
- purchase in subsequent turns.
+ purchase in the normal manner.
 \end_layout
 
 \begin_layout Itemize
@@ -2638,7 +2621,7 @@ noprefix "false"
 
 \begin_layout Itemize
 A public company that pays for a red private company with a director's contribut
-ion necessarily ends its operations with no money in its treasury.
+ion necessarily begins its own operations with no money in its treasury.
 \end_layout
 
 \begin_layout Subsection
@@ -2709,8 +2692,8 @@ At the end of the Operating Round the upside-down stock price markers are
  turned face-up so that the bottom face-down marker becomes the top face-up
  marker.
  The result is that public companies sharing a space in the stock price
- chart operate in the order in which their share markers arrived at that
- space.
+ chart operate in the order in which their stock price markers arrived at
+ that space.
 \end_layout
 
 \begin_layout Itemize
@@ -2761,6 +2744,24 @@ reference "tab:Public-Companies"
 \end_layout
 
 \begin_layout Enumerate
+(
+\emph on
+If a Local Public Company and the first time the company is operat
+\emph default
+ing) An L-train is given to the Local Public Company (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:L-trains"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
 
 \emph on
 (Optional)
@@ -2801,6 +2802,22 @@ reference "subsec:Run-train(s)"
 ).
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Discard any trains with SAVE markers from the game (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Nederlandsche-Fabriek-van"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Pay or withhold dividends (see 
 \begin_inset CommandInset ref
@@ -2870,14 +2887,7 @@ reference "subsec:Private-Companies"
 \end_layout
 
 \begin_layout Itemize
-The next public company in operating order (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:company-operating-order"
-
-\end_inset
-
-) then operates (see 
+The next public company in operating order then operates (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:company-operating-order"
@@ -2935,8 +2945,8 @@ reference "sec:Game-Phases"
 \end_inset
 
 ).
- A public cannot upgrade two track tiles or hexagons in the same Operating
- Round.
+ A public company cannot do two upgrades in the same Operating Round or
+ upgrade the a yellow track tile it placed in the same Operating Round .
 \end_layout
 
 \begin_deeper
@@ -2979,6 +2989,21 @@ reference "subsec:Private-Companies-Overview"
 ).
 \end_layout
 
+\begin_layout Itemize
+Some hexagon edges are blocked and track connections may not be made across
+ them before the appropriate game phase (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Subsubsection
 Place or swap station marker(s) 
 \begin_inset CommandInset label
@@ -3007,17 +3032,8 @@ A public company cannot place:
 
 \begin_deeper
 \begin_layout Itemize
-More or place than one station marker, not counting its home station(s),
- per Operating Round.
- A private company special power cannot be used by a public company to place
- a second station marker in an Operating Round (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Saleable-private-companies"
-
-\end_inset
-
-).
+More than one station marker, not counting its home station(s), per Operating
+ Round.
 \end_layout
 
 \begin_layout Itemize
@@ -3046,12 +3062,140 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
-A station marker in the last available city circle of a hexagon that is
- also the home station of a public company, if that company has not already
- operated and placed its home station.
+A station marker in a city all of whose open station locations have been
+ reserved by companies that haven't yet floated or operated (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company has home stations locations reserved in either
+ but not both of Arhem (I16) and Venlo (K16).
+ If the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ has not yet operated and placed its home stations, other public companies
+ may reserve home stations and may place station markers in Arhem (I16)
+ and Venlo (K16) so long as an open city circle remains for
+\end_layout
+
+\begin_layout Itemize
+Station markers may be placed in or moved to Arhem (I16) and Venlo (K16)
+ prior the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company first operating and placing its home stations (see
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) if an empty city circle is left in one of the two of them for the the
+ 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS) 
+\noun default
+home station
+\noun on
+.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Subparagraph
+
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ home stations
+\begin_inset CommandInset label
+LatexCommand label
+name "NRS-homes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company has home stations reservations in Utrecht (I12)
+ and either of Arhem (I16) and Venlo (K16) (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+When the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company operates for the first time, it must place a home
+ station in Utrecht (I12) and the director's choice of either Arhem (I16)
+ or Venlo (K16) or whichever is available (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Other public companies may place stations markers in Arhem (I16) and Venlo
+ (K16) so long as an open station location remains available in either Arhem
+ (I16) or Venlo (K16) for the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company's home station reservation.
+\end_layout
+
 \begin_layout Paragraph
 Place a station marker
 \begin_inset CommandInset label
@@ -3087,8 +3231,18 @@ s line of track to a previously placed station marker of that company:
 \begin_deeper
 \begin_layout Itemize
 Without passing through a city all of whose station-marker spaces are filled
- with other companies' station markers and/or (major public companies only)
- government station markers.
+ with other companies' station markers and/or (Major Public Companies only)
+ government station markers (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -3145,6 +3299,24 @@ Both public company directors must agree to the swap.
 Swap the locations of the two station markers.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+If the swap results in a public company with two station markers in the
+ same hexagon, the station marker in that hexagon that wasn't swapped is
+ removed and replaced with a government station marker (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Pay a fee to the bank equal to the revenue of the location the acting company's
  station marker moved to, multiplied by the number of station markers that
@@ -3202,8 +3374,23 @@ name "subsec:Pay-or-withhold"
 
 \begin_layout Itemize
 The director of a public company decides if the company's total revenue
- is paid out in dividends to its shareholders or withheld in the company's
- treasury , or a half-dividend is paid.
+ is paid out in dividends to its shareholders, withheld in the company's
+ treasury or a half-dividend is paid.
+\end_layout
+
+\begin_layout Itemize
+Local Public Companies can only withhold or pay half dividends prior to
+ blue phase (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Phases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -3223,8 +3410,18 @@ Shares in the Bank Pool pay their fraction of the total revenue as a dividend
 \end_layout
 
 \begin_layout Itemize
-Shares in the treasury of a public company pay their dividend to the system's
- treasury (see ).
+Shares in the treasury of a public company pay their dividend to the company's
+ treasury (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Redeeming-shares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -3248,7 +3445,8 @@ If a half-dividend is paid:
 
 \begin_deeper
 \begin_layout Itemize
-Half of the total revenue is paid from the bank to the company treasury.
+Half of the total revenue is paid from the bank to the company treasury,
+ rounding down to a multiple of ten.
 \end_layout
 
 \begin_layout Itemize
@@ -3273,7 +3471,7 @@ No dividend is paid for shares in the IPO.
 
 \end_deeper
 \begin_layout Itemize
-Paying or withholding dividends affects the company's stock price (see 
+Dividends can affect the company's stock price (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Stock-price-movement"
@@ -3407,7 +3605,17 @@ reference "sec:Game-Phases"
 
 \begin_deeper
 \begin_layout Itemize
-Companies can nationalise when trains rust (see ).
+Companies can nationalise when trains rust (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-company-nationalisation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
@@ -4424,8 +4632,10 @@ Stock prices on the Local Stock Market can move onto the Major Stock Market.
 \end_layout
 
 \begin_layout Itemize
-A stock price on the Local Stock Market that moves right from ƒ88 moves
- to ƒ101 on the Major Stock Market or further right as applicable (see 
+If a stock price is to be moved right multiple times on the Local Stock
+ Market and passes ƒ88, then the stock price will continue moving right
+ the remaining number of times after the move from ƒ88 to ƒ101 onto the
+ Major Stock Market (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Stock-price-movement"
@@ -4438,11 +4648,23 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 That company is now a Major Public Company and it and its assets are subject
- to different rules (see ).
+ to different rules (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Public Companies with stock prices on the Local Stock Market are Local Public
@@ -4471,7 +4693,7 @@ noprefix "false"
 
 \end_inset
 
-)..
+).
 \end_layout
 
 \begin_layout Itemize
@@ -4739,7 +4961,7 @@ Private companies are represented by a single private company certificate,
 \begin_layout Itemize
 Public companies have shares that players may purchase and sell at a share
  price that's tracked on one of the Stock Markets, and can build track,
- place station markers, buy private companies and trains, run trains, and
+ place station markers, buy private companies and trains, run trains and
  pay or withhold dividends.
 \end_layout
 
@@ -4788,10 +5010,6 @@ operate
 \end_inset
 
  and do not lay track or buy or run trains.
-\end_layout
-
-\begin_layout Itemize
-Private companies are discarded from the game when they close.
 \end_layout
 
 \begin_layout Itemize
@@ -4863,7 +5081,8 @@ The owning company may use the special power of the private company, if
 
 \end_deeper
 \begin_layout Itemize
-Brown private companies cannot be bought by public companies (see 
+Brown and red private companies cannot be bought by public companies (see
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Unsaleable-private-companies"
@@ -4874,30 +5093,30 @@ reference "par:Unsaleable-private-companies"
 \end_layout
 
 \begin_layout Itemize
-Some private companies block specific hexagons on the map.
- Track tiles cannot be built or upgraded at those hexagons by a public company
- until the matching private company has been purchased by a public company
- or closed.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
+The 
 \noun on
 Het Laantje van der Gaag
 \noun default
- blocks G19.
-\end_layout
-
-\begin_layout Itemize
-
+ green private company blocks the H7 hexagon on the map.
+ Track tiles cannot be built or upgraded at that hexagon by a public company
+ until the 
 \noun on
-Rijkswaterstaat
+Het Laantje van der Gaag
 \noun default
- blocks D10 and X57.
+ green private company has been purchased by a public company or closed
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Het-Laantje-van"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Private companies are discarded from the game when they close.
 \end_layout
@@ -4950,7 +5169,7 @@ Revenue: ƒ10
 \end_layout
 
 \begin_layout Description
-Blocks: G19
+Blocks: H7
 \end_layout
 
 \begin_layout Description
@@ -4961,7 +5180,7 @@ Closes: When power used or the start of red phase.
 Power: The owning public company may place an additional yellow track tile
  (all terrain costs or upgrade costs must be paid) in addition to the public
  company's normal track lay for ƒ20.
- If the laid tile is at G19, then there is no terrain cost.
+ If the laid tile is at H7, then there is no terrain cost.
 \end_layout
 
 \begin_layout Description
@@ -5003,14 +5222,25 @@ Closes: When power used or the start of red phase.
 
 \begin_layout Description
 Power: Owning public company may place or upgrade a tile for ƒ80 at Arnhem
- (K16) or Venlo (K18) as their yellow track lay or upgrade respectively
+ (I16) or Venlo (K16) as their yellow track lay or upgrade respectively
  and may additionally place a station marker in an empty and unreserved
  city location on that tile for free instead of their normal station placement.
 \end_layout
 
 \begin_layout Description
 Use: Power may be used during the owning company's track build and instead
- of the owning public company's station marker placement.
+ of the owning public company's station marker placement in that Operating
+ Round (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Place-station-marker"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Paragraph
@@ -5078,8 +5308,9 @@ noprefix "false"
 \end_inset
 
 If the station marker is moved to a hexagon which already contains one of
- the company's station markers, then the station marker already on the hexagon
- is removed and a government station marker put in its place (see 
+ the company's station markers, then the station marker already on that
+ hexagon is removed and a government station marker put in its place (see
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Government-railway"
@@ -5093,7 +5324,36 @@ noprefix "false"
 \end_layout
 
 \begin_layout Description
-Use: Instead of the owning public company's station market placement.
+Use: Instead of the owning public company's station market placement in
+ that Operating Round (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Place-station-marker"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+Note: In a 2-player game the
+\noun on
+ Kabinet-Rochussen
+\noun default
+ blue private company is discarded from the game and not used (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Setup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subparagraph
@@ -5134,25 +5394,28 @@ Power: Private company comes with three
 \begin_inset Quotes eld
 \end_inset
 
-SAVED
+SAVE
 \begin_inset Quotes erd
 \end_inset
 
  markers.
- Other public companies may buy SAVED markets from the owning public company,
- one per company per Operating Round, for ƒ150 each, paid to the treasury
- of the owning public company.
- The purchasing company must immediately assign the bought SAVED marker
- to a train, limit one per train.
- The owning company does not get a SAVED marker.
+ Other public companies may buy SAVE markers from the owning public company,
+ one marker per company per Operating Round, for ƒ150 each, paid to the
+ treasury of the owning public company.
+ The purchasing company must immediately assign the bought SAVE marker to
+ a train, limit one per train.
+ The owning company does not get a SAVE marker.
 \begin_inset Newline newline
 \end_inset
 
-A train with a SAVED marker will discard its SAVED marker instead of rusting,
- can be run in the next Operating Round, and will be discarded from the
- game after its owning public company finishes operating in the next Operating
- Round.
- Trains with a SAVED marker cannot be bought between companies.
+A train with a SAVE marker can run one more time after rusting.
+ Both the train and the SAVE marker are discarded from the game at that
+ time.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Trains with a SAVE marker cannot be bought between companies.
 \end_layout
 
 \begin_layout Description
@@ -5249,7 +5512,7 @@ Power: When closed coverts to ƒ800 in cash taken from the bank and a
 \noun on
 Rotterdamsche Bank
 \noun default
- red private company, both in the same location as this brown private company
+ red private company, both in the same location as this blue private company
  (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5304,7 +5567,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Description
-Use: In a 3-player game the
+Use: N/A
+\end_layout
+
+\begin_layout Description
+Note: In a 3-player game the
 \noun on
  Crédit Mobilier
 \noun default
@@ -5355,7 +5622,7 @@ Closes: At the start of red phase.
 \end_layout
 
 \begin_layout Description
-Power: Comes with two shares of the Founding Public Company associated with
+Power: Comes with two shares of the founding public company associated with
  the 
 \noun on
 Rijkswaterstaat
@@ -5408,33 +5675,62 @@ There are 5 brown private companies:
 
 \noun on
 August Borsig
+\noun default
+ (face value: ƒ260)
 \end_layout
 
 \begin_layout Itemize
 
 \noun on
 Cornelis Outshoorn
+\noun default
+ (face value: ƒ270)
 \end_layout
 
 \begin_layout Itemize
 
 \noun on
 Lodewijk Pincoffs
+\noun default
+ (face value: ƒ260)
 \end_layout
 
 \begin_layout Itemize
 
 \noun on
 Ketwich & Voombergh
+\noun default
+ (face value: ƒ270)
 \end_layout
 
 \begin_layout Itemize
 
 \noun on
 Rijkwaterstaat
+\noun default
+ (face value: ƒ290)
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+In a 2-player game the 
+\noun on
+Lodewijk Pincoffs 
+\noun default
+and 
+\noun on
+Ketwich & Voombergh
+\noun default
+ brown private companies are discarded from the game and not used (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Setup"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Itemize
 In a 3-player game the 
 \noun on
@@ -5485,11 +5781,7 @@ Face
 \begin_inset space ~
 \end_inset
 
-value: ƒ280 (ƒ300 for the 
-\noun on
-Rijkswaterstaat
-\noun default
-)
+value: ƒ260, ƒ270 or ƒ290 (varies by company)
 \end_layout
 
 \begin_layout Description
@@ -5530,8 +5822,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Description
-Power: When closed the owner of the brown private company may take any single
- share of a parred company from the IPO.
+Power: When closed, the owner of the brown private company may take any
+ single share of a parred public company from the IPO for which they currently
+ hold less than 60%.
+ If there no shares that can be legally taken, or the owner of the brown
+ private company declines to take a share from the IPO, then they are given
+ ƒ40 from the bank.
 \end_layout
 
 \begin_layout Description
@@ -5539,8 +5835,15 @@ Use: None.
 \end_layout
 
 \begin_layout Description
-Note: When purchased during the private auction comes with the 20% director's
- certificate and a 10% share certificate of the assigned public company.
+Note: Comes with the 20% director's certificate and a 10% share certificate
+ of the assigned public company (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Setup"
+
+\end_inset
+
+).
  The buying player must immediately set the par price for the matching founding
  public company to any par price on the Major Stock Market (see 
 \begin_inset CommandInset ref
@@ -5555,27 +5858,15 @@ noprefix "false"
 )
 \noun on
 .
- 
 \noun default
+
+\begin_inset Newline newline
+\end_inset
+
 An unsaleable brown private company cannot be purchased by a public company.
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-In a 3-player game the 
-\noun on
-Ketwich & Voombergh
-\noun default
- brown private company is discarded from the game and not used (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Game-Setup"
-
-\end_inset
-
-).
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -5616,7 +5907,7 @@ value: ƒ0
 \end_layout
 
 \begin_layout Description
-Revenue: ƒ-100
+Revenue: -ƒ100
 \end_layout
 
 \begin_layout Description
@@ -5638,7 +5929,17 @@ Use: None.
 \begin_layout Description
 Note: At the start of each Operating Round the owner of each red private
  company must pay the red private company's revenue (ƒ100) to the bank (see
- ).
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Paying-red-private"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection
@@ -5720,7 +6021,7 @@ Founding Public Company
 \begin_inset Text
 
 \begin_layout Plain Layout
-Major Public Company
+Public Company
 \end_layout
 
 \end_inset
@@ -6840,12 +7141,25 @@ reference "subsec:Starting-or-floating"
 \end_inset
 
 ) have a stock price, tracked on the stock market with a stock price marker
- (see ).
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Stock-price-movement"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
-The first eight listed public companies (ASM, HIJSM, NBDS, NCS, NRS, NWS,
- SS, ZHESM) are Founding Public Companies.
+The eight non-Spoorweg-Maatchappij public companies (
+\noun on
+ASM, HIJSM, NBDS, NCS, NRS, NWS, SS, ZHESM
+\noun default
+) are initially Founding Public Companies.
  They:
 \end_layout
 
@@ -6864,6 +7178,24 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+The 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company has two home stations, one in Utrecht (I12) and
+ one in either Arhem (I16) or Venlo (K16).
+ When the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ operates for the first time, it must place its second home station in whichever
+ of Arhem (I16) or Venlo (K16) is still available, or choice of either if
+ both are still available.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Must be parred on the Major Stock Market as Major Public Companies (see
  
@@ -6876,7 +7208,7 @@ noprefix "false"
 
 \end_inset
 
-) the first time they are parred.
+).
 \end_layout
 
 \begin_layout Itemize
@@ -6894,8 +7226,9 @@ noprefix "false"
 ).
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-After being nationalised (see 
+After a founding public company is nationalised (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Public-company-nationalisation"
@@ -6909,6 +7242,10 @@ noprefix "false"
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+Are no longer founding public companies, but are just public companies.
+\end_layout
+
 \begin_layout Itemize
 Can subsequently be parred as either Local or Major Public Companies on
  the Local or Major Stock Market.
@@ -6928,11 +7265,27 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Have 2 home stations and 3 place-able station markers.
+Their home station hexagons are selected and reserved when the company is
+ again parred (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Have two home stations and three place-able station markers.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 The 8 numbered 
@@ -7079,7 +7432,27 @@ The director's certificate can never be sold, only transferred to another
  player.
  Once a company has floated, there is always a player that owns the 20%
  director's certificate and is the director of the company until the company
- is nationalised or the game ends (see ).
+ is nationalised or the game ends (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-company-nationalisation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-End"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -7091,8 +7464,8 @@ If a player acquires shares such that they own a larger percentage of the
 \end_layout
 
 \begin_layout Itemize
-In order to transfer director control of a company via share sales or share
- donation (see 
+In order to transfer director control of a company via share sales (see
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Selling-shares"
@@ -7110,21 +7483,21 @@ Another player must own at least 20% of the company in order for the exchange
 
 \begin_layout Itemize
 The director's certificate must be exchanged for certificates of the player
- with the most shares of the company after the sale or donation, assigning
- control of the public company and its charter and assets to that player.
+ with the most shares of the company after the sale, assigning control of
+ the public company and its charter and assets to that player.
 \end_layout
 
 \begin_layout Itemize
-The previous director must sell or donate sufficient shares of the public
- company such that they own fewer shares of the public company than the
- new director after the sale.
+The previous director must sell sufficient shares of the public company
+ such that they own fewer shares of the public company than the new director
+ after the sale.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-In the case of a tie among other players for the most shares after the sale
- or donation, the next tied player in player number card order from the
- current director becomes the new director.
+In the case of a tie among other players for the most shares after the sale,
+ the next tied player in player number card order from the current director
+ becomes the new director.
 \end_layout
 
 \end_deeper
@@ -7208,6 +7581,32 @@ noprefix "false"
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Players cannot buy the director's certificate of a public company from the
+ IPO if they have nationalised a public company in the immediately preceding
+ set of Operating Rounds (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Operating-round-General"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Nationalisation-overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Paragraph
 Nationalisation process
 \begin_inset CommandInset label
@@ -7261,7 +7660,7 @@ Crédit Mobilier
 \noun default
  brown private company, then it and a 
 \noun on
-Rotterdamsch Bank
+Rotterdamsche Bank
 \noun default
  red private company certificate are given to the director of the company
  being nationalised (see 
@@ -7293,8 +7692,8 @@ The company charter is returned to the supply.
 \end_layout
 
 \begin_layout Enumerate
-If the nationalised company was a Founding Public Company, it is no longer
- a Founding Public Company for the rest of the game (see pub
+If the nationalised company was a founding public company, it is no longer
+ a founding public company for the rest of the game (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Public-Company-Overview"
@@ -7383,20 +7782,100 @@ Newly parred public companies may choose government station marker locations
 \begin_deeper
 \begin_layout Itemize
 When the company operates and places its home stations, government station
- markers can be replaced with the company's home stations (see ).
+ markers can be replaced with the company's home stations (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Place-a-station"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Swap-station-markers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Kabinet-Rochussen"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-When placing a station marker during an Operating Round, public companies
- may replace government station markers (that aren't reserved) with their
- own station marker (see ).
+When placing or moving a station marker during an Operating Round, public
+ companies may replace government station markers (that aren't reserved)
+ with their own station marker (see see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Place-a-station"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Kabinet-Rochussen"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
-Government station markers limit Major public company operations in the
- same manner as other public company station markers (see ) and do not limit
- Local Public Company operations (see ).
+Government station markers limit Major Public Company operations in the
+ same manner as other public company station markers and do not limit Local
+ Public Company operations (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Build-track"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Place-station-marker"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Run-train(s)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -7422,7 +7901,7 @@ name "subsec:Track-Tile-Overview"
 \end_layout
 
 \begin_layout Itemize
-There are yellow, green and brown track tiles.
+There are yellow, green, brown and gray track tiles.
 \end_layout
 
 \begin_layout Itemize
@@ -7544,7 +8023,8 @@ OO
 \begin_inset Quotes erd
 \end_inset
 
- but are otherwise the same as a normal city track tile.
+ and have a higher revenue but are otherwise the same as a normal city track
+ tile.
  Only OO city track tiles can be used on hexagons marked 
 \begin_inset Quotes eld
 \end_inset
@@ -7651,11 +8131,45 @@ After placing or upgrading a track tile the placing public company must
 \begin_layout Itemize
 Passing through a city with all of station-marker spaces filled with other
  public company's station markers or (for Major Public Companies ) government
- station markers.
+ station markers (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
 Crossing any hexagon-edge twice.
+\end_layout
+
+\begin_layout Itemize
+Crossing a dark brown barrier before dark brown phase (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Phases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
@@ -7741,7 +8255,7 @@ Starting in green phase:
 
 \begin_deeper
 \begin_layout Itemize
-public companies may upgrade yellow track tiles and yellow map hexagons
+Public companies may upgrade yellow track tiles and yellow map hexagons
  to green track tiles (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -7759,7 +8273,25 @@ Starting in brown phase:
 
 \begin_deeper
 \begin_layout Itemize
-public companies may also upgrade green track tiles to brown track tiles
+Public companies may also upgrade green track tiles to brown track tiles
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Game-Phases"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Starting in gray phase:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Public companies may also upgrade brown track tiles to gray track tiles
  (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -7894,8 +8426,8 @@ reference "subsec:Route-definitions-by-train-type"
 \end_layout
 
 \begin_layout Itemize
-Local public companies have different restrictions for their routes than
- major public companies (see 
+Local Public Companies have different restrictions for their routes than
+ Major Public Companies (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Public-Company-Overview"
@@ -7940,6 +8472,11 @@ R
 
 \end_deeper
 \begin_layout Itemize
+Off-board revenues can be counted towards a Major Public Company's revenue
+ for each of the Major Public Company's train routes that include it.
+\end_layout
+
+\begin_layout Itemize
 The number of trains a public company can own is controlled by the train
  limit (see 
 \begin_inset CommandInset ref
@@ -7952,9 +8489,9 @@ reference "subsec:Train-Limit"
 \end_layout
 
 \begin_layout Itemize
-Public companies with a route from one of their station markers to another
- revenue center (an off-board is insufficient) must own at least one train
- at the end of their turn in an Operating Round (see offboards & 
+Public companies with a route from one of their station markers to town
+ or city must own at least one train at the end of their turn in an Operating
+ Round (see off-boards & 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:General-Route-definition"
@@ -7986,14 +8523,14 @@ All the trains of a given colour must be bought from the supply before the
  trains of the next colour are available (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "subsec:Buy-train(s)"
+reference "tab:Game-Phases"
 
 \end_inset
 
  & 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "tab:Game-Phases"
+reference "subsec:Buy-train(s)"
 
 \end_inset
 
@@ -8025,6 +8562,52 @@ reference "subsec:Train-Limit"
 ).
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Trains with a SAVE marker are not removed when they rust, but after the
+ next time they run (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Nederlandsche-Fabriek-van"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Phases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+In purple phase, red trains:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+That have already run in an Operating Round are removed.
+\end_layout
+
+\begin_layout Itemize
+That have not yet run in an Operating Round are removed immediately after
+ they do run.
+\end_layout
+
+\begin_layout Itemize
+Cannot be bought between public companies.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Route definition 
 \begin_inset CommandInset label
@@ -8042,8 +8625,7 @@ A route is a single continuous line of track that:
 
 \begin_deeper
 \begin_layout Itemize
-Contains at least two revenue centers (town or city, not off-board) (see
- 
+Contains at least two revenue centers (town or city) (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Map-Explanation"
@@ -8065,8 +8647,9 @@ Local Public Companies cannot include off-boards in their routes; Major
 
 \begin_layout Itemize
 Off-boards at the ends of Major Public Company routes add to the total company
- revenue (once per train-route that includes them) but do not require train
- length to include them in the route.
+ revenue (once per train-route that includes them) and do require the route
+ to include crossing the hexagon edge to the off-board, but do not require
+ train length to include the off-board in the route.
 \end_layout
 
 \end_deeper
@@ -8084,7 +8667,18 @@ Can pass through a city with an open station marker location.
 \emph on
 Local Public Companies only
 \emph default
-) Can pass through a city containing a government station marker location.
+) Can pass through an otherwise blocked city that contains a government
+ station marker location (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -8104,8 +8698,17 @@ Can use multiple entirely separate lines of track on the same tile.
 
 \begin_deeper
 \begin_layout Description
-Note: Track tiles such as #16, #19, #20 etc and parts of #43, #44, #45 &
- #46 etc represent railway bridges and thus lines of track that do not intersect.
+Note: Plain track tiles such as #16, #19, #20 etc and parts of #43, #44,
+ #45 & #46 etc represent railway bridges and thus lines of track that do
+ not intersect.
+\end_layout
+
+\begin_layout Description
+Note: The intersections at the center of plain track tiles such as #80,
+ #81, #82, #83, #544, #545, and #546 allow a route to enter from any connected
+ edge and to leave by any other connected edge, and for #544, #545, and
+ #546, for two routes to traverse the tile, or one route the traverse the
+ tile twice as long as they don't cross the same hexagon edge twice.
 \end_layout
 
 \end_deeper
@@ -8131,7 +8734,17 @@ Use the same piece of track on a track tile more than once (no matter how
 \begin_layout Itemize
 Pass through a city that doesn't have an open station marker location and
  doesn't contain the public company's station marker and (Local Public Companies
- only) doesn't contain a Government station marker.
+ only) doesn't contain a Government station marker (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)..
 \end_layout
 
 \begin_layout Itemize
@@ -8162,6 +8775,12 @@ Off-board triangle connections are termini.
  proceed back onto the board via another.
 \end_layout
 
+\begin_layout Itemize
+The revenue of the Ruhrgebied (J17 & K18) off-board is equal to either the
+ largest revenue value on the route, or double the revenue of the off-board
+ at the other end of the route, which ever is the larger.
+\end_layout
+
 \begin_layout Subsection
 Running trains by train-type 
 \begin_inset CommandInset label
@@ -8174,6 +8793,17 @@ name "subsec:Route-definitions-by-train-type"
 \end_layout
 
 \begin_layout Subsubsection
+Train modifiers 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Train-modifiers"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
 \begin_inset Quotes eld
 \end_inset
 
@@ -8192,15 +8822,31 @@ name "subsec:L-trains"
 \end_layout
 
 \begin_layout Itemize
-Cannot be bought from the supply.
+Cannot be bought from the supply or be bought between companies (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Buy-train(s)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
-Cannot be bought between companies.
-\end_layout
+Can only be owned by Local Public Companies (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Itemize
-Can only be owned by Local Public Companies.
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -8212,9 +8858,29 @@ L
 \begin_inset Quotes erd
 \end_inset
 
- train of is given to Local Public Companies from the supply at the start
- of their first Operating Round: yellow in yellow phase, green in green
- phase, and blue in blue and light brown phases (see ).
+ train is given to Local Public Companies from the supply at the start of
+ their first Operating Round: yellow in yellow phase, green in green phase,
+ and blue in blue and light brown phases (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Game-Phases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Game-Phases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -8222,7 +8888,7 @@ If a Local Public Company become a Major Public Company, any L-train it
  owns is returned to the supply.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 \begin_inset Quotes eld
 \end_inset
 
@@ -8249,24 +8915,51 @@ R
 \end_inset
 
  trains can count cities and towns on their routes for revenue that other
- trains in the same company have already included in their routes.
-\end_layout
-
-\begin_layout Itemize
-Any red trains that have already run in an Operating Round are removed at
- the start of purple phase.
-\end_layout
-
-\begin_layout Itemize
-Red trains that have not yet run in an Operating Round are removed immediately
- after they do run in an Operating Round.
-\end_layout
-
-\begin_layout Itemize
-Red trains cannot be bought between public companies in purple phase.
+ trains in the same company have already included for revenue in their routes.
 \end_layout
 
 \begin_layout Subsubsection
+Red trains 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Red-trains"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In purple phase, red trains:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+That have already run in an Operating Round are removed.
+\end_layout
+
+\begin_layout Itemize
+That have not yet run in an Operating Round are removed immediately after
+ they do run.
+\end_layout
+
+\begin_layout Itemize
+Cannot be bought between public companies.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Train types
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Train-types"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
 
 \emph on
 N
@@ -8310,26 +9003,11 @@ N
 Revenue: The sum of all the revenue centers on the route whose revenues
  are not included in the routes of other trains owned by the company plus
  (Major Public Companies only) any off-boards of different colours at the
- ends of the routes.
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-Exception: The routes for 
-\begin_inset Quotes eld
-\end_inset
-
-R
-\begin_inset Quotes erd
-\end_inset
-
- trains can include revenue centers that are included in the routes of other
- trains owned by the company.
+ ends of the route.
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Subsubsection
+\begin_layout Paragraph
 2+1 trains 
 \begin_inset CommandInset label
 LatexCommand label
@@ -8359,7 +9037,7 @@ Revenue: The sum of all the revenue centers on the route that are not included
 \end_layout
 
 \end_deeper
-\begin_layout Subsubsection
+\begin_layout Paragraph
 N+ trains 
 \begin_inset CommandInset label
 LatexCommand label
@@ -8381,26 +9059,11 @@ The route for a N+ train cannot contain more than a total of N cities.
 Revenue: The sum of all the revenue centers on the route whose revenues
  are not included in the routes of other trains owned by the company plus
  (Major Public Companies only) any off-boards of different colours at the
- ends of the routes.
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-Exception: The routes for 
-\begin_inset Quotes eld
-\end_inset
-
-R
-\begin_inset Quotes erd
-\end_inset
-
- trains can include revenue centers that are included in the routes of other
- trains owned by the company.
+ ends of the route.
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Diesel trains 
 \begin_inset CommandInset label
 LatexCommand label
@@ -8421,24 +9084,9 @@ The route for a Diesel train may contain an unlimited number of revenue
 Revenue: The sum of all the revenue centers on the route whose revenues
  are not included in the routes of other trains owned by the company plus
  (Major Public Companies only) any off-boards of different colours at the
- ends of the routes.
+ ends of the route.
 \end_layout
 
-\begin_deeper
-\begin_layout Description
-Exception: The routes for 
-\begin_inset Quotes eld
-\end_inset
-
-R
-\begin_inset Quotes erd
-\end_inset
-
- trains can include revenue centers that are included in the routes of other
- trains owned by the company.
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Subsection
 Train limit
@@ -8467,15 +9115,23 @@ reference "sec:Game-Phases"
 
 \end_inset
 
- & 
+).
+ A public company can own trains up to the current train limit.
+\end_layout
+
+\begin_layout Itemize
+Rusted trains with SAVE markers do not count against the train limit (see
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "subsec:Systems"
+reference "par:Nederlandsche-Fabriek-van"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 ).
- A public company can own trains up to the current train limit.
 \end_layout
 
 \begin_layout Itemize
@@ -8485,7 +9141,7 @@ A public company that has not reached its train limit may buy trains that
 \end_layout
 
 \begin_layout Itemize
-Train limits are checked and enforced on all public companies as each trains
+Train limits are checked and enforced on all public companies as each train
  is bought.
 \end_layout
 
@@ -8524,6 +9180,11 @@ Yellow trains are available.
 \end_layout
 
 \begin_layout Itemize
+Dark brown barriers between map hexagons block track builds, station lays
+ and train routes.
+\end_layout
+
+\begin_layout Itemize
 Train limit is 4.
 \end_layout
 
@@ -8548,6 +9209,15 @@ Green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
+Dark brown barriers between map hexagons block track builds, station lays
+ and train routes.
+\end_layout
+
+\begin_layout Itemize
+Revenue centers with multiple values use the first (yellow) value.
+\end_layout
+
+\begin_layout Itemize
 Train limit is 4.
 \end_layout
 
@@ -8564,11 +9234,20 @@ Blue phase starts with the purchase of the first blue train.
 \end_layout
 
 \begin_layout Itemize
-Blue private companies may be bought by public companies.
+Green and blue private companies may be bought by public companies.
 \end_layout
 
 \begin_layout Itemize
 Green and yellow track tiles are available.
+\end_layout
+
+\begin_layout Itemize
+Dark brown barriers between map hexagons block track builds, station lays
+ and train routes.
+\end_layout
+
+\begin_layout Itemize
+Revenue centers with multiple values use the first (yellow) value.
 \end_layout
 
 \begin_layout Itemize
@@ -8592,11 +9271,25 @@ Light brown phase
 \end_layout
 
 \begin_layout Itemize
-Brown phase starts with the purchase of the first brown train.
+Brown phase starts with the purchase of the first light brown train.
 \end_layout
 
 \begin_layout Itemize
-Private companies may be bought by public companies.
+Green and blue private companies may be bought by public companies.
+\end_layout
+
+\begin_layout Itemize
+The 
+\noun on
+Fabriek van Rijtuigen en Spoorwagens J.
+ J.
+ Beijnes
+\noun default
+ blue private company converts to a light brown train.
+\end_layout
+
+\begin_layout Itemize
+Brown private companies close.
 \end_layout
 
 \begin_layout Itemize
@@ -8604,11 +9297,16 @@ Brown, green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
+Dark brown barriers between map hexagons block track builds, station lays
+ and train routes.
+\end_layout
+
+\begin_layout Itemize
 Revenue centers with multiple values use the second (brown) value.
 \end_layout
 
 \begin_layout Itemize
-All green trains are removed from the game.
+All green trains without a SAVE marker are removed from the game.
 \end_layout
 
 \begin_layout Itemize
@@ -8628,11 +9326,11 @@ Dark brown phase
 \end_layout
 
 \begin_layout Itemize
-Brown phase starts with the purchase of the first brown train.
+Brown phase starts with the purchase of the first dark brown train.
 \end_layout
 
 \begin_layout Itemize
-Private companies may be bought by public companies.
+Green and blue private companies may be bought by public companies.
 \end_layout
 
 \begin_layout Itemize
@@ -8640,15 +9338,20 @@ Brown, green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
+Dark brown barriers between map hexagons don't block track builds, station
+ lays and train routes.
+\end_layout
+
+\begin_layout Itemize
 Revenue centers with multiple values use the second (brown) value.
 \end_layout
 
 \begin_layout Itemize
-All blue trains are removed from the game.
+All blue trains without a SAVE marker are removed from the game.
 \end_layout
 
 \begin_layout Itemize
-Companies with a light brown or far brown train can nationalise.
+Companies with a light brown or dark brown train can nationalise.
 \end_layout
 
 \begin_layout Itemize
@@ -8676,11 +9379,16 @@ Brown, green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
-Revenue centers with multiple values use the second (brown) value.
+Dark brown barriers between map hexagons don't block track builds, station
+ lays and train routes.
 \end_layout
 
 \begin_layout Itemize
-All light brown trains are removed from the game.
+Revenue centers with multiple values use the third (red) value.
+\end_layout
+
+\begin_layout Itemize
+All light brown trains without a SAVE marker are removed from the game.
 \end_layout
 
 \begin_layout Itemize
@@ -8708,11 +9416,16 @@ Gray, brown, green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
-Revenue centers with multiple values use the second (brown) value.
+Dark brown barriers between map hexagons don't block track builds, station
+ lays and train routes.
 \end_layout
 
 \begin_layout Itemize
-All dark brown trains are removed from the game.
+Revenue centers with multiple values use the fourth (gray) value.
+\end_layout
+
+\begin_layout Itemize
+All dark brown trains without a SAVE marker are removed from the game.
 \end_layout
 
 \begin_layout Itemize
@@ -8740,11 +9453,20 @@ Gray, brown, green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
-Revenue centers with multiple values use the second brown value.
+Dark brown barriers between map hexagons don't block track builds, station
+ lays and train routes.
 \end_layout
 
 \begin_layout Itemize
-All red trains are removed from the game.
+Revenue centers with multiple values use the fourth (gray) value.
+\end_layout
+
+\begin_layout Itemize
+All red trains that have operated are removed from the game.
+\end_layout
+
+\begin_layout Itemize
+Any remaining red trains are removed after they next operate.
 \end_layout
 
 \begin_layout Itemize
