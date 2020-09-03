@@ -2342,13 +2342,24 @@ that has been nationalised
 
 \begin_deeper
 \begin_layout Itemize
-Both hexagons must have a currently available and unreserved location for
- a station marker.
+Both hexagons must either have a currently available and unreserved location
+ for a station marker, or contain a government station marker (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
 No more than one of the two hexagons can be an OO hexagon or be a big city
- (Amsterdam, Breda, Haarlem, Rotterdam, or Utrecht, see 
+ (Amsterdam (G10), Breda (K8), Haarlem (G8), Rotterdam (J7), or Utrecht
+ (I12), see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Map-Explanation"
@@ -2648,15 +2659,21 @@ reference "sec:Companies"
 
 \begin_deeper
 \begin_layout Itemize
-First all the floated companies on the Major Stock Market in descending
- order of stock prices, then all the floated companies on the Local Stock
- Market in descending order of stock prices.
+First all the floated companies on the Major Stock Market at the start of
+ that Operating Round in descending order of stock prices, then all the
+ floated companies on the Local Stock Market at the start of that Operating
+ Round in descending order of stock prices.
 \end_layout
 
 \begin_layout Itemize
 The stock price markers of public companies in the same space of the Stock
  Market are stacked to indicate the order in which they'll operate, from
  the top down.
+\end_layout
+
+\begin_layout Itemize
+The next company to operate is determined after each company completes its
+ operations.
 \end_layout
 
 \end_deeper
@@ -2720,10 +2737,11 @@ Public companies perform the following steps in order:
 \begin_layout Enumerate
 (
 \emph on
-If the first time the public company is operat
+If the first time the public company is operating
 \emph default
-ing) Place the company's home station marker(s) on its home station location(s)
- (see 
+) Place the company's home station marker(s) on its home station location(s),
+ placing them either in empty city circles or replacing a government station
+ marker on those hexagons, at the director's choice (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Starting-or-floating"
@@ -2740,7 +2758,27 @@ reference "tab:Public-Companies"
 
 \end_inset
 
-).
+ &
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "NRS-homes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+),
 \end_layout
 
 \begin_layout Enumerate
@@ -2906,6 +2944,135 @@ reference "sec:game-overview"
 \end_layout
 
 \begin_layout Subsubsection
+
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ home stations
+\begin_inset CommandInset label
+LatexCommand label
+name "NRS-homes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company has home stations reservations in Utrecht (I12)
+ and either of Arhem (I16) and Venlo (K16) (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+When the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company operates for the first time, it must place a home
+ station in Utrecht (I12) and the director's choice of either Arhem (I16)
+ or Venlo (K16) or whichever has an empty city circle or contains a government
+ station marker, at the director's choice (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Other public companies may place stations markers in Arhem (I16) and Venlo
+ (K16) so long as an open station location or city circle with a government
+ station marker remains available in either Arhem (I16) or Venlo (K16) for
+ the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ founding public company's home station reservation (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Station-marker-overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+If the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ has been nationalised, then its marked home station locations are no longer
+ reserved for the 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
 Build track
 \begin_inset CommandInset label
 LatexCommand label
@@ -3062,8 +3229,9 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
-A station marker in a city all of whose open station locations have been
- reserved by companies that haven't yet floated or operated (see 
+A station marker in a city all of whose open city circles or government
+ station marker locations have been reserved by companies that haven't yet
+ floated or operated (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Starting-or-floating"
@@ -3077,22 +3245,6 @@ noprefix "false"
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-The 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- founding public company has home stations locations reserved in either
- but not both of Arhem (I16) and Venlo (K16).
- If the 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- has not yet operated and placed its home stations, other public companies
- may reserve home stations and may place station markers in Arhem (I16)
- and Venlo (K16) so long as an open city circle remains for
-\end_layout
-
 \begin_layout Itemize
 Station markers may be placed in or moved to Arhem (I16) and Venlo (K16)
  prior the 
@@ -3110,53 +3262,15 @@ noprefix "false"
 
 \end_inset
 
-) if an empty city circle is left in one of the two of them for the the
- 
+) if an empty city circle or a government station marker is left in one
+ of the two of them for the 
 \noun on
 Nederlandsche Rhijnspoorweg-Maatschappij (NRS) 
 \noun default
-home station
-\noun on
-.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Subparagraph
-
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- home stations
-\begin_inset CommandInset label
-LatexCommand label
-name "NRS-homes"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-The 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- founding public company has home stations reservations in Utrecht (I12)
- and either of Arhem (I16) and Venlo (K16) (see 
+home station (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "subsec:Starting-or-floating"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- & 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Public-Company-Overview"
+reference "subsec:Government-railway"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3166,36 +3280,8 @@ noprefix "false"
 ).
 \end_layout
 
-\begin_layout Itemize
-When the 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- founding public company operates for the first time, it must place a home
- station in Utrecht (I12) and the director's choice of either Arhem (I16)
- or Venlo (K16) or whichever is available (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Public-Company-Overview"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-Other public companies may place stations markers in Arhem (I16) and Venlo
- (K16) so long as an open station location remains available in either Arhem
- (I16) or Venlo (K16) for the 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- founding public company's home station reservation.
-\end_layout
-
+\end_deeper
+\end_deeper
 \begin_layout Paragraph
 Place a station marker
 \begin_inset CommandInset label
@@ -3224,8 +3310,19 @@ reference "tab:Public-Companies"
 \end_layout
 
 \begin_layout Enumerate
-Place a station marker in an empty city circle that can trace a single continuou
-s line of track to a previously placed station marker of that company:
+Place a station marker in an empty city circle, or in place of a government
+ station marker that can trace a single continuous line of track to a previously
+ placed station marker of that company (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
 \end_layout
 
 \begin_deeper
@@ -4134,8 +4231,9 @@ The designer would like to thank Francis Tresham for the design and development
  measures.
  In particular Chris Talbot suggested key parts of the private auction structure
 , Lucas Boyd identified the core of the capital and pacing challenge in
- the game and greatly aided development and Shelby Noonan originated aspects
- of the train roster and what became the nationalisation system.
+ the game and greatly aided development and Shelby Noonan did much heavy
+ lifting on this rules document and originated aspects of the train roster
+ and what became the nationalisation system.
  Additional thanks go to the many other play-testers too numerous to list.
  I have been honoured to design games for and with such wonderful people.
 \end_layout
@@ -4350,8 +4448,8 @@ Big
 \begin_inset space ~
 \end_inset
 
-Cities: Are marked with a letter (Amsterdam, Breda, Haarlem, Rotterdam,
- Utrecht) and have a higher revenue.
+Cities: Are marked with a letter (Amsterdam (G10), Breda (K8), Haarlem (G8),
+ Rotterdam (J7), Utrecht (I12)) and have a higher revenue.
 \end_layout
 
 \begin_layout Description
@@ -5867,13 +5965,6 @@ An unsaleable brown private company cannot be purchased by a public company.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Paragraph
 Red private companies 
 \begin_inset CommandInset label
@@ -5999,7 +6090,7 @@ Symbol
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -6064,7 +6155,7 @@ Homes
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -6117,7 +6208,11 @@ AMS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Roermond (L17), Maastricht (N15)
+Roermond (L17),
+\begin_inset Newline newline
+\end_inset
+
+Maastricht (N15)
 \end_layout
 
 \end_inset
@@ -6175,7 +6270,11 @@ HIJSM
 \begin_inset Text
 
 \begin_layout Plain Layout
-Leeuwarden (B13), Haarlem (G8)
+Leeuwarden (B13),
+\begin_inset Newline newline
+\end_inset
+
+Haarlem (G8)
 \end_layout
 
 \end_inset
@@ -6233,7 +6332,11 @@ NBDS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Breda (K8), Weert (L13)
+Breda (K8),
+\begin_inset Newline newline
+\end_inset
+
+Weert (L13)
 \end_layout
 
 \end_inset
@@ -6291,7 +6394,11 @@ NCS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Amsterdam (G11), Amersfoort (H13)
+Amsterdam (G10),
+\begin_inset Newline newline
+\end_inset
+
+Amersfoort (H13)
 \end_layout
 
 \end_inset
@@ -6349,7 +6456,15 @@ NRS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Utrech (I12), choice of Arnhem (I16) or Venlo (K16)
+Utrech (I12),
+\begin_inset Newline newline
+\end_inset
+
+choice of Arnhem (I16)
+\begin_inset Newline newline
+\end_inset
+
+or Venlo (K16)
 \end_layout
 
 \end_inset
@@ -6523,7 +6638,11 @@ ZHESM
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hoorn (E10), Den Haag (H5)
+Hoorn (E10),
+\begin_inset Newline newline
+\end_inset
+
+Den Haag (H5)
 \end_layout
 
 \end_inset
@@ -7192,7 +7311,38 @@ Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
 \noun default
  operates for the first time, it must place its second home station in whichever
  of Arhem (I16) or Venlo (K16) is still available, or choice of either if
- both are still available.
+ both are still available (contain an empty city circle or government station
+ marker) (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Operating-round-actions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "NRS-homes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
@@ -7243,7 +7393,7 @@ noprefix "false"
 
 \begin_deeper
 \begin_layout Itemize
-Are no longer founding public companies, but are just public companies.
+Are no longer founding public companies, but are public companies.
 \end_layout
 
 \begin_layout Itemize
@@ -7252,7 +7402,7 @@ Can subsequently be parred as either Local or Major Public Companies on
 \end_layout
 
 \begin_layout Itemize
-No longer have pre-defined home station locations (see 
+No longer reserve the home station locations marked on the map (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Public-Companies"
@@ -7296,7 +7446,7 @@ Spoorweg-Maatschappij
 \end_layout
 
 \begin_layout Itemize
-Public companies may:
+Public companies can:
 \end_layout
 
 \begin_deeper
@@ -8003,11 +8153,10 @@ U
 \begin_inset Quotes erd
 \end_inset
 
- for Amsterdam, Breda, Haarlem, Rotterdam and Utrecht) and have a higher
- revenue.
+ for Amsterdam (G10), Breda (K8), Haarlem (G8), Rotterdam (J7) and Utrecht
+ (I12)) and have a higher revenue.
  Only matching city track tiles can be used on those cities and they cannot
  be used on any other map hexagons.
- 
 \end_layout
 
 \begin_layout Description
@@ -8232,8 +8381,8 @@ Once a track tile of a given type is placed in a hexagon, terrain costs
 
 \begin_deeper
 \begin_layout Description
-Exception: The big cities (Amsterdam, Breda, Haarlem, Rotterdam, Utrecht)
- have an ƒ80 upgrade fee for each upgrade.
+Exception: The big cities (Amsterdam (G10), Breda (K8), Haarlem (G8), Rotterdam
+ (J7), Utrecht (I12)) have an ƒ80 upgrade fee for each upgrade.
 \end_layout
 
 \end_deeper
@@ -8344,8 +8493,8 @@ reference "sec:Map-Explanation"
 
 \begin_deeper
 \begin_layout Description
-Exception: The big cities (Amsterdam, Breda, Haarlem, Rotterdam, Utrecht)
- have an ƒ80 upgrade fee for each upgrade.
+Exception: The big cities (Amsterdam (G10), Breda (K8), Haarlem (G8), Rotterdam
+ (J7), Utrecht (I12)) have an ƒ80 upgrade fee for each upgrade.
 \end_layout
 
 \end_deeper
@@ -8705,10 +8854,8 @@ Note: Plain track tiles such as #16, #19, #20 etc and parts of #43, #44,
 
 \begin_layout Description
 Note: The intersections at the center of plain track tiles such as #80,
- #81, #82, #83, #544, #545, and #546 allow a route to enter from any connected
- edge and to leave by any other connected edge, and for #544, #545, and
- #546, for two routes to traverse the tile, or one route the traverse the
- tile twice as long as they don't cross the same hexagon edge twice.
+ #81, #82, #83, #544, #545, and #546 do not limit the number of routes or
+ trains which may traverse them.
 \end_layout
 
 \end_deeper
@@ -9310,6 +9457,11 @@ All green trains without a SAVE marker are removed from the game.
 \end_layout
 
 \begin_layout Itemize
+All green trains with a SAVE marker are removed after the next time they
+ operate.
+\end_layout
+
+\begin_layout Itemize
 Companies with a blue or light brown train can nationalise.
 \end_layout
 
@@ -9348,6 +9500,11 @@ Revenue centers with multiple values use the second (brown) value.
 
 \begin_layout Itemize
 All blue trains without a SAVE marker are removed from the game.
+\end_layout
+
+\begin_layout Itemize
+All blue trains with a SAVE marker are removed after the next time they
+ operate.
 \end_layout
 
 \begin_layout Itemize
@@ -9392,6 +9549,11 @@ All light brown trains without a SAVE marker are removed from the game.
 \end_layout
 
 \begin_layout Itemize
+All light brown trains with a SAVE marker are removed after the next time
+ they operate.
+\end_layout
+
+\begin_layout Itemize
 Companies with a dark brown or red train can nationalise.
 \end_layout
 
@@ -9426,6 +9588,11 @@ Revenue centers with multiple values use the fourth (gray) value.
 
 \begin_layout Itemize
 All dark brown trains without a SAVE marker are removed from the game.
+\end_layout
+
+\begin_layout Itemize
+All dark brown trains with a SAVE marker are removed after the next time
+ they operate.
 \end_layout
 
 \begin_layout Itemize
@@ -9466,7 +9633,7 @@ All red trains that have operated are removed from the game.
 \end_layout
 
 \begin_layout Itemize
-Any remaining red trains are removed after they next operate.
+Any remaining red trains are removed after the next time they operate.
 \end_layout
 
 \begin_layout Itemize
