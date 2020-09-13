@@ -299,6 +299,10 @@ Eight 10% share certificates.
 \end_layout
 
 \begin_layout Itemize
+6 SAVE markers.
+\end_layout
+
+\begin_layout Itemize
 1 round marker.
 \end_layout
 
@@ -468,7 +472,7 @@ brown private company.
 \emph on
 3-player and 4-player games only
 \emph default
-) Place 3 
+) Place 6 
 \begin_inset Quotes eld
 \end_inset
 
@@ -496,7 +500,7 @@ noprefix "false"
 \end_inset
 
 ) and a matching 10% share certificate to each of the brown private companies
- remaining in the game.
+ in the game.
 \end_layout
 
 \begin_layout Itemize
@@ -1877,8 +1881,8 @@ At the end of each Stock Round the stock prices of public companies with:
 
 \begin_deeper
 \begin_layout Itemize
-No shares in the IPO or Bank Pool are moved right on the Stock Market in
- operating order (see 
+Shares in the Bank Pool are moved left on the Stock Market in operating
+ order (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:company-operating-order"
@@ -1896,8 +1900,8 @@ reference "subsec:Stock-price-movement"
 \end_layout
 
 \begin_layout Itemize
-Shares in the Bank Pool are moved left on the Stock Market in operating
- order (see 
+No shares in the IPO or Bank Pool are moved right on the Stock Market in
+ operating order (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:company-operating-order"
@@ -2043,13 +2047,6 @@ noprefix "false"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Itemize
-If shares from multiple public companies are sold and their stock prices
- end in the same space on the Stock Market, the selling player must choose
- their relative order at that stock price, and they are placed below any
- stock markers already at that location.
 \end_layout
 
 \end_deeper
@@ -2373,8 +2370,19 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-Mark both hexagons with that public company's station marker placed near
- but not in an available city circle.
+Mark both hexagons as having a reserved station marker location with that
+ public company's station marker placed near but not in an open and unreserved
+ city circle, or near a government station marker on the hexagon (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Government-railway"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
@@ -2548,7 +2556,12 @@ reference "subsec:Selling-shares"
 
 \begin_deeper
 \begin_layout Itemize
-If that is still not enough, the director must cover the arrears.
+Stock prices are adjusted for stock sales after all red private companies
+ have been paid.
+\end_layout
+
+\begin_layout Itemize
+If that is still not enough money, the director must cover the arrears.
 \end_layout
 
 \end_deeper
@@ -2758,16 +2771,6 @@ reference "tab:Public-Companies"
 
 \end_inset
 
- &
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "NRS-homes"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
  & 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -2781,6 +2784,38 @@ noprefix "false"
 ),
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+The 
+\noun on
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
+\noun default
+ must place its second home station in either Arhem (I16) and Venlo (K16)
+ whichever has an empty city circle or contains a government station marker,
+ at the director's choice (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 (
 \emph on
@@ -2937,135 +2972,6 @@ reference "subsec:company-operating-order"
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:game-overview"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Subsubsection
-
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- home stations
-\begin_inset CommandInset label
-LatexCommand label
-name "NRS-homes"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-The 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- founding public company has home stations reservations in Utrecht (I12)
- and either of Arhem (I16) and Venlo (K16) (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Starting-or-floating"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- & 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Public-Company-Overview"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-When the 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- founding public company operates for the first time, it must place a home
- station in Utrecht (I12) and the director's choice of either Arhem (I16)
- or Venlo (K16) or whichever has an empty city circle or contains a government
- station marker, at the director's choice (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Public-Company-Overview"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- & 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Government-railway"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-Other public companies may place stations markers in Arhem (I16) and Venlo
- (K16) so long as an open station location or city circle with a government
- station marker remains available in either Arhem (I16) or Venlo (K16) for
- the 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- founding public company's home station reservation (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "par:Station-marker-overview"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- & 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Government-railway"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-If the 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- has been nationalised, then its marked home station locations are no longer
- reserved for the 
-\noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
-\noun default
- (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Public-Company-Overview"
-plural "false"
-caps "false"
-noprefix "false"
 
 \end_inset
 
@@ -3265,9 +3171,9 @@ noprefix "false"
 ) if an empty city circle or a government station marker is left in one
  of the two of them for the 
 \noun on
-Nederlandsche Rhijnspoorweg-Maatschappij (NRS) 
+Nederlandsche Rhijnspoorweg-Maatschappij (NRS)
 \noun default
-home station (see 
+ second home station (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Government-railway"
@@ -3428,6 +3334,21 @@ If the destination location has no marked revenue, then use the revenue
 
 \end_deeper
 \end_deeper
+\begin_layout Itemize
+Station markers that have been swapped cannot be used by the active company
+ in this Operating Round (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:General-Route-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Subsubsection
 Run train(s)
 \begin_inset CommandInset label
@@ -3568,7 +3489,7 @@ No dividend is paid for shares in the IPO.
 
 \end_deeper
 \begin_layout Itemize
-Dividends can affect the company's stock price (see 
+Dividends will affect the company's stock price (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Stock-price-movement"
@@ -4565,6 +4486,15 @@ reference "subsec:Run-train(s)"
 ).
 \end_layout
 
+\begin_deeper
+\begin_layout Description
+Exception: The revenue value of the Ruhrgebied (J17 & K18) off-board is
+ equal to either the largest revenue value on the route, or double the revenue
+ of the differently coloured off-board at the other end of the route, which
+ ever is the larger.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Some hexagons are marked with a red barbell, denoting that they are blocked
  by a matching private company (see  
@@ -4940,7 +4870,7 @@ Exception: Public companies can redeem their shares as they are sold.
  (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "subsec:Selling-shares"
+reference "subsec:Redeeming-shares"
 plural "false"
 caps "false"
 noprefix "false"
@@ -5024,6 +4954,43 @@ Local Public Companies only
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+If a stock price reaches ƒ500 per share:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+At the end of a Stock Round because it was fully held by players, the game
+ ends immediately and winner is determined (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Scoring"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+By paying a dividend during an Operating Round and having the stock price
+ move to ƒ500, the game ends at the end of that Operating Round (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Stock-price-movement"
+
+\end_inset
+
+) and the winner is determined (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Scoring"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Companies
 \begin_inset CommandInset label
@@ -5050,6 +5017,57 @@ reference "subsec:Private-Companies"
 ) and public companies.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Some public companies are founding public companies.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Founding public companies are the 8 public companies that aren't named 
+\noun on
+Spoorweg-Maatschappij
+\noun default
+, and only until they have been nationalised (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-company-nationalisation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)..
+\end_layout
+
+\begin_layout Itemize
+After a founding public company has been nationalised it is no longer a
+ founding public company and instead is a public company (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-Company-Overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Itemize
 Private companies are represented by a single private company certificate,
  may pay a revenue to their holder at the start of Operating Rounds, and
@@ -5374,7 +5392,7 @@ value: ƒ270
 \end_layout
 
 \begin_layout Description
-Revenue: ƒ20/ƒ0 (when owned by a public company)
+Revenue: ƒ20 / ƒ0 (when owned by a public company)
 \end_layout
 
 \begin_layout Description
@@ -5386,7 +5404,7 @@ Closes: When power used or the start of red phase.
 \end_layout
 
 \begin_layout Description
-Power: Owning public company may move one of its placed station markets
+Power: Owning public company may move one of its placed station markers
  to a different location on the map for free.
  The new location must be a legal station marker placement location for
  the company before the move.
@@ -5422,7 +5440,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Description
-Use: Instead of the owning public company's station market placement in
+Use: Instead of the owning public company's station marker placement in
  that Operating Round (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5488,7 +5506,7 @@ Closes: At the start of red phase.
 \end_layout
 
 \begin_layout Description
-Power: Private company comes with three 
+Power: Private company comes with six 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5594,7 +5612,7 @@ value: ƒ300
 \end_layout
 
 \begin_layout Description
-Revenue: ƒ30/ƒ0 (when owned by a public company)
+Revenue: ƒ10 / ƒ0 (when owned by a public company)
 \end_layout
 
 \begin_layout Description
@@ -5606,7 +5624,23 @@ Closes: At the start of red phase.
 \end_layout
 
 \begin_layout Description
-Power: When closed coverts to ƒ800 in cash taken from the bank and a 
+Power: In the second stock round of the game, the owning player may take
+ up to 3 local public company shares from the IPO, one certificate per buy
+ action in the Stock Round, at no cost (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Buying-shares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+When closed coverts to ƒ800 in cash taken from the bank and a 
 \noun on
 Rotterdamsche Bank
 \noun default
@@ -5622,11 +5656,11 @@ noprefix "false"
 \end_inset
 
 ).
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-If owned by a public company when the public company is nationalised (see
- 
+\begin_layout Description
+Note: If owned by a public company when the public company is nationalised
+ (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Public-company-nationalisation"
@@ -7274,7 +7308,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-The eight non-Spoorweg-Maatchappij public companies (
+The eight non-
+\noun on
+Spoorweg-Maatchappij
+\noun default
+ public companies (
 \noun on
 ASM, HIJSM, NBDS, NCS, NRS, NWS, SS, ZHESM
 \noun default
@@ -7326,16 +7364,6 @@ noprefix "false"
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Operating-round-actions"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- & 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "NRS-homes"
 plural "false"
 caps "false"
 noprefix "false"
@@ -8104,7 +8132,6 @@ City Have one or more white circles for station markers and a revenue value
  (number in a small white circle).
  Only city track tiles can be used on city map hexagons, and they cannot
  be used on any other map hexagons.
- 
 \end_layout
 
 \begin_deeper
@@ -8480,8 +8507,8 @@ The upgraded track tile is returned to the supply for future use.
 \end_layout
 
 \begin_layout Itemize
-Once a track tile on a river or hill hexagon is upgraded, the terrain cost
- is not paid again (see 
+Once a track tile on a river hexagon is upgraded, the terrain cost is not
+ paid again (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Map-Explanation"
@@ -8803,7 +8830,7 @@ Off-boards at the ends of Major Public Company routes add to the total company
 
 \end_deeper
 \begin_layout Itemize
-Must pass through a city containing one of the owning public company's station
+Must include a city containing one of the owning public company's station
  makers.
 \end_layout
 
@@ -8891,9 +8918,26 @@ noprefix "false"
 
 \end_inset
 
-)..
+).
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Both station markers whose positions have been swapped by the active company
+ in this Operating Round (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Swap-station-markers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) are considered as another public company's station marker.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Run to or through the same revenue center more than once.
 \end_layout
@@ -8923,8 +8967,8 @@ Off-board triangle connections are termini.
 \end_layout
 
 \begin_layout Itemize
-The revenue of the Ruhrgebied (J17 & K18) off-board is equal to either the
- largest revenue value on the route, or double the revenue of the off-board
+The revenue value of the Ruhrgebied (J17 & K18) off-board is equal to either
+ the largest revenue value on the route, or double the revenue of the off-board
  at the other end of the route, which ever is the larger.
 \end_layout
 
@@ -9196,7 +9240,11 @@ name "subsec:N+-trains"
 \end_layout
 
 \begin_layout Itemize
-The route for a N+ train cannot contain more than a total of N cities.
+The route for a N+ train (where 
+\emph on
+N
+\emph default
+ is 2, 3 or 5) cannot contain more than a total of N cities.
  There may be any number of towns on the route; before, between and after
  any other revenue centers on the route.
 \end_layout
