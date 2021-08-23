@@ -1,4 +1,4 @@
-%% LyX 2.3.2 created this file.  For more info, see http://www.lyx.org/.
+%% LyX 2.3.6 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
 \documentclass[10pt,twoside,twocolumn,british,english,UKenglish]{article}
 \usepackage{mathptmx}
@@ -18,14 +18,15 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{graphicx}
+\usepackage{rotfloat}
 
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
 
 \AtBeginDocument{\providecommand\secref[1]{\ref{sec:#1}}}
-\AtBeginDocument{\providecommand\subsecref[1]{\ref{subsec:#1}}}
 \AtBeginDocument{\providecommand\tabref[1]{\ref{tab:#1}}}
+\AtBeginDocument{\providecommand\subsecref[1]{\ref{subsec:#1}}}
 \AtBeginDocument{\providecommand\parref[1]{\ref{par:#1}}}
 \newcommand{\noun}[1]{\textsc{#1}}
 %% Because html converters don't know tabularnewline
@@ -48,11 +49,12 @@
 
 \@ifundefined{date}{}{\date{}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-%\usepackage{draftwatermark}
-%\SetWatermarkText{\textsc{Prototype}}
-%\SetWatermarkColor[rgb]{0.8,0.9,0.8 }
-%\SetWatermarkFontSize{1cm}
-%\SetWatermarkScale{5}
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{Prototype}}
+% \SetWatermarkColor[rgb]{0.8,0.9,0.8}
+\SetWatermarkFontSize{1cm}
+\SetWatermarkScale{5}
+
 \usepackage[missing=Help!,notags={No tags?},dirty=dirty]{gitinfo2}
 
 \PassOptionsToPackage{UKenglish}{babel}
@@ -68,7 +70,6 @@ plainpages    = true,
          breaklinks    = true,% not default in dvips mode, so we must specify
          hypertexnames = false,%not ideal, but needed when pagenums duplicate (`i' vs. `1')
          pageanchor    = true,
-         pagecolor     = blue,
          anchorcolor   = blue,
          colorlinks    = true, %Colours links instead of ugly boxes
          urlcolor      = blue, %Colour for external hyperlinks
@@ -96,15 +97,11 @@ plainpages    = true,
 
 \usepackage{babel}
 \begin{document}
-\author{\noun{1839}\\
-\noun{English Rules}\\
+\author{\noun{English Rules}\\
 \noun{Game design: J C Lawrence}}
 \title{\includegraphics[height=7in]{masthead}}
 
 \maketitle
-\emph{``Travels safely by rail quickly and comfortably'' - }promotional
-poster probably from 1932 by Nicolaas van de Vecht\emph{.}
-
 \tableofcontents{}
 
 \clearpage{}
@@ -113,8 +110,20 @@ poster probably from 1932 by Nicolaas van de Vecht\emph{.}
 
 \section{Introduction\label{sec:Introduction}}
 
-Waffly mumble mumble words about theme and history that conceivably
-might related to the game here.
+On 20 September 1839 the locomotive \noun{De Arend} made the 16 kilometer
+journey between \noun{Amsterdam} and \noun{Haarlem}. And then the
+difficulties began.
+
+\begin{figure}
+\includegraphics[width=3.5in]{laantja-vander-gaag}
+
+\caption{The \noun{Hollandsche IJzeren Spoorweg-Maatschappij} was forced to
+build around Aernout Hendrik van Wickevoort Crommelin's farm when
+he refused to allow the railway to pass in front of his house. This
+was then the subject of humorous songs, postcards, comedic skits and
+plays etc across Europe. Traces of the looping diversion around the
+farmhouse remain visible on satellite photographs to this day. }
+\end{figure}
 
 The player with the largest net worth at the end of the game wins
 (see \secref{Game-End}).
@@ -126,10 +135,9 @@ The player with the largest net worth at the end of the game wins
 \item 1 stock market (also contains the round track).
 \item 1 IPO and Bank Pool chart \emph{(currently not provided)}.
 \item Many track tiles (yellow, green, brown and gray).
-\item Trains (5 yellow, 6 green, 6 blue, 5 light brown, 5 dark brown, 5
-red, 3 gray, 8 purple).
-\item 2 sets of 4 player number cards numbered 1 through 4 (one set blue
-\& one set red).
+\item Trains (9 yellow, 9 green, 8 blue, 7 brown, 7 red, 5 gray, 10 purple).
+\item 2 sets of player number cards numbered 1 through 4 (one set blue \&
+one set red).
 \item For each of 16 public companies:
 \begin{itemize}
 \item Public company charter.
@@ -138,13 +146,13 @@ red, 3 gray, 8 purple).
 \item One 20\% director's share certificate.
 \item Eight 10\% share certificates.
 \end{itemize}
-\item 5 station markers.
+\item 3 to 5 station markers (varies by company, see \tabref{Public-Companies}).
 \item 1 stock price marker
 \end{itemize}
-\item 12 private companies (2 green, 5 blue, 5 brown, 4 red).
+\item 13 private companies (2 green, 5 blue, 5 brown, 1 red).
 \item 32 government station markers \emph{(not count-limited)}.
 \item 1 round marker.
-\item \textasciitilde\foreignlanguage{british}{\textflorin }20,000 in
+\item \textasciitilde\foreignlanguage{british}{\textflorin }30,000 in
 money \emph{(not provided)}.
 \end{itemize}
 
@@ -172,35 +180,38 @@ the Stock Market.
 \item (\emph{2-player game only}) Discard the following from the game:
 \begin{itemize}
 \item \#3 and \#4 player number cards of both colours.
-\item \noun{Nederlandsche Fabriek van Werktuigen en Spoorwegmaterieel} blue
-private company.
-\item \noun{Crédit Mobilier }blue private company.
-\item \noun{Lodewijk Pincoffs} brown private company.
-\item \noun{Ketwich \& Voombergh }brown private company.
+\item Private companies: 
+\begin{itemize}
+\item Blue: \noun{Kabinet-Rochussen} \& \noun{Crédit Mobilier}
+\item Brown: \noun{Cornelis Outshoorn} \&\noun{ August Borsig}.
+\item Red: \noun{Rotterdamsche Handelsvereeniging}
+\end{itemize}
 \end{itemize}
 \item (\emph{3-player games only}) Discard the following from the game:
 \begin{itemize}
 \item \#4 player number cards of both colours.
-\item \noun{Crédit Mobilier }blue private company.
-\item \noun{Ketwich \& Voombergh }brown private company.
+\item One yellow, one red and one gray train.
+\item Private companies: 
+\begin{itemize}
+\item Blue: \noun{Crédit Mobilier}
+\item Brown: \noun{August Borsig}.
+\item Red: \noun{Rotterdamsche Handelsvereeniging}
 \end{itemize}
-\item Place 3 ``SAVED'' markers with the \noun{Nederlandsche Fabriek van
-Werktuigen en Spoorwegmaterieel} blue private company.
-\item Randomly assign a 20\% director's share certificate of a founding
-public company (see \subsecref{Public-Company-Overview}) and a matching
-10\% share certificate to each of the brown private companies remaining
-in the game.
-\item Assign two 10\% share certificates of the public company assigned
-to the \noun{Rijkswaterstaat} brown private company to the \noun{Schielands
-Hoge Zeedijk} blue private company.
-\item Place \textflorin 80 in discounts from the bank on each of the blue
-private companies other than the \noun{Schielands Hoge Zeedijk} blue
-private company.
-\item Place \textflorin 40 in discounts from the bank on the \noun{Schielands
-Hoge Zeedijk} blue private company.
-\item Place the private companies with their accompanying tokens, share
-assignments and discounts where they can be easily examined by all
+\end{itemize}
+\item Place the private companies where they can be easily examined by all
 players.
+\item Randomly assign a 20\% director's share certificate of a Spoorwegmaatschappij
+(see \tabref{Public-Companies} \& \subsecref{Public-Company-Overview})
+and a matching 10\% share certificate to each of the brown private
+companies in the game.
+\begin{description}
+\item [{Note:}] \emph{The designer recommends that the AMS and ZHESM be
+excluded from these assignments in games with players new to 1839
+(see \tabref{Public-Companies}).}
+\end{description}
+\item Assign two 10\% share certificates of the public company assigned
+to the \noun{Albert Voombergh} brown private company to the \noun{Weefgoederenfabrique
+C.T. Stork \& Co} blue private company.
 \item Separate the player number cards by colour, set one colour aside and
 randomly assign the remaining player number cards, one card per player.
 \item Give each player \foreignlanguage{british}{money:}
@@ -210,63 +221,70 @@ randomly assign the remaining player number cards, one card per player.
 \item 4-players: \textflorin 580
 \end{itemize}
 \end{itemize}
-\begin{table*}
+\begin{sidewaystable*}
 \begin{description}
 \item [{%
-\begin{tabular}{>{\centering}m{0.6in}>{\centering}m{2cm}>{\centering}m{1in}>{\centering}m{0.6in}>{\centering}m{0.5in}>{\centering}m{0.8in}>{\centering}m{0.8in}>{\centering}m{0.8in}}
-Phase & Train Type & Quantity & Price & Train Limit & Track Tiles Available & Trains Rusted & Operating Rounds per Set\tabularnewline
+\begin{tabular}{>{\centering}m{0.6in}>{\centering}m{2cm}>{\centering}m{1in}>{\centering}m{0.6in}>{\centering}m{0.6in}>{\centering}m{0.5in}>{\centering}m{0.8in}>{\centering}m{0.8in}>{\centering}m{0.8in}>{\centering}m{0.8in}}
+Phase & \multicolumn{5}{c}{Train} & Track\\
+ Tiles & Operating Rounds\\
+ per Set & \multicolumn{2}{c}{Available Pars}\tabularnewline
+\cline{2-6} \cline{3-6} \cline{4-6} \cline{5-6} \cline{6-6} \cline{9-10} \cline{10-10} 
+ & Type & Quantity & Price & Rusts & Limit &  &  & Local & Major\tabularnewline
 \hline 
+Yellow & 2 & 9 (8 with 3 players) & \textflorin 80 &  & 3 & Yellow & 1 & \textflorin 25, \textflorin 31,\\
+ \textflorin 38, \textflorin 46\\
+ \& \textflorin 55 & \textflorin 67, \textflorin 74\\
+ \& \textflorin 82\tabularnewline
 \hline 
-Yellow & L2\\
-2 & Unlimited\\
-5 & N/A\\
-\textflorin 80 & 4 & Yellow &  & 1\tabularnewline
+Green & 3+ & 9 & \textflorin 160 &  & 3 & Yellow\\
+Green & 2 & \textflorin 25, \textflorin 31,\\
+ \textflorin 38, \textflorin 46\\
+ \& \textflorin 55 & \textflorin 67, \textflorin 74\\
+ \& \textflorin 82\tabularnewline
 \hline 
-Green & L2+1 \\
-3+ & Unlimited\\
-6 & N/A\\
-\textflorin 160 & 4 & Yellow\\
-Green &  & 2\tabularnewline
+Blue & 5+ & 8 & \textflorin 240 & Yellow & 3 & Yellow\\
+Green & 2 & \textflorin 25, \textflorin 31,\\
+ \textflorin 38, \textflorin 46\\
+ \& \textflorin 55 & \textflorin 67 \& \textflorin 74\tabularnewline
 \hline 
-Blue & L2+\\
-5+ & Unlimited\\
-6 & N/A \textflorin 250 & 4 & Yellow\\
-Green & Yellow & 2\tabularnewline
-\hline 
-Light Brown & R4 & 5 & \textflorin 400 & 4 & Yellow\\
+Brown & R4 & 7 & \textflorin 320 & Green & 3 & Yellow\\
 Green\\
-Brown & Green & 3\tabularnewline
+Brown & 2 & \textflorin 25, \textflorin 31,\\
+ \textflorin 38, \textflorin 46\\
+ \& \textflorin 55 & \textflorin 67\tabularnewline
 \hline 
-Dark Brown & 7 & 5 & \textflorin 450 & 3 & Yellow\\
+Red & PR2+ & 7, (6 with 3 players) & \textflorin 280 & Blue & 3 & Yellow\\
 Green\\
-Brown & Blue & 3\tabularnewline
+Brown & 3 & \textflorin 25, \textflorin 31,\\
+ \textflorin 38, \textflorin 46\\
+ \& \textflorin 55 & \textflorin 67\tabularnewline
 \hline 
-Red & R2+ & 5 & \textflorin 500 & 2 & Yellow\\
-Green\\
-Brown & Light brown & 3\tabularnewline
-\hline 
-Gray & 4 & 3 & \textflorin 700 & 2 & Yellow\\
+Gray & 4 & 5, (4 with 3 players) & \textflorin 460 & Brown & 2 & Yellow\\
 Green\\
 Brown\\
-Gray & Dark brown & 4\tabularnewline
+Gray & 3 & \textflorin 25, \textflorin 31,\\
+ \textflorin 38, \textflorin 46\\
+ \& \textflorin 55 & \textflorin 67\tabularnewline
 \hline 
 Purple & Diesel & Unlimited\\
-(10 are supplied\} & \textflorin 900 & 2 & Yellow\\
+(10 supplied\} & \textflorin 570 & Red & 2 & Yellow\\
 Green\\
 Brown\\
-Gray & Red & 4\tabularnewline
+Gray & 3 & \textflorin 25, \textflorin 31,\\
+ \textflorin 38, \textflorin 46\\
+ \& \textflorin 55 & \textflorin 67\tabularnewline
 \hline 
 \end{tabular}}]~
 \end{description}
 \centering{}\caption{Game Phases\label{tab:Game-Phases}}
-\end{table*}
+\end{sidewaystable*}
 
 
 \section{Game Overview \label{sec:game-overview}}
 \begin{itemize}
 \item 1839 begins with the auction of the private companies (see \secref{Private-Auction}).
 \item After auctioning the private companies, the game consists of an alternating
-series of Stock Rounds and sets of one to four Operating Rounds\noun{.
+series of Stock Rounds and sets of one to three Operating Rounds\noun{.
 }The round marker is used to track the game's progress through the
 rounds.
 \item In Stock Rounds, players may buy and sell shares of public companies,
@@ -284,30 +302,22 @@ determined by the current game phase at the end of the Stock Round
 directors: buying private companies from players, building track and
 stations, running and buying trains, withholding or paying dividends
 to shareholders, and being nationalised (see \secref{Operating-Rounds}
-\& \subsecref{Public-company-nationalisation} \& \subsecref{Public-company-nationalisation}).
-\begin{itemize}
-\item Public companies on the Major Stock Market act in Operating Rounds,
-before public companies on the Local Stock Market. Public companies
-in each market act in descending order of their stock prices (see
-\subsecref{company-operating-order}).
-\end{itemize}
+\& \subsecref{company-operating-order} \& \subsecref{Public-company-nationalisation}).
 \item The game starts in\noun{ }yellow phase with the yellow trains (see
 \tabref{Game-Phases} \& \secref{Game-Phases}).
 \begin{itemize}
 \item Game phases are tied to their matching train colours (see \tabref{Game-Phases})
-and change immediately when the first train of a new colour is bought
+and change immediately when the first train of a new colour is acquired
 by a public company. 
-\item Additional par prices, track tile types and other changes accompany
-some game phase changes (see \secref{Game-Phases}).
 \end{itemize}
 \item An alternating sequence of Stock Rounds\noun{ }and sets of Operating
 Rounds\noun{ }continues until the end of the game (a player is agreed
-to have won, a player bankrupts, a stock price reaches \textflorin 500,
-or a complete set of Operating Rounds is finished in purple phase)
-(see \secref{Game-End}).
+to have won, all but one player bankrupts or concedes, a stock price
+reaches \textflorin 500, or a complete set of Operating Rounds is
+finished in purple phase) (see \secref{Game-End}).
 \item The player with the largest net worth at the end of the game wins
 (see \secref{Game-End}).
-\item The holdings of players, public companies and systems are public information
+\item The holdings of players \& public companies are public information
 and must be clearly displayed and visible to all players at all times.
 \end{itemize}
 
@@ -339,30 +349,20 @@ company if:
 \item One of the remaining private companies had a current price of zero
 or below before the active player's turn (face value minus any discounts
 already on the private company). In this case the private company
-is purchased at no cost.
+must be purchased at no cost.
 \end{itemize}
 or:
 \begin{itemize}
-\item (\emph{3 \& 4 player games only}) None of the other players could
-afford any of the remaining private companies at the start of the
-active player's turn, and the active player can afford one or more
-of the remaining private companies that they have not discounted on
-that turn.
-\end{itemize}
-or:
-\begin{itemize}
-\item (\emph{2-player games only}) None of the other players could afford
-any of the remaining private companies at the start of the active
-player's turn, and the active player can afford one or more of the
-remaining private companies that they have not discounted on that
-turn and they have not purchased a private company on this turn.
+\item None of the other players could afford any of the remaining private
+companies at the start of the active player's turn, and the active
+player can afford one or more of the remaining private companies that
+they have not discounted on that turn.
 \end{itemize}
 \end{description}
 \end{itemize}
 \item Player purchases are limited to their available cash.
-\item When a brown private company is purchased, the assigned Founding Public
-Company must immediately be parred on the Major Stock Market (see
-\subsecref{Stock-Market-Overview}).
+\item When a brown private company is purchased, the assigned public company
+must immediately be parred on the Major Stock Market (see \subsecref{Stock-Market-Overview}).
 \item When all private companies have been purchased, the private auction
 ends:
 \begin{itemize}
@@ -376,7 +376,7 @@ card order.
 \subsection{Stock Round overview \label{subsec:Stock-Round-overview}}
 \begin{itemize}
 \item Stock Rounds start with the player with the \#1 player number card
-and proceed in rotating player number card order with the \#1 player
+and proceeds in rotating player number card order with the \#1 player
 number card following the largest player number card.
 \begin{description}
 \item [{Exception:}] The first Stock Round after the private auction starts
@@ -393,8 +393,8 @@ treasury (see \subsecref{Buying-shares}).
 \end{itemize}
 Or:
 \begin{itemize}
-\item Have one of the companies they direct redeem one or more of its shares
-from the Bank Pool (see \subsecref{Redeeming-shares}).
+\item Redeem one or more shares from the Bank Pool of a company they direct
+(see \subsecref{Redeeming-shares}).
 \end{itemize}
 \item Sell shares of one or more public companies (see \subsecref{Selling-shares}).
 \end{itemize}
@@ -421,16 +421,16 @@ supply.
 \item The player number cards of the other colour will determine the player
 order in the next Stock Round.
 \end{itemize}
-\item At the end of each Stock Round the stock prices of floated public
-companies with:
-\begin{itemize}
-\item No shares in the IPO or Bank Pool are moved right on the Stock Market
-in operating order (see \subsecref{company-operating-order} \& \subsecref{Stock-price-movement}).
+\item At the end of each Stock Round the stock prices of public companies
+with:
+\begin{enumerate}
 \item Shares in the Bank Pool are moved left on the Stock Market in operating
 order (see \subsecref{company-operating-order} \& \subsecref{Stock-price-movement}).
-\end{itemize}
+\item No shares in the IPO and Bank Pool are moved right on the Stock Market
+in operating order (see \subsecref{company-operating-order} \& \subsecref{Stock-price-movement}).
+\end{enumerate}
 \item The number of Operating Rounds in the ``set'' following the Stock
-Round is controlled by the current game phase (see \secref{Game-Phases}).
+Round is determined by the current game phase (see \secref{Game-Phases}).
 \end{itemize}
 
 \subsection{Selling shares\label{subsec:Selling-shares}}
@@ -440,27 +440,30 @@ Round is controlled by the current game phase (see \secref{Game-Phases}).
 \item That are not a director's certificate (see \subsecref{Company-directors}).
 \item In Stock Rounds other than the first Stock Round following the private
 auction.
-\item Of public companies that have been parred (see \subsecref{Starting-or-floating}).
 \end{itemize}
-\item The sale price for sold shares for public companies floated in an
-earlier Stock Round is the current stock price per share. Otherwise
-the sale price is the stock price next to the left from the current
-stock price on that Stock Market, or if already at the left end of
-that market, the current stock price.
+\item The sale price for sold shares for public companies floated before
+this Stock Round is the current stock price per share. Otherwise the
+sale price is the stock price next to the left from the current stock
+price on that Stock Market, or if already at the left end of that
+market, the current stock price.
+\item If shares of multiple companies are sold at the same time, the seller
+must decide the order in which they are sold and thus the order in
+which their stock price markers are moved (see \subsecref{Stock-price-movement}).
 \item The sale process:
 \begin{enumerate}
 \item The selling player announces the shares they will be selling (which
-public companies and the share counts being sold) and receives the
-sale price of the share(s) in cash from the bank.
+public companies and in what order) and receives the sale price of
+the share(s) in cash from the bank.
 \item For each public company in operating order (see \subsecref{company-operating-order})
 whose shares are sold, either:
 \begin{itemize}
 \item The director of that company (may be the same player) can have the
-public company redeem all the shares being sold (see \subsecref{Redeeming-shares}).
+public company redeem all the shares of that company being sold (see
+\subsecref{Redeeming-shares}).
 \begin{itemize}
-\item The company must have been floated, must have sufficient treasury
-to pay for all the shares of the company being sold and must redeem
-all the shares being sold at that time.
+\item The company must have sufficient treasury to pay for all the shares
+of the company being sold and must redeem all the shares being sold
+at that time.
 \end{itemize}
 \end{itemize}
 or:
@@ -469,12 +472,8 @@ or:
 of that public company and the sold shares are placed in the Bank
 Pool.
 \begin{itemize}
-\item If the stock price reaches the lowest price of that Stock Market,
+\item If the stock price reaches the leftmost space on that Stock Market,
 it isn't moved further (see \secref{Stock-Market}).
-\item If shares from multiple public companies are sold and their stock
-prices end in the same space on the Stock Market, the selling player
-must choose their relative order at that stock price, and they are
-placed below any stock markers already at that location.
 \end{itemize}
 \end{itemize}
 \end{enumerate}
@@ -483,10 +482,15 @@ placed below any stock markers already at that location.
 \subsection{Buying shares\label{subsec:Buying-shares}}
 \begin{itemize}
 \item Shares may be bought from the IPO, Bank Pool and company treasury.
-\begin{itemize}
-\item Shares cannot be bought from a public company's treasury if shares
-of that public company remain in the IPO.
-\end{itemize}
+\begin{description}
+\item [{Exception:}] Shares cannot be bought from a public company's treasury
+if shares of that public company remain in the IPO.
+\end{description}
+\item The purchase price for share certificates is the number of shares
+represented by the certificate, multiplied by the current stock price
+of that company and is paid to the bank for shares bought from the
+IPO or Bank Pool and to that company treasury for shares bought from
+the company treasury.
 \item Only one stock certificate can be bought per player-turn or action
 in the Stock Round.
 \item A player cannot buy a certificate of a public company if they already
@@ -494,6 +498,11 @@ hold 60\% of that company.
 \item The first available certificate of a public company is always the
 director's certificate (2 shares, 20\%, one certificate - see \subsecref{Starting-or-floating}
 \& \subsecref{Company-directors}).
+\begin{description}
+\item [{Exception:}] The director's certificate of a company cannot be
+bought from the IPO by a player that nationalised one or more companies
+in the immediately preceding set of Operating Rounds (see \subsecref{Public-company-nationalisation}).
+\end{description}
 \item Players can buy non-director's certificates of public companies only
 if they have been parred (see \subsecref{Starting-or-floating}).
 \item A player cannot buy a certificate of a public company if they have
@@ -501,12 +510,6 @@ sold any shares of that company in the current Stock Round.
 \begin{itemize}
 \item They may buy certificates of that public company in future Stock Rounds.
 \end{itemize}
-\item The purchase price for share certificates is the number of shares
-represented by the certificate, multiplied by the current stock price
-of that company.
-\item The purchase price is paid to the bank for shares bought from the
-IPO or Bank Pool and to that company treasury for shares bought from
-a company treasury.
 \end{itemize}
 
 \subsection{Redeeming shares \label{subsec:Redeeming-shares}}
@@ -522,15 +525,18 @@ to the bank for each of its sold shares and places the purchased shares
 in its treasury.
 \item The public company must have sufficient funds for and must redeem
 all the shares of the company sold at that time.
-\item This is not an action for the director of the company (see \subsecref{Stock-Round-overview}).
+\item This is not an action for the director of the company and does not
+change the assignment of player number cards of the other colour (see
+\subsecref{Stock-Round-overview}).
 \end{itemize}
-\item On a player's turn during a Stock Round, a company they direct can
-buy any or all of its own shares from the Bank Pool.
+\item On a player's turn during a Stock Round, they can redeem any or all
+of the shares of a company they direct from the Bank Pool (see \subsecref{Stock-Round-overview}).
 \begin{itemize}
 \item The public company pays the current stock price from its treasury
 to the bank for each share bought and places them in its treasury.
 \item This is an action for the director of the company in the Stock Round
-(see \subsecref{Stock-Round-overview}).
+and may change the assignment of player number cards of the other
+colour (see \subsecref{Stock-Round-overview}).
 \end{itemize}
 \end{itemize}
 
@@ -538,48 +544,61 @@ to the bank for each share bought and places them in its treasury.
 \begin{itemize}
 \item The first available share certificate of a public company is always
 the director's certificate (2 shares, 20\%, one certificate).
+\begin{itemize}
+\item Players cannot buy the director's certificate of a public company
+from the IPO if they have nationalised a public company in the immediately
+preceding set of Operating Rounds (see \subsecref{Operating-round-General}
+\& \subsecref{Public-company-nationalisation}).
+\end{itemize}
 \item The director's certificate of a public company can be bought from
 the IPO by:
 \begin{enumerate}
-\item Placing all of the public company's shares in the IPO.
-\item Selecting a par price on the Local or Major Stock Market and putting
-the public company's stock price marker in the matching box on that
-market, underneath any other markers already there (see \secref{Stock-Market}).
+\item Selecting an un-parred Spoorwegmaatschappij or Lokaalsporwegen (see
+\tabref{Public-Companies} \& \subsecref{Public-companies}).
 \begin{itemize}
-\item Founding public companies that haven't previously been nationalised
-must be parred on the Major Stock Market. If they have been nationalised
-they can be parred as either Local or Major Public Companies (see
-\subsecref{Public-Company-Overview}).
+\item Spoorwegmaatschappij, must not have previously been nationalised (see
+\tabref{Public-Companies}, \subsecref{Public-companies} \& \subsecref{Public-company-nationalisation}).
+\end{itemize}
+\item Placing all of that public company's shares in the IPO.
+\item Selecting an available par price and putting the public company's
+stock price marker in the matching box on that market, underneath
+any other markers already there (see \secref{Stock-Market}).
+\begin{itemize}
+\item Spoorwegmaatschappij must par on the Major Stock Market (see \subsecref{Public-Company-Overview}
+\& \secref{Stock-Market}).
+\item Lokaalsporwegen must par on the Local Stock Market (see \subsecref{Public-Company-Overview}
+\& \secref{Stock-Market}). 
+\item Available par prices depend on the company type and game phase (see
+\tabref{Public-Companies}, \secref{Stock-Market} \& \secref{Game-Phases}).
 \end{itemize}
 \item Paying twice that value to the bank and taking the director's share
 certificate.
-\item (\emph{If the public company is not a founding public company}) Reserve
-two home station hexagons:
+\item (\emph{Lokaalsporwegen only} ) Reserving two home station hexagons:
 \begin{itemize}
-\item Both hexagons must have a currently available and unreserved location
-for a station marker.
-\item No more than one of the two hexagons can be an OO hexagon or be a
-big city (Amsterdam, Breda, Haarlem, Rotterdamn, or Utrecht, see \secref{Map-Explanation}).
-\item Mark both hexagons with that public company's station marker placed
-near but not in an available city circle.
+\item Both hexagons must either have a currently available and unreserved
+location for a station marker, or contain a government station marker
+(see \subsecref{Government-railway}).
+\item Only one of the two hexagons can be an OO hexagon or a big city: Amsterdam
+(G10), Breda (K8), Haarlem (G8), Rotterdam (J7), or Utrecht (I12)
+(see \secref{Map-Explanation}).
+\item Mark both hexagons as having a reserved station marker location with
+that public company's station marker placed near an open and unreserved
+city circle or government station marker on the hexagon (see \subsecref{Government-railway}).
 \end{itemize}
 \end{enumerate}
 \item After the 20\% director's certificate of a public company has been
 parred and bought, the remaining shares of the public company are
-available for purchase in subsequent turns.
+available for purchase in the normal manner.
 \item A public company is ``floated'' when no more than 40\% of the public
 company's shares remain in the IPO:
 \begin{itemize}
 \item Station markers (see \tabref{Public-Companies}) are placed on the
-company's charter. If the public company is not a founding public
-company, two of the company's station markers will be marking hexagons
-reserved for its home stations.
+company's charter.
 \item Money equal to 10 times the public company's current stock price price
 is placed on the company's charter.
 \begin{itemize}
-\item (\emph{If the public company is not a founding public company}) The
-company pays a fee to the bank equal to double the revenue of the
-two home station hexagons.
+\item (\emph{Lokaalsporwegen only}) The company pays a fee to the bank equal
+to double the revenue of the two home station hexagons.
 \begin{itemize}
 \item If the hexagon doesn't yet have a revenue, then the revenue of a yellow
 track tile for that location is used.
@@ -588,67 +607,74 @@ track tile for that location is used.
 \item The charter and control of the public company is given to the player
 holding the director's certificate (see \subsecref{Company-directors}).
 \end{itemize}
+\item If a public company is floated due to the share taken when a brown
+private company closes (see \parref{Brown-private-companies}), then
+that public company will operate in the next Operating Round in the
+normal manner (see \subsecref{company-operating-order}).
 \end{itemize}
 
 \section{Operating Rounds\label{sec:Operating-Rounds}}
 
 \subsection{Operating Round overview \label{subsec:Operating-round-General}}
 \begin{enumerate}
-\item Private companies pay their revenue (shown on their certificate) from
-the bank to their player or public company owners. Green, blue and
-brown private companies pay their owners first, then red private companies
-pay the bank (see \subsecref{Private-Companies}\& \subsecref{Red-private-companies}).
+\item Green, blue and brown private companies pay their revenue (shown on
+their certificate) from the bank to their owning player or public
+company (see \subsecref{Private-Companies}). 
+\item The red private company (\emph{if present}) pays the bank (see \subsecref{Red-private-companies}).
 \item All floated public companies operate in operating order (see \subsecref{company-operating-order}).
 \end{enumerate}
 
 \subsubsection{Paying red private companies \label{subsec:Paying-red-private}}
 \begin{itemize}
-\item If there are multiple red private private companies in play, first
-those owned by public companies are paid in company operating order
-(see \subsecref{company-operating-order}) then player-owned red private
-companies in player number card order.
+\item At the start of each Operating Round the owner of the red private
+company must pay \textflorin 100 to the bank.
+\begin{itemize}
 \item If the owning public company has insufficient funds, then the public
 company must sell shares from its treasury to raise the funds. Normal
 share-selling rules apply (see \subsecref{Selling-shares}).
 \begin{itemize}
-\item If that is still not enough, the director must cover the arrears.
+\item If that is still not enough money, the director must cover the arrears.
 \end{itemize}
 \item If the owning player's or director's cash is insufficient to cover
 the arrears, the player must sell shares as needed to raise the funds.
 Normal share-selling rules apply (see \subsecref{Selling-shares}).
 \begin{itemize}
 \item Public companies other than the company owning the red private company
-being paid may redeem shares as they are sold for each red private
-company's arrears (see \subsecref{Redeeming-shares}).
-\item Stock prices are adjusted for stock sales after all red private companies
-have been paid.
+may redeem their sold redeem shares as they are sold (see \subsecref{Redeeming-shares}).
 \item Director control of the public company that owns the red private company
 being paid cannot be transferred to another player while raising funds
 to pay the bank for that red private company (see \subsecref{Company-directors}).
 \item The player cannot sell additional shares once enough money has been
 raised to cover the arrears.
 \end{itemize}
+\end{itemize}
 \item If the player is unable raise enough money to cover the arrears after
-the public company has sold all the shares from its treasury, and
-the player having contributed all possible funds and sold all shares
-that can be legally sold (see \subsecref{Selling-shares}), then the
-player is declared bankrupt (see \secref{Player-Bankruptcy}).
+the owning public company (if any) has sold all the shares from its
+treasury and contributed all cash in its treasury, and the player
+having contributed all possible funds and sold all shares that can
+be legally sold (see \subsecref{Selling-shares}), then the player
+is bankrupt (see \secref{Player-Bankruptcy}).
 \item A public company that pays for a red private company with a director's
-contribution necessarily ends its operations with no money in its
-treasury.
+contribution necessarily begin its operations with no money or shares
+in its treasury.
 \end{itemize}
 
 \subsection{Operating order\label{subsec:company-operating-order}}
 \begin{itemize}
 \item Floated public companies (see \secref{Companies}) operate in order:
 \begin{itemize}
-\item First all the floated companies on the Major Stock Market in descending
-order of stock prices, then all the floated companies on the Local
-Stock Market in descending order of stock prices.
+\item First all floated Major Public Companies operate.
+\item Then all floated Local Public Companies operate.
+\end{itemize}
+\item Within each Stock Market, companies operate in descending order of
+stock prices.
+\begin{itemize}
 \item The stock price markers of public companies in the same space of the
 Stock Market are stacked to indicate the order in which they'll operate,
 from the top down.
 \end{itemize}
+\item The next company to operate is determined after each company completes
+its operations.
 \item As public companies operate, their stock price markers are turned
 upside-down and moved to their new stock price location (see \subsecref{Stock-price-movement}):
 \begin{itemize}
@@ -660,7 +686,7 @@ top of other face-down stock price markers (see \subsecref{Stock-price-movement}
 are turned face-up so that the bottom face-down marker becomes the
 top face-up marker. The result is that public companies sharing a
 space in the stock price chart operate in the order in which their
-share markers arrived at that space.
+stock price markers arrived at that space.
 \item Each public company completes all of its actions in the Operating
 Round before the next public company operates.
 \end{itemize}
@@ -669,9 +695,22 @@ Round before the next public company operates.
 \begin{itemize}
 \item Public companies perform the following steps in order:
 \begin{enumerate}
-\item (\emph{If the first time the public company is operat}ing) Place the
-company's home station marker(s) on its home station location(s) (see
-\subsecref{Starting-or-floating} \& \tabref{Public-Companies}).
+\item (\emph{If the first time the public company is operating}) Place the
+company's home station marker(s) on its home station location(s),
+placing them either in empty city circles or replacing a government
+station marker on those hexagons and returning the government station
+marker to the supply, at the director's choice (see \subsecref{Starting-or-floating}
+\& \tabref{Public-Companies} \& \subsecref{Government-railway}),
+\begin{itemize}
+\item The \noun{Nederlandsche Rhijnspoorweg-Maatschappij (NRS)} must place
+its second home station in either \noun{Arhem} (I16) and \noun{Venlo}
+(K16) whichever has an empty city circle or contains a government
+station marker, at the director's choice (see \subsecref{Starting-or-floating}
+\& \subsecref{Public-Company-Overview}).
+\end{itemize}
+\item (\emph{Local Public Companies, if the first time operating only})
+The Local Public Company purchases the next available train (\emph{unless
+gray or purple}) from the supply at no cost.
 \item \emph{(Optional)} Build track (see \subsecref{Build-track}).
 \item \emph{(Optional)} Place or swap a station marker (see \subsecref{Place-station-marker}).
 \item Run train(s) (see \subsecref{Run-train(s)}).
@@ -679,18 +718,17 @@ company's home station marker(s) on its home station location(s) (see
 \item \emph{(May be optional)} Buy train(s) (see \subsecref{Buy-train(s)}
 \& \subsecref{Emergency-train-buying}).
 \end{enumerate}
-\item (\emph{In green and later phases}) public companies may buy green
+\item (\emph{Green and later phases only}) Public companies may buy green
 private companies from players at any time during the company's operation
-for between \textflorin 1 and the face value of the private company
-(see \subsecref{Private-Companies}).
-\item (\emph{In blue and later phases}) public companies may buy blue private
-companies from players at any time during the company's operation
-for between \textflorin 1 and the face value of the private company
-(see \subsecref{Private-Companies}).
-\item The next public company in operating order (see \subsecref{company-operating-order})
-then operates (see \subsecref{company-operating-order}), or if it
-was the last public company in operating order, the Operating Round
-ends (see \secref{game-overview}).
+for any value between and including \textflorin 1 and the face value
+of the private company (see \subsecref{Private-Companies}).
+\item (\emph{Blue and later phases only}) Public companies may buy blue
+private companies from players at any time during the company's operation
+for any value between and including \textflorin 1 and the face value
+of the private company (see \subsecref{Private-Companies}).
+\item The next public company in operating order then operates (see \subsecref{company-operating-order}),
+or if it was the last public company in operating order, the Operating
+Round ends (see \secref{game-overview}).
 \end{itemize}
 
 \subsubsection{Build track\label{subsec:Build-track}}
@@ -701,19 +739,23 @@ a different track tile or hexagon for a fee of \textflorin 20 paid
 to the bank from the company treasury, both in addition to any terrain
 or upgrade costs (see \subsecref{Track-placement-=000026-upgrades}
 \& \subsecref{Upgrading-track} \& \secref{Game-Phases}). A public
-cannot upgrade two track tiles or hexagons in the same Operating Round.
+company cannot do two upgrades in the same Operating Round or upgrade
+the yellow track tile it placed in the same Operating Round .
 \begin{description}
 \item [{Exception:}] A public company that owns the \noun{Het Laantje van
 der Gaag} green private company (see \parref{Het-Laantje-van}) may
 place an additional yellow track tile for a cost of \textflorin 20
-paid to the bank in addition to any terrain or upgrade costs, from
-the company treasury, closing the private.
+paid to the bank in addition to any terrain or upgrade costs (the
+terrain is free if the tile is paced on H7) from the company treasury,
+closing the private.
 \end{description}
 \item Track placement and upgrade and terrain costs are paid from the public
 company treasury to the bank.
 \item Some hexagons are blocked and may not have track placed there until
 their matching private companies have closed or been bought by a public
 company (see \subsecref{Private-Companies-Overview}).
+\item Some hexagon edges are blocked and track connections may not be made
+across them before the appropriate game phase (see \secref{Map-Explanation}).
 \end{itemize}
 
 \subsubsection{Place or swap station marker(s) \label{subsec:Place-station-marker}}
@@ -722,19 +764,33 @@ company (see \subsecref{Private-Companies-Overview}).
 \begin{itemize}
 \item A public company cannot place:
 \begin{itemize}
-\item More or place than one station marker, not counting its home station(s),
-per Operating Round. A private company special power cannot be used
-by a public company to place a second station marker in an Operating
-Round (see \subsecref{Saleable-private-companies}).
+\item More than one station marker, not counting its home station(s), per
+Operating Round.
 \item More than one station marker in the same hexagon.
 \begin{description}
 \item [{Exception:}] A public company that owns the \noun{Kabinet-Rochussen}
 blue private company can move a station marker to a hexagon that already
 has one of the company's station markers (see \parref{Kabinet-Rochussen}).
+\item [{Exception:}] A public company can swap station markers (see \parref{Swap-station-markers})
+such that either or both companies end up with two station markers
+in the same hexagon. In this case, those company directors (active
+company first) must choose which of the two station markers in those
+hexagons to return to the company charter and replace with a government
+station marker from the supply (see \parref{Swap-station-markers}
+\& \subsecref{Government-railway}).
 \end{description}
-\item A station marker in the last available city circle of a hexagon that
-is also the home station of a public company, if that company has
-not already operated and placed its home station.
+\item A station marker in a hexagon all of whose open city circles and government
+station marker locations have been reserved by companies that haven't
+yet floated or operated (see \subsecref{Starting-or-floating}).
+\begin{itemize}
+\item Station markers may be placed in or moved to Arhem (I16) and Venlo
+(K16) prior the \noun{Nederlandsche Rhijnspoorweg-Maatschappij (NRS)}
+ public company first operating and placing its home stations (see
+\subsecref{Public-Company-Overview}) if an empty city circle or a
+government station marker is left in one of the two of them for the
+\noun{Nederlandsche Rhijnspoorweg-Maatschappij (NRS)} second home
+station (see \subsecref{Government-railway}).
+\end{itemize}
 \end{itemize}
 \end{itemize}
 
@@ -743,13 +799,14 @@ not already operated and placed its home station.
 \item In order to place a station marker, the public company must:
 \begin{enumerate}
 \item Have a station marker available to be placed (see \tabref{Public-Companies}).
-\item Place a station marker in an empty city circle that can trace a single
-continuous line of track to a previously placed station marker of
-that company:
+\item Place one of its station markers in an empty city circle, or in place
+of a government station marker (return the government station marker
+to the supply) that can trace a single continuous line of track to
+a previously placed station marker of that company (see \subsecref{Government-railway}):
 \begin{itemize}
 \item Without passing through a city all of whose station-marker spaces
-are filled with other companies' station markers and/or (major public
-companies only) government station markers.
+are filled with other companies' station markers and/or (\emph{Major
+Public Companies only}) government station markers (see \subsecref{Government-railway}).
 \item Crossing any hexagon-edge twice.
 \end{itemize}
 \item Pay a fee to the bank equal to the revenue of the location of the
@@ -757,7 +814,7 @@ newly placed station marker multiplied by the number of station markers
 that company will have on the map after the placement.
 \begin{itemize}
 \item If the destination hexagon has no marked revenue, then use the revenue
-of a legal yellow track tile for that hexagon.
+of a legal yellow track tile for that hexagon (see \subsecref{Track-placement-=000026-upgrades}).
 \end{itemize}
 \end{enumerate}
 \end{itemize}
@@ -773,14 +830,25 @@ of another public company.
 \item Both public company directors must agree to the swap.
 \end{itemize}
 \item Swap the locations of the two station markers.
+\begin{itemize}
+\item A public company can swap station markers such that either or both
+companies end up with two station markers in the same hexagon. In
+this case, those company directors (active company first) must choose
+which of the two station markers in those hexagons to return to the
+company charter and replace with a government station marker from
+the supply (see \parref{Swap-station-markers} \& \subsecref{Government-railway}).
+\end{itemize}
 \item Pay a fee to the bank equal to the revenue of the location the acting
 company's station marker moved to, multiplied by the number of station
 markers that company will have on the map after the move.
 \begin{itemize}
 \item If the destination location has no marked revenue, then use the revenue
-of a legal yellow track tile for that hexagon.
+of a legal yellow track tile for that hexagon (see \subsecref{Track-placement-=000026-upgrades}).
 \end{itemize}
 \end{enumerate}
+\item A company that swaps one of its station markers during its operations
+cannot use the swapped station marker in that Operating Round (see
+\subsecref{General-Route-definition}).
 \end{itemize}
 
 \subsubsection{Run train(s)\label{subsec:Run-train(s)}}
@@ -796,36 +864,41 @@ revenue for the company, the director must use it.
 \subsubsection{Pay or withhold dividends\label{subsec:Pay-or-withhold}}
 \begin{itemize}
 \item The director of a public company decides if the company's total revenue
-is paid out in dividends to its shareholders or withheld in the company's
-treasury , or a half-dividend is paid.
-\item If the revenue is paid out in dividends:
+is fully paid out in dividends to its shareholders, withheld in the
+company's treasury or a half-dividend is paid.
 \begin{itemize}
-\item Each player receives as dividends from the bank the percentage of
-the total revenue that corresponds to the total percentage of the
-company shares they own.
-\item Shares in the Bank Pool pay their fraction of the total revenue as
-a dividend from the bank to the company treasury.
-\item Shares in the treasury of a public company pay their dividend to the
-system's treasury (see ).
-\item No dividend is paid for shares in the IPO.
+\item Major Public Companies cannot pay half-dividends.
+\item Local Public Companies cannot pay full dividends prior to blue phase
+(see \secref{Game-Phases}).
 \end{itemize}
 \item If the revenue is withheld:
 \begin{itemize}
 \item The entire revenue is paid from the bank to the company treasury.
 \end{itemize}
+\item If a full dividend is paid, the dividend per share is one tenth ($\frac{1}{10}$)
+of the total revenue:
+\begin{itemize}
+\item Dividends for shares owned by players are paid from the bank to the
+player.
+\item Dividends for shares in the company treasury and the Bank Pool are
+paid from the bank to the company treasury (see \subsecref{Redeeming-shares}).
+\item No dividend is paid for shares in the IPO.
+\end{itemize}
 \item If a half-dividend is paid:
 \begin{itemize}
 \item Half of the total revenue is paid from the bank to the company treasury.
-\item Each player receives as dividends from the bank the percentage of
-half the total revenue (rounding up) that corresponds to the total
-percentage of the company shares they own.
-\item Shares in the Bank Pool pay their fraction of half the total revenue
-(rounding down) as a dividend from the bank to the company treasury.
-\item Shares in the treasury of a public company pay their fraction of half
-the total revenue (rounding down) from the bank to the company treasury.
+\item The dividend per share is one twentieth ($\frac{1}{20}$) of the total
+revenue:
+\begin{itemize}
+\item Dividends for shares owned by players are paid from the bank to the
+player, rounding up for each individual share.
+\item Dividends for shares in the company treasury and the Bank Pool are
+paid from the bank to the company treasury, rounding down for each
+individual share (see \subsecref{Redeeming-shares}).
 \item No dividend is paid for shares in the IPO.
 \end{itemize}
-\item Paying or withholding dividends affects the company's stock price
+\end{itemize}
+\item Paying or withholding dividends will affect the company's stock price
 (see \subsecref{Stock-price-movement}).
 \end{itemize}
 
@@ -840,69 +913,64 @@ phase change caused by the purchase takes effect (see \secref{Game-Phases}
 \item Trains can be bought from the supply for face value, or from another
 public company for any price agreed upon by the directors of both
 companies (minimum \textflorin 1, also see \subsecref{Emergency-train-buying}).
+\begin{description}
+\item [{Exception:}] A Local Public Company's only train cannot be bought
+by another company unless the buying company doesn't have a train.
+\end{description}
 \item A public company can buy multiple trains, limited by its treasury
 and the train limit (see \subsecref{Train-Limit}).
 \item Trains are available from the supply in colour order: first yellow,
-then green, blue, light brown, dark brown, red, gray and finally purple.
+then green, blue, brown, red, gray and finally purple.
 \begin{itemize}
 \item All the trains of a given colour must be bought from the supply before
 the trains of the next colour are available.
 \end{itemize}
 \item Trains are purchased one at a time with any phase changes occurring
 before the company purchases any more trains in that Operating Round.
-\item Game phase changes are caused by train purchases of new colours (see
-\tabref{Game-Phases} and \secref{Game-Phases}) and apply immediately
-throughout the game.
-\begin{itemize}
-\item Some game phase changes will cause older trains to ``rust'' and
-be removed from the game (see \secref{Game-Phases}).
-\begin{itemize}
-\item Companies can nationalise when trains rust (see ).
-\end{itemize}
-\item Some game phase changes reduce the train limit (see \secref{Game-Phases}).
-\begin{itemize}
-\item Public companies must immediately discard trains (director's choice)
-in excess of the new train limit from the game (see \subsecref{Train-Limit}).
-\end{itemize}
-\end{itemize}
+\item Game phase changes are caused by train purchases (see \subsecref{Operating-round-actions})
+of new colours (see \tabref{Game-Phases} and \secref{Game-Phases})
+and apply immediately throughout the game.
 \item A public company with a route between one of its station markers and
 a town or city (see \subsecref{General-Route-definition}) must own
-at least one train at the end of its train buying step.
+at least one train at the end of its operations.
 \end{itemize}
 
 \paragraph{Emergency train buying\label{subsec:Emergency-train-buying}}
 \begin{itemize}
 \item A public company with a route between one of its station markers and
-another revenue center (see \subsecref{General-Route-definition}
-\& \secref{Map-Explanation}) must own a train at the end of its operations.
+a town or city (see \subsecref{General-Route-definition} \& \secref{Map-Explanation})
+must own a train at the end of its operations.
 \item If the public company does not have enough money in its treasury to
 buy a train, and the company must own a train, then the company must
 sell shares from its treasury to raise the money. Normal share-selling
 rules apply (see \subsecref{Selling-shares}).
 \item If that is still not enough, then the additional necessary funds must
 be provided by the director of the company:
+\begin{itemize}
 \item \emph{(if the director does not have enough money to contribute to
 buy the train)} The director must sell shares to raise the additional
-funds (see \subsecref{Selling-shares}). Normal share-selling rules
-apply (see \subsecref{Selling-shares}).
+funds (see \subsecref{Selling-shares}). 
+\begin{itemize}
+\item Normal share-selling rules apply (see \subsecref{Selling-shares}).
 \begin{itemize}
 \item Director control of the currently operating public company may not
 be transferred to another player during Emergency Train Buying (see
 \subsecref{Company-directors})
+\end{itemize}
 \item If shares are sold such that director control of a different public
 company transfers to a new director, then director control transfers
-before any trains are be bought from it by that company in that operating
-round.
+before any trains are bought from it.
 \item The director of the public company cannot contribute more money than
 is required to buy the selected train and cannot sell additional shares
 once enough money has been raised to buy the selected train.
+\end{itemize}
 \end{itemize}
 \item If the public company is still unable to buy a train from the bank
 after the director has contributed all possible funds and sold all
 shares that can be legally sold (see \subsecref{Selling-shares})
 and no other public company is willing to sell one of its trains to
-the company for an agreeable price, then the player is declared bankrupt
-(see \secref{Player-Bankruptcy}).
+the company for an agreeable price, then the player is bankrupt (see
+\secref{Player-Bankruptcy}).
 \item A train bought from another public company with director's contributions
 cannot be bought for more than face value.
 \item A public company that buys a train with a director's contribution
@@ -911,32 +979,44 @@ necessarily ends its operations with no money in its treasury.
 company, regardless of the price at which it is offered.
 \end{itemize}
 
-\section{Player Bankruptcy\label{sec:Player-Bankruptcy}}
+\section{Player Bankruptcy and Concession\label{sec:Player-Bankruptcy}}
 \begin{itemize}
 \item Players can bankrupt:
 \begin{itemize}
-\item By failing to be able to pay the revenue of a \noun{Rotterdamsche
-Bank} red private company at the start of an Operating Round (see
-\subsecref{Paying-red-private} \& \parref{Rotterdamsche-Bank})
+\item By failing to pay the revenue of a \noun{Rotterdamsche Handelsvereeniging}
+red private company at the start of an Operating Round (see \subsecref{Paying-red-private}
+\& \parref{Rotterdamsche-Bank})
 \item By failing to buy a train for a company required to own one (see \subsecref{Emergency-train-buying}).
 \end{itemize}
-\item If a player bankrupts:
+\item At any time during the game a player may unilaterally concede and
+be removed from the game.
+\item If a player is bankrupt or concedes:
 \begin{itemize}
-\item Any companies they direct are nationalised (see \subsecref{Company-directors}
-\& \subsecref{Public-company-nationalisation}).
-\item Any private companies owned by the player are discarded from the game
-(see \subsecref{Private-Companies}).
-\item All the player's monies are returned to the bank.
+\item Any private companies owned by that player are discarded from the
+game (see \subsecref{Private-Companies}).
+\item Any brown train held by that player is discarded from the game (see
+\parref{Diepenbrock-en-Reigers}).
+\item Any public companies directed by that player are nationalised (see
+\subsecref{Company-directors} \& \subsecref{Public-company-nationalisation}).
+\item All the player's money is returned to the bank.
 \item If the player bankrupted due to a public company they directed failing
 to buy a train from the supply (see \subsecref{Emergency-train-buying}),
-then that train is discarded from the game.
+then that train is considered to have been purchased and is discarded
+from the game. This can change the the game phase (see \subsecref{Buy-train(s)},
+\subsecref{Train-Limit}, \subsecref{Public-company-nationalisation}
+\& \secref{Game-Phases}).
 \item Additionally, one train of each remaining rank of trains in the supply
-prior to the gray trains is discarded from the game (see \tabref{Game-Phases}).
+prior to the gray trains is discarded from the game. This does not
+affect the game phase.
+\item The bankrupt or conceding player's final score is zero (\textflorin 0).
 \end{itemize}
-\item The bankrupt player is then eliminated from the game.
-\item If only one player remains in the game after the bankruptcy, the game
-is over and that player has won (see \secref{Game-End}). Otherwise
-the game continues in the normal manner with the remaining players.
+\item The bankrupt or conceding player is then eliminated from the game.
+\begin{itemize}
+\item If only one player remains in the game after the bankruptcy or concession,
+the game is over and that player has won (see \secref{Game-End}).
+Otherwise the game continues in the normal manner with the remaining
+players.
+\end{itemize}
 \end{itemize}
 
 \section{Game End\label{sec:Game-End}}
@@ -945,7 +1025,7 @@ the game continues in the normal manner with the remaining players.
 
 1839 can end in four ways:
 \begin{enumerate}
-\item If all but one player has bankrupted (see \secref{Player-Bankruptcy}):
+\item If all but one player has bankrupted or conceded (see \secref{Player-Bankruptcy}):
 \begin{itemize}
 \item The game ends immediately and that player has won.
 \end{itemize}
@@ -958,9 +1038,9 @@ the game continues in the normal manner with the remaining players.
 \item At the end of a Stock Round because it was fully held by players,
 the game ends immediately and winner is determined (see \subsecref{Scoring}).
 \item By paying a dividend during an Operating Round and having the stock
-price move to \textflorin 500, the game ends at the end of that Operating
-Round (see \subsecref{Stock-price-movement}) and the winner is determined
-(see \subsecref{Scoring}).
+price move to \textflorin 500 (see \subsecref{Stock-price-movement}),
+the game ends at the end of that Operating Round and the winner is
+determined (see \subsecref{Scoring}).
 \end{itemize}
 \item After the first complete set of Operating Rounds in purple phase (see
 \secref{Game-Phases}) and the winner is determined (see \subsecref{Scoring}).
@@ -983,23 +1063,26 @@ Round (see \subsecref{Stock-price-movement}) and the winner is determined
 \part{Acknowledgments\label{part:Acknowledgments}}
 
 The designer would like to thank Francis Tresham for the design and
-development of the wonderful field of 18xx games, Lucas Boyd for 1871
-Prince Edward Island, Erno Eekelschot for 18Kaas, Mike Hutton for
-1860, and Francisco Vellani and Manlio Manzini for 1841 -- all of
-which were direct inspirations for this design; Lucas Boyd, Chris
-Talbot and Shelby Noonan for their bounteous supply of inspiration,
+development of the wonderful field of 18xx games, Lucas Boyd for \noun{The
+Old Prince: 1871}, Erno Eekelschot for \noun{18Kaas}, Mike Hutton
+for \noun{1860}, Francisco Vellani and Manlio Manzini for \noun{1841},
+and Han Heidema for \noun{Dutch Intercity} -- all of which were direct
+inspirations for this design; and John Bohrer, Lucas Boyd, Shelby
+Noonan and Chris Talbot for their bounteous supply of inspiration,
 notions, complaints and sounding board in equal measures. In particular
-Chris Talbot suggested key parts of the private auction structure,
-Lucas Boyd identified the core of the capital and pacing challenge
-in the game and greatly aided development and Shelby Noonan originated
-aspects of the train roster and what became the nationalisation system.
-Additional thanks go to the many other play-testers too numerous to
-list. I have been honoured to design games for and with such wonderful
-people.
+John Bohrer unknowingly made an off-hand comment that directly lead
+to rescuing this design from the half-done dustbin, Lucas Boyd identified
+the core of the capital and pacing challenge in the game and greatly
+aided development, Shelby Noonan did much heavy lifting on this rules
+document and originated aspects of the train roster and what became
+the nationalisation system, and Chris Talbot suggested key parts of
+the private auction structure. Additional thanks and recognition go
+to the many other play-testers and contributors too numerous to list.
+I have been honoured to design games for and with such wonderful people.
 
 I hope you enjoy the game!
 
--- J C Lawrence
+-- $J\,C\,Lawrence$
 
 \part{Addenda}
 
@@ -1023,6 +1106,7 @@ but not limited to:
 \item Stock buys or sales (see \subsecref{Selling-shares} \& \subsecref{Buying-shares}).
 \item Track placement or upgrades (see \subsecref{Track-placement-=000026-upgrades}).
 \item Station marker placement (see \subsecref{Buying-shares}).
+\item Conceding (see \secref{Player-Bankruptcy}).
 \end{itemize}
 \item Any offers, suggestions, negotiations or other game discussions must
 conform to the above limits and must be fully communicated to all
@@ -1045,12 +1129,11 @@ all players.
 \item [{Cities:}] City hexagons contain large circles along with the name(s)
 of the cities.
 \begin{description}
-\item [{Big~Cities:}] Are marked with a letter (Amsterdam, Breda, Haarlem,
-Rotterdam, Utrecht) and have a higher revenue.
+\item [{Big~Cities:}] Are marked with a letter (\noun{Amsterdam} (G10),
+\noun{Breda} (K8), \noun{Haarlem} (G8), \noun{Rotterdam} (J7), \noun{Utrecht}
+(I12)) and have a higher revenue.
 \item [{OO~City:}] Have two distinct cities on the same tile and are marked
-``OO'' but are otherwise the same as a normal city track tile. Only
-OO city track tiles can be used on hexagons marked ``OO'', and they
-cannot be used on any other map hexagons.
+``OO'' but are otherwise the same as a normal city track tile. 
 \end{description}
 \item [{Towns:}] Town hexagons contain one or two small black circles marking
 the towns for hexagons without track, or cross-bars on pre-built track.
@@ -1061,7 +1144,7 @@ green phase or later (see \secref{Game-Phases}).
 not be altered nor upgraded. Track tiles cannot be placed on gray
 hexagons, nor adjacent to them such that a line of track runs into
 a blank gray hexagon-edge.
-\item [{Off-board~locations:}] Black (Duitsland/Germany), blue (Overzees/Overseas),
+\item [{Off-board~locations:}] Black (Duitsland/Germany), blue (Overzeesch/Overseas),
 and red (Belgie/Belgium) hexagons represent connections to areas not
 shown on the map. Black triangles mark separate track connections
 to those remote locations. Track tiles may be placed adjacent to them
@@ -1073,25 +1156,27 @@ hexagon-edge.
 \end{description}
 \item Terrain is marked with a wavy line (river) along with the terrain
 cost for building track on those hexagons (always \textflorin 80).
-\item Big cities have an upgrade cost (always \textflorin 80) that must
-be plaid when upgrading a track tile on that hexagon.
 \item Revenue centers and off-board locations are marked with their revenue
 as a number in a small white circle, or as a series of numbers in
 a coloured box matching the game phases at which they start applying
 (see \tabref{Game-Phases} \& \subsecref{Run-train(s)}).
-\item Some hexagons are marked with a red barbell, denoting that they are
-blocked by a matching private company (see  \subsecref{Private-Companies}).
-\item Some hexagon edges are blocked by dark brown barriers and track tiles
-cannot be placed so as to make a new track connection across that
-edge before dark brown phase (see \parref{track-placement-Overview}
-\& \secref{Game-Phases}).
+\begin{description}
+\item [{Exception:}] The revenue value of the Ruhrgebied (J17 \& K18) off-board
+is equal to either the largest revenue value on the route, or double
+the revenue of the differently coloured off-board at the other end
+of the route, which ever is the larger.
+\end{description}
+\item The hexagon at H7 is marked with a red barbell, denoting that it is
+blocked by a private company (see \parref{Het-Laantje-van}).
+\item Some hexagon edges are blocked by red barriers and track tiles cannot
+be placed so as to make a new track connection across that edge before
+red phase (see \parref{track-placement-Overview} \& \secref{Game-Phases}).
 \item The Bremen (C20 \& D21) and Ruhrgebied (J17 \& K18) off-boards are
 each a single location comprised of two hexagons.
 \item Related terms:
 \begin{description}
 \item [{Revenue~center}] A city or town on a hexagon or track tile that
-has an income or revenue value. Off-board hexagons are not revenue
-centers.
+has an income or revenue value. Off-boards are not revenue centers.
 \item [{Line~of~track}] A continuous track-connection between a hexagon
 edge and a revenue center, or between a specific pair of hexagon edges
 on the same or different hexagons.
@@ -1116,36 +1201,54 @@ with a stock price marker.
 \item A Local Stock Market with values from \textflorin 10 to \textflorin 88
 \item A Major Stock Market with values from \textflorin 40 to \textflorin 500.
 \end{itemize}
+\item Public Companies with stock prices on the Local Stock Market are Local
+Public Companies (see \subsecref{Public-Company-Overview}).
+\item Public Companies with stock prices on the Major Stock Market are Major
+Public Companies (see \subsecref{Public-Company-Overview}).
 \item The two markets join at \textflorin 101 on the Major Stock Market.
 \begin{itemize}
 \item Stock prices on the Major Stock Market cannot move onto the Local
 Stock Market.
 \item Stock prices on the Local Stock Market can move onto the Major Stock
 Market.
-\item A stock price on the Local Stock Market that moves right from \textflorin 88
-moves to \textflorin 101 on the Major Stock Market or further right
-as applicable (see \subsecref{Stock-price-movement}).
-\item That company is now a Major Public Company and it and its assets are
-subject to different rules (see ).
-\end{itemize}
-\item Public Companies with stock prices on the Local Stock Market are Local
-Public Companies (see \subsecref{Public-Company-Overview}).
-\item Public Companies with stock prices on the Major Stock Market are Major
-Public Companies (see \subsecref{Public-Company-Overview})..
-\item When a public company is parred, its stock price marker is placed
-on the matching location on the Stock Market (see \subsecref{Starting-or-floating}).
+\item If a stock price is to be moved right multiple times on the Local
+Stock Market and passes \textflorin 88, then the stock price will
+continue moving right the remaining number of spaces after the move
+from \textflorin 88 to \textflorin 101 onto the Major Stock Market
+(see \subsecref{Stock-price-movement}).
 \begin{itemize}
-\item Both markets have an area of darker yellow (67/74/82 on the Major
-Stock Market and 25/31/38/46/55 on the Local Stock Market) that mark
-possible par prices for new public companies.
+\item That Local Public Company is now a Major Public Company and it is
+subject to different rules (see \subsecref{Public-Company-Overview}).
+\end{itemize}
+\end{itemize}
+\item The \textflorin 101 space on the Major Stock Market is also marked
+with two small circles.
+\begin{itemize}
+\item (\emph{Once per public company}) Some public companies which reach
+a stock price of \textflorin 101 gain additional station markers (see
+\tabref{Public-Companies}).
+\end{itemize}
+\item When a public company is parred, its stock price marker is placed
+on the matching location on the Stock Market (see \subsecref{Starting-or-floating}
+\& \tabref{Game-Phases}).
+\begin{itemize}
+\item Lokaalsporwegen can par at any of the the darker yellow values on
+the the Local Stock Market: \textflorin 25, \textflorin 31, \textflorin 38,
+\textflorin 46 or \textflorin 55.
+\item Spoorwegmaatschappij can par at:
+\begin{itemize}
+\item \textflorin 82 in yellow or green phase.
+\item \textflorin 74 in yellow, green or blue phase.
+\item \textflorin 67 in all phases.
+\end{itemize}
 \end{itemize}
 \item Both markets have large areas of pale-background spaces with no special
 rules.
 \item The \textflorin 500 price on the Major Stock Market has a red background.
 The game ends if a stock price marker reaches \textflorin 500 (see
 \subsecref{Game-end-criteria}).
-\item Public company stock price markers move in well-defined ways (see
-\subsecref{Stock-price-movement}).
+\item Public company stock prices and their markers move in well-defined
+ways (see \subsecref{Stock-price-movement}).
 \end{itemize}
 
 \subsection{Stock price movement\label{subsec:Stock-price-movement}}
@@ -1174,14 +1277,12 @@ left once (see \subsecref{Selling-shares}).
 \begin{itemize}
 \item If shares of multiple companies are sold at the same time, the seller
 must decide the order in which they are sold and thus the order in
-which their stock price markers are moved and potentially the order
-in which they will later operate (see \subsecref{Selling-shares}
-\& \ref{subsec:company-operating-order}).
+which their stock price markers are moved (see \subsecref{Selling-shares}).
 \end{itemize}
 \begin{description}
 \item [{Exception:}] Public companies can redeem their shares as they are
-sold. In this case the stock price is not changed due to the sale.
-(see \subsecref{Selling-shares}).
+sold. In this case their stock price is not changed due to the sale.
+(see \subsecref{Redeeming-shares}).
 \end{description}
 \item At the end of each Stock Round, the stock price markers of public
 companies that have:
@@ -1208,6 +1309,14 @@ time.
 the current stock price, then the stock price is moved right a fourth
 time.
 \end{itemize}
+\item If a stock price reaches \textflorin 500 per share:
+\begin{itemize}
+\item At the end of a Stock Round because it was fully held by players,
+the game ends immediately and winner is determined (see \subsecref{Scoring}).
+\item By paying a dividend during an Operating Round and having the stock
+price move to \textflorin 500, the game ends at the end of that Operating
+Round (see \subsecref{Stock-price-movement} \& \secref{Game-End}).
+\end{itemize}
 \end{itemize}
 
 \section{Companies\label{sec:Companies}}
@@ -1220,9 +1329,20 @@ and public companies.
 may pay a revenue to their holder at the start of Operating Rounds,
 and may grant their owner a special power, behaviour or benefit.
 \item Public companies have shares that players may purchase and sell at
-a share price that's tracked on one of the Stock Markets, and can
-build track, place station markers, buy private companies and trains,
-run trains, and pay or withhold dividends.
+a share price that's tracked on one of the Stock Markets (see \secref{Stock-Market}),
+and can build track, place station markers, buy private companies
+and trains, run trains, pay or withhold dividends (see \secref{Operating-Rounds})
+and be nationalised (see \subsecref{Public-company-nationalisation}).
+\item There are two types of public companies before they are parred, and
+two types after they are parred:
+\begin{itemize}
+\item ``\noun{Spoorwegmaatschappij}`` and ``\noun{Lokaalsporwegen}''
+identify company types before they are parred (see \subsecref{Starting-or-floating}).
+\item ``Local Public Company'' and ``Major Public Company'' identify
+company types after they are parred based on which stock market currently
+contains their stock price marker (see \subsecref{Starting-or-floating}
+\& \secref{Stock-Market}).
+\end{itemize}
 \end{itemize}
 
 \subsection{Private companies\label{subsec:Private-Companies}}
@@ -1234,11 +1354,15 @@ run trains, and pay or withhold dividends.
 (see \subsecref{Operating-round-General})\noun{.} Private companies
 do not otherwise ``operate'' and do not lay track or buy or run
 trains.
-\item Private companies are discarded from the game when they close.
-\item In green phase or later, public companies may purchase green private
-companies from players (see \subsecref{Operating-round-actions})
+\begin{description}
+\item [{Exception:}] The \noun{Rotterdamsche Handelsvereeniging}, if in
+the game, charges its owner \textflorin 100 (see \parref{Rotterdamsche-Bank})
+and pays the bank at the start of each Operating Round.
+\end{description}
+\item (\emph{Green phase or later}) Public companies may purchase green
+private companies from players (see \subsecref{Operating-round-actions})
 at any time during the operation of the buying company (see \subsecref{Saleable-private-companies}).
-\item In blue phase or later, public companies may purchase blue private
+\item (\emph{Blue phase or later}) Public companies may purchase blue private
 companies from players (see \subsecref{Operating-round-actions})
 at any time during the operation of the buying company (see \subsecref{Saleable-private-companies}).
 \item When a public company purchases a private company from a player:
@@ -1257,16 +1381,13 @@ onward and as long as the private company has not closed. Some private
 company powers can only be used during certain steps of their owning
 company's operations.
 \end{itemize}
-\item Brown private companies cannot be bought by public companies (see
-\parref{Unsaleable-private-companies}).
-\item Some private companies block specific hexagons on the map. Track tiles
-cannot be built or upgraded at those hexagons by a public company
-until the matching private company has been purchased by a public
-company or closed.
-\begin{itemize}
-\item \noun{Het Laantje van der Gaag} blocks G19.
-\item \noun{Rijkswaterstaat} blocks D10 and X57.
-\end{itemize}
+\item Brown and red private companies cannot be purchased by public companies
+(see \parref{Unsaleable-private-companies}).
+\item The \noun{Het Laantje van der Gaag} green private company blocks the
+H7 hexagon on the map. Track tiles cannot be built or upgraded at
+that hexagon by a public company until the \noun{Het Laantje van der
+Gaag} green private company has been purchased by a public company
+or closed (see \parref{Het-Laantje-van}).
 \item Private companies are discarded from the game when they close.
 \end{itemize}
 
@@ -1278,12 +1399,12 @@ company or closed.
 \begin{description}
 \item [{Face~value:}] \textflorin 90
 \item [{Revenue:}] \textflorin 10
-\item [{Blocks:}] G19
-\item [{Closes:}] When power used or the start of red phase.
+\item [{Blocks:}] H7
+\item [{Closes:}] When power used or the start of gray phase.
 \item [{Power:}] The owning public company may place an additional yellow
 track tile (all terrain costs or upgrade costs must be paid) in addition
-to the public company's normal track lay for \textflorin 20. If the
-laid tile is at G19, then there is no terrain cost.
+to the public company's normal track lay for \textflorin 20. There
+is not terrain cost if the placed tile is at H7.
 \item [{Use:}] Power may be used during the owning public company's track
 build.
 \end{description}
@@ -1293,106 +1414,106 @@ build.
 \item [{Face~value:}] \textflorin 100
 \item [{Revenue:}] \textflorin 10
 \item [{Blocks:}] None.
-\item [{Closes:}] When power used or the start of red phase.
-\item [{Power:}] Owning public company may place or upgrade a tile for
-\textflorin 80 at Arnhem (K16) or Venlo (K18) as their yellow track
-lay or upgrade respectively and may additionally place a station marker
-in an empty and unreserved city location on that tile for free instead
-of their normal station placement.
+\item [{Closes:}] When power used or the start of gray phase.
+\item [{Power:}] At a total cost of \textflorin 80, the owning public company
+may place or upgrade a tile at Arnhem (I16) or Venlo (K16) as their
+yellow track lay or upgrade respectively and/or may place a station
+marker in an empty and unreserved city location, or in replacement
+of a government station marker, on that tile instead of their normal
+station placement.
 \item [{Use:}] Power may be used during the owning company's track build
-and instead of the owning public company's station marker placement.
+as the owning public company's tile lay and/or upgrade and/or station
+marker placement in that Operating Round (see \subsecref{Place-station-marker}).
 \end{description}
 
 \paragraph{Blue private companies\label{par:Blue-private-companies}}
 
 \subparagraph{\noun{Kabinet-Rochussen\label{par:Kabinet-Rochussen}}}
 \begin{description}
-\item [{Face~value:}] \textflorin 270
-\item [{Revenue:}] \textflorin 20/\textflorin 0 (when owned by a public
+\item [{Face~value:}] \textflorin 230
+\item [{Revenue:}] \textflorin 30 / \textflorin 0 (when owned by a public
 company)
 \item [{Blocks:}] None
-\item [{Closes:}] When power used or the start of red phase.
+\item [{Closes:}] When power used or the start of gray phase.
 \item [{Power:}] Owning public company may move one of its placed station
-markets to a different location on the map for free. The new location
+markers to a different location on the map for free. The new location
 must be a legal station marker placement location for the company
 before the move. A government station marker is placed at the prior
-station marker location (see \subsecref{Government-railway}).\\
-If the station marker is moved to a hexagon which already contains
-one of the company's station markers, then the station marker already
-on the hexagon is removed and a government station marker put in its
-place (see \subsecref{Government-railway}).
-\item [{Use:}] Instead of the owning public company's station market placement.
+station marker location (see \subsecref{Government-railway}).
+\begin{description}
+\item [{Exception:}] A public company can move a station marker (see \parref{Swap-station-markers})
+to a space in a hexagon that already contains one of the company's
+station markers. In this case, the company director must choose which
+of the two station markers in the hexagon to return to the company
+charter and replace with a government station marker from the supply
+(see \parref{Swap-station-markers} \& \subsecref{Government-railway}).
+\end{description}
+\item [{Use:}] Instead of the owning public company's station marker placement
+in that Operating Round (see \subsecref{Place-station-marker}).
+\item [{Note:}] In a 2-player game the\noun{ Kabinet-Rochussen} blue private
+company is discarded from the game and not used (see \secref{Game-Setup}).
 \end{description}
 
-\subparagraph{\noun{Nederlandsche Fabriek van Werktuigen en Spoorwegmaterieel\label{par:Nederlandsche-Fabriek-van}}}
+\subparagraph{Koninklijke Fabriek van Stoom en andere Werktuigen \label{par:Koninklijke-Nederlandsche-Fabriek}}
 \begin{description}
-\item [{Face~value:}] \textflorin 280
-\item [{Revenue:}] \textflorin 0
+\item [{Face~value:}] \textflorin 240
+\item [{Revenue:}] \textflorin 10 more than it paid in the previous Operating
+Round, starting at \textflorin 0 in the first Operating Round of the
+game.
 \item [{Blocks:}] None.
-\item [{Closes:}] At the start of red phase.
-\item [{Power:}] Private company comes with three ``SAVED'' markers.
-Other public companies may buy SAVED markets from the owning public
-company, one per company per Operating Round, for \textflorin 150
-each, paid to the treasury of the owning public company. The purchasing
-company must immediately assign the bought SAVED marker to a train,
-limit one per train. The owning company does not get a SAVED marker.\\
-A train with a SAVED marker will discard its SAVED marker instead
-of rusting, can be run in the next Operating Round, and will be discarded
-from the game after its owning public company finishes operating in
-the next Operating Round. Trains with a SAVED marker cannot be bought
-between companies.
-\item [{Use:}] N/A.
+\item [{Closes:}] At the start of gray phase.
+\item [{Power:}] None.
+\item [{Use:}] None.
 \end{description}
 
-\subparagraph{\noun{Fabriek van Rijtuigen en Spoorwagens J. J. Beijnes\label{par:Fabriek-van-Rijtuigen}}}
+\subparagraph{Diepenbrock en Reigers te Ulft\noun{\label{par:Diepenbrock-en-Reigers}}}
 \begin{description}
-\item [{Face~value:}] \textflorin 290
+\item [{Face~value:}] \textflorin 250
 \item [{Revenue:}] \textflorin 0
 \item [{Blocks:}] None
-\item [{Closes:}] At the start of light brown phase.
-\item [{Power:}] Converts to a light brown train at the start of light
-brown phase. The train is taken from the supply and the private company
-is discarded from the game. If the private company is already owned
-by a public company, the train is immediately placed in that public
-company's treasury and may be run in the normal manner. If the private
-company is owned by a player, the train is given to the player, may
-be freely assigned to any company at any time, where-upon it can be
-run and sold between public companies in the normal manner. Should
-the train rust while still held by the player, there is no recompense.
-\item [{Use:}] N/A.
+\item [{Closes:}] At the start of brown phase.
+\item [{Power:}] Converts to a brown train at the start of brown phase.
+The train is taken from the supply and the private company is discarded
+from the game. If the private company is already owned by a public
+company, the train is placed in that public company's treasury. If
+the private company is owned by a player, the train is given to the
+player and may be freely assigned to any company at any time. Should
+the train rust while still held by a player, there is no recompense.
 \end{description}
 
 \subparagraph{\noun{Crédit Mobilier\label{par:Cr=0000E9dit-Mobilier}}}
 \begin{description}
-\item [{Face~value:}] \textflorin 300
-\item [{Revenue:}] \textflorin 30/\textflorin 0 (when owned by a public
-company)
+\item [{Face~value:}] \textflorin 260
+\item [{Revenue:}] \textflorin 0
 \item [{Blocks:}] None
-\item [{Closes:}] At the start of red phase.
-\item [{Power:}] When closed coverts to \textflorin 800 in cash taken from
-the bank and a \noun{Rotterdamsche Bank} red private company, both
-in the same location as this brown private company (see \subsecref{Red-private-companies}).\\
-If owned by a public company when the public company is nationalised
-(see \subsecref{Public-company-nationalisation}), then it is returned
-to the director of the to-be-nationalised public company, along with
-a \noun{Rotterdamsche Bank} red private company. The \noun{Crédit
-Mobilier} can be repeatedly sold and returned in this way, each time
-also giving a \noun{Rotterdamsche Bank} red private company to the
-controlling player (see \subsecref{Red-private-companies}).
-\item [{Use:}] In a 3-player game the\noun{ Crédit Mobilier} blue private
-company is discarded from the game and not used (see \secref{Game-Setup}).
+\item [{Closes:}] At the start of brown phase.
+\item [{Power:}] When closed converts to \textflorin 600 in cash taken
+from the bank and a \noun{Rotterdamsche Handelsvereeniging} red private
+company, both in the same location as this blue private company (see
+\subsecref{Red-private-companies}).
+\item [{Use:}] None.
+\item [{Note:}] If owned by a public company when the public company is
+nationalised (see \subsecref{Public-company-nationalisation}):
+\begin{itemize}
+\item The \noun{Crédit Mobilier} is discarded from the game.
+\item The \noun{Rotterdamsche Handelsvereeniging} red private company is
+given to the director of the nationalised company (see \subsecref{Red-private-companies}).
+\end{itemize}
+\item [{Note:}] In 2-player and 3-player games the\noun{ Crédit Mobilier}
+blue private company is discarded from the game and not used (see
+\secref{Game-Setup}).
 \end{description}
 
-\subparagraph{\noun{Schielands Hoge Zeedijk\label{par:Schielands-Hoge-Zeedijk}}}
+\subparagraph{Weefgoederenfabrique C.T. Stork \& Co\noun{\label{par:Weefgoederenfabrique-C.T.-Stork}}}
 \begin{description}
-\item [{Face~value:}] \textflorin 30
+\item [{Face~value:}] \textflorin 260
 \item [{Revenue:}] \textflorin 30
 \item [{Blocks:}] None.
-\item [{Closes:}] At the start of red phase.
-\item [{Power:}] Comes with two shares of the Founding Public Company associated
-with the \noun{Rijkswaterstaat} brown private company during setup
-(see \secref{Game-Setup}).
-\item [{Use:}] N/A.
+\item [{Closes:}] At the start of gray phase.
+\item [{Power:}] Comes with two 10\% shares of the public company associated
+with the \noun{Albert Voombergh} brown private company during setup
+(see \secref{Game-Setup} \& \parref{Brown-private-companies}).
+\item [{Use:}] None.
 \end{description}
 
 \subsubsection{Unsaleable private companies\label{par:Unsaleable-private-companies}}
@@ -1401,105 +1522,125 @@ with the \noun{Rijkswaterstaat} brown private company during setup
 \begin{itemize}
 \item There are 5 brown private companies:
 \begin{itemize}
-\item \noun{August Borsig}
-\item \noun{Cornelis Outshoorn}
-\item \noun{Lodewijk Pincoffs}
-\item \noun{Ketwich \& Voombergh}
-\item \noun{Rijkwaterstaat}
+\item \noun{Albert Voombergh} (face value: \textflorin 320)
+\item \noun{August Borsig} (face value: \textflorin 270)
+\item \noun{Cornelis Outshoorn} (face value: \textflorin 280)
+\item \noun{J J Beijnes} (face value: \textflorin 270)
+\item \noun{Lodewijk Pincoffs} (face value: ~\textflorin 280)
 \end{itemize}
-\item In a 3-player game the \noun{Ketwich \& Voombergh} brown private company
-is discarded from the game and not used (see \secref{Game-Setup}).
-\item The unsaleable brown private companies are randomly assigned to founding
-public companies during setup (see\secref{Game-Setup} \& \subsecref{Public-companies}).
-\item Each of the unsaleable brown private companies has the following attributes:
+\item (\emph{2-player game only}) The \noun{August Borsig} and Cornelis\noun{
+Outshoorn} brown private companies are discarded from the game and
+not used (see \secref{Game-Setup}).
+\item (\emph{3-player game only}) The \noun{August Borsig }brown private
+company is discarded from the game and not used (see \secref{Game-Setup}).
+\item The brown private companies each are randomly assigned 30\% of different
+Spoorwegmaatschappij during setup (see \secref{Game-Setup} \& \subsecref{Public-companies}).
+\item Each of the brown private companies has the following attributes:
 \begin{description}
-\item [{Face~value:}] \textflorin 280 (\textflorin 300 for the \noun{Rijkswaterstaat})
-\item [{Revenue:}] \textflorin 30 (\textflorin 40 for the \noun{Rijkswaterstaat})
+\item [{Face~value:}] \textflorin 270, \textflorin 280 or \textflorin 320
+(varies by company)
+\item [{Revenue:}] \textflorin 30 (\textflorin 40 for the \noun{Albert
+Voombergh})
 \item [{Blocks:}] None.
-\item [{Closes:}] At the start of light brown phase or when the assigned
-public company has acquired a train (see \tabref{Game-Phases} \&
-\secref{Game-Phases}).
-\item [{Power:}] When closed the owner of the brown private company may
-take any single share of a parred company from the IPO.
+\item [{Closes:}] At the start of brown phase or when the assigned public
+company has acquired a train (see \tabref{Game-Phases} \& \secref{Game-Phases})
+or if nationalised when a player bankrupts or concedes (see \secref{Player-Bankruptcy}
+\& \subsecref{Public-company-nationalisation}).
+\item [{Power:}] When closed, the owner of the brown private company may
+take any single share of a parred public company from the IPO for
+which they currently hold less than 60\%. If there are no shares that
+can be legally taken or the owner of the brown private company declines
+to take a share from the IPO, then they are given \textflorin 40 from
+the bank. If a public company is floated by the share taken when a
+brown private company closes, that public company will operate in
+the next Operating Round in the normal manner (see \subsecref{company-operating-order}).
 \item [{Use:}] None.
-\item [{Note:}] When purchased during the private auction comes with the
-20\% director's certificate and a 10\% share certificate of the assigned
-public company. The buying player must immediately set the par price
-for the matching founding public company to any par price on the Major
-Stock Market (see \secref{Stock-Market})\noun{. }An unsaleable brown
-private company cannot be purchased by a public company.
+\item [{Note:}] Comes with the 20\% director's certificate and a 10\% share
+certificate of the assigned Spoorwegmaatschappij (see \secref{Game-Setup}).
+The player purchasing the brown private company must immediately par
+the matching Spoorwegmaatschappij to an available par price on the
+Major Stock Market (see \secref{Stock-Market} \& \subsecref{Public-companies})\noun{.}
 \end{description}
-\item In a 3-player game the \noun{Ketwich \& Voombergh} brown private company
-is discarded from the game and not used (see \secref{Game-Setup}).
 \end{itemize}
-\newpage{}
 
 \paragraph{Red private companies \label{subsec:Red-private-companies}}
 
-\subparagraph{\noun{Rotterdamsche Bank\label{par:Rotterdamsche-Bank}}}
+\subparagraph{Rotterdamsche Handelsvereeniging\noun{\label{par:Rotterdamsche-Bank}}}
 \begin{description}
 \item [{Face~value:}] \textflorin 0
-\item [{Revenue:}] \textflorin -100
+\item [{Revenue:}] -\textflorin 100
 \item [{Blocks:}] None.
 \item [{Closes:}] Never.
-\item [{Power:}] None.
+\item [{Power:}] None (replaces the blue \noun{Crédit Mobilier} private
+company when it closes -- see \parref{Cr=0000E9dit-Mobilier}).
 \item [{Use:}] None.
-\item [{Note:}] At the start of each Operating Round the owner of each
-red private company must pay the red private company's revenue (\textflorin 100)
-to the bank (see ).
+\item [{Note:}] At the start of each Operating Round the owner of the \noun{Rotterdamsche
+Handelsvereeniging} must pay \textflorin 100 to the bank (see \subsecref{Paying-red-private}).
 \end{description}
 
 \subsection{Public companies\label{subsec:Public-companies}}
 
 \subsubsection{Public company overview \label{subsec:Public-Company-Overview}}
 
-\begin{table*}
-\begin{tabular}{>{\centering}p{5cm}c>{\centering}p{4cm}ccc}
+\begin{sidewaystable*}
+\begin{tabular}{>{\centering}p{5cm}cc>{\centering}p{4cm}>{\centering}p{1cm}>{\centering}p{1cm}cc}
 \hline 
-Name & Symbol & \multicolumn{2}{c}{Founding Public Company} & \multicolumn{2}{c}{Major Public Company}\tabularnewline
-\cline{3-6} \cline{4-6} \cline{5-6} \cline{6-6} 
- &  & Homes & Stations & Homes & Stations\tabularnewline
+Name & Symbol & Type & Home & Par on & Can & \multicolumn{2}{c}{Stations}\tabularnewline
+\cline{7-8} \cline{8-8} 
+ &  &  & Stations & Market & Re-float? & Initial & Additional\tabularnewline
 \hline 
+\noun{Aken-Maastrichtsche Spoorweg-Maatschappij} & AMS & Spoorwegmaatschappij & \noun{Roermo}nd (L17),\\
+\noun{Maastricht} (N15) & Major & No & 3 & 1\tabularnewline
 \hline 
-\noun{Aken-Maastrichtsche Spoorweg-Maatschappij} & AMS & Roermond (L17), Maastricht (N15) & 5 & 2 & 5\tabularnewline
+\noun{Hollandsche IJzeren Spoorweg-Maatschappij} & HIJSM & Spoorwegmaatschappij & \noun{Leeuwarden} (B13),\\
+\noun{Haarlem} (G8) & Major & No & 3 & 1\tabularnewline
 \hline 
-\noun{Hollandsche IJzeren Spoorweg-Maatschappij} & HIJSM & Leeuwarden (B13), Haarlem (G8) & 4 & 2 & 5\tabularnewline
+\noun{Noord-Brabantsch-Duitsche Spoorweg-Maatschappi} & NBDS & Spoorwegmaatschappij & \noun{Breda} (K8),\\
+\noun{Weert} (L13) & Major & No & 3 & 1\tabularnewline
 \hline 
-\noun{Noord-Brabantsch-Duitsche Spoorweg-Maatschappi} & NBDS & Breda (K8), Weert (L13) & 4 & 2 & 5\tabularnewline
+\noun{Nederlandsche Centraal Spoorweg-Maatschappij} & NCS & Spoorwegmaatschappij & \noun{Amsterdam} (G10),\\
+\noun{Amersfoort} (H13) & Major & No & 3 & 0\tabularnewline
 \hline 
-\noun{Nederlandsche Centraal Spoorweg-Maatschappij} & NCS & Amsterdam (G11), Amersfoort (H13) & 3 & 2 & 5\tabularnewline
+\noun{Nederlandsche Rhijnspoorweg-Maatschappij} & NRS & Spoorwegmaatschappij & \noun{Utrech} (I12),\\
+choice of \noun{Arnhem} (I16)\\
+or \noun{Venlo} (K16) & Major & No & 3 & 0\tabularnewline
 \hline 
-\noun{Nederlandsche Rhijnspoorweg-Maatschappij} & NRS & Utrech (I12), choice of Arnhem (I16) or Venlo (K16) & 3 & 2 & 5\tabularnewline
+\noun{Nederlandsch-Westfaalsche Spoorweg-Maatschappij} & NWS & Spoorwegmaatschappij & \noun{Deventer} (G16) & Major & No & 3 & 2\tabularnewline
 \hline 
-\noun{Nederlandsch-Westfaalsche Spoorweg-Maatschappij} & NWS & Deventer (G16) & 5 & 2 & 5\tabularnewline
+\noun{Maatschappij tot Exploitatie van Staatsspoorwegen} & SS & Spoorwegmaatschappij & \noun{Groningen} (B19), \noun{Eindhoven} (K12) & Major & No & 3 & 2\tabularnewline
 \hline 
-\noun{Maatschappij tot Exploitatie van Staatsspoorwegen} & SS & Groningen (B19), Eindhoven (K12) & 5 & 2 & 5\tabularnewline
+\noun{Zuid-Hollandsche Electrische Spoorweg-Maatschappij} & ZHESM & Spoorwegmaatschappij & \noun{Hoorn} (E10),\\
+\noun{Den Haag} (H5) & Major & No & 3 & 1\tabularnewline
 \hline 
-\noun{Zuid-Hollandsche Electrische Spoorweg-Maatschappij} & ZHESM & Hoorn (E10), Den Haag (H5) & 5 & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#1} & L1 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
-\noun{Spoorweg-Maatschappij \#1} & S1 &  &  & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#2} & L2 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
-\noun{Spoorweg-Maatschappij \#2} & S2 &  &  & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#3} & L3 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
-\noun{Spoorweg-Maatschappij \#3} & S3 &  &  & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#4} & L4 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
-\noun{Spoorweg-Maatschappij \#4} & S4 &  &  & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#5} & L5 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
-\noun{Spoorweg-Maatschappij \#5} & S5 &  &  & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#6} & L6 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
-\noun{Spoorweg-Maatschappij \#6} & S6 &  &  & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#7} & L7 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
-\noun{Spoorweg-Maatschappij \#7} & S7 &  &  & 2 & 5\tabularnewline
-\hline 
-\noun{Spoorweg-Maatschappij \#8} & S8 &  &  & 2 & 5\tabularnewline
+\noun{Lokaalsporwegen \#8} & L8 & Lokaalsporwegen & (Director-selected) & Local & Yes & 3 & 2\tabularnewline
 \hline 
 \end{tabular}
 
 \caption{Public companies\label{tab:Public-Companies}}
-\end{table*}
+\end{sidewaystable*}
 
 \begin{itemize}
-\item There are sixteen public companies (see \tabref{Public-Companies}).
+\item There are sixteen public companies (see \tabref{Public-Companies})
+across two types: 
+\begin{itemize}
+\item Spoorwegmaatschappij\noun{: AMS, HIJSM, NBDS, NCS, NRS, NWS, SS, ZHESM.}
+\item Lokaalsporwegen\noun{: Lokaalsporwegen \#1} through \noun{Lokaalsporwegen
+\#8} (\noun{L1} through \noun{L8).}
+\end{itemize}
 \item Each public company consists of:
 \begin{itemize}
 \item 9 share certificates:
@@ -1507,52 +1648,133 @@ Name & Symbol & \multicolumn{2}{c}{Founding Public Company} & \multicolumn{2}{c}
 \item One 20\% director's certificate.
 \item Eight 10\% certificates.
 \end{itemize}
-\item 5 station markers (see \tabref{Public-Companies})
-\item A charter for holding and tracking the company treasury.
+\item 3, 4 or 5 station markers (see \tabref{Public-Companies})
+\item A charter for holding and tracking company assets.
 \item A stock price marker.
 \end{itemize}
-\item Public companies can be parred on the Local Stock Market or Major
-Stock Market.
-\begin{description}
-\item [{Local~Public~Companies}] have stock prices on the Local Stock
-Market.
-\item [{Major~Public~Companies}] have stock prices on the Major Stock
-Market.
-\end{description}
 \item Public companies once parred (see \subsecref{Starting-or-floating})
 have a stock price, tracked on the stock market with a stock price
-marker (see ).
-\item The first eight listed public companies (ASM, HIJSM, NBDS, NCS, NRS,
-NWS, SS, ZHESM) are Founding Public Companies. They:
+marker (see \subsecref{Stock-price-movement}).
 \begin{itemize}
-\item Have pre-defined home station location(s) (see \tabref{Public-Companies}).
-\item Must be parred on the Major Stock Market as Major Public Companies
-(see \secref{Stock-Market}) the first time they are parred.
-\item Have varying numbers of home stations and place-able station markers
-depending on the company (see \subsecref{Place-station-marker}).
-\item After being nationalised (see \subsecref{Public-company-nationalisation}),
-they:
-\begin{itemize}
-\item Can subsequently be parred as either Local or Major Public Companies
-on the Local or Major Stock Market.
-\item No longer have pre-defined home station locations (see \tabref{Public-Companies}).
-\item Have 2 home stations and 3 place-able station markers.
+\item Local Public Companies have stock prices on the Local Stock Market
+(see \secref{Stock-Market}).
+\item Major Public Companies have stock prices on the Major Stock Market
+(see \secref{Stock-Market}).
 \end{itemize}
-\end{itemize}
-\item The 8 numbered \noun{Spoorweg-Maatschappij} can be parred and floated
-as either Local or Major Public Companies.
-\item Public companies may:
+\item (\emph{Once per public company}) Some public companies which reach
+a stock price of \textflorin 101 gain additional station markers (see
+\tabref{Public-Companies}).
+\item Public companies can:
 \begin{itemize}
-\item Buy green private companies (green phase or later, see \secref{Game-Phases}
+\item (\emph{Green phase or later}) Buy green private companies (see \secref{Game-Phases}
 \& \subsecref{Private-Companies}).
-\item Buy blue private companies (blue phase or later, see \secref{Game-Phases}
+\item (\emph{Blue phase or later}) Buy blue private companies (see \secref{Game-Phases}
 \& \subsecref{Private-Companies}).
+\item Use the special powers of any private companies they own (see \subsecref{Private-Companies}).
 \item Place and upgrade track tiles (see \subsecref{Build-track} \& \subsecref{Track-placement-=000026-upgrades})
 \item Place or swap station markers (see \subsecref{Place-station-marker}).
-\item Buy and run trains (see \subsecref{Run-train(s)}, \subsecref{Buy-train(s)}
+\item Buy trains from the supply and other public companies (see \subsecref{Buy-train(s)}
 \& \secref{Trains-and-Running-Trains}).
-\item Pay or withhold dividends (see \subsecref{Pay-or-withhold}).
+\begin{description}
+\item [{Exception:}] A Local Public Company's only train cannot be bought
+by another company unless the buying company doesn't have a train.
+\end{description}
+\item Run trains (see \subsecref{Run-train(s)} \& \secref{Trains-and-Running-Trains}).
 \end{itemize}
+\item Pay or half-pay or withhold dividends (see \subsecref{Pay-or-withhold}).
+\begin{description}
+\item [{Exception:}] Local Public Companies cannot pay full dividends before
+blue phase.
+\item [{Exception:}] Major Public Companies cannot pay half dividends.
+\end{description}
+\item Related terms:
+\begin{description}
+\item [{``Local~Public~Company''~\&~``Major~Public~Company'':}] Identify
+company types after they are parred based on which stock market currently
+contains their stock price marker (see \subsecref{Starting-or-floating}
+\& \secref{Stock-Market}).
+\begin{itemize}
+\item Local and Major Public Companies are subject to different rules (see
+\parref{Major-public-company} \& \parref{Local-public-company}).
+\item Local Public Companies become Major Public Companies if their stock
+price reaches or exceeds \textflorin 101 (see \secref{Stock-Market}
+\& \parref{Local-public-company}).
+\end{itemize}
+\item [{``Spoorwegmaatschappij``~\&~``Lokaalsporwegen'':}] Identify
+company types before they are parred (see \subsecref{Starting-or-floating}).
+Once parred they become Major Public Companies and Local Public Companies
+respectively.
+\end{description}
+\end{itemize}
+
+\subsubsection{Public company types \label{subsec:Public-company-types}}
+
+\paragraph{Before being parred:}
+
+\subparagraph{Lokaalsporwegen \label{par:Lokaalsporwegen}}
+\begin{itemize}
+\item The eight Lokaalsporwegen (L1...L8):
+\begin{itemize}
+\item Do not have pre-defined home station locations (see \tabref{Public-Companies}).
+\begin{itemize}
+\item Home station hexagons are reserved when the company is parred (see
+\subsecref{Starting-or-floating}).
+\end{itemize}
+\item Must be parred on the Local Stock Market as Local Public Companies
+(see \secref{Stock-Market}).
+\item Are not discarded from the game if nationalised (see \subsecref{Public-company-nationalisation})
+and can be floated again in subsequent Stock Rounds (see \subsecref{Starting-or-floating}).
+\end{itemize}
+\end{itemize}
+
+\subparagraph{Spoorwegmaatschappij \label{par:Spoorwegmaatschappij}}
+\begin{itemize}
+\item The eight Spoorwegmaatschappij (see \tabref{Public-Companies}):
+\begin{itemize}
+\item Some are associated with brown private companies during setup (see
+\secref{Game-Setup}).
+\item Have pre-defined home station location(s) (see \tabref{Public-Companies}).
+\begin{itemize}
+\item The \noun{Nederlandsche Rhijnspoorweg-Maatschappij (NRS)} public company
+has two home stations, one in \noun{Utrecht} (I12) and one in either
+\noun{Arhem} (I16) or \noun{Venlo} (K16) (see \subsecref{Starting-or-floating}
+\& \subsecref{Operating-round-actions}).
+\end{itemize}
+\item Must be parred on the Major Stock Market as Major Public Companies
+(see \secref{Stock-Market}).
+\item Have varying numbers of home stations and place-able station markers
+depending on the company (see \subsecref{Place-station-marker}).
+\item Are discarded from the game if nationalised (see \subsecref{Public-company-nationalisation}).
+\end{itemize}
+\end{itemize}
+
+\paragraph{After being parred:}
+
+\subparagraph{Local Public Company \label{par:Local-public-company}}
+\begin{itemize}
+\item Purchase the next-available train from the supply at no cost (unless
+gray or purple) when they first operate (see \subsecref{Operating-round-actions}).
+\item Track lays, station placements and train routes are not blocked by
+government stations (see \subsecref{Build-track}, \subsecref{Place-station-marker},
+\subsecref{Run-train(s)} \& \subsecref{Government-railway}).
+\item Train routes cannot include off-boards (see \subsecref{Run-train(s)}
+\& \secref{Trains-and-Running-Trains}).
+\item Cannot have their only train purchased by another company unless the
+buying company doesn't have a train (see \subsecref{Buy-train(s)}).
+\item Become Major Public Companies if their stock price reaches or exceeds
+\textflorin 101 on the Stock Market (see \tabref{Public-Companies}
+\& \secref{Stock-Market}).
+\item Can withhold dividends or pay half-dividends or (\emph{blue phase
+or later}) pay full dividends (see \subsecref{Pay-or-withhold}).
+\end{itemize}
+
+\subparagraph{Major Public Company \label{par:Major-public-company}}
+\begin{itemize}
+\item Track lays, station placements and train routes are blocked by government
+stations (see \subsecref{Government-railway}).
+\item Train routes can include off-boards (see \subsecref{Run-train(s)}
+\& \secref{Trains-and-Running-Trains}).
+\item Can withhold or pay full-dividends.
 \end{itemize}
 
 \subsubsection{Public company directors\label{subsec:Company-directors}}
@@ -1560,31 +1782,31 @@ as either Local or Major Public Companies.
 \item The player that holds the most shares of a public company (largest
 total percentage) is the director of the company, has the 20\% director's
 share of the company and controls all of that company's operations
-(if it has floated (see \subsecref{Starting-or-floating})).
+once it has floated (see \subsecref{Starting-or-floating}).
 \item The director's certificate can never be sold, only transferred to
 another player. Once a company has floated, there is always a player
 that owns the 20\% director's certificate and is the director of the
-company until the company is nationalised or the game ends (see ).
+company until the company is nationalised or the game ends (see \subsecref{Public-company-nationalisation}
+\& \secref{Game-End}).
 \item If a player acquires shares such that they own a larger percentage
 of the public company than the current director, they become the new
 company director and exchange company certificates totaling 20\% of
 the company for the 20\% director's certificate of the company, taking
 control of the company charter and its assets.
 \item In order to transfer director control of a company via share sales
-or share donation (see \subsecref{Selling-shares} ):
+(see \subsecref{Selling-shares} ):
 \begin{itemize}
 \item Another player must own at least 20\% of the company in order for
 the exchange to take place.
 \item The director's certificate must be exchanged for certificates of the
-player with the most shares of the company after the sale or donation,
-assigning control of the public company and its charter and assets
-to that player.
-\item The previous director must sell or donate sufficient shares of the
-public company such that they own fewer shares of the public company
-than the new director after the sale.
+player with the most shares of the company after the sale, assigning
+control of the public company and its charter and assets to that player.
+\item The previous director must sell sufficient shares of the public company
+such that they own fewer shares of the public company than the new
+director after the sale.
 \begin{itemize}
 \item In the case of a tie among other players for the most shares after
-the sale or donation, the next tied player in player number card order
+the sale, the next tied player in rotating player number card order
 from the current director becomes the new director.
 \end{itemize}
 \end{itemize}
@@ -1594,19 +1816,21 @@ from the current director becomes the new director.
 
 \paragraph{Nationalisation overview\label{subsec:Nationalisation-overview}}
 \begin{itemize}
-\item When a public company buys the first train of a new rank that rusts
-other trains, public companies may nationalise.
+\item When a public company acquires the first train of a new rank that
+rusts other trains, public companies may nationalise.
 \item In operating order (see \subsecref{company-operating-order}) each
-public company that still owns a currently unrusted train, including
-the company that bought the rusting train, may nationalise.
+public company that still owns a train, including the company that
+acquired the rusting train, may nationalise.
 \begin{itemize}
-\item A rusted train marked with a SAVE token (see \parref{Nederlandsche-Fabriek-van})
-does not qualify a public company to be able to nationalise.
 \item A player that holds a brown train from the \noun{Fabriek van Rijtuigen
 en Spoorwagens J. J. Beijnes} brown private company may assign it
-to a public company at this time in order to qualify it for nationalisation
-(see \parref{Fabriek-van-Rijtuigen}).
+to a public company at this time in order for it to qualify for nationalisation
+(see \parref{Diepenbrock-en-Reigers}).
 \end{itemize}
+\item Players cannot buy the director's certificate of a public company
+from the IPO if they have nationalised a public company in the immediately
+preceding set of Operating Rounds (see \subsecref{Operating-round-General}
+\& \subsecref{Nationalisation-overview}).
 \end{itemize}
 
 \paragraph{Nationalisation process\label{subsec:Nationalisation-process}}
@@ -1616,52 +1840,49 @@ to a public company at this time in order to qualify it for nationalisation
 Bank Pool, and IPO to the supply without recompense.
 \item The company's station makers on the map are replaced by government
 station markers (see \subsecref{Government-railway}).
-\item All station markers and the stock price marker for the company are
-returned to the supply.
+\item The company's station markers and the stock price marker are returned
+to the supply.
 \item All other assets (trains, private companies) held by the company are
 discarded from the game without recompense.
 \begin{description}
-\item [{Exception:}] If the public company owned the \noun{Crédit Mobilier}
-brown private company, then it and a \noun{Rotterdamsch Bank} red
-private company certificate are given to the director of the company
-being nationalised (see \parref{Cr=0000E9dit-Mobilier} \& \parref{Rotterdamsche-Bank}).
+\item [{Exception:}] If the nationalised public company owned the \noun{Crédit
+Mobilier }brown private company or the\noun{ Rotterdamsche Handelsvereeniging}
+red private company, then the \noun{Rotterdamsche Handelsvereeniging}
+is given to the director of the company being nationalised (see \parref{Cr=0000E9dit-Mobilier}
+\& \parref{Rotterdamsche-Bank}).
 \end{description}
-\item The company charter is returned to the supply.
-\item If the nationalised company was a Founding Public Company, it is no
-longer a Founding Public Company for the rest of the game (see pub\subsecref{Public-Company-Overview}).
+\item The public company charter is returned to the supply.
 \end{enumerate}
 
 \subsection{Government railway\label{subsec:Government-railway}}
 \begin{itemize}
-\item The Government railway (\noun{Nederlandse Spoorwegen}) is represented
+\item The Government railway (\noun{Nederlandse Spoorwegen} (NS)) is represented
 by a number of station markers.
 \item Government station markers replace the station markers of:
 \begin{itemize}
 \item Nationalised public companies (see \subsecref{Nationalisation-process}).
 \item The origin of moved station markers (see \parref{Kabinet-Rochussen}).
 \item Station markers removed when a company acquires two station markers
-in the same hexagon (see \parref{Kabinet-Rochussen}).
+in the same hexagon (see \parref{Swap-station-markers} \& \parref{Kabinet-Rochussen}).
 \end{itemize}
-\item Newly parred public companies may choose government station marker
-locations for their home stations.
-\begin{itemize}
-\item When the company operates and places its home stations, government
-station markers can be replaced with the company's home stations (see
-).
-\end{itemize}
-\item When placing a station marker during an Operating Round, public companies
-may replace government station markers (that aren't reserved) with
-their own station marker (see ).
-\item Government station markers limit Major public company operations in
-the same manner as other public company station markers (see ) and
-do not limit Local Public Company operations (see ).
+\item Newly parred Local Public Companies may choose government station
+marker locations for their home stations (see \parref{Place-a-station}
+\& \parref{Swap-station-markers} \& \parref{Kabinet-Rochussen}).
+\item When placing or moving a station marker during an Operating Round,
+public companies may replace government station markers (that aren't
+reserved for new company home stations) with their own station marker
+(see see \parref{Place-a-station} \& \parref{Kabinet-Rochussen}).
+\item Government station markers limit Major Public Company operations in
+the same manner as other public company station markers and do not
+limit Local Public Company operations (see \subsecref{Build-track}
+\& \subsecref{Place-station-marker} \& \subsecref{Run-train(s)}).
 \end{itemize}
 
 \section{Track Tiles\label{sec:Track}}
 
 \subsection{Track tiles overview\label{subsec:Track-Tile-Overview}}
 \begin{itemize}
-\item There are yellow, green and brown track tiles.
+\item There are yellow, green, brown and gray track tiles.
 \item Track tiles are limited to those available in the supply.
 \item At the beginning of the game only yellow track tiles are available.
 \item Yellow track tiles are placed directly on rural and city hexagons
@@ -1680,16 +1901,17 @@ hexagons.
 \item [{City}] Have one or more white circles for station markers and a
 revenue value (number in a small white circle). Only city track tiles
 can be used on city map hexagons, and they cannot be used on any other
-map hexagons. 
+map hexagons.
 \begin{description}
 \item [{Big~City:}] Are marked with a letter (``A'', ``B'', ``H'',
-``R'' or ``U'' for Amsterdam, Breda, Haarlem, Rotterdam and Utrecht)
+``R'' or ``U'' for \noun{Amsterdam} (G10), \noun{Breda} (K8),
+\noun{Haarlem} (G8), \noun{Rotterdam} (J7) and \noun{Utrecht} (I12))
 and have a higher revenue. Only matching city track tiles can be used
-on those cities and they cannot be used on any other map hexagons. 
+on those cities and they cannot be used on any other map hexagons.
 \item [{OO~City:}] Have two distinct cities on the same tile and are marked
-``OO'' but are otherwise the same as a normal city track tile. Only
-OO city track tiles can be used on hexagons marked ``OO'', and they
-cannot be used on any other map hexagons.
+``OO'' and have a higher revenue but are otherwise the same as a
+normal city track tile. Only OO city track tiles can be used on hexagons
+marked ``OO'', and they cannot be used on any other map hexagons.
 \end{description}
 \item [{Town:}] Have a small cross-bar marking the town with a line of
 track passing through it, and a revenue value (number in a small white
@@ -1724,8 +1946,10 @@ markers to a line of track on the placed track tile without:
 \begin{itemize}
 \item Passing through a city with all of station-marker spaces filled with
 other public company's station markers or (for Major Public Companies
-) government station markers.
+) government station markers (see \subsecref{Government-railway}).
 \item Crossing any hexagon-edge twice.
+\item Crossing a red barrier before red phase (see \secref{Map-Explanation}
+\& \secref{Game-Phases}).
 \end{itemize}
 \item Track tiles must not be placed such that a line of track:
 \begin{itemize}
@@ -1736,8 +1960,8 @@ connectivity is important, not the exact shape of the line of track)
 track running to it.
 \item Runs to the edge of an off-board hexagon that doesn't have a black
 triangle/arrow to indicate a continuation for the track.
-\item Makes a new track connection across a dark brown barrier before dark
-brown phase (see \secref{Map-Explanation}).
+\item Makes a new track connection across a red barrier before red phase
+(see \secref{Map-Explanation}).
 \end{itemize}
 \item A company placing a track tile on a water terrain (\textflorin 80)
 hexagon that has not previously contained a track tile must pay the
@@ -1747,22 +1971,32 @@ terrain cost from its treasury to the bank before placing the tile
 \item Once a track tile of a given type is placed in a hexagon, terrain
 costs for the hexagon are not paid again in future tile upgrades.
 \begin{description}
-\item [{Exception:}] The big cities (Amsterdam, Breda, Haarlem, Rotterdam,
-Utrecht) have an \textflorin 80 upgrade fee for each upgrade.
+\item [{Exception:}] The big cities (\noun{Amsterdam} (G10), \noun{Breda}
+(K8), \noun{Haarlem} (G8), \noun{Rotterdam} (J7), \noun{Utrecht} (I12))
+have an \textflorin 80 upgrade fee for each upgrade.
 \end{description}
 \end{itemize}
+\item If a company places a yellow track tile on an OO city hexagon which
+contains one or more station markers, the company director placing
+the track tile has free choice as to which cities to allocate the
+station markers on the yellow track tile.
 \end{itemize}
 
 \subsubsection{Upgrading track\label{subsec:Upgrading-track}}
 \begin{itemize}
 \item Starting in green phase:
 \begin{itemize}
-\item public companies may upgrade yellow track tiles and yellow map hexagons
+\item Public companies may upgrade yellow track tiles and yellow map hexagons
 to green track tiles (see \tabref{Game-Phases}).
 \end{itemize}
 \item Starting in brown phase:
 \begin{itemize}
-\item public companies may also upgrade green track tiles to brown track
+\item Public companies may also upgrade green track tiles to brown track
+tiles (see \tabref{Game-Phases}).
+\end{itemize}
+\item Starting in gray phase:
+\begin{itemize}
+\item Public companies may also upgrade brown track tiles to gray track
 tiles (see \tabref{Game-Phases}).
 \end{itemize}
 \item When upgrading a track tile:
@@ -1775,11 +2009,12 @@ be preserved.
 or placed in that same Operating Round.
 \end{itemize}
 \item The upgraded track tile is returned to the supply for future use.
-\item Once a track tile on a river or hill hexagon is upgraded, the terrain
-cost is not paid again (see \secref{Map-Explanation}).
+\item Once a track tile on a river hexagon is upgraded, the terrain cost
+is not paid again (see \secref{Map-Explanation}).
 \begin{description}
-\item [{Exception:}] The big cities (Amsterdam, Breda, Haarlem, Rotterdam,
-Utrecht) have an \textflorin 80 upgrade fee for each upgrade.
+\item [{Exception:}] The big cities (\noun{Amsterdam} (G10), \noun{Breda}
+(K8), \noun{Haarlem} (G8), \noun{Rotterdam} (J7), \noun{Utrecht} (I12))
+have an \textflorin 80 upgrade fee for each upgrade.
 \end{description}
 \item Station markers are moved to their corresponding locations on the
 new tile when upgrading a track tile or hexagon.
@@ -1795,8 +2030,8 @@ and \subsecref{Buy-train(s)}).
 \subsecref{Run-train(s)}).
 \item Different types of trains have different restrictions for their routes
 (see \subsecref{Route-definitions-by-train-type}).
-\item Local public companies have different restrictions for their routes
-than major public companies (see \subsecref{Public-Company-Overview}
+\item Local Public Companies have different restrictions for their routes
+than Major Public Companies (see \subsecref{Public-Company-Overview}
 \& \subsecref{Public-Company-Overview}).
 \item Cities' and towns' revenues can be counted towards a company's revenue
 only once, no matter how many of the company's trains include the
@@ -1806,51 +2041,59 @@ city or town in their route.
 town toward company revenue that a different train run by the same
 company has already counted.
 \end{description}
+\item (\emph{Major Public Companies only}) Off-board revenues can be counted
+for each of the company's train routes that include it.
 \item The number of trains a public company can own is controlled by the
 train limit (see \subsecref{Train-Limit}).
 \item Public companies with a route from one of their station markers to
-another revenue center (an off-board is insufficient) must own at
-least one train at the end of their turn in an Operating Round (see
-offboards \& \subsecref{General-Route-definition} \& \subsecref{Emergency-train-buying})
+town or city must own at least one train at the end of their turn
+in an Operating Round (see off-boards \& \subsecref{General-Route-definition}
+\& \subsecref{Emergency-train-buying})
 \item Trains are available from the supply in colour order:
 \begin{itemize}
-\item First yellow, then green, blue, light brown, dark brown, red, gray
-and finally purple.
-\item All the trains of a given colour must be bought from the supply before
-the trains of the next colour are available (see \subsecref{Buy-train(s)}
-\& \tabref{Game-Phases}).
+\item First yellow, then green, blue, brown, red, gray and finally purple.
+\item All the trains of a given colour must be bought or taken from the
+supply before the trains of the next colour are available (see \tabref{Game-Phases}
+\& \subsecref{Buy-train(s)}).
 \end{itemize}
 \item Trains are purchased one at a time with any phase changes occurring
-before the company purchases any more trains in that Operating Round.
+before the company purchases any more trains in that Operating Round
+(see \tabref{Game-Phases}).
 \item The purchase of trains of new types causes phase changes and may change
 the train limit (see \tabref{Game-Phases} \& \subsecref{Train-Limit}).
+\item ``R'' trains are guaranteed to run a route in an Operating Round
+at least once (see \subsecref{R-trains} \& \secref{Game-Phases}).
+When they rust, those:
+\begin{itemize}
+\item That have already run a route in an Operating Round are discarded
+from the game.
+\item That have not yet run a route in an Operating Round are discarded
+from the game immediately after they do run a route.
+\end{itemize}
 \end{itemize}
 
 \subsection{Route definition \label{subsec:General-Route-definition}}
 \begin{itemize}
 \item A route is a single continuous line of track that:
 \begin{itemize}
-\item Contains at least two revenue centers (town or city, not off-board)
-(see \secref{Map-Explanation}).
-\item Can begin or end at a town, city or off-board.
-\begin{itemize}
-\item Local Public Companies cannot include off-boards in their routes;
-Major Public Companies can.
-\item Off-boards at the ends of Major Public Company routes add to the total
-company revenue (once per train-route that includes them) but do not
-require train length to include them in the route.
-\end{itemize}
-\item Must pass through a city containing one of the owning public company's
+\item Contains at least two revenue centers (town or city) (see \secref{Map-Explanation}).
+\item Can begin or end at a town, city or (\emph{Major Public Companies
+only}) off-board.
+\item Must include a city containing one of the owning public company's
 station makers.
 \item Can pass through a city with an open station marker location.
-\item (\emph{Local Public Companies only}) Can pass through a city containing
-a government station marker location.
+\item (\emph{Local Public Companies only}) Can pass through an otherwise
+blocked city that contains a government station marker location (see
+\subsecref{Government-railway}).
 \item Can include separate revenue centers on the same hexagon (see \subsecref{Track-types}).
 \item Can use multiple entirely separate lines of track on the same tile.
 \begin{description}
-\item [{Note:}] Track tiles such as \#16, \#19, \#20 etc and parts of \#43,
-\#44, \#45 \& \#46 etc represent railway bridges and thus lines of
-track that do not intersect.
+\item [{Note:}] Plain track tiles such as \#16, \#19, \#20 etc and parts
+of \#43, \#44, \#45 \& \#46 etc represent railway bridges and thus
+lines of track that do not intersect.
+\item [{Note:}] The intersections at the center of plain track tiles such
+as \#80, \#81, \#82, \#83, \#544, \#545, and \#546 do not limit the
+number of routes or trains which may traverse them.
 \end{description}
 \item Can enter a city from one direction and exit in any other connected
 direction.
@@ -1861,128 +2104,122 @@ direction.
 \item Use the same piece of track on a track tile more than once (no matter
 how small the track section may be).
 \item Pass through a city that doesn't have an open station marker location
-and doesn't contain the public company's station marker and (Local
-Public Companies only) doesn't contain a Government station marker.
+and doesn't contain the public company's station marker and (\emph{Local
+Public Companies only}) doesn't contain a Government station marker
+(see \subsecref{Government-railway}).
+\begin{itemize}
+\item A public company that swaps one of its station markers during its
+operations cannot use the swapped station marker in that Operating
+Round (see \parref{Swap-station-markers}).
+\end{itemize}
 \item Run to or through the same revenue center more than once.
 \item Have both ends of the route in an off-board of the same colour (black,
-blue or red).
+blue or red, see \secref{Map-Explanation}).
+\item Cross a red barrier before red phase (see \secref{Map-Explanation}
+\& \secref{Game-Phases}).
 \end{itemize}
 \item The routes of multiple trains run by the same public company during
 an Operating Round cannot share or re-use any line of track.
 \begin{itemize}
-\item The routes can meet or cross at provided that they use entirely separate
+\item The routes can meet or cross provided that they use entirely separate
 sections of track.
 \end{itemize}
 \item Off-board triangle connections are termini. Routes may not run into
 an off-board location via one black triangle and proceed back onto
-the board via another.
+the board via another (see \secref{Map-Explanation}).
+\item Local Public Companies cannot include off-boards in their routes (see
+\parref{Local-public-company})
+\item (\emph{Major Public Companies only}) The revenue value of the \noun{Ruhrgebied}
+(J17 \& K18) off-board is equal to either the largest revenue value
+on the route, or double the revenue of the off-board at the other
+end of the route, whichever is the larger (see \parref{Major-public-company}).
 \end{itemize}
 
 \subsection{Running trains by train-type \label{subsec:Route-definitions-by-train-type}}
 
-\subsubsection{``L'' trains\label{subsec:L-trains}}
-\begin{itemize}
-\item Cannot be bought from the supply.
-\item Cannot be bought between companies.
-\item Can only be owned by Local Public Companies.
-\item Until dark brown phase, an ``L'' train of is given to Local Public
-Companies from the supply at the start of their first Operating Round:
-yellow in yellow phase, green in green phase, and blue in blue and
-light brown phases (see ).
-\item If a Local Public Company become a Major Public Company, any L-train
-it owns is returned to the supply.
-\end{itemize}
+\subsubsection{Train types\label{subsec:Train-types}}
 
-\subsubsection{``R'' trains\label{subsec:R-trains}}
+\paragraph{\emph{N}~trains \label{subsec:Ntrains}}
 \begin{itemize}
-\item ``R'' trains can count cities and towns on their routes for revenue
-that other trains in the same company have already included in their
-routes.
-\item Any red trains that have already run in an Operating Round are removed
-at the start of purple phase.
-\item Red trains that have not yet run in an Operating Round are removed
-immediately after they do run in an Operating Round.
-\item Red trains cannot be bought between public companies in purple phase.
-\end{itemize}
-
-\subsubsection{\emph{N}~trains \label{subsec:Ntrains}}
-\begin{itemize}
-\item The route for an \emph{N} train (where \emph{N} is 2, 4 or 7) cannot
-contain more than a total of \emph{N} revenue centers, where \emph{N}
-is the number on the train card.
+\item The route for an \emph{N} train (where \emph{N} is 2 or 4 ) cannot
+contain more than a total of \emph{N} revenue centers.
 \begin{description}
 \item [{Revenue:}] The sum of all the revenue centers on the route whose
-revenues are not included in the routes of other trains owned by the
-company plus (Major Public Companies only) any off-boards of different
-colours at the ends of the routes.
-\begin{description}
-\item [{Exception:}] The routes for ``R'' trains can include revenue
-centers that are included in the routes of other trains owned by the
-company.
-\end{description}
+revenues are not included in the routes of other non-''R'' trains
+(see \subsecref{R-trains}) owned by the company plus (\emph{Major
+Public Companies only}, see \subsecref{Public-companies}) any off-boards
+of different colours at the ends of the route.
 \end{description}
 \end{itemize}
 
-\subsubsection{2+1 trains \label{subsec:2+1-trains}}
+\paragraph{N+ trains \label{subsec:N+-trains}}
 \begin{itemize}
-\item The route for a\emph{ 2+1} train cannot contain more than a total
-of \emph{3} revenue centers, no more than two of which are cities.
-\begin{description}
-\item [{Revenue:}] The sum of all the revenue centers on the route that
-are not included in the routes of other trains owned by the company
-\end{description}
-\end{itemize}
-
-\subsubsection{N+ trains \label{subsec:N+-trains}}
-\begin{itemize}
-\item The route for a N+ train cannot contain more than a total of N cities.
-There may be any number of towns on the route; before, between and
-after any other revenue centers on the route.
+\item The route for a N+ train (where \emph{N} is 2, 3 or 5) cannot contain
+more than a total of N cities. There may be any number of towns on
+the route; before, between and after any other revenue centers on
+the route.
 \begin{description}
 \item [{Revenue:}] The sum of all the revenue centers on the route whose
-revenues are not included in the routes of other trains owned by the
-company plus (Major Public Companies only) any off-boards of different
-colours at the ends of the routes.
-\begin{description}
-\item [{Exception:}] The routes for ``R'' trains can include revenue
-centers that are included in the routes of other trains owned by the
-company.
-\end{description}
+revenues are not included in the routes of other non-''R'' trains
+(see \subsecref{R-trains}) owned by the company plus (\emph{Major
+Public Companies only}, see \subsecref{Public-companies}) any off-boards
+of different colours at the ends of the route.
 \end{description}
 \end{itemize}
 
-\subsubsection{Diesel trains \label{subsec:Dieseltrains}}
+\paragraph{Diesel trains \label{subsec:Dieseltrains}}
 \begin{itemize}
 \item The route for a Diesel train may contain an unlimited number of revenue
 centers.
 \begin{description}
 \item [{Revenue:}] The sum of all the revenue centers on the route whose
-revenues are not included in the routes of other trains owned by the
-company plus (Major Public Companies only) any off-boards of different
-colours at the ends of the routes.
-\begin{description}
-\item [{Exception:}] The routes for ``R'' trains can include revenue
-centers that are included in the routes of other trains owned by the
-company.
+revenues are not included in the routes of other non-''R'' trains
+(see \subsecref{R-trains}) owned by the company plus (\emph{Major
+Public Companies only,} see \subsecref{Public-companies}) any off-boards
+of different colours at the ends of the route .
 \end{description}
-\end{description}
+\end{itemize}
+
+\subsubsection{Train modifiers \label{subsec:Train-modifiers}}
+
+\paragraph{``P'' trains\label{subsec:P-trains}}
+\begin{itemize}
+\item ``P'' trains can include only one off-board in their route (if owned
+by a Major Public Company, see \subsecref{Public-companies}).
+\end{itemize}
+
+\paragraph{``R'' trains\label{subsec:R-trains}}
+\begin{itemize}
+\item ``R'' trains:
+\begin{itemize}
+\item Can count cities and towns on their routes for revenue that other
+trains in the same company have already included for revenue in their
+routes.
+\item ``R'' trains are guaranteed to run a route in an Operating Round
+at least once (see \secref{Game-Phases}). When they rust, those:
+\begin{itemize}
+\item That have already run a route in an Operating Round are discarded
+from the game.
+\item That have not yet run a route in an Operating Round are discarded
+from the game immediately after they do run a route.
+\end{itemize}
+\end{itemize}
 \end{itemize}
 
 \subsection{Train limit\label{subsec:Train-Limit}}
 \begin{itemize}
 \item The number of trains a public company can own is limited by the game
-phase (see \parref{Train-purchasing} \& \secref{Game-Phases} \&
-\subsecref{Systems}). A public company can own trains up to the current
-train limit.
+phase (see \parref{Train-purchasing} \& \secref{Game-Phases}). A
+public company can own trains up to the current train limit.
 \item A public company that has not reached its train limit may buy trains
 that would cause it to exceed the train limit after the game phase
 change caused by the purchase takes effect.
 \item Train limits are checked and enforced on all public companies as each
-trains is bought.
+train is bought.
 \begin{itemize}
 \item A public company with more trains than the current train limit must
-discard its trains from the game until it is within the current train
-limit.
+discard its trains (director's choice) from the game until it is within
+the current train limit.
 \end{itemize}
 \end{itemize}
 
@@ -1993,7 +2230,9 @@ limit.
 \item The game begins in yellow phase.
 \item Yellow track tiles are available.
 \item Yellow trains are available.
-\item Train limit is 4.
+\item Red barriers between map hexagons block track builds, station lays
+and train routes.
+\item Train limit is 3.
 \item There is 1 Operating Round per set after Stock Rounds.
 \end{itemize}
 
@@ -2002,53 +2241,58 @@ limit.
 \item Green phase starts with the purchase of the first green train.
 \item Green private companies may be bought by public companies.
 \item Green and yellow track tiles are available.
-\item Train limit is 4.
+\item Red barriers between map hexagons block track builds, station lays
+and train routes.
+\item Off-boards with multiple revenue values use the first (yellow) value.
+\item Train limit is 3.
 \item There are 2 Operating Rounds per set after Stock Rounds.
 \end{itemize}
 
 \subsection{Blue phase}
 \begin{itemize}
 \item Blue phase starts with the purchase of the first blue train.
-\item Blue private companies may be bought by public companies.
+\item Green and blue private companies may be bought by public companies.
 \item Green and yellow track tiles are available.
-\item All yellow trains are removed from the game.
-\item Companies with a green or blue train can nationalise.
-\item Train limit is 4.
+\item Red barriers between map hexagons block track builds, station lays
+and train routes.
+\item Off-boards with multiple revenue values use the first (yellow) value.
+\item All yellow trains are discarded from the game.
+\item Companies with a green or blue train can nationalise at the start
+of blue phase.
+\item Train limit is 3.
 \item There are 2 Operating Rounds per set after Stock Rounds.
 \end{itemize}
 
-\subsection{Light brown phase}
+\subsection{Brown phase}
 \begin{itemize}
 \item Brown phase starts with the purchase of the first brown train.
-\item Private companies may be bought by public companies.
+\item Green and blue private companies may be bought by public companies.
+\item The \noun{Diepenbrock en Reigers te Ulft} blue private company converts
+to a brown train.
+\item The \noun{Crédit Mobilier} blue private company converts to \textflorin 600
+and the red \noun{Rotterdamsche Handelsvereeniging} private company.
+\item Brown private companies close.
+\item All remaining Brown private companies close.
 \item Brown, green and yellow track tiles are available.
-\item Revenue centers with multiple values use the second (brown) value.
-\item All green trains are removed from the game.
-\item Companies with a blue or light brown train can nationalise.
+\item Red barriers between map hexagons block track builds, station lays
+and train routes.
+\item Off-boards with multiple revenue values use the second (brown) value.
+\item Companies with a blue or brown train can nationalise at the start
+of brown phase.
 \item Train limit is 3.
-\item There are 3 Operating Rounds per set after Stock Rounds.
-\end{itemize}
-
-\subsection{Dark brown phase}
-\begin{itemize}
-\item Brown phase starts with the purchase of the first brown train.
-\item Private companies may be bought by public companies.
-\item Brown, green and yellow track tiles are available.
-\item Revenue centers with multiple values use the second (brown) value.
-\item All blue trains are removed from the game.
-\item Companies with a light brown or far brown train can nationalise.
-\item Train limit is 3.
-\item There are 3 Operating Rounds per set after Stock Rounds.
+\item There are 2 Operating Rounds per set after Stock Rounds.
 \end{itemize}
 
 \subsection{Red phase}
 \begin{itemize}
 \item Red phase starts with the purchase of the first red train.
-\item All private companies close.
+\item All remaining private companies close.
 \item Brown, green and yellow track tiles are available.
-\item Revenue centers with multiple values use the second (brown) value.
-\item All light brown trains are removed from the game.
-\item Companies with a dark brown or red train can nationalise.
+\item Red barriers between map hexagons don't block track builds, station
+lays and train routes.
+\item Off-boards with multiple revenue values use the second (brown) value.
+\item Companies with a brown or red train can nationalise at the start of
+red phase.
 \item Train limit is 3.
 \item There are 3 Operating Rounds per set after Stock Rounds.
 \end{itemize}
@@ -2056,10 +2300,18 @@ limit.
 \subsection{Gray phase}
 \begin{itemize}
 \item Gray phase starts with the purchase of the first gray train.
+\item All remaining private companies close other than the \noun{Rotterdamsche
+Handelsvereeniging} close (see \parref{Rotterdamsche-Bank})
 \item Gray, brown, green and yellow track tiles are available.
-\item Revenue centers with multiple values use the second (brown) value.
-\item All dark brown trains are removed from the game.
-\item Companies with a red or gray train can nationalise.
+\item Red barriers between map hexagons don't block track builds, station
+lays and train routes.
+\item Off-boards with multiple revenue values use the third (gray) value.
+\item All brown trains that have operated and run a route are discarded
+from the game.
+\item Any remaining brown trains are discarded immediately after the next
+time they operate and run a route.
+\item Companies with a brown (that hasn't yet run), red or gray train can
+nationalise at the start of gray phase.
 \item Train limit is 2.
 \item There are 3 Operating Rounds per set after Stock Rounds.
 \end{itemize}
@@ -2068,12 +2320,19 @@ limit.
 \begin{itemize}
 \item Purple phase starts with the purchase of the first purple train.
 \item Gray, brown, green and yellow track tiles are available.
-\item Revenue centers with multiple values use the second brown value.
-\item All red trains are removed from the game.
-\item Companies with a gray or purple train can nationalise.
+\item Red barriers between map hexagons don't block track builds, station
+lays and train routes.
+\item Off-boards with multiple revenue values use the third (gray) value.
+\item All red trains that have operated and run a route are discarded from
+the game.
+\item Any remaining red trains are discarded immediately after the next
+time they operate and run a route.
+\item Companies with a gray or purple train can nationalise at the start
+of purple phase.
 \item Train limit is 2.
-\item There are 4 Operating Rounds per set after the Stock Round.
+\item There are 3 Operating Rounds per set after the Stock Round.
 \item The game ends after the first set of Operating Rounds in purple phase.
+\item xxx
 \end{itemize}
 
 \end{document}
