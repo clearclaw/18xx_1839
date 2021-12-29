@@ -11123,6 +11123,58 @@ That have not yet run a route in an Operating Round are discarded from the
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+An 
+\begin_inset Quotes eld
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ train owned by a company during the Run Trains portion of the company's
+ operations, and which contributed revenue to the company's income is considered
+ to have run a route in that Operating Round (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Run-train(s)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Note: 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ trains that have not yet run a route can be marked by placing them sideways
+ on company charters, turning them vertical as they run a route.
+ Non-
+\begin_inset Quotes erd
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ trains can then also be kept vertical on their company charters by default,
+ thus having all vertical trains on charters being immediately subject to
+ rusting.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Subsection
 Train limit
