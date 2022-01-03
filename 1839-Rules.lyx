@@ -2836,6 +2836,89 @@ If the hexagon doesn't yet have a revenue, then the revenue of a yellow
  track-tile for that location is used.
 \end_layout
 
+\begin_layout Itemize
+If the company treasury is insufficient to pay the fee, then the additional
+ necessary funds must be provided by the director of the company.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+(If the director does not have enough money to contribute to cover the fee)
+\emph default
+ The director must sell shares to raise the additional funds (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Selling-shares"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+Normal share-selling rules apply (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Selling-shares"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Director control of the 
+\emph on
+Lokaalsporwegen
+\emph default
+ may not be transferred to another player while paying the fee (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Company-directors"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+The director of the 
+\emph on
+Lokaalsporwegen
+\emph default
+ cannot contribute more money than is required to pay the fee and cannot
+ sell additional shares once enough money has been raised.
+\end_layout
+
+\begin_layout Itemize
+If the 
+\emph on
+Lokaalsporwegen
+\emph default
+ is still unable to pay the fee for its home stations after the director
+ has contributed all possible funds and sold all shares that can be legally
+ sold (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Selling-shares"
+
+\end_inset
+
+), then the player is bankrupt (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Player-Bankruptcy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Itemize
@@ -3445,7 +3528,7 @@ noprefix "false"
 
 ) may place an additional yellow track-tile for a cost of ƒ20 paid to the
  bank in addition to any terrain or upgrade costs (the terrain is free if
- the tile is paced on H7) from the company treasury, closing the private.
+ the tile is placed on H7) from the company treasury, closing the private.
 \end_layout
 
 \end_deeper
@@ -4106,7 +4189,7 @@ If that is still not enough, then the additional necessary funds must be
 \begin_layout Itemize
 
 \emph on
-(if the director does not have enough money to contribute to buy the train)
+(If the director does not have enough money to contribute to buy the train)
 \emph default
  The director must sell shares to raise the additional funds (see 
 \begin_inset CommandInset ref
@@ -4608,7 +4691,7 @@ The Old Prince: 1871
 \noun on
 1860
 \noun default
-, Francisco Vellani and Manlio Manzini for 
+, Federico Vellani and Manlio Manzini for 
 \noun on
 1841
 \noun default
@@ -11132,7 +11215,7 @@ R
 \begin_inset Quotes erd
 \end_inset
 
- train owned by a company during the Run Trains portion of the company's
+ train owned by a company during the Run Train(s) portion of the company's
  operations, and which contributed revenue to the company's income is considered
  to have run a route in that Operating Round (see 
 \begin_inset CommandInset ref
