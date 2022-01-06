@@ -5113,6 +5113,34 @@ reference "sec:Game-Phases"
 \end_layout
 
 \begin_layout Itemize
+Some hexes are connected by partial track stubs (
+\noun on
+Breda
+\noun default
+ (K8), 
+\noun on
+Haarlem
+\noun default
+ (G8), and 
+\noun on
+Rotterdam
+\noun default
+ (J7)).
+ The track stubs on those hexes constrain future track lays on those hexes
+ to connecting those edges (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Track-placement-&-upgrades"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
 The Bremen (C20 & D21) and Ruhrgebied (J17 & K18) off-boards are each a
  single location comprised of two hexagons.
 \end_layout
@@ -10139,6 +10167,36 @@ Already present is not preserved by the new track tile.
  track)
 \end_layout
 
+\begin_deeper
+\begin_layout Description
+Note: Some hexes are connected by partial track stubs (
+\noun on
+Breda
+\noun default
+ (K8), 
+\noun on
+Haarlem
+\noun default
+ (G8), and 
+\noun on
+Rotterdam
+\noun default
+ (J7)).
+ The track stubs on those hexes constrain future track lays on those hexes
+ to connecting those edges (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Runs off the edge of the map (no further hexagons).
 \end_layout
