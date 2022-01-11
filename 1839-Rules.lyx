@@ -3334,6 +3334,11 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_layout Itemize
+Home station reservations are for that hexagon and not for a specific city
+ within that hexagon for the Amsterdam and OO hexes.
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Itemize
@@ -4512,6 +4517,31 @@ noprefix "false"
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+Home station reservations are for that hexagon and not for a specific city
+ within that hexagon for the Amsterdam and OO hexes (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Itemize
 Station markers may be placed in or moved to Arhem (I16) and Venlo (K16)
  prior the 
@@ -12024,7 +12054,7 @@ Fabriek van Rijtuigen en Spoorwagens J.
  J.
  Beijnes
 \noun default
- brown private company may assign it to a public company in order for it
+ blue private company may assign it to a public company in order for it
  to immediately qualify for nationalisation (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
