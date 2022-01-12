@@ -5664,6 +5664,25 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
+Any remaining shares held by that player are sold to the Bank Pool in the
+ normal manner (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Selling-shares"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Selling-shares"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
 All the player's money is returned to the bank.
 \end_layout
 
