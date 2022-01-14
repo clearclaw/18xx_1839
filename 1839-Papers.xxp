@@ -447,6 +447,29 @@ company:
 
 marker:
   index:
+    govt:
+      token:
+        _:
+          _major_fill: ${colour/x11/yellow1}
+          _major_fill_2: ${colour/x11/mediumblue}
+          _minor_fill_2: ${colour/x11/mediumblue}
+          _minor_fill: ${colour/x11/yellow1}
+          _related_fill: ${colour/x11/slategray1}
+          vertical_stripe_box_fill: ${colour/x11/firebrick1}
+          name_stripe_box_fill: ${colour/x11/mediumblue}
+          name_stripe_box_stroke: ${colour/x11/mediumblue}
+          _related_fill: ${colour/resene/Locust}
+        TEMPLATE_stripey_cross:
+          - token_interior_box
+          - top_half_box
+          - bottom_half_box
+          - top_line_box
+          - bottom_line_box
+          - vertical_stripe_box
+          - name_stripe_box
+          - short_name_text
+        ELEMENTS: ${TEMPLATE_stripey_cross/.}
+        index: "$[index_of (32)]"
     round:
       token:
         _:
