@@ -302,7 +302,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-Many track-tiles (yellow, green, brown and gray).
+Many track tiles (yellow, green, brown and gray).
 \end_layout
 
 \begin_layout Itemize
@@ -444,7 +444,7 @@ name "sec:Game-Setup"
 \end_layout
 
 \begin_layout Itemize
-Place the map, Stock Market, public company charters, shares and track-tiles
+Place the map, Stock Market, public company charters, shares and track tiles
  where they can be easily seen and accessed.
 \end_layout
 
@@ -3396,7 +3396,7 @@ Lokaalsporwegen only
 \begin_deeper
 \begin_layout Itemize
 If the hexagon doesn't yet have a revenue, then the revenue of a yellow
- track-tile for that location is used.
+ track tile for that location is used.
 \end_layout
 
 \begin_layout Itemize
@@ -4319,12 +4319,12 @@ name "subsec:Build-track"
 \end_layout
 
 \begin_layout Itemize
-A public company may place a yellow track-tile or 
+A public company may place a yellow track tile or 
 \emph on
 (green phase or later)
 \emph default
- upgrade one track-tile or hexagon, and may place or upgrade a different
- track-tile or hexagon for a fee of ƒ20 paid to the bank from the company
+ upgrade one track tile or hexagon, and may place or upgrade a different
+ track tile or hexagon for a fee of ƒ20 paid to the bank from the company
  treasury, both in addition to any terrain or upgrade costs (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -4369,7 +4369,7 @@ reference "sec:Game-Phases"
 
 ).
  A public company cannot do two upgrades in the same Operating Round or
- upgrade the yellow track-tile it placed in the same Operating Round .
+ upgrade the yellow track tile it placed in the same Operating Round .
 \end_layout
 
 \begin_deeper
@@ -4398,7 +4398,7 @@ noprefix "false"
 
 \end_inset
 
-) may place an additional yellow track-tile for a cost of ƒ20 paid to the
+) may place an additional yellow track tile for a cost of ƒ20 paid to the
  bank in addition to any terrain or upgrade costs (the terrain is free if
  the tile is placed on H7) from the company treasury, closing the private.
 \end_layout
@@ -4703,7 +4703,7 @@ Pay a fee to the bank equal to the revenue of the location of the newly
 \begin_deeper
 \begin_layout Itemize
 If the destination hexagon has no marked revenue, then use the revenue of
- a legal yellow track-tile for that hexagon (see 
+ a legal yellow track tile for that hexagon (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Track-placement-&-upgrades"
@@ -4823,7 +4823,7 @@ Pay a fee to the bank equal to the revenue of the location the acting company's
 \begin_deeper
 \begin_layout Itemize
 If the destination location has no marked revenue, then use the revenue
- of a legal yellow track-tile for that hexagon (see 
+ of a legal yellow track tile for that hexagon (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Track-placement-&-upgrades"
@@ -6423,7 +6423,7 @@ OO
 \begin_inset Quotes erd
 \end_inset
 
- but are otherwise the same as a normal city track-tile.
+ but are otherwise the same as a normal city track tile.
  
 \end_layout
 
@@ -6439,7 +6439,7 @@ Yellow
 \end_inset
 
 hexagons: Yellow hexagons represent yellow pre-built track on the map.
- They can be upgraded using green track-tiles in green phase or later (see
+ They can be upgraded using green track tiles in green phase or later (see
  
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -6464,7 +6464,7 @@ Gray
 
 hexagons: Gray hexagons contain pre-built track that may not be altered
  nor upgraded.
- Track-tiles cannot be placed on gray hexagons, nor adjacent to them such
+ Track tiles cannot be placed on gray hexagons, nor adjacent to them such
  that a line of track runs into a blank gray hexagon-edge.
 \end_layout
 
@@ -6477,9 +6477,9 @@ locations: Black (Duitsland/Germany), blue (Overzeesch/Overseas), and red
  (Belgie/Belgium) hexagons represent connections to areas not shown on the
  map.
  Black triangles mark separate track connections to those remote locations.
- Track-tiles may be placed adjacent to them so that the lines of track connect
+ Track tiles may be placed adjacent to them so that the lines of track connect
  to the black triangles leading to the remote connections.
- Track-tiles cannot be placed adjacent to an off-board hexagon such that
+ Track tiles cannot be placed adjacent to an off-board hexagon such that
  a line of track runs into a blank off-board hexagon-edge.
 \end_layout
 
@@ -6566,7 +6566,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-Some hexagon edges are blocked by red barriers and track-tiles cannot be
+Some hexagon edges are blocked by red barriers and track tiles cannot be
  placed so as to make a new track connection across that edge before red
  phase (see 
 \begin_inset CommandInset ref
@@ -7865,7 +7865,7 @@ Closes: When power used or the start of gray phase.
 
 \begin_layout Description
 Power: At a total cost of ƒ80, the owning public company may place or upgrade
- a track-tile at Arnhem (I16) or Venlo (K16) as their yellow track lay or
+ a track tile at Arnhem (I16) or Venlo (K16) as their yellow track lay or
  upgrade respectively and/or may place a station marker in an empty and
  unreserved city location, or in replacement of a government station marker,
  on that tile instead of their normal station placement.
@@ -12072,9 +12072,7 @@ noprefix "false"
 \begin_layout Itemize
 A player that holds a brown train from the 
 \noun on
-Fabriek van Rijtuigen en Spoorwagens J.
- J.
- Beijnes
+Diepenbrock en Reigers te Ulft
 \noun default
  blue private company may assign it to a public company in order for it
  to immediately qualify for nationalisation (see 
@@ -12556,7 +12554,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
-Track Tiles
+track tiles
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Track"
@@ -12567,7 +12565,7 @@ name "sec:Track"
 \end_layout
 
 \begin_layout Subsection
-Track tiles overview
+track tiles overview
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Track-Tile-Overview"
@@ -12931,50 +12929,6 @@ noprefix "false"
 
 \begin_layout Itemize
 Crossing any hexagon-edge twice.
-\end_layout
-
-\begin_layout Itemize
-Crossing a red barrier before red phase (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Map-Explanation"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "sec:Map-Explanation"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- & 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Game-Phases"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "sec:Game-Phases"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
 \end_layout
 
 \end_deeper
@@ -14602,8 +14556,8 @@ Yellow trains are available.
 \end_layout
 
 \begin_layout Itemize
-Red barriers between map hexagons block track builds, station lays and train
- routes.
+Red barriers between map hexagons block station lays, train routes and some
+ track builds.
 \end_layout
 
 \begin_layout Itemize
@@ -14631,8 +14585,8 @@ Green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
-Red barriers between map hexagons block track builds, station lays and train
- routes.
+Red barriers between map hexagons block station lays, train routes and some
+ track builds.
 \end_layout
 
 \begin_layout Itemize
@@ -14664,8 +14618,8 @@ Green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
-Red barriers between map hexagons block track builds, station lays and train
- routes.
+Red barriers between map hexagons block station lays, train routes and some
+ track builds.
 \end_layout
 
 \begin_layout Itemize
@@ -14734,8 +14688,8 @@ Brown, green and yellow track tiles are available.
 \end_layout
 
 \begin_layout Itemize
-Red barriers between map hexagons block track builds, station lays and train
- routes.
+Red barriers between map hexagons block station lays, train routes and some
+ track builds.
 \end_layout
 
 \begin_layout Itemize
@@ -14773,7 +14727,7 @@ Brown, green and yellow track tiles are available.
 
 \begin_layout Itemize
 Red barriers between map hexagons don't block track builds, station lays
- and train routes.
+ or train routes.
 \end_layout
 
 \begin_layout Itemize
@@ -14835,7 +14789,7 @@ Gray, brown, green and yellow track tiles are available.
 
 \begin_layout Itemize
 Red barriers between map hexagons don't block track builds, station lays
- and train routes.
+ or train routes.
 \end_layout
 
 \begin_layout Itemize
@@ -14879,7 +14833,7 @@ Gray, brown, green and yellow track tiles are available.
 
 \begin_layout Itemize
 Red barriers between map hexagons don't block track builds, station lays
- and train routes.
+ or train routes.
 \end_layout
 
 \begin_layout Itemize
