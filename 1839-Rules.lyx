@@ -306,7 +306,7 @@ Many track tiles (yellow, green, brown and gray).
 \end_layout
 
 \begin_layout Itemize
-Trains (9 yellow, 9 green, 8 blue, 7 brown, 7 red, 5 gray, 10 purple).
+Trains (9 yellow, 9 green, 7 blue, 7 brown, 7 red, 5 gray, 10 purple).
 \end_layout
 
 \begin_layout Itemize
@@ -3952,7 +3952,7 @@ reference "subsec:Stock-price-movement"
 \begin_layout Itemize
 At the end of the Operating Round the upside-down stock price markers are
  turned face-up so that the bottom face-down marker becomes the top face-up
- marker.
+ marker (under any face-up markers already present).
  The result is that public companies sharing a space in the stock price
  chart operate in the order in which their stock price markers arrived at
  that space.
@@ -11969,10 +11969,10 @@ noprefix "false"
 
 \begin_layout Itemize
 If a player acquires shares such that they own a larger percentage of the
- public company than the current director, they become the new company director
- and exchange company certificates totaling 20% of the company for the 20%
- director's certificate of the company, taking control of the company charter
- and its assets.
+ public company than the current director, they immediately become the new
+ company director and exchange company certificates totaling 20% of the
+ company for the 20% director's certificate of the company, taking control
+ of the company charter and its assets.
 \end_layout
 
 \begin_layout Itemize

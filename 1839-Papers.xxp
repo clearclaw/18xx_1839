@@ -103,7 +103,8 @@ company:
         token_5_text_fill: ${colour/xxp/L_GRAY}
         _major_fill: ${colour/wikipedia/icterine}
         _minor_fill: ${colour/xxp/BLACK}
-        _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        _related_fill: ${colour/x11/lightgoldenrod3}
       charter:
         comment_text:
           text: |
@@ -135,7 +136,8 @@ company:
         token_5_text_fill: ${colour/xxp/L_GRAY}
         _major_fill: ${colour/wikipedia/debian_red}
         _minor_fill: ${colour/xxp/BLACK}
-        _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        _related_fill: ${colour/x11/maroon}
       charter:
         comment_text:
           text: |
@@ -188,7 +190,8 @@ company:
         _minor_fill: ${colour/xxp/BLACK}
         _major_fill_2: ${colour/wikipedia/dark_orange}
         _minor_fill_2: ${colour/wikipedia/dark_orange}
-        _related_fill: "$[desaturate_and_brighten (${_/_minor_fill_2}, 0.4, 0.5)]"
+        #_related_fill: "$[desaturate_and_brighten (${_/_minor_fill_2}, 0.4, 0.5)]"
+        _related_fill: ${colour/x11/darkgoldenrod1}
       charter:
         comment_text:
           text: |
@@ -214,7 +217,8 @@ company:
         _minor_fill: ${colour/xxp/BLACK}
         _major_fill_1: ${_/_major_fill}
         _major_fill_2: ${_/_minor_fill}
-        _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        _related_fill: ${colour/resene/Splash}
       charter:
         comment_text:
           text: |
@@ -239,9 +243,10 @@ company:
         short_name_text_text: L7
         token_4_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_fill: ${colour/xxp/L_GRAY}
-        _major_fill: ${colour/wikipedia/french_blue}
+        _major_fill: ${colour/hollasch/blue}
         _minor_fill: ${colour/xxp/BLACK}
-        _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        _related_fill: ${colour/hollasch/dodger_blue}
       charter:
         comment_text:
           text: |
@@ -346,8 +351,10 @@ company:
         token_5_text_fill: ${colour/xxp/L_GRAY}
         token_4_text_text: ""
         token_5_text_text: ""
-        _major_fill: ${colour/wikipedia/light_apricot}
+        _major_fill: ${colour/hollasch/tan}
         _minor_fill: ${_/_major_fill}
+        # _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
+        _related_fill: ${colour/hollasch/peru}
       share:
         long_name_text:
           size: 12
@@ -368,6 +375,7 @@ company:
         token_5_text_fill: ${colour/xxp/L_GRAY}
         _major_fill: ${colour/wikipedia/daffodil}
         _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/khaki1}
       charter:
         comment_text:
           text: |
@@ -399,6 +407,7 @@ company:
         token_5_text_fill: ${colour/xxp/L_GRAY}
         _major_fill: ${colour/wikipedia/eton_blue}
         _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/green_pale}
       charter:
         comment_text:
           text: |
@@ -425,6 +434,7 @@ company:
         token_5_text_text: ""
         _major_fill: ${colour/wikipedia/dartmouth_green}
         _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/olivedrab3}
       charter:
         comment_text:
           text: |
@@ -729,7 +739,7 @@ train:
         long_name_text_text: "5+"
         cost_text_text_p: ƒ240
       model:
-        index: $[index_of (8)]
+        index: $[index_of (7)]
 
     R4T:
       _:
