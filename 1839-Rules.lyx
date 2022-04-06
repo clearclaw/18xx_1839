@@ -5601,6 +5601,37 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+If the player owned the 
+\noun on
+Diepenbrock en Reigers te Ulft
+\noun default
+ blue private company, a brown train is also discarded from the supply (see
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Diepenbrock-en-Reigers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "par:Diepenbrock-en-Reigers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Any brown train held by that player is discarded from the game (see 
 \begin_inset CommandInset ref

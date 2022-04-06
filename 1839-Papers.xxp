@@ -158,7 +158,7 @@ company:
         short_name_text_text: L4
         token_4_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_fill: ${colour/xxp/L_GRAY}
-        _major_fill: ${colour/wikipedia/green_ryb}
+        _major_fill: ${colour/x11/mediumspringgreen}
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
       charter:
@@ -169,8 +169,8 @@ company:
               stock price.
       token:
         _:
+          _minor_fill: ${colour/x11/mediumspringgreen}
           _major_fill: ${colour/xxp/BLACK}
-          _minor_fill: ${colour/wikipedia/green_ryb}
         ELEMENTS: ${TEMPLATE_star/.}
         EMBED_ELEMENTS: ${TEMPLATE_star_embed/.}
         index: $[index_of (7)]
