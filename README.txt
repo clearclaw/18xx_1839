@@ -1,36 +1,17 @@
-1839
-====
+1839: An 18xx game set in the Netherlands which features 16 public
+companies of two different types, an unusual private auction and
+private companies, nationaliastion, a novel stock market, an
+aggressive train roster, no certificate limit and several other
+curiousities.
 
-This is an 18xx game. See: https://en.wikipedia.org/wiki/18XX_games
+A produced copy of the files ready for printing your own copy can be
+found at: https://kanga.nu/~claw/1839/
 
-Use `build.sh` to produce the art files for all the components.
-Major dependencies:
+If you make changes to this game under its Creative Commons license,
+to components, art-files, the rules or anything else, please also
+change the name of your new game to something other than "1839".
 
-  Ghostscript: http://www.ghostscript.com/
-  LyX: http://lyx,.org/
-  XXpaper: https://pypi.python.org/pypi?name=xxpaper
-
-Print the components to match the counts listed in the rules.  This
-will for instance, require printing four copies of the foreign shares
-and then discarding down.  Likewise the trains will need discarding
-down to match counts.
-
-If producing the components with an Ellison Prestige Pro die cutter,
-then use the *-nooutline-* files and delete the *-outline-* files.
-Align the centre lines of your die with the cutlines at the centre of
-each edge of the bounding box on each sheet.  But if cutting the
-components by hand, reverse that and work entirely from the
-*-outline-* files.
-
-Exceptions:
-
-  - If using a hand-punch for the token stickers, use the
-    *-nooutline-* files for a cleaner result.
-
-  - A revenue track is provided in each of two orientations.
-
-I recommend printing the tokens on full-page lable stock, cutting with
-a 1/2" PaperShaper punch and then mounting to wood plugs or discs.
-
-Note: The ps18xx version of the map is not completely defined as
-regards tile upgrade paths.  That will happen later.
+Note that under this license a commercial service cannot be used for
+printing or making the game or any part of it.  License is given
+solely for private reproduction of the game without the use of third
+party services.

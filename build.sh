@@ -13,23 +13,24 @@ rm -f build/* || true
 #then
 #  echo "Making rules images"
 #  \rm -f ${GAMENAME}-Map.png ${GAMENAME}-Market.png
-#  convert -density 150 ${GAMENAME}-Map-B2.pdf -quality 90 ${GAMENAME}-Map.png
-#  convert -density 150 ${GAMENAME}-Market-tabloid.pdf -quality 90 ${GAMENAME}-Market.png
+#  convert -density 150 ${GAMENAME}-Map.pdf -quality 90 ${GAMENAME}-Map.png
+#  convert -density 150 ${GAMENAME}-Market.pdf -quality 90 ${GAMENAME}-Market.png
 #fi
 
 lyx --export pdf2 ./${GAMENAME}-Rules.lyx
 mv ./${GAMENAME}-Rules.pdf build
 
 cp ${GAMENAME}-Papers.xxp build/
-cp LICENSE build/
+cp LICENSE README.txt build/
 
 for paper in letter A4
 do
   xxpaper make ${GAMENAME}-Papers -p ${paper} build/${GAMENAME}-Papers-${paper}-diecut.pdf
   xxpaper make ${GAMENAME}-Papers -p ${paper} -c build/${GAMENAME}-Papers-${paper}-outline.pdf
+  # pdfunite masthead-${paper}.pdf box-sides-${paper}.pdf build/${GAMENAME}-BoxCovers-${paper}.pdf
 done
-for suffix in Map-A4 Map-B2 Map-letter Map-tabloid Market-A4 Market-letter \
-              Market-tabloid TrackTiles-letter-diecut TrackTiles-letter-outline
+for suffix in Map-B2 Map-A4 Market-A4 Map-letter Market-letter Map-tabloid Market-tabloid \
+              TrackTiles-letter-diecut TrackTiles-letter-outline Map Market
 do
   cp ${GAMENAME}-${suffix}.pdf build
 done  

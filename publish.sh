@@ -2,7 +2,16 @@
 
 set -e
 
-./build.sh
+ARG="${1}"
+GAMENAME=1839
+
+if [ -n "${ARG}" ]
+then
+  ./gitinfo_install
+fi
+
+./build.sh 
 pushd build
-  rsync -ra * claw@kanga.nu:~/public_html/1839/
+  chmod 644 *
+  rsync -ra --delete * claw@kanga.nu:~/public_html/${GAMENAME}/
 popd
