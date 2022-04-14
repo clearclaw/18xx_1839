@@ -4860,9 +4860,9 @@ noprefix "false"
 \end_deeper
 \end_deeper
 \begin_layout Itemize
-A public company that initiates a token swap cannot include the swapped
- station marker in either its original or new location as one of the company's
- station markers on a route in that Operating Round (see 
+A public company that initiates a station marker swap cannot include the
+ swapped station marker in either its original or new location as one of
+ the company's station markers on a route in that Operating Round (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:General-Route-definition"
