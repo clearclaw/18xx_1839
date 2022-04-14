@@ -702,7 +702,9 @@ train:
         index:
           "1":
             note_text:
-              text: 4-player game only
+              text: |
+                2-player & 
+                4 -player games only
           "2":
           "3":
           "4":
@@ -722,7 +724,9 @@ train:
         index:
           "1":
             note_text:
-              text: 4-player game only
+              text: |
+                2-player &
+                4-player games only
           "2":
           "3":
           "4":
@@ -762,7 +766,9 @@ train:
         index:
           "1":
             note_text:
-              text: 4-player game only
+              text: |
+                2-player &
+                4-player games only
           "2":
           "3":
           "4":
@@ -781,7 +787,7 @@ train:
         index:
           "1":
             note_text:
-              text: 4-player game only
+              text: 4-player games only
           "2":
           "3":
           "4":

@@ -4375,7 +4375,7 @@ reference "sec:Game-Phases"
 
 ).
  A public company cannot do two upgrades in the same Operating Round or
- upgrade the yellow track tile it placed in the same Operating Round .
+ upgrade the yellow track tile it placed in the same Operating Round.
 \end_layout
 
 \begin_deeper
@@ -4819,6 +4819,11 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_layout Description
+Note: A station marker swap cannot result in all the active company's station
+ markers on the map being in the same hexagon.
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Pay a fee to the bank equal to the revenue of the location the acting company's
@@ -4855,8 +4860,8 @@ noprefix "false"
 \end_deeper
 \end_deeper
 \begin_layout Itemize
-A public company that initiates a token swap cannot use the swapped station
- marker in that Operating Round (see 
+A public company that initiates a token swap cannot use the station marker
+ in either its original or new location in that Operating Round (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:General-Route-definition"
@@ -5493,6 +5498,54 @@ Players can bankrupt:
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+By failing to pay for a 
+\noun on
+Lokaalsporwegen's
+\noun default
+ home stations when it floats (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Company-types"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Company-types"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Itemize
 By failing to pay the revenue of a 
 \noun on
@@ -7370,6 +7423,13 @@ name "sec:Companies"
 
 \begin_layout Subsection
 Company types
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Company-types"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -12499,9 +12559,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-When placing or moving a station marker during an Operating Round, public
- companies may replace government station markers (that aren't reserved
- for new company home stations) with their own station marker (see see 
+When placing a station marker during an Operating Round, public companies
+ may replace government station markers (that aren't reserved for new company
+ home stations) with their own station marker (see see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Place-a-station"
@@ -13238,8 +13298,8 @@ Connections of city circles to hexagon edges by lines of track must be preserved
 \end_layout
 
 \begin_layout Itemize
-A public company cannot upgrade a track tile it has previously upgraded
- or placed in that same Operating Round.
+A public company cannot upgrade a track tile it has placed in that same
+ Operating Round.
 \end_layout
 
 \end_deeper
