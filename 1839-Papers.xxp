@@ -787,7 +787,9 @@ train:
         index:
           "1":
             note_text:
-              text: 4-player games only
+              text: |
+	        2-player &
+	        4-player games only
           "2":
           "3":
           "4":
