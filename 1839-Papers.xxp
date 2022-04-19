@@ -83,6 +83,9 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
       token:
         _:
           _major_fill_1: ${colour/xxp/BLACK}
@@ -111,6 +114,9 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_minor_fill})]
@@ -144,6 +150,9 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
@@ -167,6 +176,9 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
       token:
         _:
           _minor_fill: ${colour/x11/mediumspringgreen}
@@ -198,8 +210,10 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
-      token:
         _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
+      token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
         index: $[index_of (7)]
@@ -225,6 +239,9 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
       token:
         _:
           _rotation: 0
@@ -253,6 +270,9 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
       token:
         _:
           outer_circle_fill: ${_/_minor_fill}
@@ -279,6 +299,9 @@ company:
               Gains two additional
               station markers at ƒ101
               stock price.
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
       token:
         _:
           short_name_text_fill: ${colour/xxp/WHITE}
@@ -703,7 +726,7 @@ train:
           "1":
             note_text:
               text: |
-                2-player & 
+                2-player &
                 4 -player games only
           "2":
           "3":
