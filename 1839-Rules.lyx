@@ -7917,6 +7917,18 @@ name "par:Het-Laantje-van"
 \end_layout
 
 \begin_layout Description
+Nickname: 
+\begin_inset Quotes eld
+\end_inset
+
+yellow tile
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
 Face
 \begin_inset space ~
 \end_inset
@@ -7956,6 +7968,18 @@ Spoorlijn Roosendaal - Vlissingen
 LatexCommand label
 name "par:Spoorlijn-Roosendaal--"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Nickname: 
+\begin_inset Quotes eld
+\end_inset
+
+teleport station
+\begin_inset Quotes erd
 \end_inset
 
 
@@ -8037,6 +8061,18 @@ Kabinet-Rochussen
 LatexCommand label
 name "par:Kabinet-Rochussen"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Nickname: 
+\begin_inset Quotes eld
+\end_inset
+
+station move
+\begin_inset Quotes erd
 \end_inset
 
 
@@ -8230,6 +8266,18 @@ name "par:Koninklijke-Nederlandsche-Fabriek"
 \end_layout
 
 \begin_layout Description
+Nickname: 
+\begin_inset Quotes eld
+\end_inset
+
+money bags
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
 Face
 \begin_inset space ~
 \end_inset
@@ -8272,6 +8320,18 @@ name "par:Diepenbrock-en-Reigers"
 \end_layout
 
 \begin_layout Description
+Nickname: 
+\begin_inset Quotes eld
+\end_inset
+
+brown train
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
 Face
 \begin_inset space ~
 \end_inset
@@ -8299,6 +8359,31 @@ Power: Converts to a brown train at the start of brown phase.
  is placed in that public company's treasury.
  If the private company is owned by a player, the train is given to the
  player and may be freely assigned to any company at any time.
+ If a player owning the 
+\noun on
+Diepenbrock en Reigers te Ulft
+\noun default
+ bankupts or concedes (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Player-Bankruptcy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Player-Bankruptcy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), then a brown train is discarded from the supply.
  Should a gray train be purchased while the brown train from the 
 \noun on
 Diepenbrock en Reigers te Ulft
@@ -8315,6 +8400,18 @@ Crédit Mobilier
 LatexCommand label
 name "par:Crédit-Mobilier"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Nickname: 
+\begin_inset Quotes eld
+\end_inset
+
+Crédit
+\begin_inset Quotes erd
 \end_inset
 
 
@@ -8486,6 +8583,18 @@ Weefgoederenfabrique C.T.
 LatexCommand label
 name "par:Weefgoederenfabrique-C.T.-Stork"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Nickname: 
+\begin_inset Quotes eld
+\end_inset
+
+C&A
+\begin_inset Quotes erd
 \end_inset
 
 
