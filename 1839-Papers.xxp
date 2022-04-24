@@ -410,6 +410,8 @@ company:
         long_name_text:
           size: 10.5
       charter:
+        _:
+          token_2_text_text: "ƒ x #"
         long_name_text:
           size: 15
       token:
@@ -524,7 +526,7 @@ private:
 
     HLvdG:
       _:
-        asset_interior_box_fill: ${colour/scale/green_1}
+        asset_interior_box_fill: ${colour/scale/green_0}
         long_name_text_text: |
             Het Laantje van der Gaag
         power_text_text: |
@@ -566,7 +568,7 @@ private:
 
     KFvSeaW:
       _:
-        asset_interior_box_fill: ${colour/scale/azure_0}
+        asset_interior_box_fill: ${colour/scale/azure_1}
         closes_text_text: "Closes: In GRAY phase"
         long_name_text_text: |
             Koninklijke Fabriek
@@ -582,7 +584,7 @@ private:
 
     DeRtU:
       _:
-        asset_interior_box_fill: ${colour/scale/azure_0}
+        asset_interior_box_fill: ${colour/scale/azure_2}
         closes_text_text: "Closes: In BROWN phase"
         long_name_text_text: |
             Diepenbrock en
@@ -595,7 +597,7 @@ private:
 
     CM:
       _:
-        asset_interior_box_fill: ${colour/scale/azure_0}
+        asset_interior_box_fill: ${colour/scale/azure_3}
         closes_text_text: "Closes: In BROWN phase"
         long_name_text_text: |
             Crédit Mobilier
@@ -609,7 +611,7 @@ private:
 
     WCTS&Co:
       _:
-        asset_interior_box_fill: ${colour/scale/azure_0}
+        asset_interior_box_fill: ${colour/scale/azure_4}
         closes_text_text: "Closes: In GRAY phase"
         long_name_text_text: |
             Weefgoederenfabrique
@@ -623,7 +625,7 @@ private:
 
     AV:
       _:
-        asset_interior_box_fill: ${colour/scale/orange_1}
+        asset_interior_box_fill: ${colour/scale/orange_2}
         closes_text_text: "Closes: In BROWN phase / company buys a train"
         long_name_text_text: |
             Albert Voombergh
