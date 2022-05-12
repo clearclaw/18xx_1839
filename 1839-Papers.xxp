@@ -78,14 +78,14 @@ company:
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
       charter:
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-        _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
       token:
         _:
           _major_fill_1: ${colour/xxp/BLACK}
@@ -109,14 +109,14 @@ company:
         #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
         _related_fill: ${colour/x11/lightgoldenrod3}
       charter:
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-        _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_minor_fill})]
@@ -145,14 +145,14 @@ company:
         #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
         _related_fill: ${colour/x11/maroon}
       charter:
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-        _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
@@ -171,14 +171,14 @@ company:
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
       charter:
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-        _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
       token:
         _:
           _minor_fill: ${colour/x11/mediumspringgreen}
@@ -205,14 +205,14 @@ company:
         #_related_fill: "$[desaturate_and_brighten (${_/_minor_fill_2}, 0.4, 0.5)]"
         _related_fill: ${colour/x11/darkgoldenrod1}
       charter:
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-        _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
@@ -234,14 +234,14 @@ company:
         #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
         _related_fill: ${colour/resene/Splash}
       charter:
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-        _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
       token:
         _:
           _rotation: 0
@@ -294,14 +294,14 @@ company:
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill_2}, 0.4, 0.5)]"
       charter:
+        _:
+          token_1_text_text: "ƒ x #"
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-        _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
       token:
         _:
           short_name_text_fill: ${colour/xxp/WHITE}
@@ -328,12 +328,11 @@ company:
               Gains an additional
               station marker at ƒ101
               stock price.
+        long_name_text:
+          size: 14
       share:
         long_name_text:
           size: 10.5
-      charter:
-        long_name_text:
-          size: 14
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
@@ -400,20 +399,18 @@ company:
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/khaki1}
       charter:
+        _:
+          token_2_text_text: "ƒ x #"
         comment_text:
           text: |
               Gains two additional
               station markers at ƒ101
               stock price.
-      token:
+        long_name_text:
+          size: 15
       share:
         long_name_text:
           size: 10.5
-      charter:
-        _:
-          token_2_text_text: "ƒ x #"
-        long_name_text:
-          size: 15
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
@@ -440,7 +437,6 @@ company:
               station markers at ƒ101
               stock price.
       token:
-      token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
@@ -466,12 +462,11 @@ company:
               Gains an additional
               station marker at ƒ101
               stock price.
+        long_name_text:
+          size: 15
       share:
         long_name_text:
           size: 12
-      charter:
-        long_name_text:
-          size: 15
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
