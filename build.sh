@@ -25,8 +25,8 @@ cp LICENSE README.txt build/
 
 for paper in letter A4
 do
-  xxpaper make ${GAMENAME}-Papers -p ${paper} build/${GAMENAME}-Papers-${paper}-diecut.pdf
-  xxpaper make ${GAMENAME}-Papers -p ${paper} -c build/${GAMENAME}-Papers-${paper}-outline.pdf
+  xxpaper make assets ${GAMENAME}-Papers -p ${paper} build/${GAMENAME}-Papers-${paper}-diecut.pdf
+  xxpaper make assets ${GAMENAME}-Papers -p ${paper} -c build/${GAMENAME}-Papers-${paper}-outline.pdf
   # pdfunite masthead-${paper}.pdf box-sides-${paper}.pdf build/${GAMENAME}-BoxCovers-${paper}.pdf
 done
 for suffix in Map-B2 Map-A4 Market-A4 Map-letter Market-letter Map-tabloid Market-tabloid \
