@@ -371,6 +371,34 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
+1 charter to track the 
+\noun on
+Koninklijke Fabriek van Stoom en andere Werktuigen
+\noun default
+'s revenue (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Koninklijke-Nederlandsche-Fabriek"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "par:Koninklijke-Nederlandsche-Fabriek"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
 32 government station markers 
 \emph on
 (not count-limited)
@@ -8304,6 +8332,11 @@ Power: None.
 
 \begin_layout Description
 Use: None.
+\end_layout
+
+\begin_layout Description
+Note: A small charter is provided to ease tracking this private company's
+ revenue.
 \end_layout
 
 \begin_layout Subparagraph
