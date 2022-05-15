@@ -12,6 +12,35 @@ company:
 
   index:
 
+    KFvSeaW:
+      _:
+        long_name_text_text: |
+            Koninklijke Fabriek
+            van Stoom en andere
+            Werktuigen
+        short_name_text_text:
+        _major_fill: ${colour/scale/azure_1}
+        _minor_fill: ${colour/scale/azure_1}
+        middle_box_fill: ${_/_minor_fill}
+      charter:
+        index:
+      minor_charter:
+        _:
+          comment_text_text: |
+              Use to track the revenue of
+              the blue private company:
+              Koninklijke Fabriek van Stoom
+              en andere Werktuigen.
+          label_text_text: Revenue
+          token_1_text_text: ""
+          token_2_text_text: ""
+          token_3_text_text: ""
+        index: $[index_of (6)]
+      share:
+        index:
+      token:
+        index:
+
     AMS:
       _:
         long_name_text_text: |
