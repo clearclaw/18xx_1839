@@ -5183,7 +5183,7 @@ reference "subsec:Emergency-train-buying"
 \begin_deeper
 \begin_layout Description
 Exception: A Local Public Company's only train cannot be bought by another
- company unless the buying company doesn't have a train.
+ company.
 \end_layout
 
 \end_deeper
@@ -8649,7 +8649,7 @@ Nickname:
 \begin_inset Quotes eld
 \end_inset
 
-C&A
+Shares
 \begin_inset Quotes erd
 \end_inset
 
