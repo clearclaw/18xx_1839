@@ -4,9 +4,9 @@ company:
     name_stripe_box_suppress: True
     token_1_text_text: Free
     token_2_text_text: Free
-    token_3_text_text: "ƒ x #"
-    token_4_text_text: "ƒ x #"
-    token_5_text_text: "ƒ x #"
+    token_3_text_text: "3 x ƒ"
+    token_4_text_text: "3 x ƒ"
+    token_5_text_text: "3 x ƒ"
     token_4_text_fill: ${colour/xxp/L_GRAY}
     token_5_text_fill: ${colour/xxp/L_GRAY}
 
@@ -77,7 +77,7 @@ company:
         token_4_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_text: ""
-        _major_fill: ${colour/hollasch/orange}
+        _major_fill: ${colour/hollasch/van_dyke_brown}
         _minor_fill: ${_/_major_fill}
       charter:
         comment_text:
@@ -97,8 +97,10 @@ company:
 
     L1:
       _:
+        comment_text_text: |
+            "The flag"
         long_name_text_text: |
-            Lokaalsporwegen #1
+            Lokaalspoorwegen #1
         name_stripe_box_suppress: False
         short_name_text_text: L1
         token_4_text_fill: ${colour/xxp/L_GRAY}
@@ -108,8 +110,8 @@ company:
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
       charter:
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -127,8 +129,10 @@ company:
 
     L2:
       _:
+        comment_text_text: |
+            "Butter Round"
         long_name_text_text: |
-            Lokaalsporwegen #2
+            Lokaalspoorwegen #2
         name_stripe_box_suppress: True
         short_name_text_text: L2
         token_4_text_fill: ${colour/xxp/L_GRAY}
@@ -139,8 +143,8 @@ company:
         _related_fill: ${colour/x11/lightgoldenrod3}
       charter:
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -162,8 +166,10 @@ company:
 
     L3:
       _:
+        comment_text_text: |
+            "Dutch Oven"
         long_name_text_text: |
-            Lokaalsporwegen #3
+            Lokaalspoorwegen #3
         name_stripe_box_fill: ${colour/xxp/BLACK}
         name_stripe_box_suppress: False
         short_name_text_text: L3
@@ -175,8 +181,8 @@ company:
         _related_fill: ${colour/x11/maroon}
       charter:
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -191,8 +197,10 @@ company:
 
     L4:
       _:
+        comment_text_text: |
+            "Pickle"
         long_name_text_text: |
-            Lokaalsporwegen #4
+            Lokaalspoorwegen #4
         short_name_text_text: L4
         token_4_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_fill: ${colour/xxp/L_GRAY}
@@ -201,8 +209,8 @@ company:
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
       charter:
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -218,8 +226,10 @@ company:
 
     L5:
       _:
+        comment_text_text: |
+            "Orange Rail"
         long_name_text_text: |
-            Lokaalsporwegen #5
+            Lokaalspoorwegen #5
         name_stripe_box_suppress: True
         name_stripe_box_fill: ${colour/xxp/BLACK}
         top_rotate_angle: 90
@@ -235,8 +245,8 @@ company:
         _related_fill: ${colour/x11/darkgoldenrod1}
       charter:
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -249,8 +259,10 @@ company:
 
     L6:
       _:
+        comment_text_text: |
+            "Pink Nuke"
         long_name_text_text: |
-            Lokaalsporwegen #6
+            Lokaalspoorwegen #6
         name_stripe_box_fill: ${colour/xxp/BLACK}
         name_stripe_box_suppress: False
         short_name_text_text: L6
@@ -264,8 +276,8 @@ company:
         _related_fill: ${colour/resene/Splash}
       charter:
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -283,8 +295,10 @@ company:
 
     L7:
       _:
+        comment_text_text: |
+            "Blue Diamond"
         long_name_text_text: |
-            Lokaalsporwegen #7
+            Lokaalspoorwegen #7
         middle_rotate_angle: 45
         short_name_text_text: L7
         token_4_text_fill: ${colour/xxp/L_GRAY}
@@ -300,8 +314,8 @@ company:
               station markers at ƒ101
               stock price.
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
       token:
         _:
           outer_circle_fill: ${_/_minor_fill}
@@ -312,8 +326,10 @@ company:
 
     L8:
       _:
+        comment_text_text: |
+            "Splat"
         long_name_text_text: |
-            Lokaalsporwegen #8
+            Lokaalspoorwegen #8
         short_name_text_text: L8
         token_4_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_fill: ${colour/xxp/L_GRAY}
@@ -324,8 +340,8 @@ company:
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill_2}, 0.4, 0.5)]"
       charter:
         _:
-          token_1_text_text: "ƒ x #"
-          token_2_text_text: "ƒ x #"
+          token_1_text_text: "2 x ƒ"
+          token_2_text_text: "2 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -339,6 +355,39 @@ company:
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
         index: $[index_of (7)]
+
+#    L9:
+#      _:
+#        comment_text_text: |
+#            "zet"
+#        long_name_text_text: |
+#            Lokaalspoorwegen #9
+#        short_name_text_text: L9
+#        name_stripe_box_suppress: False
+#        middle_rotate_angle: 45
+#        token_4_text_fill: ${colour/xxp/L_GRAY}
+#        token_5_text_fill: ${colour/xxp/L_GRAY}
+#        _major_fill: ${colour/xxp/BLACK}
+#        _minor_fill: ${colour/x11/orangered}
+#        _major_fill_2: ${colour/xxp/WHITE}
+#        # _related_fill: ${colour/x11/slategray4}
+#        _related_fill: "$[desaturate_and_brighten (${_/_minor_fill_2}, 0.4, 0.5)]"
+#      charter:
+#        _:
+#          token_1_text_text: "2 x ƒ"
+#          token_2_text_text: "2 x ƒ"
+#        comment_text:
+#          text: |
+#              Gains two additional
+#              station markers at ƒ101
+#              stock price.
+#      token:
+#        _:
+#          name_stripe_box_fill: ${colour/x11/orangered}
+#          name_stripe_box_stroke: ${colour/x11/orangered}
+#        ELEMENTS: ${TEMPLATE_cross/.}
+#        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+#        index: $[index_of (7)]
 
     NDBS:
       _:
@@ -368,6 +417,31 @@ company:
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (6)]
+
+    MSS:
+      _:
+        long_name_text_text: |
+            Maatschappij
+            tot Exploitatie van
+            Staatsspoorwegen
+        short_name_text_text: MSS
+        token_4_text_fill: ${colour/xxp/L_GRAY}
+        token_5_text_fill: ${colour/xxp/L_GRAY}
+        _major_fill: ${colour/wikipedia/eton_blue}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/green_pale}
+      charter:
+        comment_text:
+          text: |
+              Gains two additional
+              station markers at ƒ101
+              stock price.
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
 
     NCS:
       _:
@@ -429,7 +503,7 @@ company:
         _related_fill: ${colour/x11/khaki1}
       charter:
         _:
-          token_2_text_text: "ƒ x #"
+          token_2_text_text: "3 x ƒ"
         comment_text:
           text: |
               Gains two additional
@@ -440,31 +514,6 @@ company:
       share:
         long_name_text:
           size: 10.5
-      token:
-        _:
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
-        ELEMENTS: ${TEMPLATE_solid/.}
-        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
-
-    SS:
-      _:
-        long_name_text_text: |
-            Matschappij
-            tot Exploitatie van
-            Staatsspoorwegen
-        short_name_text_text: SS
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
-        _major_fill: ${colour/wikipedia/eton_blue}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/hollasch/green_pale}
-      charter:
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
@@ -743,87 +792,107 @@ train:
   index:
     2T:
       _:
-        asset_interior_box_fill_p: YELLOW
-        rust_bar_box_fill_p: BLUE
+        asset_interior_box_fill_p: LIGHT_YELLOW
+        rust_bar_box_fill_p: DARK_GREEN
         long_name_text_text: "2"
         cost_text_text_p: ƒ80
+        rusted_text_size: 8
       model:
-        index:
-          "1":
-            note_text:
-              text: |
-                2-player &
-                4-player games only
-          "2":
-          "3":
-          "4":
-          "5":
-          "6":
-          "7":
-          "8":
-          "9":
+        index: $[index_of (6)]
+
+    2+1T:
+      _:
+        asset_interior_box_fill_p: MEDIUM_YELLOW
+        rust_bar_box_fill_p: BLUE
+        long_name_text_text: "2+1"
+        cost_text_text_p: ƒ120
+      long_name_text:
+        size: 56
+      model:
+        index: $[index_of (5)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: LIGHT_GREEN
+        rust_bar_box_fill_p: LIGHT_BROWN
+        long_name_text_text: "3"
+        cost_text_text_p: ƒ140
+        rusted_text_size: 8
+      model:
+        index: $[index_of (6)]
 
     3+T:
       _:
-        asset_interior_box_fill_p: GREEN
-        rust_bar_box_fill_p: BROWN
+        asset_interior_box_fill_p: DARK_GREEN
+        rust_bar_box_fill_p: MEDIUM_BROWN
         long_name_text_text: "3+"
-        cost_text_text_p: ƒ160
+        cost_text_text_p: ƒ180
+        rusted_text_size: 7
       model:
-        index:
-          "1":
-            note_text:
-              text: |
-                2-player &
-                4-player games only
-          "2":
-          "3":
-          "4":
-          "5":
-          "6":
-          "7":
-          "8":
-          "9":
+        index: $[index_of (4)]
 
     5+T:
       _:
         asset_interior_box_fill_p: BLUE
-        rust_bar_box_fill_p: RED
+        rust_bar_box_fill_p: DARK_BROWN
         long_name_text_text: "5+"
         cost_text_text_p: ƒ240
+        rusted_text_size: 8
       model:
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     R4T:
       _:
-        asset_interior_box_fill_p: BROWN
-        rust_bar_box_fill_p: GRAY
+        asset_interior_box_fill_p: LIGHT_BROWN
+        rust_bar_box_fill_p: LIGHT_RED
         long_name_text_text: "R4"
         cost_text_text_p: ƒ320
+        rusted_text_size: 9
+        long_name_text_size: 60
       model:
-        index: $[index_of (7)]
+        index: $[index_of (5)]
+
+    R4+1T:
+      _:
+        asset_interior_box_fill_p: MEDIUM_BROWN
+        rust_bar_box_fill_p: DARK_RED
+        long_name_text_text: "R4+1"
+        cost_text_text_p: ƒ340
+        long_name_text_size: 36
+        rusted_text_size: 9
+      model:
+        index: $[index_of (3)]
+
+    R5T:
+      _:
+        asset_interior_box_fill_p: DARK_BROWN
+        rust_bar_box_fill_p: GRAY
+        long_name_text_text: "R5"
+        cost_text_text_p: ƒ380
+      model:
+        index: $[index_of (4)]
 
     PR2+T:
       _:
-        asset_interior_box_fill_p: RED
+        asset_interior_box_fill_p: LIGHT_RED
         rust_bar_box_fill_p: PURPLE
         long_name_text_text: "PR2+"
-        cost_text_text_p: ƒ280
+        cost_text_text_p: ƒ240
       long_name_text:
         size: 36
       model:
-        index:
-          "1":
-            note_text:
-              text: |
-                2-player &
-                4-player games only
-          "2":
-          "3":
-          "4":
-          "5":
-          "6":
-          "7":
+        index: $[index_of (5)]
+
+    PR3+1T:
+      _:
+        asset_interior_box_fill_p: DARK_RED
+        rust_bar_box_fill_p: PURPLE
+        long_name_text_text: "PR3+1"
+        cost_text_text_p: ƒ260
+      long_name_text:
+        size: 28
+      model:
+        index: $[index_of (3)]
 
     4T:
       _:
@@ -833,16 +902,7 @@ train:
         cost_text_text_p: ƒ460
         rusted_text_text: PERMANENT
       model:
-        index:
-          "1":
-            note_text:
-              text: |
-                2-player &
-                4-player games only
-          "2":
-          "3":
-          "4":
-          "5":
+        index: $[index_of (5)]
 
     Diesel:
       _:
@@ -856,82 +916,82 @@ train:
       model:
         index: $[index_of (10)]
 
-    p1Pa:
-      _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
-        long_name_text_text: "1"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
-
-    p2Pa:
-      _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
-        long_name_text_text: "2"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
-
-    p3Pa:
-      _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
-        long_name_text_text: "3"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
-
-    p4Pa:
-      _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
-        long_name_text_text: "4"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
-
-    p1Pb:
-      _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-        long_name_text_text: "1"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
-
-    p2Pb:
-      _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-        long_name_text_text: "2"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
-
-    p3Pb:
-      _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-        long_name_text_text: "3"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
-
-    p4Pb:
-      _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-        long_name_text_text: "4"
-        cost_text_text:
-        rusted_text_text:
-      model:
-        index:  "$[index_of (1)]"
+#    p1Pa:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+#        rust_bar_box_fill: ${colour/xxp/D_RED}
+#        long_name_text_text: "1"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
+#
+#    p2Pa:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+#        rust_bar_box_fill: ${colour/xxp/D_RED}
+#        long_name_text_text: "2"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
+#
+#    p3Pa:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+#        rust_bar_box_fill: ${colour/xxp/D_RED}
+#        long_name_text_text: "3"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
+#
+#    p4Pa:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+#        rust_bar_box_fill: ${colour/xxp/D_RED}
+#        long_name_text_text: "4"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
+#
+#    p1Pb:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/D_RED}
+#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+#        long_name_text_text: "1"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
+#
+#    p2Pb:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/D_RED}
+#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+#        long_name_text_text: "2"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
+#
+#    p3Pb:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/D_RED}
+#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+#        long_name_text_text: "3"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
+#
+#    p4Pb:
+#      _:
+#        asset_interior_box_fill: ${colour/xxp/D_RED}
+#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+#        long_name_text_text: "4"
+#        cost_text_text:
+#        rusted_text_text:
+#      model:
+#        index:  "$[index_of (1)]"
