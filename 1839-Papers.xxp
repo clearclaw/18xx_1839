@@ -4,11 +4,9 @@ company:
     name_stripe_box_suppress: True
     token_1_text_text: Free
     token_2_text_text: Free
-    token_3_text_text: "3 x ƒ"
-    token_4_text_text: "3 x ƒ"
-    token_5_text_text: "3 x ƒ"
-    token_4_text_fill: ${colour/xxp/L_GRAY}
-    token_5_text_fill: ${colour/xxp/L_GRAY}
+    token_3_text_text: "ƒ80"
+    token_4_text_text: "ƒ80"
+    token_5_text_text: "ƒ80"
 
   index:
 
@@ -47,17 +45,8 @@ company:
             Aken-Maastrichtsche
             Spoorweg-Maatschappij
         short_name_text_text: AMS
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_text: ""
         _major_fill: ${colour/wikipedia/dark_violet}
         _minor_fill: ${_/_major_fill}
-      charter:
-        comment_text:
-          text: |
-              Gains an additional
-              station marker at ƒ101
-              stock price.
       share:
         long_name_text:
           size: 11.5
@@ -66,7 +55,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     HIJSM:
       _:
@@ -74,17 +63,8 @@ company:
             Hollandsche IJzeren
             Spoorweg-Maatschappij
         short_name_text_text: HIJSM
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_text: ""
         _major_fill: ${colour/hollasch/van_dyke_brown}
         _minor_fill: ${_/_major_fill}
-      charter:
-        comment_text:
-          text: |
-              Gains an additional
-              station marker at ƒ101
-              stock price.
       share:
         long_name_text:
           size: 11.5
@@ -93,30 +73,31 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     L1:
       _:
-        comment_text_text: |
-            "The flag"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #1
         name_stripe_box_suppress: False
         short_name_text_text: L1
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/wikipedia/gainsboro}
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
       charter:
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #1
       token:
         _:
           _major_fill_1: ${colour/xxp/BLACK}
@@ -125,31 +106,32 @@ company:
           _minor_fill_2: ${colour/xxp/BLACK}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     L2:
       _:
-        comment_text_text: |
-            "Butter Round"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #2
         name_stripe_box_suppress: True
         short_name_text_text: L2
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/wikipedia/icterine}
         _minor_fill: ${colour/xxp/BLACK}
         #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
         _related_fill: ${colour/x11/lightgoldenrod3}
       charter:
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #2
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_minor_fill})]
@@ -162,72 +144,73 @@ company:
           fill: ${colour/wikipedia/icterine}
         outer_circle:
           fill: ${colour/xxp/BLACK}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     L3:
       _:
-        comment_text_text: |
-            "Dutch Oven"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #3
         name_stripe_box_fill: ${colour/xxp/BLACK}
         name_stripe_box_suppress: False
         short_name_text_text: L3
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/wikipedia/debian_red}
         _minor_fill: ${colour/xxp/BLACK}
         #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
         _related_fill: ${colour/x11/maroon}
       charter:
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #3
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     L4:
       _:
-        comment_text_text: |
-            "Pickle"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #4
         short_name_text_text: L4
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/x11/mediumspringgreen}
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
       charter:
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #4
       token:
         _:
           _minor_fill: ${colour/x11/mediumspringgreen}
           _major_fill: ${colour/xxp/BLACK}
         ELEMENTS: ${TEMPLATE_star/.}
         EMBED_ELEMENTS: ${TEMPLATE_star_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     L5:
       _:
-        comment_text_text: |
-            "Orange Rail"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #5
         name_stripe_box_suppress: True
@@ -235,8 +218,8 @@ company:
         top_rotate_angle: 90
         bottom_rotate_angle: 90
         short_name_text_text: L5
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/xxp/BLACK}
         _minor_fill: ${colour/xxp/BLACK}
         _major_fill_2: ${colour/wikipedia/dark_orange}
@@ -245,29 +228,30 @@ company:
         _related_fill: ${colour/x11/darkgoldenrod1}
       charter:
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #5
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     L6:
       _:
-        comment_text_text: |
-            "Pink Nuke"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #6
         name_stripe_box_fill: ${colour/xxp/BLACK}
         name_stripe_box_suppress: False
         short_name_text_text: L6
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/wikipedia/fuchsia}
         _minor_fill: ${colour/xxp/BLACK}
         _major_fill_1: ${_/_major_fill}
@@ -276,13 +260,15 @@ company:
         _related_fill: ${colour/resene/Splash}
       charter:
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #6
       token:
         _:
           _rotation: 0
@@ -291,48 +277,48 @@ company:
           inner_circle_suppress: true
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     L7:
       _:
-        comment_text_text: |
-            "Blue Diamond"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #7
         middle_rotate_angle: 45
         short_name_text_text: L7
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/hollasch/blue}
         _minor_fill: ${colour/xxp/BLACK}
         #_related_fill: "$[desaturate_and_brighten (${_/_major_fill}, 0.4, 0.5)]"
         _related_fill: ${colour/hollasch/dodger_blue}
       charter:
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #7
       token:
         _:
           outer_circle_fill: ${_/_minor_fill}
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_boxes/.}
         EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
     L8:
       _:
-        comment_text_text: |
-            "Splat"
+        asset_interior_box_fill: ${colour/wikipedia/indigo_dye}
         long_name_text_text: |
             Lokaalspoorwegen #8
         short_name_text_text: L8
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
+        token_4_text_text: ""
+        token_5_text_text: ""
         _major_fill: ${colour/XXP/BLACK}
         _major_fill_1: ${colour/xxp/BLACK}
         _major_fill_2: ${colour/wikipedia/french_beige}
@@ -340,13 +326,15 @@ company:
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill_2}, 0.4, 0.5)]"
       charter:
         _:
+          outside_box_fill: ${colour/wikipedia/indigo_dye}
           token_1_text_text: "2 x ƒ"
           token_2_text_text: "2 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
+      share:
+        _:
+          long_name_text_text: |
+              Lokaalspoorwegen
+
+              #8
       token:
         _:
           short_name_text_fill: ${colour/xxp/WHITE}
@@ -354,7 +342,7 @@ company:
           _angle: $[360 / 20]
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (5)]
 
 #    L9:
 #      _:
@@ -395,17 +383,10 @@ company:
             Noord-Brabantsch-Duitsche
             Spoorweg-Maatschappij
         short_name_text_text: NBDS
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_text: ""
         _major_fill: ${colour/wikipedia/capri}
         _minor_fill: ${_/_major_fill}
       charter:
-        comment_text:
-          text: |
-              Gains an additional
-              station marker at ƒ101
-              stock price.
         long_name_text:
           size: 14
       share:
@@ -425,17 +406,9 @@ company:
             tot Exploitatie van
             Staatsspoorwegen
         short_name_text_text: MSS
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
         _major_fill: ${colour/wikipedia/eton_blue}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/hollasch/green_pale}
-      charter:
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
@@ -449,8 +422,6 @@ company:
             Nederlandsche Centraal-
             Spoorweg-Maatschappij
         short_name_text_text: NCS
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
         token_4_text_text: ""
         token_5_text_text: ""
         _major_fill: ${colour/hollasch/cadmium_red_light}
@@ -463,7 +434,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (5)]
+        index: $[index_of (6)]
 
     NRS:
       _:
@@ -472,8 +443,6 @@ company:
             Rhijnspoorweg-
             Maatschappij
         short_name_text_text: NRS
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
         token_4_text_text: ""
         token_5_text_text: ""
         _major_fill: ${colour/hollasch/tan}
@@ -488,7 +457,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (5)]
+        index: $[index_of (6)]
 
     NWS:
       _:
@@ -496,19 +465,10 @@ company:
             Nederlandsch-Westfaalsche
             Spoorweg-Maatschappij
         short_name_text_text: NWS
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
         _major_fill: ${colour/wikipedia/daffodil}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/khaki1}
       charter:
-        _:
-          token_2_text_text: "3 x ƒ"
-        comment_text:
-          text: |
-              Gains two additional
-              station markers at ƒ101
-              stock price.
         long_name_text:
           size: 15
       share:
@@ -528,18 +488,11 @@ company:
             Electrische
             Spoorweg-Maatschappij
         short_name_text_text: ZHESM
-        token_4_text_fill: ${colour/xxp/L_GRAY}
-        token_5_text_fill: ${colour/xxp/L_GRAY}
         token_5_text_text: ""
         _major_fill: ${colour/wikipedia/dartmouth_green}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/olivedrab3}
       charter:
-        comment_text:
-          text: |
-              Gains an additional
-              station marker at ƒ101
-              stock price.
         long_name_text:
           size: 15
       share:
@@ -578,7 +531,7 @@ marker:
           - name_stripe_box
           - short_name_text
         ELEMENTS: ${TEMPLATE_stripey_cross/.}
-        index: "$[index_of (32)]"
+        index: "$[index_of (25)]"
     round:
       token:
         _:
@@ -593,15 +546,45 @@ marker:
 private:
 
   _:
-    closes_text_text: "Closes: In GRAY phase or when power used"
+    closes_text_text: "Closes: GRAY phase or when power used"
 
   index:
 
-    HLvdG:
+    LP:
+      _:
+        asset_interior_box_fill: ${colour/scale/yellow_1}
+        closes_text_text: "Closes: DARK YELLOW phase"
+        long_name_text_text: |
+            Lodewijk Pincoffs
+        power_text_text: |
+            When closed, converts into 40%
+            of a new lokaalsporwegen
+            parred at ƒ25.
+        cost_text_text: "Cost: ƒ90"
+        revenue_text_text: "Revenue: ƒ0"
+
+    JJB:
+      _:
+        asset_interior_box_fill: ${colour/scale/yellow_2}
+        closes_text_text: "Closes: DARK GREEN phase"
+        long_name_text_text: |
+            J J Beijnes
+        power_text_text: |
+            Comes with a 10% share of the
+            public company associated with
+            the brown Cornelis Outshoorn
+            private company. When closed,
+            converts into 40% of a new
+            lokaalsporwegen parred at ƒ25.
+        cost_text_text: "Cost: ƒ100"
+        revenue_text_text: "Revenue: ƒ0"
+
+    HLvVdG:
       _:
         asset_interior_box_fill: ${colour/scale/green_0}
         long_name_text_text: |
-            Het Laantje van der Gaag
+            Het Laantje van
+            Van der Gaag
         power_text_text: |
             Blocks: H7
             Owning company may place an
@@ -636,140 +619,112 @@ private:
             station marker for free. A government
             station marker is placed at the prior
             station marker location
-        cost_text_text: "Cost: ƒ230"
-        revenue_text_text: "Revenue: ƒ30 / ƒ0"
+        cost_text_text: "Cost: ƒ100"
+        revenue_text_text: "Revenue: ƒ30"
 
     KFvSeaW:
       _:
         asset_interior_box_fill: ${colour/scale/azure_1}
-        closes_text_text: "Closes: In GRAY phase"
+        closes_text_text: "Closes: GRAY phase"
         long_name_text_text: |
             Koninklijke Fabriek
             van Stoom en andere
             Werktuigen
         power_text_text: |
             (3-player & 4-player games only)
-            Pays ƒ10 more than it paid in the
+            Pays ƒ20 more than it paid in the
             previous Operating Round, starting
             at ƒ0 in the first Operating Round.
-        cost_text_text: "Cost: ƒ240"
-        revenue_text_text: "Revenue: +ƒ10/OR"
+        cost_text_text: "Cost: ƒ120"
+        revenue_text_text: "Revenue: +ƒ20/OR"
 
     DeRtU:
       _:
         asset_interior_box_fill: ${colour/scale/azure_2}
-        closes_text_text: "Closes: In BROWN phase"
+        closes_text_text: "Closes: BROWN phase"
         long_name_text_text: |
             Diepenbrock en
             Reigers te Ulft
         power_text_text: |
-            Converts to a BROWN train
-            at the start of BROWN phase.
-        cost_text_text: "Cost: ƒ250"
+            Converts to a DARK BROWN
+            train at the start of
+            DARK BROWN phase.
+        cost_text_text: "Cost: ƒ130"
         revenue_text_text: "Revenue: ƒ0"
 
     CM:
       _:
         asset_interior_box_fill: ${colour/scale/azure_3}
-        closes_text_text: "Closes: In BROWN phase"
+        closes_text_text: "Closes: BROWN phase"
         long_name_text_text: |
             Crédit Mobilier
         power_text_text: |
             (4-player games only)
-            When closed converts to ƒ600 & the
+            When closed converts to ƒ800 & the
             Rotterdamsche Handelsvereeniging
             red private company
-        cost_text_text: "Cost: ƒ260"
+        cost_text_text: "Cost: ƒ140"
         revenue_text_text: "Revenue: ƒ0"
 
     WCTS&Co:
       _:
         asset_interior_box_fill: ${colour/scale/azure_4}
-        closes_text_text: "Closes: In GRAY phase"
+        closes_text_text: "Closes: GRAY phase"
         long_name_text_text: |
             Weefgoederenfabrique
             C.T. Stork & Co
         power_text_text: |
             Comes with two 10% shares of
             the company associated with the
-            Albert Voombergh private company.
-        cost_text_text: "Cost: ƒ260"
-        revenue_text_text: "Revenue: ƒ30"
-
-    AV:
-      _:
-        asset_interior_box_fill: ${colour/scale/orange_2}
-        closes_text_text: "Closes: In BROWN phase / company buys a train"
-        long_name_text_text: |
-            Albert Voombergh
-        power_text_text: |
-            Comes with 30% of an
-            associated public company.
-            When closed converts into
-            choice of any parred 10%
-            share from the IPO or ƒ40.
-        cost_text_text: "Cost: ƒ320"
-        revenue_text_text: "Revenue: ƒ40"
-
-    AB:
-      _:
-        asset_interior_box_fill: ${colour/scale/orange_1}
-        closes_text_text: "Closes: In BROWN phase / company buys a train"
-        long_name_text_text: |
-            August Borsig
-        power_text_text: |
-            (4-player games only)
-            Comes with 30% of an associated
-            public company.  When closed
-            converts into choice of any
-            parred 10% share from IPO or ƒ40.
-        cost_text_text: "Cost: ƒ270"
+            brown Albert Voombergh
+            private company.
+        cost_text_text: "Cost: ƒ240"
         revenue_text_text: "Revenue: ƒ30"
 
     CO:
       _:
         asset_interior_box_fill: ${colour/scale/orange_1}
-        closes_text_text: "Closes: In BROWN phase / company buys a train"
+        closes_text_text: "Closes: LIGHT BROWN / company buys train"
         long_name_text_text: |
             Cornelis Outshoorn
         power_text_text: |
-            (3-player & 4-player games only)
-            Comes with 30% of an associated
-            public company.  When closed
-            converts into choice of any
-            parred 10% share from IPO or ƒ40.
-        cost_text_text: "Cost: ƒ280"
-        revenue_text_text: "Revenue: ƒ30"
+            Comes with 30% of an
+            associated public company.
+            When closed, converts into
+            40% of a new lokaalsporwegen
+            parred at ƒ25.
+        cost_text_text: "Cost: ƒ200"
+        revenue_text_text: "Revenue: ƒ40"
 
-    JJB:
+    AB:
       _:
         asset_interior_box_fill: ${colour/scale/orange_1}
-        closes_text_text: "Closes: In BROWN phase / company buys a train"
+        closes_text_text: "Closes: LIGHT BROWN / company buys train"
         long_name_text_text: |
-            J J Beijnes
+            August Borsig
         power_text_text: |
             Comes with 30% of an
             associated public company.
-            When closed converts into
-            choice of any parred 10%
-            share from the IPO or ƒ40.
-        cost_text_text: "Cost: ƒ270"
-        revenue_text_text: "Revenue: ƒ30"
+            When closed, converts into
+            40% of a new lokaalsporwegen
+            parred at ƒ25.
+        cost_text_text: "Cost: ƒ210"
+        revenue_text_text: "Revenue: ƒ40"
 
-    LP:
+    AV:
       _:
-        asset_interior_box_fill: ${colour/scale/orange_1}
-        closes_text_text: "Closes: In BROWN phase / company buys a train"
+        asset_interior_box_fill: ${colour/scale/orange_2}
+        closes_text_text: "Closes: LIGHT BROWN / company buys train"
         long_name_text_text: |
-            Lodewijk Pincoffs
+            Albert Voombergh
         power_text_text: |
             Comes with 30% of an
             associated public company.
-            When closed converts into
-            choice of any parred 10%
-            share from the IPO or ƒ40.
-        cost_text_text: "Cost: ƒ280"
-        revenue_text_text: "Revenue: ƒ30"
+            When closed, converts into
+            40% of a new lokaalsporwegen
+            parred at ƒ25.
+        cost_text_text: "Cost: ƒ240"
+        revenue_text_text: "Revenue: ƒ60"
 
     RH:
       _:
@@ -798,7 +753,7 @@ train:
         cost_text_text_p: ƒ80
         rusted_text_size: 8
       model:
-        index: $[index_of (6)]
+        index: $[index_of (5)]
 
     2+1T:
       _:
@@ -809,7 +764,7 @@ train:
       long_name_text:
         size: 56
       model:
-        index: $[index_of (5)]
+        index: $[index_of (4)]
 
     3T:
       _:
@@ -819,7 +774,7 @@ train:
         cost_text_text_p: ƒ140
         rusted_text_size: 8
       model:
-        index: $[index_of (6)]
+        index: $[index_of (5)]
 
     3+T:
       _:
@@ -829,7 +784,7 @@ train:
         cost_text_text_p: ƒ180
         rusted_text_size: 7
       model:
-        index: $[index_of (4)]
+        index: $[index_of (3)]
 
     5+T:
       _:
@@ -839,18 +794,16 @@ train:
         cost_text_text_p: ƒ240
         rusted_text_size: 8
       model:
-        index: $[index_of (5)]
+        index: $[index_of (4)]
 
-    R4T:
+    R5T:
       _:
         asset_interior_box_fill_p: LIGHT_BROWN
         rust_bar_box_fill_p: LIGHT_RED
-        long_name_text_text: "R4"
+        long_name_text_text: "R5"
         cost_text_text_p: ƒ320
-        rusted_text_size: 9
-        long_name_text_size: 60
       model:
-        index: $[index_of (5)]
+        index: $[index_of (4)]
 
     R4+1T:
       _:
@@ -861,16 +814,18 @@ train:
         long_name_text_size: 36
         rusted_text_size: 9
       model:
-        index: $[index_of (3)]
+        index: $[index_of (2)]
 
-    R5T:
+    R4T:
       _:
         asset_interior_box_fill_p: DARK_BROWN
         rust_bar_box_fill_p: GRAY
-        long_name_text_text: "R5"
+        long_name_text_text: "R4"
         cost_text_text_p: ƒ380
+        rusted_text_size: 9
+        long_name_text_size: 60
       model:
-        index: $[index_of (4)]
+        index: $[index_of (3)]
 
     PR2+T:
       _:
@@ -881,7 +836,7 @@ train:
       long_name_text:
         size: 36
       model:
-        index: $[index_of (5)]
+        index: $[index_of (4)]
 
     PR3+1T:
       _:
@@ -892,7 +847,7 @@ train:
       long_name_text:
         size: 28
       model:
-        index: $[index_of (3)]
+        index: $[index_of (2)]
 
     4T:
       _:
@@ -902,19 +857,17 @@ train:
         cost_text_text_p: ƒ460
         rusted_text_text: PERMANENT
       model:
-        index: $[index_of (5)]
+        index: $[index_of (4)]
 
-    Diesel:
+    7T:
       _:
         asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill_p: BLACK
-        long_name_text_text: "Diesel"
-        cost_text_text_p: ƒ570
+        long_name_text_text: "7"
+        cost_text_text_p: ƒ660
         rusted_text_text: PERMANENT
-      long_name_text:
-        size: 32
       model:
-        index: $[index_of (10)]
+        index: $[index_of (7)]
 
 #    p1Pa:
 #      _:
