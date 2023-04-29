@@ -619,7 +619,7 @@ private:
             station marker for free. A government
             station marker is placed at the prior
             station marker location
-        cost_text_text: "Cost: ƒ100"
+        cost_text_text: "Cost: ƒ110"
         revenue_text_text: "Revenue: ƒ30"
 
     KFvSeaW:
