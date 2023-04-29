@@ -869,82 +869,82 @@ train:
       model:
         index: $[index_of (7)]
 
-#    p1Pa:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-#        rust_bar_box_fill: ${colour/xxp/D_RED}
-#        long_name_text_text: "1"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
-#
-#    p2Pa:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-#        rust_bar_box_fill: ${colour/xxp/D_RED}
-#        long_name_text_text: "2"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
-#
-#    p3Pa:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-#        rust_bar_box_fill: ${colour/xxp/D_RED}
-#        long_name_text_text: "3"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
-#
-#    p4Pa:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-#        rust_bar_box_fill: ${colour/xxp/D_RED}
-#        long_name_text_text: "4"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
-#
-#    p1Pb:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/D_RED}
-#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-#        long_name_text_text: "1"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
-#
-#    p2Pb:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/D_RED}
-#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-#        long_name_text_text: "2"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
-#
-#    p3Pb:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/D_RED}
-#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-#        long_name_text_text: "3"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
-#
-#    p4Pb:
-#      _:
-#        asset_interior_box_fill: ${colour/xxp/D_RED}
-#        rust_bar_box_fill: ${colour/xxp/M_BLUE}
-#        long_name_text_text: "4"
-#        cost_text_text:
-#        rusted_text_text:
-#      model:
-#        index:  "$[index_of (1)]"
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/D_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/D_RED}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/D_RED}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/D_RED}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/D_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/D_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/D_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/D_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
