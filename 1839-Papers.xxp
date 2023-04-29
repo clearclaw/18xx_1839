@@ -73,7 +73,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (6)]
 
     L1:
       _:
@@ -321,7 +321,7 @@ company:
         token_5_text_text: ""
         _major_fill: ${colour/XXP/BLACK}
         _major_fill_1: ${colour/xxp/BLACK}
-        _major_fill_2: ${colour/wikipedia/french_beige}
+        _major_fill_2: ${colour/wikipedia/khaki_html_css_khaki}
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: "$[desaturate_and_brighten (${_/_major_fill_2}, 0.4, 0.5)]"
       charter:
@@ -504,7 +504,7 @@ company:
           short_name_text_size: 8
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
 marker:
   index:
@@ -786,11 +786,11 @@ train:
       model:
         index: $[index_of (3)]
 
-    5+T:
+    4+T:
       _:
         asset_interior_box_fill_p: BLUE
         rust_bar_box_fill_p: DARK_BROWN
-        long_name_text_text: "5+"
+        long_name_text_text: "4+"
         cost_text_text_p: ƒ240
         rusted_text_size: 8
       model:
