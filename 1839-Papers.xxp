@@ -857,7 +857,15 @@ train:
         cost_text_text_p: ƒ460
         rusted_text_text: PERMANENT
       model:
-        index: $[index_of (4)]
+        index:
+          "1":
+            note_text:
+              text: |
+                (4-player
+                games only)
+          "2":
+          "3":
+          "4":
 
     7T:
       _:
