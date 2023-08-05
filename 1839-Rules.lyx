@@ -4568,16 +4568,16 @@ reference "subsec:Stock-price-movement"
 ).
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-At the end of the Operating Round the upside-down stock price markers are
- turned face-up so that the bottom face-down marker becomes the top face-up
- marker (under any face-up markers already present).
+\begin_layout Description
+Note: At the end of the Operating Round the upside-down stock price markers
+ are turned face-up so that the bottom face-down marker becomes the top
+ face-up marker (under any face-up markers already present).
  The result is that public companies sharing a space in the stock price
  chart operate in the order in which their stock price markers arrived at
  that space.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Each public company completes all of its actions in the Operating Round
  before the next public company operates.
