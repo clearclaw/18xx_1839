@@ -2833,10 +2833,6 @@ The private auction sheet can be used to track this process, writing the
 
 \end_deeper
 \begin_layout Itemize
-Players are limited to their available cash.
-\end_layout
-
-\begin_layout Itemize
 When a brown Private Company is bought, the assigned public company must
  immediately be parred on the Major Stock Market (see 
 \begin_inset CommandInset ref
@@ -3014,10 +3010,6 @@ reference "subsec:Selling-shares"
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-Players are limited to their available cash.
-\end_layout
-
 \begin_layout Itemize
 If a player passes, they may act in the Stock Round on their next or a later
  turn.
