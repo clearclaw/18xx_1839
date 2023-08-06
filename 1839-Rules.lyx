@@ -4604,7 +4604,7 @@ Public companies perform the following steps in order:
 \emph on
 If the first time the public company is operating
 \emph default
-) Place the company's home station marker(s) on its home station location(s),
+) Place the company's home station markers on its home station locations,
  placing them either in empty city circles or replacing a government station
  marker on those hexagons and returning the government station marker to
  the supply, at the director's choice (see 
@@ -12468,7 +12468,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-Have predefined home station location(s) (see 
+Have predefined home station locations (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Public-Companies"
