@@ -275,6 +275,7 @@ company:
           _angle: $[360 / 6]
           inner_circle_fill: ${colour/x11/darkgoldenrod1}
           inner_circle_suppress: true
+          bottom_half_box_suppress: true
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
         index: $[index_of (5)]
@@ -340,6 +341,7 @@ company:
           short_name_text_fill: ${colour/xxp/WHITE}
           _rotation: 0
           _angle: $[360 / 20]
+          bottom_half_box_suppress: true
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
         index: $[index_of (5)]
@@ -802,6 +804,7 @@ train:
         rust_bar_box_fill_p: LIGHT_RED
         long_name_text_text: "R5"
         cost_text_text_p: ƒ320
+        rusted_text_size: 8
       model:
         index: $[index_of (4)]
 
