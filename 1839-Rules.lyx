@@ -15584,7 +15584,7 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Paragraph
-N+ trains 
+N+1 trains 
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:N+M-trains"
@@ -15599,7 +15599,7 @@ The route for a N+1 train (where
 \emph on
 N
 \emph default
- is 2, 4 or 3 and ) cannot contain more than a total of N cities.
+ is 2, 3 or 4) cannot contain more than a total of N cities.
  There may also be one town on the route; before, between and after any
  other revenue centers on the route.
 \end_layout
