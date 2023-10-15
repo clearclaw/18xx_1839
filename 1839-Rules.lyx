@@ -631,6 +631,26 @@ Place the remaining Private Companies where they can be easily examined
 \end_layout
 
 \begin_layout Itemize
+Select an otherwise unused area around the board to serve as the train supply
+ and arrange the trains there so they can be easily examined and counted
+ by all players.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\emph on
+Recommendation
+\emph default
+: 
+\emph on
+Place the trains in a line of stacks in phase order, each stack one type
+ of train and splayed vertically so that the ranks, their prices and the
+ number of trains in each rank are easily visible to all players.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Take a dark brown R4 train from the supply and place it with the 
 \noun on
 Diepenbrock en Reigers te Ulft 
@@ -677,25 +697,6 @@ noprefix "false"
 \end_inset
 
 )
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Place the remaining trains where they can be easily examined and counted
- by all players.
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-
-\emph on
-Recommendation
-\emph default
-: 
-\emph on
-Place the trains in a line of stacks in phase order, each stack one type
- of train and splayed vertically so that the ranks, their prices and the
- number of trains in each rank are easily visible to all players.
 \end_layout
 
 \end_deeper
@@ -898,6 +899,27 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_layout Itemize
+Place the remaining company shares in the IPO, with their charters and station
+ markers nearby.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\emph on
+Recommendation
+\emph default
+: 
+\emph on
+Keep the components for unparred companies in the supply (in the gamebox,
+ or nearby and readily available), only taking the shares and tokens out
+ as a company is parred, and returning them to the supply if nationalised
+ and available to be floated again.
+ Such companies in the supply are considered to be in the IPO.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Separate the player number cards by colour, set one colour aside and randomly
  assign the remaining player number cards, one card per player.
@@ -6053,7 +6075,7 @@ reference "subsec:Train-Limit"
 
 \begin_layout Itemize
 A public company without a train must buy a train from the supply in the
- train-buying step of its operations see 
+ buy-train(s) step (this step) of its operations see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Emergency-train-buying"
@@ -7596,9 +7618,15 @@ Off-board
 \begin_inset space ~
 \end_inset
 
-locations: Black (Duitsland/Germany), blue (Overzeesch/Overseas), and red
- (Belgie/Belgium) hexagons represent connections to areas not shown on the
- map.
+locations:
+\begin_inset CommandInset label
+LatexCommand label
+name "Off-boardlocations"
+
+\end_inset
+
+ Black (Duitsland/Germany), blue (Overzeesch/Overseas), and red (Belgie/Belgium)
+ hexagons represent connections to areas not shown on the map.
  Black triangles mark separate track connections to those remote locations.
  Track tiles may be placed adjacent to them so that the lines of track connect
  to the black triangles leading to the remote connections.
@@ -7678,8 +7706,27 @@ reference "subsec:Run-train(s)"
 \begin_layout Description
 Exception: The revenue value of the Ruhrgebied (J17 & K18) off-board is
  equal to either the largest revenue value on the route, or double the revenue
- of the differently coloured off-board at the other end of the route, whichever
- is the larger.
+ of the differently coloured off-board (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) at the other end of the route, whichever is the larger.
 \end_layout
 
 \end_deeper
@@ -8925,8 +8972,8 @@ The
 Het Laantje van Van der Gaag
 \noun default
  green Private Company blocks the H7 hexagon on the map.
- A track tile cannot be built or upgraded at that hexagon by a public company
- until the 
+ A track tile cannot be built at that hexagon by a public company until
+ the 
 \noun on
 Het Laantje van Van der Gaag
 \noun default
@@ -9063,7 +9110,7 @@ Power: At a total cost of ƒ80, the owning public company may place or upgrade
  a track tile at Arnhem (I16) or Venlo (K16) as their yellow track lay or
  upgrade respectively and/or may place a station marker in an empty and
  unreserved city location, or in replacement of a government station marker,
- on that tile instead of their normal station placement.
+ on that hexagon instead of their normal station placement.
  The track tile placed or upgraded with the private at Arnhem (I16) or Venlo
  (K16) does not need to connect to or be part of one of the owning public
  company’s routes.
@@ -9162,8 +9209,20 @@ Lodewijk Pincoffs
 \begin_layout Description
 Power: When closed (and after the public company that bought the train that
  closed the Private Company has completed its operations), the owner of
- the Private Company must select the home stations for and par a Lokaalspoorwege
-n at ƒ25 (see 
+ the Private Company must:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Select an available unparred Lokaalspoorwegen from the supply.
+\end_layout
+
+\begin_layout Itemize
+Take 4 of its shares (the directors certificate and two others).
+\end_layout
+
+\begin_layout Itemize
+Part it at ƒ25 (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Starting-or-floating"
@@ -9184,15 +9243,45 @@ noprefix "false"
 \end_inset
 
 ).
- The number of companies with ƒ25 stock prices is not checked.
+\end_layout
+
+\begin_layout Itemize
+Select its home stations (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The number of companies with ƒ25 stock prices is not checked.
  If insufficient home station locations or no un-parred Lokaalspoorwegen
  are available, the owning player instead receives ƒ80 from the bank.
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Description
 Use: None.
 \end_layout
 
+\begin_deeper
 \begin_layout Description
 Note: The 
 \noun on
@@ -9979,8 +10068,20 @@ noprefix "false"
 \end_layout
 
 \begin_layout Description
-Power: When closed, the owner of the Private Company must select the home
- stations for and par a Lokaalspoorwegen at ƒ25 (see 
+Power: When closed, the owner of the Private Company must:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Select an available unparred Lokaalspoorwegen from the supply.
+\end_layout
+
+\begin_layout Itemize
+Take 4 of its shares (the directors certificate and two others).
+\end_layout
+
+\begin_layout Itemize
+Part it at ƒ25 (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Starting-or-floating"
@@ -10001,11 +10102,39 @@ noprefix "false"
 \end_inset
 
 ).
- The number of companies with ƒ25 stock prices is not checked.
+\end_layout
+
+\begin_layout Itemize
+Select its home stations (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Starting-or-floating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The number of companies with ƒ25 stock prices is not checked.
  If insufficient home station locations or no un-parred Lokaalspoorwegen
  are available, the owning player instead receives ƒ80 from the bank.
 \end_layout
 
+\end_deeper
 \begin_layout Description
 Use: None.
 \end_layout
@@ -12922,7 +13051,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-Train routes can include off-boards (see 
+Train routes can include off-boards of different colours (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Run-train(s)"
@@ -12950,7 +13079,27 @@ reference "sec:Trains-and-Running-Trains"
 
 \end_inset
 
-).
+ & 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Subsubsection
@@ -13398,60 +13547,6 @@ All other assets (trains, Private Companies) held by the company are discarded
  from the game without recompense.
 \end_layout
 
-\begin_deeper
-\begin_layout Description
-Exception: If the nationalised public company owned the 
-\noun on
-Rotterdamsche Handelsvereeniging
-\noun default
- red Private Company, then the 
-\noun on
-Rotterdamsche Handelsvereeniging
-\noun default
- is given to the director of the company being nationalised (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "par:Crédit-Mobilier"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "par:Crédit-Mobilier"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- & 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "par:Rotterdamsche-Bank"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "par:Rotterdamsche-Bank"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 The public company charter is returned to the supply.
 \end_layout
@@ -14943,6 +15038,34 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
+(
+\emph on
+Major Public Companies only
+\emph default
+) Can include on off-board at either or both ends of the route (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
 Can include separate revenue centers on the same hexagon (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -15283,8 +15406,8 @@ N
 
 \begin_deeper
 \begin_layout Description
-Revenue: The sum of all the revenue centers on the route whose revenues
- are not included in the routes of other non-
+Revenue: The sum of all the revenue centers on the route, excluding those
+ already counted by a non-
 \begin_inset Quotes erd
 \end_inset
 
@@ -15292,7 +15415,7 @@ R
 \begin_inset Quotes erd
 \end_inset
 
- trains (see 
+ train (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:R-trains"
@@ -15312,7 +15435,7 @@ noprefix "false"
 
 \end_inset
 
-) owned by the company plus (
+) also owned by the company, plus (
 \emph on
 Major Public Companies only
 \emph default
@@ -15336,7 +15459,27 @@ noprefix "false"
 
 \end_inset
 
-) any off-boards of different colours at the ends of the route.
+) any off-boards of different colours at the ends of the route (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
@@ -15363,8 +15506,8 @@ N
 
 \begin_deeper
 \begin_layout Description
-Revenue: The sum of all the revenue centers on the route whose revenues
- are not included in the routes of other non-
+Revenue: The sum of all the revenue centers on the route, excluding those
+ already counted by a non-
 \begin_inset Quotes erd
 \end_inset
 
@@ -15372,7 +15515,7 @@ R
 \begin_inset Quotes erd
 \end_inset
 
- trains (see 
+ train (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:R-trains"
@@ -15392,7 +15535,7 @@ noprefix "false"
 
 \end_inset
 
-) owned by the company plus (
+) also owned by the company, plus (
 \emph on
 Major Public Companies only
 \emph default
@@ -15416,7 +15559,127 @@ noprefix "false"
 
 \end_inset
 
-) any off-boards of different colours at the ends of the route.
+) any off-boards of different colours at the ends of the route (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+N+ trains 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:N+M-trains"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The route for a N+1 train (where 
+\emph on
+N
+\emph default
+ is 2, 4 or 3 and ) cannot contain more than a total of N cities.
+ There may also be one town on the route; before, between and after any
+ other revenue centers on the route.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Revenue: The sum of all the revenue centers on the route, excluding those
+ already counted by a non-
+\begin_inset Quotes erd
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ train (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:R-trains"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:R-trains"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) also owned by the company, plus (
+\emph on
+Major Public Companies only
+\emph default
+, see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Public-companies"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Public-companies"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) any off-boards of different colours at the ends of the route (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Map-Explanation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
@@ -16145,7 +16408,7 @@ Companies with a blue, light brown or medium brown train can nationalise
 \end_layout
 
 \begin_layout Itemize
-Local Public Companies may only pay full-dividends or withhold dividends.
+Public Companies may only pay full-dividends or withhold dividends.
 \end_layout
 
 \begin_layout Itemize
