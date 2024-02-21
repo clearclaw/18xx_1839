@@ -7,7 +7,7 @@ fix = -0.0115
 old = value
 
 r = rate - fix
-for i in range (26):
+for i in range (9):
   print ("#%2d" % i, "Value: %3d" % value, "Gain: %f" % (float (value) / float (old)), "Delta: %d" % (value - old))
   old = value
   r += fix
