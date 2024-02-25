@@ -73,7 +73,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (5)]
 
     L1:
       _:
@@ -436,7 +436,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (5)]
 
     NRS:
       _:
@@ -459,7 +459,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (5)]
 
     NWS:
       _:
@@ -490,7 +490,6 @@ company:
             Electrische
             Spoorweg-Maatschappij
         short_name_text_text: ZHESM
-        token_5_text_text: ""
         _major_fill: ${colour/wikipedia/dartmouth_green}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/olivedrab3}
@@ -617,10 +616,12 @@ private:
         long_name_text_text: |
             Kabinet-Rochussen
         power_text_text: |
-            Owning public company may move a
-            station marker for free. A government
-            station marker is placed at the prior
-            station marker location
+            Owner may move a station marker to a
+            legal station maker placement location
+            for free.  The company director must
+            agree.  A government station marker is
+            placed at the prior station marker
+            location.
         cost_text_text: "Cost: ƒ110"
         revenue_text_text: "Revenue: ƒ30"
 
@@ -643,7 +644,7 @@ private:
     DeRtU:
       _:
         asset_interior_box_fill: ${colour/scale/azure_2}
-        closes_text_text: "Closes: BROWN phase"
+        closes_text_text: "Closes: DARK BROWN phase"
         long_name_text_text: |
             Diepenbrock en
             Reigers te Ulft
@@ -657,7 +658,7 @@ private:
     CM:
       _:
         asset_interior_box_fill: ${colour/scale/azure_3}
-        closes_text_text: "Closes: BROWN phase"
+        closes_text_text: "Closes: DARK BROWN phase"
         long_name_text_text: |
             Crédit Mobilier
         power_text_text: |
@@ -796,7 +797,15 @@ train:
         cost_text_text_p: ƒ240
         rusted_text_size: 8
       model:
-        index: $[index_of (4)]
+        index:
+          "1":
+            note_text:
+              text: |
+                (4-player
+                games only)
+          "2":
+          "3":
+          "4":
 
     R5T:
       _:
@@ -875,7 +884,7 @@ train:
         asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "7"
-        cost_text_text_p: ƒ660
+        cost_text_text_p: ƒ640
         rusted_text_text: PERMANENT
       model:
         index: $[index_of (7)]
