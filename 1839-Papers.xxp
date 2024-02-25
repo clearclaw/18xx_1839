@@ -73,7 +73,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (5)]
+        index: $[index_of (6)]
 
     L1:
       _:
