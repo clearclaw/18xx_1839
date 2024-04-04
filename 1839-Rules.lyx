@@ -4397,8 +4397,10 @@ nolink "false"
 ).
 \end_layout
 
-\begin_layout Itemize
-Mark both hexagons as having a reserved station marker location with that public company's station marker placed near an open and unreserved city circle or government station marker on the hexagon (see 
+\begin_deeper
+\begin_layout Description
+Recommendation:
+ Mark both hexagons as having a reserved station marker location with that public company's station marker placed near an open and unreserved city circle or government station marker on the hexagon (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Government-railway"
@@ -4423,7 +4425,6 @@ nolink "false"
 ).
 \end_layout
 
-\begin_deeper
 \begin_layout Description
 Note:
  Home station reservations are for that hexagon and not for a specific city within that hexagon for the Amsterdam and OO hexes.
@@ -4716,8 +4717,29 @@ Then all floated Local Public Companies operate.
 
 \begin_layout Description
 Note:
- This is assessed dynamically after each company operates.
+ This is assessed dynamically after each company operates and may require returning to companies on the Major Stock Market after starting on the Local Stock Market (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Local-public-company"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
  
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "par:Local-public-company"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
 \end_layout
 
 \end_deeper
@@ -5901,7 +5923,7 @@ Select one of its placed station markers and a placed station marker of another 
 
 \begin_deeper
 \begin_layout Itemize
-Both public companies must have floated.
+Both public companies must have floated and operated at least once.
 \end_layout
 
 \begin_layout Itemize
