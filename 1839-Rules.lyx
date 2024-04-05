@@ -14228,7 +14228,7 @@ All shares of the company are returned from the players,
 \end_layout
 
 \begin_layout Enumerate
-The company's station makers on the map are replaced by government station markers (see 
+The company's station markers on the map are replaced by government station markers (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Government-railway"
@@ -15790,7 +15790,7 @@ Major Public Companies only
 \end_layout
 
 \begin_layout Itemize
-Must include a city containing one of the owning public company's station makers.
+Must include a city containing one of the owning public company's station markers.
 \end_layout
 
 \begin_layout Itemize

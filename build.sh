@@ -30,7 +30,8 @@ do
   # pdfunite masthead-${paper}.pdf box-sides-${paper}.pdf build/${GAMENAME}-BoxCovers-${paper}.pdf
 done
 for suffix in Map-B2 Map-A4 Market-A4 Map-letter Market-letter Map-tabloid Market-tabloid \
-              TrackTiles-letter-diecut TrackTiles-letter-outline Map Market
+              TrackTiles-letter-diecut TrackTiles-letter-outline Map Market \
+	      AuctionSheet-A4 AuctionSheet-letter
 do
   cp ${GAMENAME}-${suffix}.pdf build
 done  
