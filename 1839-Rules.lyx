@@ -2892,7 +2892,7 @@ On their turn each player must either do both the following or either of the fol
 \begin_deeper
 \begin_layout Itemize
 Buy one of the remaining Private Companies at its current price,
- paying that price to the bank (face value minus any discounts already on the Private Company) and discarding any discounts on that Private Company to the bank (see 
+ paying that price to the bank (face value minus any discounts already on the Private Company)(see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Private-Companies"
@@ -2960,7 +2960,7 @@ Recommendation:
  
 \emph on
 The private auction sheet can be used to track this process,
- writing the associated company symbols in the spaces provided,
+ using a wet-erase pen and writing the associated company symbols in the spaces provided,
  and crossing out prices for discounts and circling prices as those privates are bought.
 \end_layout
 
@@ -3511,14 +3511,8 @@ Shares may be bought from the IPO,
 \end_layout
 
 \begin_deeper
-\begin_layout Description
-Exception:
- Shares cannot be bought from a public company's treasury if shares of that public company remain in the IPO.
-\end_layout
-
-\begin_layout Description
-Note:
- If the director's certificate of a public company is in the Bank Pool,
+\begin_layout Itemize
+If the director's certificate of a public company is in the IPO,
  no other certificates of that public company can be bought (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -3542,6 +3536,11 @@ nolink "false"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Description
+Exception:
+ Shares cannot be bought from a public company's treasury if shares of that public company remain in the IPO.
 \end_layout
 
 \end_deeper
@@ -3845,6 +3844,33 @@ The first available share certificate of a public company is always the director
 
 \begin_deeper
 \begin_layout Itemize
+If the director's certificate of a public company is in the IPO,
+ no other certificates of that public company can be bought (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Player-Bankruptcy"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Player-Bankruptcy"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
 Players cannot buy the director's certificate of a public company from the IPO if they have nationalised a public company in the immediately preceding set of Operating Rounds (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -3882,34 +3908,6 @@ nolink "false"
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "subsec:Public-company-nationalisation"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Description
-Note:
- The directors' certificate may be purchased from the Bank Pool,
- if there (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Player-Bankruptcy"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "sec:Player-Bankruptcy"
 plural "false"
 caps "false"
 noprefix "false"
@@ -4276,7 +4274,8 @@ nolink "false"
 
 \begin_layout Description
 Exception:
- The Lokaalspoorwegen parred when the yellow and brown Private Companies close are always parred at ƒ25 (see 
+ The Lokaalspoorwegen parred when the yellow and brown Private Companies close are always parred at ƒ25,
+ and the number of companies with ƒ25 stock prices is not checked (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Yellow-private-companies"
@@ -8128,7 +8127,7 @@ nolink "false"
 \end_inset
 
 ) at the other end of the route,
- whichever is the larger.
+ whichever results in the larger revenue.
 \end_layout
 
 \end_deeper
@@ -8523,7 +8522,8 @@ nolink "false"
 \begin_deeper
 \begin_layout Description
 Exception:
- The Lokaalspoorwegen parred when the yellow and brown Private Companies close are not limited in this way and are always parred at ƒ25 (see 
+ The Lokaalspoorwegen parred when the yellow and brown Private Companies close are always parred at ƒ25,
+ and the number of companies with ƒ25 stock prices is not checked (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "par:Yellow-private-companies"
@@ -9415,6 +9415,7 @@ The owning company may use the special power of the Private Company,
 \end_deeper
 \begin_layout Itemize
 Yellow,
+ blue,
  brown and red Private Companies cannot be bought by public companies (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -9701,7 +9702,7 @@ Take 4 of its shares (the directors certificate and two others).
 \end_layout
 
 \begin_layout Itemize
-Part it at ƒ25 (see 
+Par it at ƒ25 (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Starting-or-floating"
@@ -9925,7 +9926,7 @@ nolink "false"
 
 ).
  The public company's director must agree.
- The new location must be a legal station marker placement location for the company (ignoring cost) before the move.
+ The new location must be able to trace a line of track a legal station marker placement location for the company (ignoring cost and whether the company has an available unplaced station marker) before the move.
  A government station marker is placed at the prior station marker location (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -10639,7 +10640,7 @@ Take 4 of its shares (the directors certificate and two others).
 \end_layout
 
 \begin_layout Itemize
-Part it at ƒ25 (see 
+Par it at ƒ25 (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Starting-or-floating"
@@ -13833,35 +13834,6 @@ nolink "false"
 ).
 \end_layout
 
-\begin_deeper
-\begin_layout Description
-Exception:
- Directors' certificates of unfloated public companies may be in the Bank Pool after their owning player concedes or bankrupts (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Player-Bankruptcy"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "sec:Player-Bankruptcy"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
- ).
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 The director's certificate can never be sold,
  only transferred to another player.
