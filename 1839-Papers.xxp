@@ -65,6 +65,9 @@ company:
         short_name_text_text: HIJSM
         _major_fill: ${colour/hollasch/van_dyke_brown}
         _minor_fill: ${_/_major_fill}
+      charter:
+        _:
+          comment_text_text: ƒ100 extra capital when floated.
       share:
         long_name_text:
           size: 11.5
@@ -174,8 +177,8 @@ company:
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        ELEMENTS: ${TEMPLATE_basketball/.}
+        EMBED_ELEMENTS: ${TEMPLATE_basketball_embed/.}
         index: $[index_of (5)]
 
     L4:
@@ -252,7 +255,7 @@ company:
         short_name_text_text: L6
         token_4_text_text: ""
         token_5_text_text: ""
-        _major_fill: ${colour/wikipedia/fuchsia}
+        _major_fill: ${colour/scale/colour_10_2}
         _minor_fill: ${colour/xxp/BLACK}
         _major_fill_1: ${_/_major_fill}
         _major_fill_2: ${_/_minor_fill}
@@ -638,25 +641,9 @@ private:
         cost_text_text: "Cost: ƒ110"
         revenue_text_text: "Revenue: ƒ30"
 
-    KFvSeaW:
-      _:
-        asset_interior_box_fill: ${colour/scale/azure_1}
-        closes_text_text: "Closes: GRAY phase"
-        long_name_text_text: |
-            Koninklijke Fabriek
-            van Stoom en andere
-            Werktuigen
-        power_text_text: |
-            (3-player & 4-player games only)
-            Pays ƒ20 more than it paid in the
-            previous Operating Round, starting
-            at ƒ0 in the first Operating Round.
-        cost_text_text: "Cost: ƒ120"
-        revenue_text_text: "Revenue: +ƒ20/OR"
-
     DeRtU:
       _:
-        asset_interior_box_fill: ${colour/scale/azure_2}
+        asset_interior_box_fill: ${colour/scale/azure_1}
         closes_text_text: "Closes: DARK BROWN phase"
         long_name_text_text: |
             Diepenbrock en
@@ -670,7 +657,7 @@ private:
 
     CM:
       _:
-        asset_interior_box_fill: ${colour/scale/azure_3}
+        asset_interior_box_fill: ${colour/scale/azure_2}
         closes_text_text: "Closes: DARK BROWN phase"
         long_name_text_text: |
             Crédit Mobilier
@@ -681,6 +668,22 @@ private:
             red private company
         cost_text_text: "Cost: ƒ140"
         revenue_text_text: "Revenue: ƒ0"
+
+    KFvSeaW:
+      _:
+        asset_interior_box_fill: ${colour/scale/azure_3}
+        closes_text_text: "Closes: GRAY phase"
+        long_name_text_text: |
+            Koninklijke Fabriek
+            van Stoom en andere
+            Werktuigen
+        power_text_text: |
+            (3-player & 4-player games only)
+            Pays ƒ20 more than it paid in the prior 
+            Operating Round. Maximum ƒ40 if the 
+            owner doesn't direct a floated company.
+        cost_text_text: "Cost: ƒ180"
+        revenue_text_text: "Revenue: +ƒ20/OR"
 
     WCTS&Co:
       _:
@@ -809,12 +812,15 @@ train:
         long_name_text_text: "4+"
         cost_text_text_p: ƒ240
         rusted_text_size: 8
+      #model:
+      #  index: $[index_of (3)]
       model:
         index:
           "1":
             note_text:
               text: |
-                (4-player
+                (3-player 
+                & 4-player 
                 games only)
           "2":
           "3":
@@ -825,6 +831,7 @@ train:
         asset_interior_box_fill_p: LIGHT_BROWN
         rust_bar_box_fill_p: LIGHT_RED
         long_name_text_text: "R5"
+        long_name_text_size: 60
         cost_text_text_p: ƒ320
         rusted_text_size: 8
       model:
@@ -846,7 +853,7 @@ train:
         asset_interior_box_fill_p: DARK_BROWN
         rust_bar_box_fill_p: GRAY
         long_name_text_text: "R4"
-        cost_text_text_p: ƒ380
+        cost_text_text_p: ƒ400
         rusted_text_size: 9
         long_name_text_size: 60
       model:
@@ -858,8 +865,7 @@ train:
         rust_bar_box_fill_p: PURPLE
         long_name_text_text: "PR2+"
         cost_text_text_p: ƒ240
-      long_name_text:
-        size: 36
+        long_name_text_size: 36
       model:
         index: $[index_of (4)]
 
@@ -868,9 +874,9 @@ train:
         asset_interior_box_fill_p: DARK_RED
         rust_bar_box_fill_p: PURPLE
         long_name_text_text: "PR3+1"
-        cost_text_text_p: ƒ260
-      long_name_text:
-        size: 28
+        __long_name_text_y: 130
+        cost_text_text_p: ƒ300
+        long_name_text_size: 28
       model:
         index: $[index_of (2)]
 
@@ -881,26 +887,49 @@ train:
         long_name_text_text: "4"
         cost_text_text_p: ƒ460
         rusted_text_text: PERMANENT
+        long_name_text_size: 58
       model:
         index:
           "1":
             note_text:
               text: |
-                (4-player
+                (2-player 
+                & 3-player 
                 games only)
           "2":
           "3":
           "4":
 
-    7T:
+    2xL2+T:
       _:
         asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill_p: BLACK
-        long_name_text_text: "7"
-        cost_text_text_p: ƒ640
+        long_name_text_y: 130
+        long_name_text_text: |
+          2×
+          L2+
+        cost_text_text_p: ƒ480
         rusted_text_text: PERMANENT
+        long_name_text_size: 32
+        note_text_text: |
+          (locals only,
+          majors cannot use)
       model:
-        index: $[index_of (7)]
+        index: $[index_of (8)]
+
+    M7T:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "M7"
+        cost_text_text_p: ƒ760
+        rusted_text_text: PERMANENT
+        long_name_text_size: 58
+        note_text_text: |
+          (majors only,
+          locals cannot use)
+      model:
+        index: $[index_of (8)]
 
     p1Pa:
       _:
@@ -910,7 +939,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"
 
     p2Pa:
       _:
@@ -920,7 +949,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"
 
     p3Pa:
       _:
@@ -930,7 +959,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"
 
     p4Pa:
       _:
@@ -940,7 +969,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"
 
     p1Pb:
       _:
@@ -950,7 +979,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"
 
     p2Pb:
       _:
@@ -960,7 +989,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"
 
     p3Pb:
       _:
@@ -970,7 +999,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"
 
     p4Pb:
       _:
@@ -980,4 +1009,4 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (3)]"

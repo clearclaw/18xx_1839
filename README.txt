@@ -7,11 +7,12 @@ curiousities.
 A produced copy of the files ready for printing your own copy can be
 found at: https://kanga.nu/~claw/1839/  
 
-Six copies of the charter for the Koninklijke Fabriek van Stoom en
-andere Werktuigen are provided, simply to fill the page.  Only one
-copy is needed.  Two versions of the NS Government tokens are
-provided, as I like the yellow, blue and red tokens, but some people
-find them visually challenging.
+Two versions of the NS Government token art is provided, one colourful
+and one plain, as I like the yellow, blue and red tokens, but some
+find them visually challenging.  Additionally, 6 copies of the small
+tracking charter for the Koninklijke Fabriek van Stoom en andere
+Werktuigen, andd 3 copies of the player number cards are provided as
+they fill the page and ease manufacture.
 
 If you make changes to this game under its Creative Commons license,
 to components, art-files, the rules or anything else, please also
