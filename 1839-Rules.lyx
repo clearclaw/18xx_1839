@@ -6810,7 +6810,8 @@ The player can choose the order in which shares of different companies are sold.
 
 \end_deeper
 \begin_layout Itemize
-If insufficient money has been raised after all shares that can be legally sold have been sold (this may force the director to sell shares from the treasury,
+If insufficient money has been raised after all shares that can be legally sold have been sold,
+ and all monies contributed (this may force the director to sell shares from the treasury,
  see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -6828,7 +6829,6 @@ nolink "false"
 \end_inset
 
 ),
- and all monies contributed,
  then the player is bankrupt (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
