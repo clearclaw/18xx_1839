@@ -2128,7 +2128,7 @@ PR3+1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Medium Brown
 \end_layout
 
 \end_inset
@@ -17707,7 +17707,29 @@ All light brown trains that have operated and run a route are discarded from the
 \end_layout
 
 \begin_layout Itemize
-Any remaining light brown trains are discarded immediately after the next time they operate and run a route.
+Any remaining light brown trains that haven't yet run a route (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:R-trains"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:R-trains"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+) are discarded immediately after the next time they operate and run a route.
 \end_layout
 
 \begin_layout Itemize
@@ -17829,6 +17851,36 @@ Red barriers between map hexagons don't block track builds,
 
 \begin_layout Itemize
 Off-boards with multiple revenue values use the second (brown) value.
+\end_layout
+
+\begin_layout Itemize
+All medium brown trains that have operated and run a route are discarded from the game.
+\end_layout
+
+\begin_layout Itemize
+Any remaining medium brown trains that haven't yet run a route (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:R-trains"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:R-trains"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+) are discarded immediately after the next time they operate and run a route.
 \end_layout
 
 \begin_layout Itemize
