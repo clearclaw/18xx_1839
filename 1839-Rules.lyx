@@ -5121,7 +5121,7 @@ nolink "false"
 
 \end_deeper
 \begin_layout Itemize
-This cannot cause a phase change (see 
+This can cause a phase change (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Game-Phases"
