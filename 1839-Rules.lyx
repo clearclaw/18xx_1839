@@ -4861,11 +4861,12 @@ Public companies perform the following steps in order:
 
 \begin_deeper
 \begin_layout Enumerate
-(
-\emph on
-If the first time the public company is operating
-\emph default
-) Place the company's home station markers on its home station locations,
+If the first time the public company is operating:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Place the company's home station markers on its home station locations,
  placing them either in empty city circles or replacing a government station marker on those hexagons and returning the government station marker to the supply,
  at the director's choice (see 
 \begin_inset CommandInset ref
@@ -4994,19 +4995,77 @@ nolink "false"
 
 \end_deeper
 \begin_layout Enumerate
-(
-\emph on
-If the first time the public company is operating and the next available train is not gray or purple
-\emph default
-) The public company must buy the next available train from the bank:
+The public company must buy the next available train from the bank:
  
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Local Public Companies buy the train for free.
+
+\emph on
+(Prior to gray phase)
+\emph default
+ Local Public Companies buy the train for free.
 \end_layout
 
+\begin_layout Itemize
+
+\emph on
+(Gray and purple phases)
+\emph default
+ Local Public Companies must pay the cost of the train to the bank (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Game-Phases"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "tab:Game-Phases"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Emergency money raising rules can apply (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Emergency-train-buying"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "subsec:Emergency-train-buying"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Major Public Companies must pay the cost of the train to the bank (see 
 \begin_inset CommandInset ref
@@ -5062,7 +5121,7 @@ nolink "false"
 
 \end_deeper
 \begin_layout Itemize
-This can cause a phase change (see 
+This cannot cause a phase change (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Game-Phases"
@@ -5097,6 +5156,7 @@ nolink "false"
 ).
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -6398,24 +6458,7 @@ nolink "false"
 
 \begin_layout Itemize
 Trains can be bought from the supply for cost,
- or (if it already owns a train) from another public company for any price agreed upon by the directors of both companies (minimum ƒ1,
- also see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Emergency-train-buying"
-nolink "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "subsec:Emergency-train-buying"
-nolink "false"
-
-\end_inset
-
-).
+ or (if it already owns a train) from another public company for any price agreed upon by the directors of both companies (minimum ƒ1).
 \end_layout
 
 \begin_layout Itemize
@@ -6811,24 +6854,7 @@ The player can choose the order in which shares of different companies are sold.
 \end_deeper
 \begin_layout Itemize
 If insufficient money has been raised after all shares that can be legally sold have been sold,
- and all monies contributed (this may force the director to sell shares from the treasury,
- see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Selling-shares"
-nolink "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "subsec:Selling-shares"
-nolink "false"
-
-\end_inset
-
-),
+ and all monies contributed (this may force the director to have sold shares from the treasury),
  then the player is bankrupt (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -7278,7 +7304,7 @@ If all trains of a rank are removed in this way,
 \begin_layout Description
 Exception:
  If a purple train is to be discarded,
- a gray train is discarded instead.
+ a gray train is discarded (if possible) instead.
 \end_layout
 
 \end_deeper
@@ -17975,6 +18001,10 @@ Off-boards with multiple revenue values use the third (gray) value.
 \end_layout
 
 \begin_layout Itemize
+Local Public Companies pay the cost of their first train.
+\end_layout
+
+\begin_layout Itemize
 All dark brown trains that have operated and run a route are discarded from the game.
 \end_layout
 
@@ -18090,6 +18120,10 @@ Red barriers between map hexagons don't block track builds,
 
 \begin_layout Itemize
 Off-boards with multiple revenue values use the third (gray) value.
+\end_layout
+
+\begin_layout Itemize
+Local Public Companies pay the cost of their first train.
 \end_layout
 
 \begin_layout Itemize
