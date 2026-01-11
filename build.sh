@@ -29,7 +29,7 @@ do
   xxpaper make assets ${GAMENAME}-Papers -p ${paper} -c build/${GAMENAME}-Papers-${paper}-outline.pdf
   # pdfunite masthead-${paper}.pdf box-sides-${paper}.pdf build/${GAMENAME}-BoxCovers-${paper}.pdf
 done
-for suffix in Map-B2 Map-A4 Market-A4 Map-letter Market-letter Map-tabloid Market-tabloid \
+for suffix in Map-A4 Map-B2 Map-legal Map-letter Map-tabloid Market-A4 Market-legal Market-letter Market-tabloid \
               TrackTiles-letter-diecut TrackTiles-letter-outline Map Market \
 	      AuctionSheet-A4 AuctionSheet-letter
 do
