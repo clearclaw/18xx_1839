@@ -10300,7 +10300,8 @@ value:
 Revenue:
  ƒ20 more than it paid in the previous Operating Round,
  starting at ƒ0 in the first Operating Round of the game.
- If the owner is not the director of a public company and the current revenue is ƒ40 or more,
+ If the owner is not the director of a public company when private revenues are to be paid,
+ and the current revenue is ƒ40 or more,
  then the revenue is reset to ƒ40.
 \end_layout
 
@@ -13568,11 +13569,9 @@ name "par:Local-public-company"
 \end_layout
 
 \begin_layout Itemize
-Buy the next available train from the supply at no cost (
-\emph on
-unless gray or purple
-\emph default
-) when they first operate (see 
+Buy the next available train from the supply at no cost before gray phase,
+ and at face cost in gray and purple phases,
+ when they first operate (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Operating-round-actions"
@@ -13808,11 +13807,7 @@ name "par:Major-public-company"
 \end_layout
 
 \begin_layout Itemize
-Buy the next available train from the supply at face cost (
-\emph on
-unless gray or purple
-\emph default
-) when they first operate (see 
+Buy the next available train from the supply at face cost when they first operate (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:Operating-round-actions"
